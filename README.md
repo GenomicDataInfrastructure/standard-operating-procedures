@@ -21,11 +21,18 @@ flowchart TB
     classDef SOP fill:#FFD700,stroke:#000000,stroke-width:2px;
     classDef Template fill:#87CEEB,stroke:#000000,stroke-width:2px;
 
-    %% Nodes    
+    %% Nodes
+    A[GDI project partners]
+    A -->|Identify the need for a\n new European level GDI SOP| B
+    B[GDI project partners]
+    B -->|Write proposal of SOP.\n inc. purpose, scope, and justification of SOP| B2
+    B2[GitHub Issue]
+    B2 --> D
+    D{1+MG Working\nGroup Approves\nproposal?}
+    D -->|No| B
     D -->|Yes| E
     F[General GDI SOP Template]
     F -->|Is used by| E
-    K -->|Identifies the need for a\n new Node-specific GDI SOP| E
     E[T4.3/WP4]
     E -->|Prepares template| G
     G[SOP Template]
@@ -36,14 +43,6 @@ flowchart TB
 
     %% Boxes
     subgraph European-level SOPs
-        A[GDI project partners]
-        A -->|Identify the need for a\n new European level GDI SOP| B
-        B[GDI project partners]
-        B -->|Write proposal of SOP.\n inc. purpose, scope, and justification of SOP| C
-        C[Relevant 1+MG Working group]
-        C --> D
-        D{Approves\nproposal?}
-        D -->|No| B
         S[SOP Instance]
         V[Finished European-level\nSOP Instance]
         ZA[Released European-level\nSOP Instance]
@@ -52,8 +51,6 @@ flowchart TB
     ZA -->|Enters periodic\nreview cycle| ZA
 
     subgraph Node-specific SOPs
-        direction TB
-        K[T4.3/WP4]
         Q[SOP Template]
         W[Finished Node-specific\nSOP Template]
         Z[Released Node-specific\nSOP Template]
@@ -139,6 +136,6 @@ flowchart TB
     end
 
     %% Styles
-    class G,S,V,ZA,nodeSOP SOP
-    class F,Q,W,Z,nodeTem Template
+    class S,V,ZA,nodeSOP SOP
+    class G,F,Q,W,Z,nodeTem Template
 ````

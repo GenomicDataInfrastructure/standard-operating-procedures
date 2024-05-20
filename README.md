@@ -23,7 +23,7 @@ flowchart TB
 
     %% Nodes
     A[GDI project partners]
-    A -->|Identify the need for a\n new European level GDI SOP| B
+    A -->|Identify the need for a\n new GDI SOP| B
     B[GDI project partners]
     B -->|Write proposal of SOP.\n inc. purpose, scope, and justification of SOP| B2
     B2[GitHub Issue]

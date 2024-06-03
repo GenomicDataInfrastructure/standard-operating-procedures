@@ -1,0 +1,153 @@
+---
+name: New SOP Request
+description: Request a new Standard Operating Procedure (SOP) for the GDI project
+title: '[SOP Request] <Short title>'
+labels: ["new-sop-request", "enhancement"]
+assignees: ""
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## New SOP Request
+
+  - type: markdown
+    attributes:
+      value: |
+        This form serves as a template for **new GDI SOP requests**. It can be used to request a standard operation procedure (SOP) that could help the GDI members to execute a process in a standardized way.
+        Thank you for contributing to the Genomics Data Infrastructure (GDI) SOPs!
+
+  - type: dropdown
+    id: sop-topics
+    attributes:
+      label: SOP topics
+      description: What topic does the new SOP belong to the most? Take a look at the existing classification of SOPs [here](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/tree/main/sops).
+      multiple: false
+      options:
+        - Data protection & security
+        - Data & metadata management
+        - Technical infrastructure & software development
+        - Helpdesk & operations
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sop-type
+    attributes:
+      label: SOP type
+      description: |
+        Do you envision the SOP you request to be used at European level or Node-specific? The difference between each is whether the SOP would be used *as is* by GDI nodes, or adapted by each node to develop their own node-specific SOP. For example, an SOP revolving around how GDI Committees resolve data access requests may be uniform across the whole GDI, while an SOP for how each nodes vetoes this decision may be node-specific.
+      multiple: false
+      options:
+        - European-level
+        - Node-specific
+    validations:
+      required: false
+
+  - type: input
+    id: sop-title
+    attributes:
+      label: SOP Title
+      description: Provide a brief title of the SOP you are requesting.
+      placeholder: "NCPs veto EDIC decision"
+    validations:
+      required: true
+
+  - type: textarea
+    id: sop-description
+    attributes:
+      label: Detailed Description
+      description: Provide a detailed description of what the SOP should cover. Include specific steps, processes, or standards that should be addressed.
+      placeholder: |
+        1. Initial data preparation and encryption...
+        2. Secure transfer methods (e.g., SFTP, SCP)...
+        3. Verification and validation of transferred data...
+        4. Logging and documentation requirements...
+    validations:
+      required: true
+
+  - type: textarea
+    id: sop-motivation
+    attributes:
+      label: motivation
+      description: Explain the motivation and background for the requested SOP. Why is it needed? Is its content not covered already by other existing SOPs?
+      placeholder: "Currently, there is no standardized procedure for securely transferring data between nodes. This has led to inconsistencies and potential security risks..."
+
+  - type: textarea
+    id: existing-procedures
+    attributes:
+      label: Existing Procedures or References
+      description: If there are any existing procedures, guidelines, or references that could help in creating the SOP, please provide them here. If applicable, reference other existing SOPs that may have to do with your requested SOP.
+      placeholder: |
+        - Existing node-specific procedures for data transfer...
+        - Relevant sections from the GDI security policy...
+        - Existing SOP: ...
+        ...
+
+  - type: textarea
+    id: sop-impact
+    attributes:
+      label: Impact
+      description: Describe the expected impact of implementing this SOP. Who will benefit and how?
+      placeholder: "This SOP will ensure data transfers are consistent and secure, reducing the risk of data breaches. All GDI nodes will benefit from a standardized procedure..."
+
+  - type: textarea
+    id: stakeholders
+    attributes:
+      label: Stakeholders
+      description: List the stakeholders who should be consulted or informed about this SOP.
+      placeholder: |
+        - 1+MG Management Board
+        - GDI Coordination committee
+        - Data management team (WP...)
+        - IT security team
+        - Node administrators
+        ...
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Provide any additional information or considerations that should be taken into account.
+      placeholder: "Consider including guidelines for handling different data sensitivity levels."
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Requester information
+
+  - type: dropdown
+    id: requester-provenance
+    attributes:
+      label: Requester GDI role
+      description: Are you part of the GDI consortium?
+      multiple: false
+      options:
+        - "Yes"
+        - "No"
+        - "Not sure"
+    validations:
+      required: true
+
+  - type: input
+    id: requester-node
+    attributes:
+      label: GDI Node
+      description: If you are a GDI member, please specify your GDI node.
+      placeholder: "Swedish GDI node, institution..."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have searched the existing SOPs and this request does not duplicate an existing SOP.
+          required: true
+        - label: I understand that submitting this request does not guarantee the creation of the SOP.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your request! The GDI team will review it and follow up as needed.

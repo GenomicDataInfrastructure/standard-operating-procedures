@@ -1,17 +1,16 @@
-## SOP Example Template
+_< Below is a template that you can use to start a new SOP. You can start your new SOP by copying this document in different ways: copying the raw markdown of this document if you want to start from markdown; or by copying the rendered document as is, directly, and pasting it into another format (e.g. Google Docs) if you want to use it elsewhere. >_
 
-Below is a template that you can use to start a new SOP. Click the "copy" icon to copy all the markdown text, and then past in a new file.
+_< The template has some annotations and examples between ``<>``, with the only purpose of helping you fill out the content. >_
 
-Follow the [accessioning documentation](sop-accessioning.md) for identifying and naming your new SOP.
+_< Follow the [accessioning documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md) for identifying and naming your new SOP. >_
 
-````markdown
-# European GDI - _SOP title_
+# European GDI - < _SOP title_ >
 
-_< Title of the SOP prepended by "European GDI:". The title must remain the same for all instantiations of the SOP. For node-specific SOPs, the GDI node name must be added in the subtitle. >_
+_< Title of the SOP prepended by "European GDI:". The title must remain the same for all instantiations of the SOP (see more details at the ISM document in ``docs/``). For node-specific SOPs, the GDI node name must be added in the subtitle. >_
 
 | SOP Identifier | SOP Type | GDI Node             | Institution name |
 |:--|:--|:--|:--|
-| _< "GDI-SOP000..." See [documentation](../sop-accessioning#identifier-format) >_ | _< Either "Node-specific SOP" or "European Level SOP". See [documentation](../sop-accessioning#sop-life-cycle) >_ | _< Unique Alpha-3 code for the node (e.g. SWE for Sweden) >_ | _< Name of the GDI Node institution instancing the SOP (only if the SOP is of type "Node-specific SOP") >_ |
+| _< "GDI-SOP000..." See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md#identifier-format) >_ | _< Either "Node-specific SOP" or "European-Level SOP". See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md#sop-life-cycle) >_ | _< Unique Alpha-3 code for the node (e.g. SWE for Sweden) >_ | _< Name of the GDI Node institution instancing the SOP (only if the SOP is of type "Node-specific SOP") >_ |
 
 ## Index
 
@@ -42,6 +41,8 @@ _< This section is required >_
 
 _< Include definitions of node and/or SOP-specific concepts used in this SOP. >_
 
+Find GDI SOPs common Glossary at the [**charter document**]().
+
 | Abbreviations | Description     |
 |---------------|-----------------|
 |               |                 |
@@ -53,7 +54,7 @@ _< Include definitions of node and/or SOP-specific concepts used in this SOP. >_
 ### 3. Roles and Responsibilities
 _< This section is required >_
 
-_< Roles and responsibilities table to be completed with who is responsible to author, review, approve, and authorize the SOP. To be decided how these responsibilities are shared between GDI/European-level operations and node-level operations. >_
+_< Roles and responsibilities table to be completed with who is responsible to author, review, approve, and authorize the SOP (see more details at the ORR document in ``docs/``). To be decided how these responsibilities are shared between GDI/European-level operations and node-level operations. >_
 
 | Name     | GDI/node role | Organisation |
 |----------|-----------------|--------------|
@@ -80,7 +81,7 @@ _< Include if additional information is needed to ensure the SOP can be understo
 
 ### 7. Summary or Context Diagram
 
-_< If applicable, include a diagram (e.g., mermaid or plantUML block) summarizing the SOP step-by-step. Diagrams could represent the larger context of where this particular SOP should be used, e.g., within a "virtual helpdesk", if that is useful. >_
+_< If applicable, include a diagram (e.g., in mermaid or plantUML format) summarizing the SOP step-by-step. Diagrams could represent the larger context of where this particular SOP should be used, e.g., within a "virtual helpdesk", if that is useful. >_
 ```mermaid
 graph TB
     start( )
@@ -109,19 +110,19 @@ _< List step-by-step hierarchical instructions for the SOP. Each step has at fir
 _< After input 1 is received by ..., it is evaluated following this checklist: >_
 - _< It is ... >_
 - _< It contains ...>_
-#### 1.1. < Do X >
+#### 2.1. < Do X >
 | Step identifier            | When             | Who |
 |:------------------|:----|:----|
-| _< 1.1 >_                     | _< After positive evaluation at [step 1](#1--evaluate-input-1-)... >_ | _< The 1+MG Management Board at ... >_ |
+| _< 2.1 >_                     | _< After positive evaluation at [step 1](#1--evaluate-input-1-)... >_ | _< The 1+MG Management Board at ... >_ |
 
 _< If positive evaluation is received, then ... executes the following code: >_
 ```bash
 echo "Hello world"
 ```
-#### 1.2. < Do X >
+#### 2.2. < Do X >
 | Step identifier            | When             | Who |
 |:------------------|:----|:----|
-| _< 1.2 >_                     | _< After negative evaluation at [step 1](#1--evaluate-input-1-)... >_ | _< The 1+MG Management Board at ... >_ |
+| _< 2.2 >_                     | _< After negative evaluation at [step 1](#1--evaluate-input-1-)... >_ | _< The 1+MG Management Board at ... >_ |
 _< If negative evaluation is received, then ... executes the following code: >_
 ```bash
 echo "Bye world"
@@ -138,6 +139,3 @@ _< Include references to useful information to understand this document. >_
 | [2](#)    | European GDI - Procedures for Information Service Management (ISM) for SOPs |
 | [3](#)    | European GDI - Organisational Roles and Responsibilities (ORR) |
 | [4](#)    | ... |
-````
-
-

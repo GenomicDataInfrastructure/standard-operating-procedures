@@ -1,4 +1,4 @@
-_< Below is a template that you can use to start a new SOP. You can start your new SOP by copying this document in different ways: copying the raw markdown of this document if you want to start from markdown; or by copying the rendered document as is, directly, and pasting it into another format (e.g. Google Docs) if you want to use it elsewhere. >_
+_< Below is a **template that you can use to create a new SOP**. You can start your new SOP by copying this document in different ways: copying the raw markdown of this document if you want to start from markdown; or by copying the rendered document as is, directly, and pasting it into another platform (e.g. Google Docs) if you want to use it elsewhere. >_
 
 _< The template has some annotations and examples between ``<>``, with the only purpose of helping you fill out the content. >_
 
@@ -6,11 +6,15 @@ _< Follow the [accessioning documentation](https://github.com/GenomicDataInfrast
 
 # European GDI - < _SOP title_ >
 
-_< Title of the SOP prepended by "European GDI:". The title must remain the same for all instantiations of the SOP (see more details at the ISM document in ``docs/``). For node-specific SOPs, the GDI node name must be added in the subtitle. >_
+_< Title of the SOP prepended by "European GDI:". The title must remain the same for all instantiations of the SOP (see more details at the [ISM document](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/information-service-management.md)). **Only** for node-specific SOP instances, the GDI node and institution names must be added in the following table. >_
 
-| SOP Identifier | SOP Type | GDI Node             | Institution name |
-|:--|:--|:--|:--|
-| _< "GDI-SOP000..." See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md#identifier-format) >_ | _< Either "Node-specific SOP" or "European-Level SOP". See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md#sop-life-cycle) >_ | _< Unique Alpha-3 code for the node (e.g. SWE for Sweden) >_ | _< Name of the GDI Node institution instancing the SOP (only if the SOP is of type "Node-specific SOP") >_ |
+| Metadata          | Value         |
+|-------------------|---------------------|
+| Template SOP number  | _< ``GDI-SOP000...``. The number should be unique in the GDI SOP namespace. See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md#identifier-format) for further details. >_ |
+| Template SOP version      | _< ``vY``. See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md#identifier-format) >_ |
+| Template SOP Type      | _< Either "Node-specific SOP" or "European-Level SOP". See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md#sop-life-cycle) >_ |
+| GDI Node   | _< Unique Alpha-3 code for the node (e.g. SWE for Sweden). Only needed if the node is instancing the template. >_ |
+| Instance version     | _< ``vZ``. See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md#identifier-format). Only needed if a node is instancing the template. >_ |
 
 ## Index
 
@@ -27,13 +31,13 @@ _< Title of the SOP prepended by "European GDI:". The title must remain the same
 ### 1. Document History
 _< This section is required >_
 
-_< Manual or automated tracking of the history of changes for this SOP. >_
+_< Manual or automated tracking of the history of changes for this SOP. Notice how the template and instance have different version trackers, since there can be different combinations of versions. >_
 
-| Version | Author(s) | Description of changes       | Date       |
-|---------|-----------|------------------------------|------------|
-| v1.0.0      | _< Full name >_           | _< First version of SOP released, added ... >_ | _< YYYY.MM.DD >_ |
-| v0.1.0      | _< Full name >_           | _< First review prior release, changed ... >_ | _< YYYY.MM.DD >_ |
-| v0.0.0      | _< Full name >_           | _< First draft... >_ | _< YYYY.MM.DD >_ |
+| Template Version | Instance version | Author(s) | Description of changes       | Date       |
+|---------|-----------|-----------|------------------------------|------------|
+| _< ``v1`` >_ | _< ``v2`` >_ | _< Full name >_           | _< Modified node's instance at ... >_ | _< ``YYYY.MM.DD`` >_ |
+| _< ``v1`` >_ | _< ``v1`` >_ | _< Full name >_           | _< SOP Instance of node ..., changed ... >_ | _< ``YYYY.MM.DD`` >_ |
+| _< ``v1`` >_ | _< ``-`` >_| _< Full name >_           | _< First version of template... >_ | _< ``YYYY.MM.DD`` >_ |
 
 
 ### 2. Glossary
@@ -41,7 +45,7 @@ _< This section is required >_
 
 _< Include definitions of node and/or SOP-specific concepts used in this SOP. >_
 
-Find GDI SOPs common Glossary at the [**charter document**]().
+Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
 
 | Abbreviations | Description     |
 |---------------|-----------------|
@@ -54,16 +58,18 @@ Find GDI SOPs common Glossary at the [**charter document**]().
 ### 3. Roles and Responsibilities
 _< This section is required >_
 
-_< Roles and responsibilities table to be completed with who is responsible to author, review, approve, and authorize the SOP (see more details at the ORR document in ``docs/``). To be decided how these responsibilities are shared between GDI/European-level operations and node-level operations. >_
+_< Roles and responsibilities table to be completed with who is responsible to author, review, approve, and authorize the SOP (see more details at the [ORR document](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md)). To be decided how these responsibilities are shared between GDI/European-level operations and node-level operations. >_
 
-| Name     | GDI/node role | Organisation |
-|----------|-----------------|--------------|
-| Author   |                 |              |
-| Reviewer |                 |              |
-| Approver |                 |              |
-| Authorizer|                |              |
+See qualifications and responsabilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
 
-*Example GDI/node roles: Legal Officer, Service Lead, Data Protection Officer, Admin Lead...*
+| Role       | Full name       | GDI/node role   | Organisation |
+|------------|-----------------|-----------------|--------------|
+| Author     |                 |                 |              |
+| Reviewer   |                 |                 |              |
+| Approver   |                 |                 |              |
+| Authorizer |                 |                 |              |
+
+_< Example GDI/node roles: Legal Officer, Service Lead, Data Protection Officer, Admin Lead... >_
 
 ### 4. Purpose
 _< This section is required >_
@@ -121,8 +127,9 @@ echo "Hello world"
 ```
 #### 2.2. < Do X >
 | Step identifier            | When             | Who |
-|:------------------|:----|:----|
-| _< 2.2 >_                     | _< After negative evaluation at [step 1](#1--evaluate-input-1-)... >_ | _< The 1+MG Management Board at ... >_ |
+|:---------------------------|:-----------------|:----|
+| _< 2.2 >_                  | _< After negative evaluation at [step 1](#1--evaluate-input-1-)... >_ | _< The 1+MG Management Board at ... >_ |
+
 _< If negative evaluation is received, then ... executes the following code: >_
 ```bash
 echo "Bye world"

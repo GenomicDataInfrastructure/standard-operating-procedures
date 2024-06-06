@@ -3,7 +3,7 @@ name: New SOP Request
 description: Request a new Standard Operating Procedure (SOP) for the GDI project
 title: '[SOP Request] <Short title>'
 labels: ["new-sop-request", "enhancement"]
-assignees: ""
+# assignees: ""
 
 body:
   - type: markdown
@@ -72,13 +72,13 @@ body:
     attributes:
       label: motivation
       description: Explain the motivation and background for the requested SOP. Why is it needed? Is its content not covered already by other existing SOPs?
-      placeholder: "Currently, there is no standardized procedure for securely transferring data between nodes. This has led to inconsistencies and potential security risks..."
+      placeholder: "Currently, there is no standardized procedure for ... If not addressed, it could lead to ..."
 
   - type: textarea
     id: existing-procedures
     attributes:
       label: Existing Procedures or References
-      description: If there are any existing procedures, guidelines, or references that could help in creating the SOP, please provide them here. If applicable, reference other existing SOPs that may have to do with your requested SOP.
+      description: If there are any existing procedures, guidelines, or references that could help us fill out the SOP, please provide them here. If applicable, reference other existing SOPs that may have to do with your requested SOP.
       placeholder: |
         - Existing node-specific procedures for data transfer...
         - Relevant sections from the GDI security policy...
@@ -90,7 +90,7 @@ body:
     attributes:
       label: Impact
       description: Describe the expected impact of implementing this SOP. Who will benefit and how?
-      placeholder: "This SOP will ensure data transfers are consistent and secure, reducing the risk of data breaches. All GDI nodes will benefit from a standardized procedure..."
+      placeholder: "This SOP will ensure ... are consistent and secure, reducing the risk of ... All GDI nodes using ... will benefit from this standardized procedure ..."
 
   - type: textarea
     id: stakeholders
@@ -110,7 +110,7 @@ body:
     attributes:
       label: Additional Information
       description: Provide any additional information or considerations that should be taken into account.
-      placeholder: "Consider including guidelines for handling different data sensitivity levels."
+      placeholder: "Consider including ..."
 
   - type: markdown
     attributes:
@@ -135,7 +135,7 @@ body:
     attributes:
       label: GDI Node
       description: If you are a GDI member, please specify your GDI node.
-      placeholder: "Swedish GDI node, institution..."
+      placeholder: "E.g., Swedish GDI node, institution..."
 
   - type: checkboxes
     id: confirmation
@@ -150,4 +150,4 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for your request! The GDI team will review it and follow up as needed.
+        Thank you for your request! The team will review it and follow up as needed.

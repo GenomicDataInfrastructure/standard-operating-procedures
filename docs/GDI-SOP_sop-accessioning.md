@@ -1,6 +1,15 @@
-# GDI SOP Accessioning System Proposal
+# GDI SOP Accessioning Proposal
 ## Introduction
 This document outlines the **accessioning system for Standard Operating Procedures** (SOPs) within the Genomics Data Infrastructure (GDI) project. It covers the SOP identifier format, file naming conventions, automation workflows, repository structure, version control, and referencing mechanisms. This system aims to streamline the management, versioning, and referencing of SOPs, ensuring clarity, consistency, and ease of use across the project.
+
+## Index
+
+1. [Identifier Format](#identifier-format)
+1. [File Naming Conventions](#file-naming-conventions)
+1. [SOP Repository Structure](#sop-repository-structure)
+1. [SOP Life-cycle](#sop-life-cycle)
+1. [Automatic SOP accessioning](#automatic-sop-accessioning)
+1. [Version Control and Updates](#version-control-and-updates)
 
 ## Identifier Format
 In this section we cover how identifiers for SOP-related documents are given. The main two categories are European-level and Node-specific SOPs.
@@ -32,7 +41,7 @@ The details encompassed by these identifiers **must** be added at the _Metadata_
 ### SOP documents
 Identifiers can be used as unique references to SOPs, nevertheless, they are difficult to read by humans. For this reason, additionally to the identifier, the SOP filenames will have **brief titles** of what they encompass.
 
-Furthermore, before diving into the details of filenaming, we have to define a **major distinction** among documents: those that are hosted in the [main repository](https://github.com/GenomicDataInfrastructure/standard-operating-procedures), and those that are hosted in forks or imports of the main repository (see [github-management](github-management.md) document). 
+Furthermore, before diving into the details of filenaming, we have to define a **major distinction** among documents: those that are hosted in the [main repository](https://github.com/GenomicDataInfrastructure/standard-operating-procedures), and those that are hosted in forks or imports of the main repository (see [github-management](GDI-SOP_github-management.md) document). 
 
 In order to make use of the main features of GitHub (e.g., file changes tracking), it is crucial to **maintain integrity with regards to filenaming**. For example, if any time a file changes its version we modified its filename, we would not be able to automatically track their changes across releases and forks. For this reason, **the filename of an SOP document will be defined exclusively by its ``Base identifier``** (see [identifier format](#identifier-format) section).
 

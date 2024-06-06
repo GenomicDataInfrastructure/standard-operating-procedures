@@ -2,19 +2,19 @@ _< Below is a **template that you can use to create a new SOP**. You can start y
 
 _< The template has some annotations and examples between ``<>``, with the only purpose of helping you fill out the content. >_
 
-_< Follow the [accessioning documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md) for identifying and naming your new SOP. >_
+_< Follow the [accessioning documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-accessioning.md) for identifying and naming your new SOP. >_
 
 # European GDI - < _SOP title_ >
 
-_< Title of the SOP prepended by "European GDI:". The title must remain the same for all instantiations of the SOP (see more details at the [ISM document](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/information-service-management.md)). **Only** for node-specific SOP instances, the GDI node and institution names must be added in the following table. >_
+_< Title of the SOP prepended by "European GDI:". The title must remain the same for all instantiations of the SOP (see more details at the [ISM document](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_information-service-management.md)). **Only** for node-specific SOP instances, the GDI node and institution names must be added in the following table. >_
 
 | Metadata          | Value         |
 |-------------------|---------------------|
-| Template SOP number  | _< ``GDI-SOP000...``. The number should be unique in the GDI SOP namespace. See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md#identifier-format) for further details. >_ |
-| Template SOP version      | _< ``vY``. See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md#identifier-format) >_ |
-| Template SOP Type      | _< Either "Node-specific SOP" or "European-Level SOP". See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md#sop-life-cycle) >_ |
+| Template SOP number  | _< ``GDI-SOP000...``. The number should be unique in the GDI SOP namespace. See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-accessioning.md#identifier-format) for further details. >_ |
+| Template SOP version      | _< ``vY``. See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-accessioning.md#identifier-format) >_ |
+| Template SOP Type      | _< Either "Node-specific SOP" or "European-Level SOP". See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-accessioning.md#sop-life-cycle) >_ |
 | GDI Node   | _< Unique Alpha-3 code for the node (e.g. SWE for Sweden). Only needed if the node is instancing the template. >_ |
-| Instance version     | _< ``vZ``. See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/sop-accessioning.md#identifier-format). Only needed if a node is instancing the template. >_ |
+| Instance version     | _< ``vZ``. See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-accessioning.md#identifier-format). Only needed if a node is instancing the template. >_ |
 
 ## Index
 

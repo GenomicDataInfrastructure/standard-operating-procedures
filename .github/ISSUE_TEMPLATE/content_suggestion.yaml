@@ -2,7 +2,7 @@
 name: SOP Content Change Suggestion
 description: Suggest changes to the content of the GDI SOP GitHub repository
 title: '[Change Suggestion] <Title>'
-labels: ["help wanted"]
+labels: ["help wanted", "enhancement"]
 # assignees: ""
 
 body:

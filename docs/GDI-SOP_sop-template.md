@@ -4,6 +4,8 @@ _< The template has some annotations and examples between ``<>``, with the only 
 
 _< Follow the [accessioning documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-accessioning.md) for identifying and naming your new SOP. >_
 
+_< Make sure to always **use the latest version** of this [Generic SOP Template](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-template.md) from GDI's GitHub repository >_
+
 # European GDI - < _SOP title_ >
 
 _< Title of the SOP prepended by "European GDI:". The title must remain the same for all instantiations of the SOP (see more details at the [ISM document](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_information-service-management.md)). **Only** for node-specific SOP instances, the GDI node and institution names must be added in the following table. >_

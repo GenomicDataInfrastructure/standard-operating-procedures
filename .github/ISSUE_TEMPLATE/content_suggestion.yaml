@@ -75,6 +75,13 @@ body:
     validations:
       required: false
 
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Any Other Information
+      description: Add any other information you think might be helpful for reviewing your suggestion.
+      placeholder: "Add any additional information here..."
+
   - type: checkboxes
     id: review
     attributes:
@@ -84,13 +91,6 @@ body:
           required: true
         - label: I understand that my suggestions will be reviewed and not all suggestions may be implemented.
           required: true
-
-  - type: textarea
-    id: additional-information
-    attributes:
-      label: Any Other Information
-      description: Add any other information you think might be helpful for reviewing your suggestion.
-      placeholder: "Add any additional information here..."
 
   - type: markdown
     attributes:

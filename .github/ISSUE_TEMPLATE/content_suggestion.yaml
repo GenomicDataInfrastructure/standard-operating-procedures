@@ -12,7 +12,7 @@ body:
         ## SOP Content Change Suggestion
 
   - type: markdown
-    says:
+    attributes:
       value: |
         Thank you for your contribution to improving the Genomics Data Infrastructure (GDI) Standard Operating Procedures (SOPs). **If you are familiar with GitHub**, you are welcome to contribute directly through a Pull Request to the repository. **If not**, this Issue Template will guide you through the content suggestion request. Please provide detailed information to help us understand and evaluate your suggested changes effectively. If your suggestion is for the creation of a new SOP, please use the `New SOP Request` issue instead.
 

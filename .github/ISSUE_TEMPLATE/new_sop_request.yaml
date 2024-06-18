@@ -15,7 +15,7 @@ body:
     attributes:
       value: |
         This form serves as a template for **new GDI SOP requests**. It can be used to request a standard operation procedure (SOP) that could help the GDI members to execute a process in a standardized way.
-        Thank you for contributing to the Genomics Data Infrastructure (GDI) SOPs!
+        Thank you for contributing to the Genomic Data Infrastructure (GDI) SOPs!
 
   - type: dropdown
     id: sop-topics

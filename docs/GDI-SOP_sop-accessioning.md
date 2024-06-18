@@ -1,6 +1,6 @@
 # GDI SOP Accessioning Proposal
 ## Introduction
-This document outlines the **accessioning system for Standard Operating Procedures** (SOPs) within the Genomics Data Infrastructure (GDI) project. It covers the SOP identifier format, file naming conventions, automation workflows, repository structure, version control, and referencing mechanisms. This system aims to streamline the management, versioning, and referencing of SOPs, ensuring clarity, consistency, and ease of use across the project.
+This document outlines the **accessioning system for Standard Operating Procedures** (SOPs) within the Genomic Data Infrastructure (GDI) project. It covers the SOP identifier format, file naming conventions, automation workflows, repository structure, version control, and referencing mechanisms. This system aims to streamline the management, versioning, and referencing of SOPs, ensuring clarity, consistency, and ease of use across the project.
 
 ## Index
 
@@ -12,7 +12,7 @@ This document outlines the **accessioning system for Standard Operating Procedur
 1. [Version Control and Updates](#version-control-and-updates)
 
 ## Identifier Format
-In this section we cover how identifiers for SOP-related documents are given. The main two categories are European-level and Node-specific SOPs.
+In this section we cover how identifiers for SOP-related documents are given. The two main categories are European-level and Node-specific SOPs.
 
 1. **European-level SOP instances**. To be used uniformly across all GDI nodes at European level.
    - **Format:** `GDI-SOPXXXX.vY`

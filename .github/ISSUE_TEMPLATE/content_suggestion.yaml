@@ -1,0 +1,98 @@
+---
+name: SOP Content Change Suggestion
+description: Suggest changes to the content of the GDI SOP GitHub repository
+title: '[Change Suggestion] <Title>'
+labels: ["help wanted", "enhancement"]
+# assignees: ""
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## SOP Content Change Suggestion
+
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your contribution to improving the Genomic Data Infrastructure (GDI) Standard Operating Procedures (SOPs). **If you are familiar with GitHub**, you are welcome to contribute directly through a Pull Request to the repository. **If not**, this Issue Template will guide you through the content suggestion request. Please provide detailed information to help us understand and evaluate your suggested changes effectively. If your suggestion is for the creation of a new SOP, please use the `New SOP Request` issue instead.
+
+  - type: dropdown
+    id: content-type
+    attributes:
+      label: Suggestion type
+      description: What type of suggestion is it?
+      multiple: false
+      options:
+        - Bug fix
+        - New content
+        - Modify content
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: sop-id
+    attributes:
+      label: SOP Identifier
+      description: If you selected `Modify content`, please specify the SOP ID or file title for which you are suggesting changes.
+      placeholder: "E.g., GDI-SOP0001; NCPs-veto-EDIC-decision; Charter... "
+    validations:
+      required: false
+
+  - type: textarea
+    id: change-description
+    attributes:
+      label: Detailed Change Description
+      description: Describe the specific changes you suggest. Please be as detailed as possible, including the reasons for the changes and the sections/pages affected and resources that could be used for the completion of the request.
+      placeholder: "Detail the suggested changes here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason-for-change
+    attributes:
+      label: Reason for the Change
+      description: Explain why these changes are necessary. Include any supporting information or context that could help in the decision-making process.
+      placeholder: "Explain why this change is needed..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-impact
+    attributes:
+      label: Expected Impact
+      description: Describe the expected impact of these changes on the repository, the SOP and its users.
+      placeholder: "Describe the expected impact here..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: supporting-documents
+    attributes:
+      label: Supporting Documents or References
+      description: Provide any documents, references, or data that support your suggested changes.
+      placeholder: "Include links or reference documents here..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Any Other Information
+      description: Add any other information you think might be helpful for reviewing your suggestion.
+      placeholder: "Add any additional information here..."
+
+  - type: checkboxes
+    id: review
+    attributes:
+      label: Review Confirmation
+      options:
+        - label: I have reviewed the existing content of the SOP to ensure that these changes are not already covered.
+          required: true
+        - label: I understand that my suggestions will be reviewed and not all suggestions may be implemented.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us enhance our SOPs. We appreciate your suggestions and will consider them during our review process.

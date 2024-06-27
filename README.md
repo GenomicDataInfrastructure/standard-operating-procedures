@@ -125,7 +125,7 @@ flowchart TB
     I -..->|Responsible for| SOP-release-process
     subgraph SOP-release-process
         Accessioning(SOP Accessioning)
-        Accessioning --> GitHub-management
+        Accessioning --> git2
         GitHub-management
     end
 

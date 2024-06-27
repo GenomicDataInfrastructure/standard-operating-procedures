@@ -2,8 +2,8 @@
 The GDI SOP repository ([**GenomicDataInfrastructure/standard-operating-procedures**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures)) contains both European-level SOP _instances_ and Node-specific SOP _templates_. In order to adapt the Node-specific SOP templates, GDI nodes are expected to make a copy of this GitHub repository and modify them to suit them to their needs.
 
 Given that the base repository is public, forks of this repository cannot be private. Therefore, making a node's copy of the repository can be done in different ways, explained in this document, depending on the level of privacy that each node may require:
-- **Public node's repository**. If the node does not require for a private repository, copying the source repository is straightforward. See section _[1. Public repository](./github-management.md#1-public-repository)_.
-- **Private node's repository**. On the contrary, if nodes need their SOP instances to be private (e.g. for security reasons), an alternative route is taken. See section _[2. Private repository](./github-management.md#2-private-repository)_.
+- **Public node's repository**. If the node does not require a private repository, copying the source repository is straightforward. See section _[1. Public repository](#1-public-repository)_.
+- **Private node's repository**. On the contrary, if nodes need their SOP instances to be private (e.g. for security reasons), an alternative route is taken. See section _[2. Private repository](#2-private-repository)_.
 
 ````mermaid
 flowchart TD
@@ -65,7 +65,7 @@ This rubric guides project partners through the steps to create a **private repo
     1. Enter the details of the **new repository**. 
         - This repository will be your node's instance of the ``standard-operating-procedures``. Therefore, we recommend you to use your organization's namespace (similar to [GenomicDataInfrastructure](https://github.com/GenomicDataInfrastructure) but for your specific organization), as the repository ``Owner``, instead of your own username. 
         - You can choose any name for the new repository (recommended: ``standard-operating-procedures``)
-        - Choose "Private" as your new repository's privacy level. Otherwise, we advise you to follow section _[1. Public repository](./github-management.md#1-public-repository)_.
+        - Choose "Private" as your new repository's privacy level. Otherwise, we advise you to follow section _[1. Public repository](#1-public-repository)_.
     
         Since the source repository is public, no credentials are needed to copy it.
 1. Click "Begin Import". Wait for a few moments while GitHub imports the repository.

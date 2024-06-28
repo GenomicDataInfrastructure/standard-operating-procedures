@@ -10,6 +10,7 @@ This document outlines the **accessioning system for Standard Operating Procedur
 1. [SOP Life-cycle](#sop-life-cycle)
 1. [Automatic SOP accessioning](#automatic-sop-accessioning)
 1. [Version Control and Updates](#version-control-and-updates)
+1. [SOP Releases and DOI minting](#sop-releases-and-doi-minting)
 
 ## Identifier Format
 In this section we cover how identifiers for SOP-related documents are given. The two main categories are European-level and Node-specific SOPs.
@@ -158,3 +159,21 @@ gitGraph
 - **Notification System:**
   - Nodes get automatic notification of updates via GitHub.
   - Nodes must resolve changes and update their instances accordingly.
+
+## SOP Releases and DOI minting
+To ensure persistent and reliable identification of Standard Operating Procedures (SOPs), we have implemented a system that integrates **Zenodo with GitHub**. This setup allows us to automatically generate **Digital Object Identifiers** (DOIs) for each release in our GitHub repository.
+
+Notice how these persistent identifiers will be assigned to full repository releases, and not to individual SOP versions. Versioning and identification of individual SOPs is kept through the [accessioning](#identifier-format).
+
+### Integration with Zenodo
+1. **Zenodo Account Setup**: [GDI's Zenodo account](https://zenodo.org/communities/gdi) (``ELIXIR Europe``) is configured and linked to this GitHub repository.
+1. **GitHub releases**: When the repository reaches a point in maturity to be considered a consistent unit, a [release](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/releases/new) is created.
+1. **Automated DOI Generation**: Each new release in GitHub triggers a Zenodo release, which automatically grabs all the code in the release, stores it, and mints a DOI for it. This DOI is a stable and persistent identifier, ensuring long-term accessibility and traceability of the SOPs in each release.
+
+### Forking and Independent Releases
+The DOI minting process is not limited to the main repository. When **GDI-nodes fork** this repository to adapt their SOPs, they can also create releases in their forks and trigger Zenodo releases. The only requirement is to configure these node repositories to the Zenodo account. This allows each node to independently manage and identify their SOP releases while maintaining consistency across the infrastructure.
+
+
+
+
+

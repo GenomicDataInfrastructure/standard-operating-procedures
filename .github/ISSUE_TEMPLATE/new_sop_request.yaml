@@ -50,7 +50,7 @@ body:
     attributes:
       label: SOP Title
       description: Provide a brief title of the SOP you are requesting.
-      placeholder: "NCPs veto EDIC decision"
+      placeholder: "e.g., NCPs veto EDIC decision"
     validations:
       required: true
 

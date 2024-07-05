@@ -85,7 +85,7 @@ _< 1-2 sentence summary describing what is covered within this SOP, defining wha
 
 ### 6. Introduction and Background Information
 
-_< Include if additional information is needed to ensure the SOP can be understood as a standalone document. Include definitions of SOP-specific concepts, and also include relevant definitions in the Glossary section below. >_
+_< Include if additional information is needed to ensure the SOP can be understood as a standalone document. Include definitions of SOP-specific concepts, and also include relevant definitions in the Glossary section above. >_
 
 ### 7. Summary or Context Diagram
 

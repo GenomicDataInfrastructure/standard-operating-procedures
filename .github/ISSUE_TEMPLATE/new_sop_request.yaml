@@ -70,7 +70,7 @@ body:
   - type: textarea
     id: sop-motivation
     attributes:
-      label: motivation
+      label: Motivation
       description: Explain the motivation and background for the requested SOP. Why is it needed? Is its content not covered already by other existing SOPs?
       placeholder: "Currently, there is no standardized procedure for ... If not addressed, it could lead to ..."
 
@@ -133,7 +133,7 @@ body:
   - type: input
     id: requester-node
     attributes:
-      label: GDI Node
+      label: Requester GDI Node
       description: If you are a GDI member, please specify your GDI node.
       placeholder: "E.g., Swedish GDI node, institution..."
 

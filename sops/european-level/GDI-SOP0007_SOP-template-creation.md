@@ -248,7 +248,7 @@ Operations Committee (OC) / Security and Data Protection Committee (SDPC)
 
 Depending on the format of the draft, the above-mentioned ``< URL of drafted document >`` will change:
 - **Google Document**. You can simply paste the URL of the Google Document, making sure to add the recipients as editors of that particular document in Google Drive.
-- **Markdown document**. The easiest way to share the document would be by creating a drafted PR in GH, from either a personal fork or branch to the ``dev`` branch. Make sure to create it as a _Draft pull request_. If done this way, at [step 7](#7-create-pr-review-and-merge) you will simply have to convert the draft into a _Ready for review_ PR.
+- **Markdown document**. The easiest way to share the document would be by creating a drafted PR in GH, from either a personal fork or branch to the ``dev`` branch. Make sure to create it as a _Draft pull request_. If done this way, at [step 7](#7-create-pr-review-and-merge) you will simply have to convert the draft into a _Ready for review_ PR. Check the [accessioning guide](../../docs/GDI-SOP_sop-accessioning.md#file-naming-conventions) to know how to name and where to place this new file.
 
 Remember to leave a comment in the GitHub issue, briefly mentioning that authors have been contacted. Be mindful of the information you share (e.g., no email addresses), since _anything_ that is typed through ZenHub in the ticket, will be **publicly displayed** in the GitHub issue!
 
@@ -299,12 +299,12 @@ Similar to previous steps, this one shall finish once formal approval from the 1
 
 Now that we have the content reviewed and ready, we need to format it to fit into the GH repository. The difficulty of this step will vary depending on the chosen format for the draft at [step 3](#3-draft-sop-document). In both cases, it is assumed that you are familiar with GH and already have a local copy of the GDI SOP repository (i.e., you have cloned it).
 
-If the **document was drafted using Google Drive**, its format must be modified before adding it to the repository. On the other hand, if the **document was drafted in markdown** format natively, there are no format changes required and thus you can skip the first step of the following:
+If the **document was drafted using Google Drive**, its format must be modified before adding it to the repository. On the other hand, if the **document was drafted in markdown** format natively, there are no format changes required and thus you can skip the first two of the following:
 1. [_Only if the document was drafted using Google Drive_] **Copy the whole Google Document and paste it** into the left box at [**gdoc2md**](https://gdoc2md.com/). There are many tools to format a Google Document into markdown but, in our experience, this one keeps the markdown format the closest to the native template, which is especially relevant regarding tables. Bear in mind that anything copied here would be processed by the tool deployed at someone else's server. If the document contains information that should not be public (yet), consider other choices, like locally installing [gdoc2md](https://github.com/mr0grog/google-docs-to-markdown) or [pandoc](https://pandoc.org/installing.html).
 
-![Converting Google Document to Markdown](../../docs/images/GDI-SOP0007_5-doc-to-md.png)
+2. [_Only if the document was drafted using Google Drive_] **Copy the raw markdown into a new file**. Check the [accessioning guide](../../docs/GDI-SOP_sop-accessioning.md#file-naming-conventions) to know how to name and where to place this new file.
 
-2. **Copy the raw markdown into a new file**. Check the [accessioning guide](../../docs/GDI-SOP_sop-accessioning.md#file-naming-conventions) to know how to name and where to place this new file.
+![Converting Google Document to Markdown](../../docs/images/GDI-SOP0007_5-doc-to-md.png)
 
 3. Manually **inspect that the markdown file complies with the [Style and Format guide for GDI SOPs](../../docs/GDI-SOP_style-guide.md)** before proceeding to [step 7](#7-create-pr-review-and-merge). Some **format changes** may be due depending on the document, especially if it was drafted originally in Google Drive. These changes should not affect the content that was reviewed and authorized previously, just the format.
 
@@ -317,7 +317,7 @@ Once the markdown file has the required content in the proper format, the OC/SDP
 
 Members of the OC/SDPC are to be listed as **reviewers** in the PR. Given that the content is not supposed to be modified, this review is merely for format changes between the formal authorization and the final document ([step 6](#6-prepare-final-sop-markdown-document)). Furthermore, if there are any GH actions as checks (e.g., an SOP linter), they should be addressed (i.e., assert that they pass) before merging.
 
-Finally, once the PR was reviewed and there are no conflicting checks, it is to be **merged** against the ``dev`` branch. The new content will stay there until it is to be released and merged with ``main``.
+Finally, once the PR was reviewed and there are no conflicting checks, it is to be **merged** against the ``dev`` branch. At this point, **this SOP is finished**. The new content will stay there until it is to be released and merged with ``main``.
 
 In case there are merge conflicts, resolve them either through GH's user interface or command line before merging (see [documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)).
 

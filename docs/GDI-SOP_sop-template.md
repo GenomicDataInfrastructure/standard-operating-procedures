@@ -49,7 +49,7 @@ _< Include definitions of node and/or SOP-specific concepts used in this SOP. >_
 
 Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
 
-| Abbreviations | Description     |
+| Abbreviation | Description     |
 |---------------|-----------------|
 |               |                 |
 
@@ -85,7 +85,7 @@ _< 1-2 sentence summary describing what is covered within this SOP, defining wha
 
 ### 6. Introduction and Background Information
 
-_< Include if additional information is needed to ensure the SOP can be understood as a standalone document. Include definitions of SOP-specific concepts, and also include relevant definitions in the Glossary section below. >_
+_< Include if additional information is needed to ensure the SOP can be understood as a standalone document. Include definitions of SOP-specific concepts, and also include relevant definitions in the Glossary section above. >_
 
 ### 7. Summary or Context Diagram
 

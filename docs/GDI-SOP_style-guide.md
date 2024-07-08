@@ -6,4 +6,13 @@ This document describes the format and style expected for GDI SOPs. By using sim
 
 Every SOP document must follow this standard structure for clarity and ease of understanding:
 
-TODO
+#! TODO
+
+Things to consider:
+- Diagram is legible
+- Tables use markdown (not HTML) syntax
+- Code blocks are formatted correctly.
+- Required fields are populated.
+- Required sections are present.
+
+#! TODO - Automatic linter

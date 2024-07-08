@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- [GDI-SOP0007_SOP-template-creation.md](sops/european-level/GDI-SOP0007_SOP-template-creation.md) - "SOP Template creation" SOP
+- [CHANGELOG.md](CHANGELOG.md) - Repository's changelog
 - [pull_request_template.md](.github/pull_request_template.md) - PR Template for the repository
 - [new_sop_request.yaml](.github/ISSUE_TEMPLATE/new_sop_request.yaml) - GH Issue template for new SOP requests
 - [content_suggestion.yaml](.github/ISSUE_TEMPLATE/content_suggestion.yaml) - GH Issue template for SOP change requests

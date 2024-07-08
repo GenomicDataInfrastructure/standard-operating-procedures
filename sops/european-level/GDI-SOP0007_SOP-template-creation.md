@@ -208,7 +208,7 @@ The **format** of the drafted document can vary, based on the convenience of all
    - Either (_option 1_) directly copy-paste the markdown from the [general SOP template](../../docs/GDI-SOP_sop-template.md) into a new document at **GDI's [SOP Drafts](https://drive.google.com/drive/u/0/folders/131kJLHDk8L2oGgnRzRBT5AR0Ofpbn2qS) directory**; or (_option 2_) duplicate the existing SOP Template Google Document in the same directory. See video snippet below.
    - Name the new file following the format of ``< YYYYMMDD > - GDI-SOP_draft-< SOP title >`` (e.g., ``20240702 - GDI-SOP_draft-SOP Template creation``).
 
-![Drafting SOP template in Google Drive](GDI-SOP0007_4-Draft-SOP-document.gif)
+![Drafting SOP template in Google Drive](../../docs/images/GDI-SOP0007_4-Draft-SOP-document.gif)
 
 Regardless of the format, **fill out the draft with as much information** (e.g., background, purpose, summary...) **as possible**, to the best of your knowledge. This content will be finished by the authors later on.
 

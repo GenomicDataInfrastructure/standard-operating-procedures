@@ -33,7 +33,7 @@ _< Title of the SOP prepended by "European GDI:". The title must remain the same
 ### 1. Document History
 _< This section is required >_
 
-_< Manual or automated tracking of the history of changes for this SOP. Notice how the template and instance have different version trackers, since there can be different combinations of versions. >_
+_< Manual or automated tracking of the history of changes for this SOP. Notice how the template and instance have different version trackers, since there can be different combinations of versions. Notice how the order of rows is recent to older, from top to bottom >_
 
 | Template Version | Instance version | Author(s) | Description of changes       | Date       |
 |---------|-----------|-----------|------------------------------|------------|

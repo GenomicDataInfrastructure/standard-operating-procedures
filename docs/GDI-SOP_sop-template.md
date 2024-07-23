@@ -39,7 +39,7 @@ _< Manual or automated tracking of the history of changes for this SOP. Notice h
 |---------|-----------|-----------|------------------------------|------------|
 | _< ``v1`` >_ | _< ``v2`` >_ | _< Full name >_           | _< Modified node's instance at ... >_ | _< ``YYYY.MM.DD`` >_ |
 | _< ``v1`` >_ | _< ``v1`` >_ | _< Full name >_           | _< SOP Instance of node ..., changed ... >_ | _< ``YYYY.MM.DD`` >_ |
-| _< ``v1`` >_ | _< ``-`` >_| _< Full name >_           | _< First version of template... >_ | _< ``YYYY.MM.DD`` >_ |
+| _< ``v1`` >_ |  | _< Full name >_           | _< First version of template... >_ | _< ``YYYY.MM.DD`` >_ |
 
 
 ### 2. Glossary

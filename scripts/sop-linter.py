@@ -127,7 +127,7 @@ class SOPLinter:
                     # e.g., Node-specific SOP
                     self.report_issue(f"{key} is invalid: '{value}'. It's value should be one of: {expected_metadata[key]}", file_path, error=True)
             else:
-                self.report_issue(f"Unexpected row in metadata table: '{' | '.join(columns)}'.", file_path, warning=True)
+                self.report_issue(f"Unexpected row in metadata table: '{' | '.join([key, value])}'.", file_path, warning=True)
 
         for key in expected_metadata.keys():
             if key not in table_dict.keys():
@@ -359,9 +359,10 @@ class SOPLinter:
         """
         Generates a JSON formatted report of all linting results.
 
-        :return: JSON string of the linting results.
+        :return: JSON string of the linting results and a boolean on whether there are errors or not
         """
-        return json.dumps(self.results, indent=2)
+        has_errors = any(file_results['errors'] for file_results in self.results.values())
+        return json.dumps(self.results, indent=2), has_errors
 
 def parse_args() -> Any:
     """
@@ -407,24 +408,32 @@ def main():
     sop_files = collect_files(args.inputs)
 
     required_sections = {
-            "## Index": "h2:contains('Index')",
-            "### Document History": "h3:contains('Document History')",
-            "### Glossary": "h3:contains('Glossary')",
-            "### Roles and Responsibilities": "h3:contains('Roles and Responsibilities')",
-            "### Purpose": "h3:contains('Purpose')",
-            "### Scope": "h3:contains('Scope')",
-            "### Procedure": "h3:contains('Procedure')",
-            "### References": "h3:contains('References')"
+        "## Index": "h2:contains('Index')",
+        "### Document History": "h3:contains('Document History')",
+        "### Glossary": "h3:contains('Glossary')",
+        "### Roles and Responsibilities": "h3:contains('Roles and Responsibilities')",
+        "### Purpose": "h3:contains('Purpose')",
+        "### Scope": "h3:contains('Scope')",
+        "### Procedure": "h3:contains('Procedure')",
+        "### References": "h3:contains('References')"
     }
 
     linter = SOPLinter(verbosity=args.verbosity, strict=args.strict, required_sections=required_sections)
     for sop_file in sop_files:
         linter.lint_sop(sop_file)
 
-    report = linter.generate_report()
+    report, has_errors = linter.generate_report()
     if args.verbosity > 0:
         print(report)
-    return report
+
+    # These exit codes will be interpreted downstream
+    if has_errors:
+        exit(1)
+    else:
+        exit(0)
 
 if __name__ == "__main__":
+    """
+    To run it as a standalone script besides importing bits of it
+    """
     main()

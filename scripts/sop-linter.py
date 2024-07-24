@@ -6,6 +6,7 @@ from typing import List, Dict, Any
 from packaging.version import Version, InvalidVersion
 import markdown
 from bs4 import BeautifulSoup
+from utils import find_tables
 
 class SOPLinter:
     def __init__(self, verbosity: int = 0, strict: bool = False, required_sections: dict = {}):
@@ -319,19 +320,12 @@ class SOPLinter:
 
     def find_tables(self, soup: BeautifulSoup, file_path: str, aim_headers: List[str]) -> List[BeautifulSoup]:
         """
-        Finds all tables by their set of headers, among all tables in the given file content (soup).
+        Uses imported function to find all tables by their set of headers
         Returns a list of tables.
         """
         if not self.tables[file_path]:
             self.tables[file_path] = soup.find_all('table')
-
-        aim_tables = []
-
-        for table in self.tables[file_path]:
-            headers = [header.text.strip() for header in table.find_all('th')]
-            if headers == aim_headers:
-                aim_tables.append(table)
-
+        aim_tables = find_tables(soup=soup, aim_headers=aim_headers, tables=self.tables[file_path]) 
         return aim_tables
 
     def is_valid_version(self, version: str) -> bool:

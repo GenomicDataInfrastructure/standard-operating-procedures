@@ -78,20 +78,21 @@ class SOPLinter:
             print("-- Linting rule: checking metadata table...")
 
         metadata_table_headers = ["Metadata", "Value"]
-        metadata_table = self.find_tables(soup = soup, file_path = file_path, aim_headers = metadata_table_headers)[0]
+        table_find_result = self.find_tables(soup = soup, file_path = file_path, aim_headers = metadata_table_headers)
 
-        if not metadata_table:
+        if not table_find_result:
             self.report_issue("Metadata table is missing or incorrectly formatted.", file_path, error=True)
             return
-
+        
+        metadata_table = table_find_result[0]
         rows = metadata_table.find_all('tr') # Table rows (tr)
         # Expected format of the "Value" column of each row
         expected_metadata = {
-            "Template SOP number": r"GDI-SOP\d{4}", # e.g.: GDI-SOP0001
-            "Template SOP version": self.is_valid_version, # e.g.: v1
-            "Template SOP Type": ["Node-specific SOP", "European-level SOP"],
-            "GDI Node": r"^[A-Z]{3}$", # e.g.: SWE (for Sweden)
-            "Instance version": self.is_valid_version, # e.g.: v1
+            "template sop number": r"GDI-SOP\d{4}", # e.g.: GDI-SOP0001
+            "template sop version": self.is_valid_version, # e.g.: v1
+            "template sop type": ["Node-specific SOP", "European-level SOP"],
+            "gdi node": r"^[A-Z]{3}$", # e.g.: SWE (for Sweden)
+            "instance version": self.is_valid_version, # e.g.: v1
         }
 
         table_dict = {}
@@ -103,14 +104,13 @@ class SOPLinter:
                 self.report_issue(f"Metadata table row is incorrectly formatted (2 columns are expected): '{' | '.join(columns)}'.", file_path, error=True)
                 continue
             key, value = columns[0], columns[1]
-            table_dict[key] = value
+            table_dict[key.lower()] = value
 
         for key, value in table_dict.items():
-
             # Linting rules for node-specific SOPs should not apply for european-level ones
-            if key == "GDI Node" or key == "Instance version":
+            if key in ["gdi node", "instance version"]:
                 try:
-                    if table_dict["Template SOP Type"].lower() == "European-level SOP".lower():
+                    if table_dict["template sop type"].lower() == "European-level SOP".lower():
                         continue
                 except:
                     pass
@@ -119,24 +119,24 @@ class SOPLinter:
                 # Depending on the type of format rules for each row, we apply them differently
                 if isinstance(expected_metadata[key], str) and not re.match(expected_metadata[key], value):
                     # e.g., GDI-SOP0001
-                    self.report_issue(f"{key} is incorrectly formatted: '{value}'.", file_path, error=True)
+                    self.report_issue(f"At the metadata table, value column for '{key}' is incorrectly formatted: '{value}'. It should follow the regex '{expected_metadata[key]}'", file_path, error=True)
                 elif callable(expected_metadata[key]) and not expected_metadata[key](value):
                     # e.g., v1.0.2
-                    self.report_issue(f"{key} is incorrectly formatted: '{value}'.", file_path, error=True)
+                    self.report_issue(f"At the metadata table, value column for '{key}' is incorrectly formatted: '{value}'.", file_path, error=True)
                 elif isinstance(expected_metadata[key], list) and value.lower() not in [item.lower() for item in expected_metadata[key]]:
                     # e.g., Node-specific SOP
-                    self.report_issue(f"{key} is invalid: '{value}'. It's value should be one of: {expected_metadata[key]}", file_path, error=True)
+                    self.report_issue(f"At the metadata table, value column for '{key}' is invalid: '{value}'. It's value should be one of: {expected_metadata[key]}", file_path, error=True)
             else:
-                self.report_issue(f"Unexpected row in metadata table: '{' | '.join([key, value])}'.", file_path, warning=True)
+                self.report_issue(f"Unexpected row in the metadata table: '{' | '.join([key, value])}'.", file_path, warning=True)
 
         for key in expected_metadata.keys():
-            if key not in table_dict.keys():
+            if key.lower() not in table_dict.keys():
                 self.report_issue(f"Metadata row '{key}' is missing from the metadata table.", file_path, error=True)
 
         try:
-            if table_dict["Template SOP Type"] == "European-level SOP" and (table_dict["GDI Node"] or table_dict["Instance version"]):
-                self.report_issue("European-level SOPs should not have 'GDI Node' or 'Instance version' values.", file_path, error=True)
-        except Exception: 
+            if table_dict["template sop type"] == "European-level SOP" and (table_dict["gdi node"] or table_dict["instance version"]):
+                self.report_issue("European-level SOPs should not have 'GDI Node' or 'Instance version' values in the metadata table.", file_path, error=True)
+        except Exception:
             # The missing rows are already reported above
             pass
 
@@ -174,12 +174,13 @@ class SOPLinter:
             print("-- Linting rule: checking Document History table...")
 
         aim_headers = ["Template Version", "Instance version", "Author(s)", "Description of changes", "Date"]
-        document_history_table = self.find_tables(soup, file_path, aim_headers)[0]
+        table_find_result = self.find_tables(soup, file_path, aim_headers)
 
-        if not document_history_table:
+        if not table_find_result:
             self.report_issue("Document History table is missing or incorrectly formatted.", file_path, error=True)
             return
         
+        document_history_table = table_find_result[0]        
         rows = document_history_table.find_all('tr')[1:]  # Skip the header row
         previous_template_version = None
         previous_instance_version = None
@@ -188,7 +189,7 @@ class SOPLinter:
             columns = [col.text.strip('`').strip() for col in row.find_all('td')]
 
             if len(columns) != 5:
-                self.report_issue(f"Document History table row is incorrectly formatted (expected 5 columns): '{' | '.join(columns)}'.", file_path, error=True)
+                self.report_issue(f"Document History table row is incorrectly formatted (expected 5 columns). Row: '{' | '.join(columns)}'.", file_path, error=True)
                 continue
 
             template_version = columns[0]
@@ -201,14 +202,14 @@ class SOPLinter:
             if self.is_valid_version(template_version):
                 current_template_version = Version(template_version)
             else:
-                self.report_issue(f"Template Version is incorrectly formatted: '{template_version}'.", file_path, error=True)
+                self.report_issue(f"At the Document History table, Template Version ('{template_version}') is incorrectly formatted. Row: '{' | '.join(columns)}'.", file_path, error=True)
                 continue
 
             if instance_version:
                 if self.is_valid_version(instance_version):
                     current_instance_version = Version(instance_version)                    
                 else:
-                    self.report_issue(f"Instance Version is incorrectly formatted: '{instance_version}'.", file_path, error=True)
+                    self.report_issue(f"At the Document History table, Instance Version ('{instance_version}') is incorrectly formatted. Row: '{' | '.join(columns)}'.", file_path, error=True)
                     continue
             else:
                 current_instance_version = None
@@ -216,13 +217,13 @@ class SOPLinter:
             if previous_template_version:
                 # Template versions should be equal or lower than the ones above (more recent)
                 if (current_template_version > previous_template_version) or (current_template_version == previous_template_version and not previous_instance_version):
-                    self.report_issue(f"Template version ('{current_template_version}') should be lower than the version right above ('{previous_template_version}'). Notice the order of the table: from recent (top) to older (bottom) and address the versioning. Row: '{' | '.join(columns)}'.", file_path, error=True)
+                    self.report_issue(f"At the Document History table, Template version ('{current_template_version}') should be lower than the version right above ('{previous_template_version}'). Notice the order of the table: from recent (top) to older (bottom) and address the versioning. Row: '{' | '.join(columns)}'.", file_path, error=True)
 
                 # Instance versions are not always required, only when it's a node instance
                 if current_instance_version and previous_instance_version:
                     # Instance versions should always be higher than the previous one
                     if current_instance_version >= previous_instance_version:
-                        self.report_issue(f"Instance Version ('{current_instance_version}') should be lower than the version right above ('{previous_instance_version}'). Notice the order of the table: from recent (top) to older (bottom) and address the versioning. Row: '{' | '.join(columns)}'.", file_path, error=True)
+                        self.report_issue(f"At the Document History table, Instance Version ('{current_instance_version}') should be lower than the version right above ('{previous_instance_version}'). Notice the order of the table: from recent (top) to older (bottom) and address the versioning. Row: '{' | '.join(columns)}'.", file_path, error=True)
 
             # Assigned for the next iteration to use for comparisons
             previous_template_version = current_template_version
@@ -254,12 +255,13 @@ class SOPLinter:
             print("-- Linting rule: checking Roles and Responsibilities table...")
 
         aim_headers = ["Role", "Full name", "GDI/node role", "Organisation"]
-        roles_table = self.find_tables(soup, file_path, aim_headers)[0]
+        table_find_result = self.find_tables(soup, file_path, aim_headers)
 
-        if not roles_table:
+        if not table_find_result:
             self.report_issue("Roles and Responsibilities table is missing or incorrectly formatted.", file_path, error=True)
             return
-
+        
+        roles_table = table_find_result[0]
         required_roles = ["Author", "Reviewer", "Approver"]
         found_roles = {role: False for role in required_roles}
 
@@ -297,7 +299,8 @@ class SOPLinter:
         for section_title, selector in self.required_sections.items():
             header = soup.select_one(selector)
             if not header:
-                self.report_issue(f"Section '{section_title}' is missing.", file_path, error=True)
+                # No need to report the missing section as an error, since 
+                #   that's the role of a different linting rule
                 continue
 
             # Get all siblings of the header until the next header of the same or higher level

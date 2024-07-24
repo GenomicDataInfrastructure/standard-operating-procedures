@@ -5,7 +5,7 @@
 #   - Why: helps maintain consistency of SOPs, both in format and content
 #   - Would block the PR if failed? If the mode is not strict, all errors
 #       should be addressed before merging with 'main'
-#   - How: calls the linter class 'SOPLinter' within 'sop-linter.py' 
+#   - How: calls the linter class 'SOPLinter' within 'sop_linter.py' 
 name: |
   [REQUIRED] Linter of SOPs
 
@@ -37,4 +37,4 @@ jobs:
     - name: Run SOP linter
       # The linter exit codes will determine whether this workflow finishes or not
       run: |
-        python scripts/sop-linter.py sops/european-level sops/node-specific -v 1
+        python scripts/sop_linter.py sops/european-level sops/node-specific -v 1

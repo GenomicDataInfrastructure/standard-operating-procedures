@@ -6,7 +6,7 @@ from typing import List, Dict, Any
 from packaging.version import Version, InvalidVersion
 import markdown
 from bs4 import BeautifulSoup
-from utils import find_tables
+from utils import find_tables, collect_sop_files
 
 class SOPLinter:
     def __init__(self, verbosity: int = 0, strict: bool = False, required_sections: dict = {}):
@@ -379,30 +379,12 @@ def parse_args() -> Any:
     )
     return parser.parse_args()
 
-def collect_files(inputs: List[str]) -> List[str]:
-    """
-    Collects SOP markdown files from input paths.
-
-    :param inputs: List of file or directory paths.
-    :return: List of SOP markdown file paths.
-    """
-    sop_files = []
-    for path in inputs:
-        if os.path.isfile(path):
-            sop_files.append(path)
-        elif os.path.isdir(path):
-            for root, _, files in os.walk(path):
-                for file in files:
-                    if re.match(r"GDI-SOP\d{4}.*\.md", file):
-                        sop_files.append(os.path.join(root, file))
-    return sop_files
-
 def main():
     """
     Main function to run the SOP linter.
     """
     args = parse_args()
-    sop_files = collect_files(args.inputs)
+    sop_files = collect_sop_files(args.inputs)
 
     required_sections = {
         "## Index": "h2:contains('Index')",

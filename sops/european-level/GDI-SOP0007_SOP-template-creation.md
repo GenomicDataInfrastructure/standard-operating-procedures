@@ -207,6 +207,8 @@ The **format** of the drafted document can vary, based on the convenience of all
 - **Google Document**. The template may be transformed from its native markdown to a Google Document, where it will be edited live as a draft, and then reformatted back into a markdown document later on. While reformatting back to Markdown will be needed at [step 6](#6-prepare-final-sop-markdown-document), this is likely the most common path, given its simplicity by making use of Google Drive features. To create the draft, follow these steps:
    - Either (_option 1_) directly copy-paste the markdown from the [general SOP template](../../docs/GDI-SOP_sop-template.md) into a new document at **GDI's [SOP Drafts](https://drive.google.com/drive/u/0/folders/131kJLHDk8L2oGgnRzRBT5AR0Ofpbn2qS) directory**; or (_option 2_) duplicate the existing SOP Template Google Document in the same directory. See video snippet below.
    - Name the new file following the format of ``< YYYYMMDD > - GDI-SOP_draft-< SOP title >`` (e.g., ``20240702 - GDI-SOP_draft-SOP Template creation``).
+   - In Google Documents, tables can have a **header**, but you must specify it as such for each table (or copy-paste the one you configure): right-click on a table, click on ``Table properties``, click on ``Row``, and then tick the box ``Pin header row(s)`` (number of header rows commonly is 1). This little trick will save you a lot of headaches when the time comes to transform the document to markdown.
+
 
 ![Drafting SOP template in Google Drive](../../docs/images/GDI-SOP0007_4-Draft-SOP-document.gif)
 

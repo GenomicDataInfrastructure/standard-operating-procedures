@@ -105,6 +105,10 @@ class SOPIndexGenerator:
 
         parsed_data = [self.parse_sop(file) for file in sop_files]
         self.index_data = pd.DataFrame(parsed_data)
+
+        if self.index_data.empty:
+            raise ValueError(f"The newly created index table was empty! Check if there were any inputs (list of files: {sop_files}).")
+
         self.index_data.sort_values(by="Identifier", inplace=True)
 
         if self.verbosity > 1:

@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- [compare_index.py](scripts/compare_index.py) - Script to automatically check if the SOP index table is up to date
+- [sop_index.py](scripts/sop_index.py) - Script to automatically create the SOP index table
+- [utils.py](scripts/utils.py) - General functions used by other scripts
+- [sops/README.md](sops/README.md) - Markdown containing the SOP index table
 - [``tests/``](tests/) - Directory containing tests to run GH repo's code
 - [``requirements.txt``](requirements.txt) - Needed modules to run GH repo's code
 - [``lint_sops.yml``](.github/workflows/lint_sops.yml) - GH Workflow to trigger linter on PRs

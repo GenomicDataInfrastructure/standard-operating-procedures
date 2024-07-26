@@ -43,3 +43,43 @@ def collect_sop_files(inputs: List[str]) -> List[str]:
                     if re.match(r"GDI-SOP\d{4}.*\.md", file):
                         sop_files.append(os.path.join(root, file))
     return sop_files
+
+def count_procedure_steps(soup: BeautifulSoup, procedure_header: str = "Procedure") -> int:
+    """
+    Counts the number of steps in the 'Procedure' section of an SOP.
+
+    :param soup: BeautifulSoup object of the parsed SOP content.
+    :param procedure_header: Keyword to identify the procedure header (optional)
+    :return: Number of steps in the 'Procedure' section.
+    """
+    procedure_section = soup.find(re.compile('^h3$'), text=re.compile(rf'^\d*\.*\s*{procedure_header}$', re.IGNORECASE))
+    num_steps = 0
+    if procedure_section:
+        for sibling in procedure_section.find_next_siblings():
+            if re.match(r'^h[1-6]$', sibling.name) and sibling.name <= procedure_section.name:
+                break
+            if re.match(r'^h4$', sibling.name):
+                # We count as steps the headers of each step "#### ..." in the SOP
+                num_steps += 1
+    else:
+        return None
+    
+    return num_steps
+
+def build_hyperlink(file_path: str, relative_directory: str = "sops"):
+    """
+    Builds a filename with a relative path to a given directory.
+    Example output: "[GDI-SOP0000_test.md](european-level/GDI-SOP0000_test.md)"
+
+    :param file_path: File path of the file.
+    :param relative_directory: directory to which the filepath will be relative to (optional)
+    :return: Filename with relative path reference
+    """
+    sops_index = file_path.lower().find(f'{relative_directory}/')    
+    if sops_index == -1:
+        raise ValueError(f"For file '{file_path}', the given '{relative_directory}' directory was not found in its filepath, and could not construct its relative filepath")
+    relative_path = file_path[sops_index + len(relative_directory) + 1:]
+    file_name = os.path.basename(file_path)
+    name_with_link = f"[{file_name}](./{relative_path})"
+
+    return name_with_link

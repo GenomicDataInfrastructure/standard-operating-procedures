@@ -1,5 +1,6 @@
 import argparse
 import os
+import json
 import pandas as pd
 from typing import Dict, Any
 from io import StringIO
@@ -164,7 +165,7 @@ def main():
     comparison_results = comparator.compare_indexes(existing_index, new_index)
 
     if args.verbosity > 0:
-        print(comparison_results)
+        print(json.dumps(comparison_results, indent=2),"\n")
     
     # If there are any differences, exit apropriately
     if len(comparison_results["differences"]):

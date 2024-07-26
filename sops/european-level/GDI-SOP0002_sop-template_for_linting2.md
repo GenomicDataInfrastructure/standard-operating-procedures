@@ -46,7 +46,7 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 |------------|-----------------|-----------------|--------------|
 | Author     | Bruce Wayne |                 |              |
 | Reviewer   | Batman |                 |              |
-| Approver   | Alfred |                 |              |
+| Approver   |  |                 |              |
 | Authorizer |  |                 |              |
 
 ### 4. Purpose

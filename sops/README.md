@@ -2,7 +2,4 @@
 Below you can find the full list of SOPs in this repository.
 | Name                                                                                                  | Identifier   | Template version   | Type               | GDI Node   | Instance version   |   Nº steps | Last modified   |
 |:------------------------------------------------------------------------------------------------------|:-------------|:-------------------|:-------------------|:-----------|:-------------------|-----------:|:----------------|
-| [GDI-SOP0001_sop-template_for_linting.md](./european-level/GDI-SOP0001_sop-template_for_linting.md)   | GDI-SOP0001  | v1                 | European-level SOP |            |                    |          3 | 2024.07.23      |
-| [GDI-SOP0002_sop-template_for_linting2.md](./european-level/GDI-SOP0002_sop-template_for_linting2.md) | GDI-SOP0002  | v1                 | European-level SOP |            |                    |          3 | 2024.07.23      |
-| [GDI-SOP0003_sop-template_for_linting.md](./node-specific/GDI-SOP0003_sop-template_for_linting.md)    | GDI-SOP0003  | v1                 | Node-specific SOP  | SWE        | v1                 |          3 | 2024.12.23      |
-| [GDI-SOP0004_sop-template_for_linting3.md](./european-level/GDI-SOP0004_sop-template_for_linting3.md) | GDI-SOP0004  | v1                 | European-level SOP |            |                    |          3 | 2024.07.23      |
+| | | | | | | | |

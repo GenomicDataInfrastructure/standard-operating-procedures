@@ -1,3 +1,4 @@
 beautifulsoup4==4.12.3
 markdown==3.6
 packaging==24
+pandas==2.2

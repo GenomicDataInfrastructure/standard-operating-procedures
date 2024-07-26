@@ -10,8 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - [``tests/``](tests/) - Directory containing tests to run GH repo's code
 - [``requirements.txt``](requirements.txt) - Needed modules to run GH repo's code
-- [``lint-sops.yml``](.github/workflows/lint-sops.yml) - GH Workflow to trigger linter on PRs
-- [``sop-linter.py``](scripts/sop-linter.py) - Python script to lint SOPs
+- [``lint_sops.yml``](.github/workflows/lint_sops.yml) - GH Workflow to trigger linter on PRs
+- [``sop_linter.py``](scripts/sop_linter.py) - Python script to lint SOPs
 - [``CHANGELOG.md``](CHANGELOG.md) - Repository's changelog
 - [``pull_request_template.md``](.github/pull_request_template.md) - PR Template for the repository
 - [``new_sop_request.yaml``](.github/ISSUE_TEMPLATE/new_sop_request.yaml) - GH Issue template for new SOP requests

@@ -6,6 +6,7 @@ from typing import List, Dict, Any
 from packaging.version import Version, InvalidVersion
 import markdown
 from bs4 import BeautifulSoup
+from utils import find_tables, collect_sop_files
 
 class SOPLinter:
     def __init__(self, verbosity: int = 0, strict: bool = False, required_sections: dict = {}):
@@ -319,19 +320,12 @@ class SOPLinter:
 
     def find_tables(self, soup: BeautifulSoup, file_path: str, aim_headers: List[str]) -> List[BeautifulSoup]:
         """
-        Finds all tables by their set of headers, among all tables in the given file content (soup).
+        Uses imported function to find all tables by their set of headers
         Returns a list of tables.
         """
         if not self.tables[file_path]:
             self.tables[file_path] = soup.find_all('table')
-
-        aim_tables = []
-
-        for table in self.tables[file_path]:
-            headers = [header.text.strip() for header in table.find_all('th')]
-            if headers == aim_headers:
-                aim_tables.append(table)
-
+        aim_tables = find_tables(soup=soup, aim_headers=aim_headers, tables=self.tables[file_path]) 
         return aim_tables
 
     def is_valid_version(self, version: str) -> bool:
@@ -385,30 +379,12 @@ def parse_args() -> Any:
     )
     return parser.parse_args()
 
-def collect_files(inputs: List[str]) -> List[str]:
-    """
-    Collects SOP markdown files from input paths.
-
-    :param inputs: List of file or directory paths.
-    :return: List of SOP markdown file paths.
-    """
-    sop_files = []
-    for path in inputs:
-        if os.path.isfile(path):
-            sop_files.append(path)
-        elif os.path.isdir(path):
-            for root, _, files in os.walk(path):
-                for file in files:
-                    if re.match(r"GDI-SOP\d{4}.*\.md", file):
-                        sop_files.append(os.path.join(root, file))
-    return sop_files
-
 def main():
     """
     Main function to run the SOP linter.
     """
     args = parse_args()
-    sop_files = collect_files(args.inputs)
+    sop_files = collect_sop_files(args.inputs)
 
     required_sections = {
         "## Index": "h2:contains('Index')",

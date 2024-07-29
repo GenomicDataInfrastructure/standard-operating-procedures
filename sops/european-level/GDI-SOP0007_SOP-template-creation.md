@@ -42,10 +42,20 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 
 | Role       | Full name       | GDI/node role   | Organisation |
 |------------|-----------------|-----------------|--------------|
-| Author     | Marcos Casado Barbero | OC/SDPC | EMBL-EBI |
-| Reviewer   | ``-``           | OC/SDPC | GDI |
-| Approver   | ``-``           | OC/SDPC | GDI |
-| Authorizer | ``-``           | 1+MG WG | GDI |
+| Author     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |
+| Reviewer   | Pedro Ferreira | Task 4.3 member | GDI |
+| Reviewer   | Dylan Spalding | Task 4.3 member | GDI |
+| Reviewer   | Bianca Hendriksze | Task 4.3 member | GDI |
+| Reviewer   | Elisavet Torstensson | Task 4.3 member | GDI |
+| Reviewer   | Erik Hedman | Task 4.3 member | GDI |
+| Reviewer   | Mattias Stromberg | Task 4.3 member | GDI |
+| Reviewer   | Miguel Santos | Task 4.3 member | GDI |
+| Reviewer   | Markus Englund | Task 4.3 member | GDI |
+| Reviewer   | Silvia Bahena | Task 4.3 member | GDI |
+| Reviewer   | Gabriele Rinck | Task 4.3 member | GDI |
+| Approver   |TBD: depending on whether OC/SDPC are formed or not| OC/SDPC | GDI |
+| Approver   |TBD: Pillar I to provide details on WHO would approve, which group, and HOW to contact them| Pillar I | GDI |
+| Authorizer |TBD: Same as for Pillar I| 1+MG WG | GDI |
 
 ### 4. Purpose
 This SOP will help maintainers of the [``GenomicDataInfrastructure/standard-operating-procedures``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures) repository (i.e., GDI's Operations Committee) **transform SOP Requests into SOP templates**. In doing so, the process will be reproducible and straightforward.

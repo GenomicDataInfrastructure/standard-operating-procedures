@@ -43,19 +43,19 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | Role       | Full name       | GDI/node role   | Organisation |
 |------------|-----------------|-----------------|--------------|
 | Author     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |
-| Reviewer   | Pedro Ferreira | Task 4.3 member | GDI |
-| Reviewer   | Dylan Spalding | Task 4.3 member | GDI |
-| Reviewer   | Bianca Hendriksze | Task 4.3 member | GDI |
-| Reviewer   | Elisavet Torstensson | Task 4.3 member | GDI |
-| Reviewer   | Erik Hedman | Task 4.3 member | GDI |
-| Reviewer   | Mattias Stromberg | Task 4.3 member | GDI |
-| Reviewer   | Miguel Santos | Task 4.3 member | GDI |
-| Reviewer   | Markus Englund | Task 4.3 member | GDI |
-| Reviewer   | Silvia Bahena | Task 4.3 member | GDI |
-| Reviewer   | Gabriele Rinck | Task 4.3 member | GDI |
-| Approver   |TBD: depending on whether OC/SDPC are formed or not| OC/SDPC | GDI |
-| Approver   |TBD: Pillar I to provide details on WHO would approve, which group, and HOW to contact them| Pillar I | GDI |
-| Authorizer |TBD: Same as for Pillar I| 1+MG WG | GDI |
+| Reviewer   | Pedro Ferreira | Task 4.3 member | IST |
+| Reviewer   | Dylan Spalding | Task 4.3 member | CSC |
+| Reviewer   | Bianca Hendriksze | Task 4.3 member | HRI |
+| Reviewer   | Elisavet Torstensson | Task 4.3 member | UU |
+| Reviewer   | Erik Hedman | Task 4.3 member | UU / NBIS |
+| Reviewer   | Mattias Strömberg | Task 4.3 member | UU |
+| Reviewer   | Miguel Santos | Task 4.3 member | IST |
+| Reviewer   | Markus Englund | Task 4.3 member | UU / NBIS |
+| Reviewer   | Silvia Bahena | Task 4.3 member | EMBL-EBI |
+| Reviewer   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |
+| Approver   | _TBD: depending on whether OC/SDPC are formed or not_ | OC/SDPC | _TBD_ |
+| Approver   | _TBD: Pillar I to provide details on WHO would approve, which group, and HOW to contact them_ | Pillar I | _TBD_ |
+| Authorizer | _TBD: to be brought up in a monthly MB meeting, to appoint a MB authorizer_ | 1+MG WG | _TBD_ |
 
 ### 4. Purpose
 This SOP will help maintainers of the [``GenomicDataInfrastructure/standard-operating-procedures``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures) repository (i.e., GDI's Operations Committee) **transform SOP Requests into SOP templates**. In doing so, the process will be reproducible and straightforward.

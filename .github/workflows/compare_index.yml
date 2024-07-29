@@ -37,4 +37,6 @@ jobs:
     - name: Run SOP index comparison
       # The comparison exit codes will determine whether this workflow finishes or not
       run: |
+        echo "Remember that creating the index table automatically is very easy! Just make use of 'scripts/sop_index.py'. For example, running:"
+        echo "'python3 scripts/sop_index.py sops/ -v 1'"
         python scripts/compare_index.py sops/README.md sops/ -v 1

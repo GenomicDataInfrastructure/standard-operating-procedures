@@ -1,0 +1,42 @@
+---
+# This workflow asserts that the SOP index table at 'sops/README.md' is up to date.
+# The logic of this workflow is:
+#   - Details: ZH-301
+#   - Why: helps identify mistakes in the updating of the SOP index table
+#   - Would block the PR if failed? Yes. Errors (i.e. differences between the
+#       existing and new index tables) should be addressed.
+#   - How: Executes the script 'compare_index.py'
+name: |
+  [REQUIRED] Compare SOP Index table
+
+on:
+  pull_request:
+    branches:
+      - main
+      - dev
+
+jobs:
+  compare-sop-index:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
+
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        requirements_f="./requirements.txt"
+        if [ -f "$requirements_f" ]; then pip install -r "$requirements_f" --verbose; fi
+
+    - name: Run SOP index comparison
+      # The comparison exit codes will determine whether this workflow finishes or not
+      run: |
+        echo "Remember that creating the index table automatically is very easy! Just make use of 'scripts/sop_index.py'. For example, running:"
+        echo "'python3 scripts/sop_index.py sops/ -v 1'"
+        python scripts/compare_index.py sops/README.md sops/ -v 1

@@ -15,8 +15,8 @@
 3. [Roles and Responsibilities](#3-roles-and-responsibilities)
 4. [Purpose](#4-purpose)
 5. [Scope](#5-scope)
-6. [Introduction and Background Information - as needed](#6-introduction-and-background-information)
-7. [Summary or Context Diagram - as needed](#7-summary-or-context-diagram)
+6. [Introduction and Background Information](#6-introduction-and-background-information)
+7. [Summary or Context Diagram](#7-summary-or-context-diagram)
 8. [Procedure](#8-procedure)
 9. [References](#9-references)
 
@@ -79,7 +79,6 @@ graph TB
         step3{More information\n needed?}
         stepj(Request more\n information from user)
         step4(Justify rejection\n and close GH issue)
-        step2-1(Contact 1+MG WG\n for approval)
         step2(Update ZenHub ticket\n & GH issue)
         step5{"`Will template be created 
                 in **Google Docs** first?`"}
@@ -87,12 +86,23 @@ graph TB
         step7(Create Markdown\n document draft)
         step8(Assign SOP Template authors)
         step9(Contact authors)
+        step13{Document\n approved?}
+        r3(Contact authors)
+        step13-1(Contact \n Management Board)
+
+        step-rfc1(Create RFC discussion)
+        step-rfc2(Update RFC discussion)
+        step-rfc3(Update RFC discussion)
+
+        step14(Prepare final\n SOP Markdown document)
+        step15(Create PR against\n 'dev' branch)
+        step16(Review and merge PR)
     end
-    subgraph 1+MG-WG
-        step2-3{Is SOP request\n approved?}
-        step2-3 -->|Yes| step2
-        step2-3 -->|No| step3
-        step11{Document\nauthorized?}
+    step2 --> step-rfc1
+    step8 -->|Set as Active|step-rfc2
+    step16 -->|Set as Landed|step-rfc3
+    subgraph Management Board
+        step-mb1{Document\nauthorized?}
         r1(Contact authors)
     end
     subgraph Authors
@@ -104,40 +114,34 @@ graph TB
         r2(Contact authors)
     end
     step12 -->|Yes|step13
-    subgraph Approvers
-        step13{Document\n approved?}
-        r3(Contact authors)
-    end
-    step13 -->|Yes|step11
-    subgraph OC/SDPC
-        step14(Prepare final\n SOP Markdown document)
-        step15(Create PR against\n 'dev' branch)
-        step16(Review and merge PR)
-    end
+    step13 -->|Yes|step13-1
+    step13-1 --> step-mb1
     ending(" ")
 
     start -..->|GDI member creates\nSOP request| input1
     input1 -..->|ZenHub automatically\n creates ticket in Board|Zenhub1
     Zenhub1 -..->|OC/SDPC\n Notices the request| step1
-    step1 -->|Yes| step2-1
+    step1 -->|Yes| step2
     step1 -->|No| step3
     step3 -->|Yes| stepj
     stepj -->|Wait for user's answer| step1
     step3 -->|No| step4
-    step2-1 --> step2-3
-    step2 --> step5
+    step-rfc1 --> step5
     step5 -->|Yes| step6
     step5 -->|No| step7
     step6 --> step8
     step7 --> step8
-    step8 --> step9
-    step9 -->|Authors are given the SOP\n draft and requested to fill it in| step10
+    step8 -->|Authors are given the SOP draft| step9
+    step9 -->|Authors are requested to fill the draft| step10
 
-    step11 -->|Requested changes| r1
-    step12 -->|Requested changes| r2
-    step13 -->|Requested changes| r3
+    step-mb1 -->|Requested\nchanges| r1
+    r1 --> step-mb1
+    step12 -->|Requested\nchanges| r2
+    r2 --> step12
+    step13 -->|Requested\nchanges| r3
+    r3 --> step13
 
-    step11 -->|Yes|step14
+    step-mb1 -->|Yes|step14
     step14 -->|SOP is accessioned| step15
     step15 -->|OC/SDPC member\n requests review from\n other members | step16
     step16 -..- ending

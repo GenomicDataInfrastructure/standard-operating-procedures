@@ -58,7 +58,7 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | Authorizer | _TBD: to be brought up in a monthly MB meeting, to appoint a MB authorizer_ | Management Board | _TBD_ |
 
 ### 4. Purpose
-This SOP will help maintainers of the [``GenomicDataInfrastructure/standard-operating-procedures``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures) repository (i.e., GDI's Operations Committee and Security and Data Protection Committee) **transform SOP Requests into SOP templates**. In doing so, the process will be reproducible and straightforward.
+This SOP will help maintainers of the [``GenomicDataInfrastructure/standard-operating-procedures``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures) repository (i.e., GDI's Operations Committee and Security and Data Protection Committee) **transform SOP Requests into SOP templates**. In doing so, the process will be reproducible and straightforward, ensuring consistency and quality in SOP development across the GDI project
 
 ### 5. Scope
 This SOP **starts with the need to create a new GDI SOP Template**, triggered by the creation of a new GH issue through the [``New SOP Request``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new?assignees=&labels=new-sop-request%2Cenhancement&projects=&template=new_sop_request.yaml&title=%5BSOP+Request%5D+%3CShort+title%3E) issue template.
@@ -66,7 +66,7 @@ This SOP **starts with the need to create a new GDI SOP Template**, triggered by
 The SOP encompasses the steps after the need for an SOP has been manifested, until the addition of the markdown SOP within the GitHub repository itself. The **output of this SOP will be the finalized document added to the repository**.
 
 ### 6. Introduction and Background Information
-Given the size of GDI as a project, in order to minimize the heterogeneity among GDI nodes, this repository contains SOPs, templates and instances, standardizing procedures for GDI members to follow. How these SOPs are created is a process in itself, which task 4.3 of the project aims to define. This document aids the creators and maintainers of these SOP Templates along that process.
+Given the size of GDI as a project, in order to minimize the heterogeneity among GDI nodes, this repository contains SOPs, templates, and instances, standardizing procedures for GDI members to follow. How these SOPs are created is a process in itself, which task 4.3 of the project aims to define. This document aids the creators and maintainers of these SOP Templates along that process.
 
 ### 7. Summary or Context Diagram
 ```mermaid
@@ -80,12 +80,12 @@ graph TB
         stepj(Request more\n information from user)
         step4(Justify rejection\n and close GH issue)
         step2(Update ZenHub ticket\n & GH issue)
-        step5{"`Will template be created 
+        step5{"`Will the template be created 
                 in **Google Docs** first?`"}
         step6(Create Google\n Document draft)
         step7(Create Markdown\n document draft)
         step8(Assign SOP Template authors)
-        step9(Contact authors)
+        step9(Contact the authors)
         step13{Document\n approved?}
         r3(Contact authors)
         step13-1(Contact \n Management Board)
@@ -132,7 +132,7 @@ graph TB
     step6 --> step8
     step7 --> step8
     step8 -->|Authors are given the SOP draft| step9
-    step9 -->|Authors are requested to fill the draft| step10
+    step9 -->|Authors are requested to fill in the draft| step10
 
     step-mb1 -->|Requested\nchanges| r1
     r1 -->|Amendments| step-mb1
@@ -181,7 +181,7 @@ Once the SOP request was accepted, it is time for the idea to be built from with
 
 Go to [**GDI's RFC GH repository**](https://github.com/GenomicDataInfrastructure/rfcs?tab=readme-ov-file#what-the-process-is) and familiarize yourself with the process of **RFC creation**. As the first step, **create a [new discussion](https://github.com/GenomicDataInfrastructure/rfcs/discussions/new/choose)** choosing the ``RFC Discussions`` category. The goal of this discussion is for the SOP, as a substantial change to GDI, to be introduced and discussed by the GDI community.
 
-#! TO-DO: the process of adding an RFC to the repository is still not fully defined, but the idea is for a discussion to be opened in GH, for consensus to be reached and a final markdown RFC document to be merged with the repo.
+_#! TO-DO: the process of adding an RFC to the repository is still not fully defined, but the idea is for a discussion to be opened in GH, for consensus to be reached and a final markdown RFC document to be merged with the repo._
 
 #### 3. Draft SOP document
 | Step identifier | When| Who |
@@ -214,6 +214,7 @@ Once the SOP document has been drafted, experts are required to fill in the gaps
 
 Depending on the selected authors, communication may vary. For example, if the experts are part of the OC/SDPC themselves, then it may be best to let the group know through GDI's Slack workspace or mailing lists (``gdi-oc [at] elixir-europe.org`` and ``gdi-sdpc [at] elixir-europe.org``). On the other hand, if authors are external to these two committees, the following email template could be used to contact them.
 
+Remember to CC the OC and SDPC mailing lists: ``gdi-oc [at] elixir-europe.org`` and ``gdi-sdpc [at] elixir-europe.org``.
 ````
 Subject: [GDI T4.3] Requesting expert input for drafted SOP
 ````
@@ -252,15 +253,81 @@ This step of the process ends when enough GDI members accepted authoring the SOP
 |:----------------|:----|:----|
 | ``5``                  | After SOP authors have been appointed | OC/SDPC |
 
-It is the duty of the OC/SDPC to monitor the entire SOP development process, ensuring that:
+It is your duty, as member of the OC/SDPC, to monitor the entire SOP development process, ensuring that:
 - **Authors** are engaged with the development of the SOP. Checking the content of the SOP or contacting the authors recurrently may be required.
 - **Reviewers and approvers are appointed**, diverse across GDI nodes, and engaged in the process. Beyond the role definitions in the [ORR](../../docs/GDI-SOP_organisational-roles-and-responsibilities.md), the rule of thumb is for these roles to span multiple GDI Pillars and nodes. Reviewers may be selected directly by the OC/SDPC or by the authors themselves. Approvers will be part of the OC/SDPC itself.
 - **Communication is efficient** throughout the process. For example, ensuring that GDI MB receives the request to authorize the final SOP, or that authors are aware of any requested changes. 
 - All **people involved are included in the _Roles and Responsibilities_ section** of the drafted SOP. This includes all authors, reviewers, approvers, authorizers and any other role pertinent to the SOP.
 - Every **gate-keeping event** (review, approval, authorization) **is documented in the GH issue and RFC discussion**. In other words, when the SOP draft passes through any of these steps, the OC/SDPC should document it in the GH issue and RFC discussion. For example: ``SOP draft has been reviewed by reviewers X, X and X...``.
 
-Once the drafted SOP has been filled in by the authors, and has passed the inspection of reviewers and approvers, as an OC/SDPC member, you shall **communicate the formal authorization request to the GDI MB**. Make use of the template below to craft the email sent to ``gdi-mb [at] elixir-europe.org``.
+In each of the subsequent sub-steps, back and forth communication between all actors may be needed to address requests.
 
+##### 5.1 Appoint reviewers
+
+Similar to how authors were nominated and contacted, you shall **appoint reviewers and contact them** requesting their review. Depending on the SOP, who are the reviewers and how to contact them will vary. If by email, you can use the email template below.
+
+Remember to CC the OC and SDPC mailing lists: ``gdi-oc [at] elixir-europe.org`` and ``gdi-sdpc [at] elixir-europe.org``.
+````
+Subject: [GDI T4.3] Requesting SOP review
+````
+````
+Dear < Recipient's Name(s) >,
+
+We hope this message finds you well.
+
+A new GDI Standard Operating Procedure (SOP) is in development. We now seek your expertise to review the drafted SOP to ensure that its content meets GDI's quality standards. Given your background and involvement in the GDI project, we believe you are well-suited as a reviewer of this SOP, titled "< SOP Title >".
+
+We kindly request you to review the SOP draft and provide your feedback. Please find the draft SOP document here: < URL of drafted document >
+
+You can find more information about GDI SOPs here: https://github.com/GenomicDataInfrastructure/standard-operating-procedures
+
+Should you know any other GDI members that could assist as reviewers as well, please let us know to get in contact with them.
+
+Thank you for your attention and collaboration. We look forward to your valuable contributions.
+
+Best regards,
+
+< Your Name >
+< Your GDI Node >
+Operations Committee (OC) / Security and Data Protection Committee (SDPC)
+````
+
+You shall **follow through the communication between authors and reviewers**, to ensure that once authors have drafted the SOP, reviewers are notified and proceed with their reviews.
+
+##### 5.2 Request OC/SDPC approval
+Once the drafted SOP has been filled in by the authors, and has passed the inspection of reviewers, the SOP document shall go through approval of the OC/SDPC. Use the following template to **send an email to the OC (``gdi-oc [at] elixir-europe.org``) and SDPC (``gdi-sdpc [at] elixir-europe.org``) requesting approval**:
+````
+Subject: [GDI T4.3] Requesting SOP approval
+````
+````
+Dear OC/SDPC,
+
+I hope this message finds you well.
+
+A new GDI Standard Operating Procedure (SOP) is in development. It was drafted by the OC/SDPC, authored, and reviewed by GDI members, and is pending approval from across the Operations Committee (OC) and Security and Data Protection Committee (SDPC).
+
+Please provide your formal approval at your earliest convenience. Find the current SOP document here: < URL of SOP document >. 
+
+You can find more details about this SOP development at the following sources: 
+- [Information Service Management](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_information-service-management.md).
+- SOP Request: < URL of the GH issue, the SOP request >
+- RFC Discussion: < URL of the RFC discussion created for this SOP >
+
+Thank you for your attention and collaboration.
+
+Best regards,
+
+< Your Name >
+< Your GDI Node >
+Operations Committee (OC) / Security and Data Protection Committee (SDPC)
+````
+
+**Follow through the approval process**, ensuring that all three GDI Pillars are aware of the new SOP, and have given their formal approval. It may be needed for you to bring it up at committee meetings, or to chase members to approve the SOP.
+
+##### 5.3 Request MB authorization
+Once approved by the OC/SDPC, **communicate the formal authorization request to the GDI MB**. Make use of the template below to craft the email sent to ``gdi-mb [at] elixir-europe.org``.
+
+Remember to CC the OC and SDPC mailing lists: ``gdi-oc [at] elixir-europe.org`` and ``gdi-sdpc [at] elixir-europe.org``.
 ````
 Subject: [GDI T4.3] Requesting SOP Authorization
 ````
@@ -276,7 +343,7 @@ As part of the authorization process, if no issues are raised within four weeks 
 Please, find the SOP document here: < URL of SOP document >.
 
 More information about the development process can be found within the [Information Service Management](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_information-service-management.md) at our repository.
-Thank you for your attention and cooperation.
+Thank you for your attention and collaboration.
 
 Best regards,
 
@@ -294,7 +361,7 @@ Similar to previous steps, this one shall finish once formal authorization from 
 
 Now that we have the content reviewed and ready, we need to format it to fit into the GH repository. The difficulty of this step will vary depending on the chosen format for the draft at [step 3](#3-draft-sop-document). In both cases, it is assumed that you are familiar with GH and already have a local copy of the GDI SOP repository (i.e., you have cloned it).
 
-If the **document was drafted using Google Drive**, its format must be modified before adding it to the repository. On the other hand, if the **document was drafted in markdown** format natively, there are no format changes required and thus you can skip the first two of the following:
+If the **document was drafted using Google Drive**, its format must be modified before it is added to the repository. On the other hand, if the **document was drafted in markdown** format natively, there are no format changes required and thus you can skip the first two of the following:
 1. [_Only if the document was drafted using Google Drive_] **Copy the whole Google Document and paste it** into the left box at [**gdoc2md**](https://gdoc2md.com/). There are many tools to format a Google Document into markdown but, in our experience, this one keeps the markdown format the closest to the native template, which is especially relevant regarding tables. Bear in mind that anything copied here would be processed by the tool deployed at someone else's server. If the document contains information that should not be public (yet), consider other choices, like locally installing [gdoc2md](https://github.com/mr0grog/google-docs-to-markdown) or [pandoc](https://pandoc.org/installing.html).
 
 2. [_Only if the document was drafted using Google Drive_] **Copy the raw markdown into a new file**. Check the [accessioning guide](../../docs/GDI-SOP_sop-accessioning.md#file-naming-conventions) to know how to name and where to place this new file.

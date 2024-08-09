@@ -22,24 +22,16 @@ flowchart TB
     classDef Template fill:#87CEEB,stroke:#000000,stroke-width:2px;
 
     %% Nodes
-    A[GDI project partners]
-    A -->|Identify the need for a\n new GDI SOP| B
     B[GDI project partners]
-    B -->|Write proposal of SOP.\n inc. purpose, scope, and justification of SOP| B2
+    B -->|Write SOP proposal| B2
     B2[GitHub Issue]
-    B2 --> D
-    D{1+MG Working\nGroup Approves\nproposal?}
-    D -->|No| B
-    D -->|Yes| E
+    B2 --> E
     F[General GDI SOP Template]
     F -->|Is used by| E
-    E[T4.3/WP4]
+    E[Operations Committee - OC\nSecurity and Data Protection Committee - SDPC]
     E -->|Prepares template| G
     G[SOP Template]
-    G --> H
-    H[T4.3/WP4]
-    H -->|Shares template| I
-    
+    G --> I
 
     %% Boxes
     subgraph European-level SOPs
@@ -62,9 +54,9 @@ flowchart TB
         end
         nodeRep -->|Copy SOP Template| Node's-GitHub
         subgraph Node's-Roles
-            nodeRep[Node's OC/SDPC representative]
+            nodeRep[Node's OC/SDPC \n representative]
             nodeRep --> |Nominate| nodeExp
-            nodeExp[Node's experts]
+            nodeExp[Nominated experts]
         end
         subgraph Node's-SOP-development-process
             nodeDev(Template gets adapted\n with the node's needs)
@@ -72,25 +64,18 @@ flowchart TB
             nodeRev(Review)
             nodeRev --> nodeApp
             nodeApp(Approval)
-            nodeApp --> nodeAcc
-            nodeAcc(Accessioning)
         end
         Node's-Roles -..->|Responsible for| Node's-SOP-development-process        
         nodeTem --> nodeDev
         nodeApp --> |Produces| nodeSOP
     end
-
-    subgraph Authors
-        I[Operations Committee - OC\nSecurity and Data Protection Committee - SDPC]
-        I -->|Nominate|J
-        J[Nominated experts]
-    end
+    rev2[OC/SDPC] -..->|Approves \n changes| nodeApp
 
     I --> |Start development process| R
-    Authors -..-> |Fill SOP content| L
-    P -..->|Review SOP| M
-    T -..->|Approve SOP|N
-    U -..->|Authorize SOP| O
+    Authors -..-> |Fill in SOP content| L
+    Reviewers -..->|Review SOP| M
+    Approvers -..->|Approve SOP|N
+    Authorizers -..->|Authorize SOP| O
     R{Is SOP\na template?}
     R -->|Yes| Q
     R -->|No| S
@@ -98,23 +83,53 @@ flowchart TB
     S -->|Enters cycle|SOP-development-cycle
 
     subgraph SOP-development-cycle
-        L(Content-filling)
+        L(Drafting)
         L --> M
         M(Review)
         M --> N
         N(Approval)
         N --> O
         O(Authorization)
-        O --> zz(Finished Development cycle)
     end
-    zz -->|Produces| V
-    zz -->|Produces| W
-    
+    O --> aos-accessioning
+    aos-merge -->|Produces| V
+    aos-merge -->|Produces| W
+
+    subgraph Main-GitHub-repository
+        aos-accessioning(SOP accessioning\n and formatting)
+        aos-merge(PR against \n `dev` branch)
+        subgraph SOP-release-process
+            git1(Pull Request\nto `main` branch)
+            git1 -->|Automatically \n triggers| git2
+            git2(Zenodo release)
+        end
+    end
+    aos-accessioning --> aos-merge
+
     subgraph ORR-roles
         Authors
-        P[Reviewers]
-        T[Approvers]
-        U[Authorizers\ne.g. Management Board - MB\ne.g. 1+MG Working Group]
+        Reviewers
+        Authorizers
+        Approvers
+    end
+
+    subgraph Authors
+        I[OC/SDPC]
+        I -->|Nominate|J
+        J[Nominated experts]
+    end
+
+    subgraph Reviewers
+        reviewers1[GDI members]
+    end
+
+    subgraph Approvers
+        approvers1[OC/SDPC]
+    end
+
+    subgraph Authorizers
+        authorizers1[Management Board]
+        authorizers2[1+MG Working Group]
     end
 
     V -->|Enters process| SOP-release-process
@@ -122,18 +137,7 @@ flowchart TB
     SOP-release-process -->|Produces| ZA
     SOP-release-process -->|Produces| Z
 
-    I -..->|Responsible for| SOP-release-process
-    subgraph SOP-release-process
-        Accessioning(SOP Accessioning)
-        Accessioning --> git2
-        GitHub-management
-    end
-
-    subgraph GitHub-management
-        git1(Pull Request\nto main branch\nwith new SOP)
-        git1 --> git2
-        git2(PR approved)
-    end
+    resp1[OC/SDPC] -..->|Responsible for| Main-GitHub-repository
 
     %% Styles
     class S,V,ZA,nodeSOP SOP

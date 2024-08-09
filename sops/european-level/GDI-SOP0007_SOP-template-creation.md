@@ -39,7 +39,7 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 |               |                 |
 
 ### 3. Roles and Responsibilities
-See qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
+See the qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
 
 | Role       | Full name       | GDI/node role   | Organisation |
 |------------|-----------------|-----------------|--------------|
@@ -47,9 +47,9 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | Reviewer   | Pedro Ferreira | Task 4.3 member | IST |
 | Reviewer   | Dylan Spalding | Task 4.3 member | CSC |
 | Reviewer   | Bianca Hendriksze | Task 4.3 member | HRI |
-| Reviewer   | Elisavet Torstensson | Task 4.3 member | UU |
+| Reviewer   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |
 | Reviewer   | Erik Hedman | Task 4.3 member | UU / NBIS |
-| Reviewer   | Mattias Strömberg | Task 4.3 member | UU |
+| Reviewer   | Mattias Strömberg | Task 4.3 member | UU / NBIS |
 | Reviewer   | Miguel Santos | Task 4.3 member | IST |
 | Reviewer   | Markus Englund | Task 4.3 member | UU / NBIS |
 | Reviewer   | Silvia Bahena | Task 4.3 member | EMBL-EBI |
@@ -158,8 +158,8 @@ A GH user creates a GH issue like the following, requesting a new SOP:
 ![GH Issue](../../docs/images/GDI-SOP0007_1-trigger-gh-issue.png)
 
 The first step is for the Operations Committee to **evaluate the new SOP request**, following these criteria:
-- **Request**: Is the request correctly made? Is there missing information? Is the given information comprehensive enough?
 - **Existing content**: Is the requested SOP not already in the GH repository?
+- **Request**: Is the request correctly made? Is there missing information? Is the given information comprehensive enough?
 - **Motivation**: Is the creation of the SOP justified and valid? Would GDI benefit from the creation of this SOP? Is the SOP covering a repetitive process of the GDI workflow?
 
 Depending on the answer to all previous questions:
@@ -210,9 +210,9 @@ Regardless of the format, **fill out the draft with as much information** (e.g.,
 |:----------------|:----|:----|
 | ``4`` | After SOP document has been drafted | OC/SDPC |
 
-Once the SOP document has been drafted, experts are required to fill in the gaps and finalize it. These **authors are to be appointed and contacted by the OC/SDPC**. Who the authors are will depend on the background and requirements of each SOP, and thus it is the responsibility of the OC/SDPC to **find the best suited people for the task**. The only requirements are for authors to be part of the GDI project and to know about, or be part of, the subject the SOP revolves around. An approach to identify authors is to go through the contributors of the RFC discussion at [step 2](#2-create-rfc-discussion).
+Once the SOP document has been drafted, experts are required to fill in the gaps and finalize it. These **authors are to be appointed and contacted by the OC/SDPC**. Who the authors are will depend on the background and requirements of each SOP, and thus it is the responsibility of the OC/SDPC to **find the best-suited people for the task**. The only requirements are for authors to be part of the GDI project and to know about, or be part of, the subject the SOP revolves around. An approach to identify authors is to go through the contributors of the RFC discussion at [step 2](#2-create-rfc-discussion).
 
-Depending on the selected authors, communication may vary. For example, if the experts are part of the OC/SDPC themselves, then it may be best to let the group know through GDI's Slack workspace or mailing lists (``gdi-oc [at] elixir-europe.org`` and ``gdi-sdpc [at] elixir-europe.org``). On the other hand, if authors are external to these two committees, the following email template could be used to contact them.
+The communication may vary depending on the selected authors. For example, if the experts are part of the OC/SDPC themselves, then it may be best to let the group know through GDI's Slack workspace or mailing lists (``gdi-oc [at] elixir-europe.org`` and ``gdi-sdpc [at] elixir-europe.org``). On the other hand, if authors are external to these two committees, the following email template could be used to contact them.
 
 Remember to CC the OC and SDPC mailing lists: ``gdi-oc [at] elixir-europe.org`` and ``gdi-sdpc [at] elixir-europe.org``.
 ````
@@ -229,7 +229,7 @@ We kindly request you to review the SOP draft and provide the necessary input. P
 
 We will aid you during the subsequent rounds of review, approval and authorization of the SOP. You can find more information about GDI SOPs here: https://github.com/GenomicDataInfrastructure/standard-operating-procedures
 
-Should you know any other GDI members that could assist as authors as well, please let us know to get in contact with them. 
+Should you know any other GDI members who could assist as authors as well, please let us know to get in contact with them. 
 
 Thank you for your attention and collaboration. We look forward to your valuable contributions.
 
@@ -246,14 +246,14 @@ Depending on the format of the draft, the above-mentioned ``< URL of drafted doc
 
 Remember to **leave a comment in the GitHub issue**, briefly mentioning that authors have been contacted. Be mindful of the information you share (e.g., no email addresses), since _anything_ that is typed through ZenHub in the ticket, will be **publicly displayed** in the GitHub issue!
 
-This step of the process ends when enough GDI members accepted authoring the SOP. For this to happen, it may be needed for the OC/SDPC member to engage in conversations to find the best suited authors. These conversations will be useful when reviewers are needed.
+This step of the process ends when enough GDI members accepted authoring the SOP. For this to happen, it may be needed for the OC/SDPC member to engage in conversations to find the best-suited authors. These conversations will be useful when reviewers are needed.
 
 #### 5. Monitor SOP development
 | Step identifier | When| Who |
 |:----------------|:----|:----|
 | ``5``                  | After SOP authors have been appointed | OC/SDPC |
 
-It is your duty, as member of the OC/SDPC, to monitor the entire SOP development process, ensuring that:
+It is your duty, as a member of the OC/SDPC, to monitor the entire SOP development process, ensuring that:
 - **Authors** are engaged with the development of the SOP. Checking the content of the SOP or contacting the authors recurrently may be required.
 - **Reviewers and approvers are appointed**, diverse across GDI nodes, and engaged in the process. Beyond the role definitions in the [ORR](../../docs/GDI-SOP_organisational-roles-and-responsibilities.md), the rule of thumb is for these roles to span multiple GDI Pillars and nodes. Reviewers may be selected directly by the OC/SDPC or by the authors themselves. Approvers will be part of the OC/SDPC itself.
 - **Communication is efficient** throughout the process. For example, ensuring that GDI MB receives the request to authorize the final SOP, or that authors are aware of any requested changes. 
@@ -281,7 +281,7 @@ We kindly request you to review the SOP draft and provide your feedback. Please 
 
 You can find more information about GDI SOPs here: https://github.com/GenomicDataInfrastructure/standard-operating-procedures
 
-Should you know any other GDI members that could assist as reviewers as well, please let us know to get in contact with them.
+Should you know any other GDI members who could assist as reviewers as well, please let us know to get in contact with them.
 
 Thank you for your attention and collaboration. We look forward to your valuable contributions.
 
@@ -388,7 +388,7 @@ Once the markdown file has the required content in the proper format, it is time
 
 ![PR creation](../../docs/images/GDI-SOP0007_6-PR-image.png)
 
-Remember to **comment the GH issue** (i.e., its URL) of the SOP request in this PR, so that it is automatically tracked by GH.
+Remember to **comment on the GH issue** (i.e., its URL) of the SOP request in this PR, so that it is automatically tracked by GH.
 
 Members of the OC/SDPC are to be listed as **reviewers** in the PR. Given that the content is not supposed to be modified, this review is merely for format changes that occurred (or should have occurred) between the formal authorization and the final document ([step 6](#6-prepare-final-sop-markdown-document)). 
 

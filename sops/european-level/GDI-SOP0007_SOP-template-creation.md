@@ -32,7 +32,13 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 |---------------|-----------------|
 | GH            | GitHub          |
 | PR            | Pull Request    |
-| RFC            | Request For Comments    |
+| RFC           | Request For Comments    |
+| EBI           | European Bioinformatics Institute    |
+| EMBL          | European Molecular Biology Laboratory    |
+| IST           | Instituto Superior Técnico    |
+| HRI           | Health Research Infrastructure |
+| UU            | University of Uppsala |
+| NBIS          | National Bioinformatics Infrastructure Sweden |
 
 | Term          | Definition      |
 |---------------|-----------------|
@@ -45,16 +51,12 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 |------------|-----------------|-----------------|--------------|
 | Author     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |
 | Reviewer   | Pedro Ferreira | Task 4.3 member | IST |
-| Reviewer   | Dylan Spalding | Task 4.3 member | CSC |
 | Reviewer   | Bianca Hendriksze | Task 4.3 member | HRI |
 | Reviewer   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |
-| Reviewer   | Erik Hedman | Task 4.3 member | UU / NBIS |
 | Reviewer   | Mattias Strömberg | Task 4.3 member | UU / NBIS |
-| Reviewer   | Miguel Santos | Task 4.3 member | IST |
-| Reviewer   | Markus Englund | Task 4.3 member | UU / NBIS |
-| Reviewer   | Silvia Bahena | Task 4.3 member | EMBL-EBI |
-| Reviewer   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |
-| Approver   | _TBD: depending on how and when OC/SDPC are formed_ | OC/SDPC | _TBD_ |
+| Approver   | Erik Hedman | Task 4.3 member | UU / NBIS |
+| Approver   | Markus Englund | Task 4.3 member | UU / NBIS |
+| Approver   | Jorge Oliveira | Task 4.3 member | IST |
 | Authorizer | _TBD: to be brought up in a monthly MB meeting, to appoint a MB authorizer_ | Management Board | _TBD_ |
 
 ### 4. Purpose

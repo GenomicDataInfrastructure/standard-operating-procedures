@@ -352,7 +352,7 @@ Best regards,
 Operations Committee (OC) / Security and Data Protection Committee (SDPC)
 ````
 
-Similar to previous steps, this one shall finish once formal authorization from the GDI MB has been received. It will be your responsibility, as member of the OC/SDPC, to keep track of the status of development and to make sure requested changes are addressed (e.g., contacting authors).
+This **step shall finish** once the **period to raise issues (4 full weeks) concluded without any complaints from the MB**. If comments are given from this body, the step shall finish when they are addressed, starting a new period of review altogether. It will be your responsibility, as a member of the OC/SDPC, to keep track of the status of development and to make sure requested changes are addressed (e.g., contacting authors).
 
 #### 6. Prepare final SOP Markdown document
 | Step identifier | When| Who |

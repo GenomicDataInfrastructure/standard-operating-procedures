@@ -23,7 +23,7 @@
 ### 1. Document History
 | Template Version | Instance version | Author(s) | Description of changes       | Date       |
 |---------|-----------|-----------|------------------------------|------------|
-| ``v1`` | ``-`` | Marcos Casado Barbero | Created first version of the SOP | ``2024.07.08`` |
+| ``v1`` |  | Marcos Casado Barbero | Created first version of the SOP | ``2024.07.08`` |
 
 ### 2. Glossary
 Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).

@@ -33,13 +33,13 @@ _< Title of the SOP prepended by "European GDI:". The title must remain the same
 ### 1. Document History
 _< This section is required >_
 
-_< Manual or automated tracking of the history of changes for this SOP. Notice how the template and instance have different version trackers, since there can be different combinations of versions. >_
+_< Manual or automated tracking of the history of changes for this SOP. Notice how the template and instance have different version trackers, since there can be different combinations of versions. Notice how the order of rows is recent to older, from top to bottom >_
 
 | Template Version | Instance version | Author(s) | Description of changes       | Date       |
 |---------|-----------|-----------|------------------------------|------------|
 | _< ``v1`` >_ | _< ``v2`` >_ | _< Full name >_           | _< Modified node's instance at ... >_ | _< ``YYYY.MM.DD`` >_ |
 | _< ``v1`` >_ | _< ``v1`` >_ | _< Full name >_           | _< SOP Instance of node ..., changed ... >_ | _< ``YYYY.MM.DD`` >_ |
-| _< ``v1`` >_ | _< ``-`` >_| _< Full name >_           | _< First version of template... >_ | _< ``YYYY.MM.DD`` >_ |
+| _< ``v1`` >_ |  | _< Full name >_           | _< First version of template... >_ | _< ``YYYY.MM.DD`` >_ |
 
 
 ### 2. Glossary

@@ -21,46 +21,46 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 
 | Abbreviation | Description                    |
 | ------------ | ------------------------------ |
-| GDI          | European Genomic Data Infrastructure |
-| SOP          | Standard Operating Procedure   |
-| OC           | Operations Committee           |
-| SDPC         | Security and Data Protection Committee |
-| WG           | Working Group                  |
-| 1+MG         | [1+ Million Genomes](https://framework.onemilliongenomes.eu/) |
-| ORR          | Organisational Roles and Responsibilities |
-| RFC          | Request For Comments           |
-| TBD          | To Be Determined               |
-| MB           | Management Board               |
-| ISM          | Information Service Management |
-| NCP          | Contact Point                  |
-| EDIC         | European Digital Infrastructure Consortium |
-| PR           | Pull Request                   |
-| MS           | Milestone                      |
-| WP           | Work Package                   |
-| ZH           | ZenHub                         |
-| GH           | GitHub                         |
-| GDI-CO       | GDI Project Management Team ("GDI coordinators") |
-| EBI          | European Bioinformatics Institute |
-| EMBL         | European Molecular Biology Laboratory |
-| IST          | Instituto Superior Técnico      |
-| HRI          | Health Research Infrastructure |
-| UU           | University of Uppsala          |
-| NBIS         | National Bioinformatics Infrastructure Sweden |
-| BEN          | Beneficiary                    |
-| AE           | Associated Entity              |
-| INSERM       | L'Institut national de la santé et de la recherche médicale (France) |
-| DAC          | Data Access Committee          |
-| AI           | Action Item                    |
-| QMS          | Quality Management System      |
-| DPbDD        | Data Protection by Design and Default |
-| DP           | Data Protection                |
-| DPA          | Data Processing Agreement      |
-| KT           | Knowledge Transfer             |
-| HD           | Helpdesk                       |
-| UI           | User Interface                 |
-| AAI          | Authentication and Authorization Infrastructure |
-| VPN          | Virtual Private Network        |
-| GDPR         | General Data Protection Regulation |
+|1+MG|[1+MillionGenomes](https://framework.onemilliongenomes.eu/)|
+|AAI|AuthenticationandAuthorizationInfrastructure|
+|AE|AssociatedEntity|
+|AI|ActionItem|
+|BEN|Beneficiary|
+|DAC|DataAccessCommittee|
+|DPA|DataProcessingAgreement|
+|DPbDD|DataProtectionbyDesignandDefault|
+|DP|DataProtection|
+|EBI|EuropeanBioinformaticsInstitute|
+|EDIC|EuropeanDigitalInfrastructureConsortium|
+|EMBL|EuropeanMolecularBiologyLaboratory|
+|GDI-CO|GDIProjectManagementTeam("GDIcoordinators")|
+|GDI|EuropeanGenomicDataInfrastructure|
+|GDPR|GeneralDataProtectionRegulation|
+|GH|GitHub|
+|HD|Helpdesk|
+|HRI|HealthResearchInfrastructure|
+|INSERM|L'Institutnationaldelasantéetdelarecherchemédicale(France)|
+|ISM|InformationServiceManagement|
+|IST|InstitutoSuperiorTécnico|
+|KT|KnowledgeTransfer|
+|MB|ManagementBoard|
+|MS|Milestone|
+|NBIS|NationalBioinformaticsInfrastructureSweden|
+|NCP|NodeContactPoint|
+|OC|OperationsCommittee|
+|ORR|OrganisationalRolesandResponsibilities|
+|PR|PullRequest|
+|QMS|QualityManagementSystem|
+|RFC|RequestForComments|
+|SDPC|SecurityandDataProtectionCommittee|
+|SOP|StandardOperatingProcedure|
+|TBD|ToBeDetermined|
+|UI|UserInterface|
+|UU|UniversityofUppsala|
+|VPN|VirtualPrivateNetwork|
+|WG|WorkingGroup|
+|WP|WorkPackage|
+|ZH|ZenHub|
 
 | **Term**     | **Definition**                 |
 | ------------ | ------------------------------ |
@@ -75,11 +75,13 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | **Approver** | TBD                 |               |
 
 ## 4. Introduction
-The [**European Genomic Data Infrastructure (GDI)**](https://gdi.onemilliongenomes.eu) project is a pioneering initiative aimed at **enabling access to genomic, phenotypic, and clinical data across Europe**. This access is crucial for advancing research, policymaking, and healthcare on a continental scale. Central to this mission is the 1+ Million Genomes (1+MG) network, which encompasses a diverse array of national human data-sharing projects, each at different stages of development.
+The [**European Genomic Data Infrastructure (GDI)**](https://gdi.onemilliongenomes.eu) project is a pioneering initiative aims to **enable access access to genomic, phenotypic, and clinical data across Europe**. This access is crucial for advancing research, policymaking, and healthcare on a continental scale. Central to this mission is the 1+ Million Genomes (1+MG) network, which encompasses a diverse array of national human data-sharing projects, each at different stages of development.
 
 Given the diversity of these projects, the **GDI serves as an essential platform for harmonizing operational practices through the development and alignment of Standard Operating Procedures** (SOPs). This harmonization not only facilitates the integration of well-established nodes but also provides critical guidance for those in the early stages of their development.
 
 The governance model within the GDI network is designed to be both collaborative and flexible, **supporting the adoption of European-wide standards while accommodating the unique needs of individual nodes**. This dual approach is reflected in the structure of the GDI SOPs, which are divided into [**European-level SOPs**](../sops/european-level/) that provide standardized procedures applicable across all nodes, and [**Node-specific SOPs**](../sops/node-specific/) that allow for customization based on local requirements.
+
+SOPs will be **version controlled** in GitHub, with a single source of truth: this repository. Furthermore, through GitHub we expect to **collaboratively and transparently** develop and maintain the SOPs. By having the main repository public, yet allowing GDI nodes to privately make their implementations, we comply with the rule of thumb _as open as possible, yet as private as needed_. For further details, refer to the [GitHub management](./GDI-SOP_github-management.md) documentation.
 
 Through this Charter, the GDI underscores its commitment to fostering a unified yet adaptable operational environment, ensuring that all nodes, regardless of their current capabilities, can contribute to and benefit from this pan-European initiative.
 
@@ -87,11 +89,46 @@ Through this Charter, the GDI underscores its commitment to fostering a unified 
 The purpose of this document is to **define the scope and management of SOPs within the GDI network**. Specifically, it outlines how GDI SOPs will be managed to ensure consistency, quality, and relevance. This Charter serves as a foundational document within the GDI SOP quality management system, providing the necessary guidance and structure for the development, approval, and implementation of SOPs across the network.
 
 ## 6. Scope of GDI SOPs
-The GDI is not a monolithic entity but a network of existing and emerging infrastructures. While SOPs can encompass various aspects of a team, node, or even project, this repository is not intended to cover every process within all institutions under the GDI umbrella. Instead, it contains SOPs that are relevant to GDI-specific use cases and are implemented by the nodes forming the GDI network.
+The GDI is not a monolithic entity but a network of existing and emerging infrastructures. While SOPs can encompass various aspects of a team, node, or even project, this repository is not intended to cover every process within all institutions under the GDI umbrella. Instead, it contains **SOPs that are relevant to GDI-specific use cases** and are implemented by the nodes forming the GDI network.
 
 For example, if a GDI node already functions as an archive with submitted datasets, the curation of these datasets, when outside the GDI scope, is not expected to follow a hypothetical "Dataset Curation SOP" from GDI.
 
 Therefore, it is the **responsibility of the GDI nodes to implement these SOPs when the use case pertains to GDI infrastructure**, governance, or data.
+
+The scope of these SOPs is focused on roles, topics, and resources that are essential for establishing or operating node services, ensuring high-quality data management, and maintaining robust technical infrastructure. However, certain items are deliberately excluded from the current scope to maintain focus.
+
+### In-Scope
+#### Roles
+- **Helpdesk Staff and Operations Bioinformaticians**: Responsible for responding to and resolving user queries and issues within the node.
+- **Data Stewards, Data Curators, and Bioinformaticians**: Focused on the preparation, harmonization, and curation of data and metadata to ensure high-quality data management.
+- **Software Developers, Software Engineers, and DevOps Engineers**: Tasked with designing, developing, implementing, deploying, and monitoring software and services deployed at a node.
+
+#### Topics
+- **Data Protection & Security**: Includes procedures related to security incident response, risk assessment, and compliance with data protection regulations (e.g., DPA, DAA, DPIA).
+- **Data & Metadata Management**: Covers data management plans (DMPs), and processes for ensuring data quality and harmonization within the node, including interactions with the GDI User Portal.
+- **Technical Infrastructure & Software Development**: Focuses on technical certifications, compliance assessment tools, and ensuring that node infrastructure meets GDI standards.
+- **Helpdesk & Operations**: Encompasses standard operating procedures for helpdesk interactions with users, including interfacing with the GDI User Portal.
+
+#### Resources
+- **SOP Examples & Templates**: Provision of standardized templates for SOPs that can be adapted by nodes.
+- **Operational Recommendations & Guidelines**: Guidance on best practices for operating node services within the GDI network.
+- **Training on SOP Usage & Management**: Training materials and sessions to ensure that node staff can effectively implement and manage SOPs.
+- **Resource Management Plan**: A plan for the management of resources required for SOP implementation.
+
+### Out-of-scope
+#### Roles
+- **Researchers Using Node Services**: While crucial to the broader GDI network, their specific operational procedures are not covered by these SOPs.
+- **Training, Outreach, and Communications Officers**: These roles, while important, are not the focus of the current SOP scope.
+
+#### Topics
+- **Governance, Strategy & Sustainability**: These high-level topics, including aspects like GDI governance and long-term sustainability strategies, are beyond the scope of these SOPs.
+- **User Training on Node Services**: Training materials and programs designed to educate users (researchers) on how to use node services are not covered.
+- **Community Outreach & Engagement**: Activities related to building community engagement and outreach are excluded.
+
+#### Resources
+- **Node-Specific SOPs**: SOPs tailored to the unique needs of individual nodes are not included, as the focus is on providing common templates and guidelines.
+- **Training Materials for Users**: Resources designed for educating end-users (researchers) are out of scope.
+- **Security Audits**: Formal security audits are not covered by the SOPs, although security procedures are included.
 
 ## 7. GDI SOP Management
 Given the diverse fields that GDI SOPs may cover, a well-defined set of roles and responsibilities is crucial for ensuring seamless operations across the network. These roles are involved at every step of the SOP lifecycle, from development to node implementation. The most up-to-date definitions of roles and responsibilities can be found [here](./GDI-SOP_organisational-roles-and-responsibilities.md#6-roles-and-responsibilities-definitions).

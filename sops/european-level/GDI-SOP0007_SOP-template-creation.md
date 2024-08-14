@@ -4,6 +4,7 @@
 |----------------------|--------------------|
 | Template SOP number  | ``GDI-SOP0007``    |
 | Template SOP version | ``v1``             |
+| Topic                | Helpdesk & operations |
 | Template SOP Type    | European-Level SOP |
 | GDI Node             |                    |
 | Instance Version     |                    |

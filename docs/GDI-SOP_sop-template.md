@@ -14,6 +14,7 @@ _< Title of the SOP prepended by "European GDI:". The title must remain the same
 |-------------------|---------------------|
 | Template SOP number  | _< ``GDI-SOP000...``. The number should be unique in the GDI SOP namespace. See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-accessioning.md#identifier-format) for further details. >_ |
 | Template SOP version      | _< ``vY``. See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-accessioning.md#identifier-format) >_ |
+| Topic      | _< One of the 4 topics in scope of the SOPs: Data protection & security; Data & metadata management; Technical infrastructure & software development; Helpdesk & operations >_ |
 | Template SOP Type      | _< Either "Node-specific SOP" or "European-Level SOP". See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-accessioning.md#sop-life-cycle) >_ |
 | GDI Node   | _< Unique Alpha-3 code for the node (e.g. SWE for Sweden). Only needed if the node is instancing the template. >_ |
 | Instance version     | _< ``vZ``. See [documentation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-accessioning.md#identifier-format). Only needed if a node is instancing the template. >_ |
@@ -25,8 +26,8 @@ _< Title of the SOP prepended by "European GDI:". The title must remain the same
 3. [Roles and Responsibilities](#3-roles-and-responsibilities)
 4. [Purpose](#4-purpose)
 5. [Scope](#5-scope)
-6. [Introduction and Background Information - as needed](#6-introduction-and-background-information)
-7. [Summary or Context Diagram - as needed](#7-summary-or-context-diagram)
+6. [Introduction and Background Information](#6-introduction-and-background-information)
+7. [Summary or Context Diagram](#7-summary-or-context-diagram)
 8. [Procedure](#8-procedure)
 9. [References](#9-references)
 
@@ -45,7 +46,7 @@ _< Manual or automated tracking of the history of changes for this SOP. Notice h
 ### 2. Glossary
 _< This section is required >_
 
-_< Include definitions of node and/or SOP-specific concepts used in this SOP. >_
+_< Include definitions of node and/or SOP-specific concepts used in this SOP. Order items alphabetically. >_
 
 Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
 

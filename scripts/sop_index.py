@@ -42,6 +42,7 @@ class SOPIndexGenerator:
             "Name": name_with_link,
             "Identifier": metadata.get("template sop number", ""),
             "Template version": metadata.get("template sop version", ""),
+            "Topic": metadata.get("topic", ""),
             "Type": metadata.get("template sop type", ""),
             "GDI Node": metadata.get("gdi node", ""),
             "Instance version": metadata.get("instance version", ""),

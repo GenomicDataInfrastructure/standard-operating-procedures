@@ -19,60 +19,64 @@
 ## 2. Glossary
 The following table defines the abbreviations and terms relevant to GDI SOPs.
 
-| Abbreviation | Description                    |
-| ------------ | ------------------------------ |
-|1+MG|[1+MillionGenomes](https://framework.onemilliongenomes.eu/)|
-|AAI|AuthenticationandAuthorizationInfrastructure|
-|AE|AssociatedEntity|
-|AI|ActionItem|
-|BEN|Beneficiary|
-|DAC|DataAccessCommittee|
-|DPA|DataProcessingAgreement|
-|DPbDD|DataProtectionbyDesignandDefault|
-|DP|DataProtection|
-|EBI|EuropeanBioinformaticsInstitute|
-|EDIC|EuropeanDigitalInfrastructureConsortium|
-|EMBL|EuropeanMolecularBiologyLaboratory|
-|GDI-CO|GDIProjectManagementTeam("GDIcoordinators")|
-|GDI|EuropeanGenomicDataInfrastructure|
-|GDPR|GeneralDataProtectionRegulation|
-|GH|GitHub|
-|HD|Helpdesk|
-|HRI|HealthResearchInfrastructure|
-|INSERM|L'Institutnationaldelasantéetdelarecherchemédicale(France)|
-|ISM|InformationServiceManagement|
-|IST|InstitutoSuperiorTécnico|
-|KT|KnowledgeTransfer|
-|MB|ManagementBoard|
-|MS|Milestone|
-|NBIS|NationalBioinformaticsInfrastructureSweden|
-|NCP|NodeContactPoint|
-|OC|OperationsCommittee|
-|ORR|OrganisationalRolesandResponsibilities|
-|PR|PullRequest|
-|QMS|QualityManagementSystem|
-|RFC|RequestForComments|
-|SDPC|SecurityandDataProtectionCommittee|
-|SOP|StandardOperatingProcedure|
-|TBD|ToBeDetermined|
-|UI|UserInterface|
-|UU|UniversityofUppsala|
-|VPN|VirtualPrivateNetwork|
-|WG|WorkingGroup|
-|WP|WorkPackage|
-|ZH|ZenHub|
+| Abbreviation | Description                                                         |
+| ------------ | ------------------------------------------------------------------- |
+| 1+MG         | [1+ Million Genomes](https://framework.onemilliongenomes.eu/)       |
+| AAI          | Authentication and Authorization Infrastructure                     |
+| AE           | Associated Entity                                                   |
+| AI           | Action Item                                                         |
+| BEN          | Beneficiary                                                         |
+| DAA          | Data Access Agreement                                               |
+| DAC          | Data Access Committee                                               |
+| DMP          | Data Management Plan                                                |
+| DP           | Data Protection                                                     |
+| DPA          | Data Processing Agreement                                           |
+| DPbDD        | Data Protection by Design and Default                               |
+| DPIA         | Data Protection Impact Assessment                                   |
+| EBI          | European Bioinformatics Institute                                   |
+| EDIC         | European Digital Infrastructure Consortium                          |
+| EMBL         | European Molecular Biology Laboratory                               |
+| GDI          | European Genomic Data Infrastructure                                |
+| GDI-CO       | GDI Project Management Team (GDI coordinators)                      |
+| GDPR         | General Data Protection Regulation                                  |
+| GH           | GitHub                                                              |
+| HD           | Helpdesk                                                            |
+| HRI          | Health Research Infrastructure                                      |
+| INSERM       | L'Institut national de la santé et de la recherche médicale (France)|
+| ISM          | Information Service Management                                      |
+| IST          | Instituto Superior Técnico                                          |
+| KT           | Knowledge Transfer                                                  |
+| MB           | Management Board                                                    |
+| MS           | Milestone                                                           |
+| NBIS         | National Bioinformatics Infrastructure Sweden                       |
+| NCP          | Node Contact Point                                                  |
+| OC           | Operations Committee                                                |
+| ORR          | Organisational Roles and Responsibilities                           |
+| PR           | Pull Request                                                        |
+| QMS          | Quality Management System                                           |
+| RFC          | Request For Comments                                                |
+| SDPC         | Security and Data Protection Committee                              |
+| SOP          | Standard Operating Procedure                                        |
+| TBD          | To Be Determined                                                    |
+| UI           | User Interface                                                      |
+| UU           | University of Uppsala                                               |
+| VPN          | Virtual Private Network                                             |
+| WG           | Working Group                                                       |
+| WP           | Work Package                                                        |
+| ZH           | ZenHub                                                              |
 
 | **Term**     | **Definition**                 |
 | ------------ | ------------------------------ |
 | FitSM        | Standards for lightweight IT Services Management; developed initially through The FedSM Project, funded by the European Commission, now maintained by ITEMO (<https://www.fitsm.eu/>) |
 
 ## 3. Roles and Responsibilities
-| Name         | GDI/Node Role      | Organisation  |
-| ------------ | ------------------ | ------------- |
-| **Author**   | Mallory Freeberg    | EMBL-EBI      |
-| **Author**   | Marcos Casado Barbero | EMBL-EBI    |
-| **Reviewer** | TBD                 |               |
-| **Approver** | TBD                 |               |
+| Role       | Full name       | GDI/node role   | Organisation |
+|------------|-----------------|-----------------|--------------|
+| **Author**     | Mallory Freeberg | Task 4.3 member | EMBL-EBI |
+| **Author**     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |
+| **Reviewer**   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |
+| **Approver**   | Erik Hedman | Task 4.3 member | UU / NBIS |
+| **Approver** | TBD                 |               |  |
 
 ## 4. Introduction
 The [**European Genomic Data Infrastructure (GDI)**](https://gdi.onemilliongenomes.eu) project is a pioneering initiative aims to **enable access access to genomic, phenotypic, and clinical data across Europe**. This access is crucial for advancing research, policymaking, and healthcare on a continental scale. Central to this mission is the 1+ Million Genomes (1+MG) network, which encompasses a diverse array of national human data-sharing projects, each at different stages of development.
@@ -126,7 +130,7 @@ The scope of these SOPs is focused on roles, topics, and resources that are esse
 - **Community Outreach & Engagement**: Activities related to building community engagement and outreach are excluded.
 
 #### Resources
-- **Node-Specific SOPs**: SOPs tailored to the unique needs of individual nodes are not included, as the focus is on providing common templates and guidelines.
+- **Node-Specific SOPs**: SOPs tailored to the unique needs of individual nodes are not included, as the focus is on providing standard templates and guidelines.
 - **Training Materials for Users**: Resources designed for educating end-users (researchers) are out of scope.
 - **Security Audits**: Formal security audits are not covered by the SOPs, although security procedures are included.
 

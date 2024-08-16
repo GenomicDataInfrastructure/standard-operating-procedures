@@ -29,17 +29,18 @@
 ### 2. Glossary
 Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
 
-| Abbreviation  | Description     |
-|---------------|-----------------|
-| GH            | GitHub          |
-| PR            | Pull Request    |
-| RFC           | Request For Comments    |
-| EBI           | European Bioinformatics Institute    |
-| EMBL          | European Molecular Biology Laboratory    |
-| IST           | Instituto Superior Técnico    |
-| HRI           | Health Research Infrastructure |
-| UU            | University of Uppsala |
+| Abbreviation  | Description                             |
+|---------------|-----------------------------------------|
+| EBI           | European Bioinformatics Institute       |
+| EMBL          | European Molecular Biology Laboratory   |
+| GH            | GitHub                                  |
+| HRI           | Health Research Infrastructure          |
+| IST           | Instituto Superior Técnico              |
 | NBIS          | National Bioinformatics Infrastructure Sweden |
+| PR            | Pull Request                            |
+| RFC           | Request For Comments                    |
+| SLA           | Service Level Agreements                |
+| UU            | University of Uppsala                   |
 
 | Term          | Definition      |
 |---------------|-----------------|
@@ -55,9 +56,8 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 | Reviewer   | Bianca Hendriksze | Task 4.3 member | HRI |
 | Reviewer   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |
 | Reviewer   | Mattias Strömberg | Task 4.3 member | UU / NBIS |
-| Approver   | Erik Hedman | Task 4.3 member | UU / NBIS |
 | Approver   | Markus Englund | Task 4.3 member | UU / NBIS |
-| Approver   | Jorge Oliveira | Task 4.3 member | IST |
+| Approver   | Dylan Spalding | WP5 Leader | CSC |
 | Authorizer | _TBD: to be brought up in a monthly MB meeting, to appoint a MB authorizer_ | Management Board | _TBD_ |
 
 ### 4. Purpose
@@ -79,6 +79,7 @@ graph TB
     Zenhub1[ZenHub ticket]
     subgraph 'Operations Committee' and 'Security and Data Protection Committee'
         step1{Is SOP\n request valid?}
+        step_subsChange{Does this SOP represent\n a 'substantial' change?}
         step3{More information\n needed?}
         stepj(Request more\n information from user)
         step4(Justify rejection\n and close GH issue)
@@ -89,6 +90,7 @@ graph TB
         step7(Create Markdown\n document draft)
         step8(Assign SOP Template authors)
         step9(Contact the authors)
+        step13_prev(Request nomination of approvers)
         step13{Document\n approved?}
         r3(Contact authors)
         step13-1(Contact \n Management Board)
@@ -102,8 +104,8 @@ graph TB
         step16(Review and merge PR)
     end
     step-rfc1 --> step2
-    step8 -->|Set as Active|step-rfc2
-    step16 -->|Set as Landed|step-rfc3
+    step8 -..->|Set as Active|step-rfc2
+    step16 -..->|Set as Landed|step-rfc3
     subgraph Management Board
         step-mb1{Document\nauthorization\nvetoed?}
         r1(Contact authors)
@@ -116,7 +118,8 @@ graph TB
         step12{Document\n reviewed?}
         r2(Contact authors)
     end
-    step12 -->|Yes|step13
+    step12 -->|Yes|step13_prev
+    step13_prev -->|2 OC and 2 SDPC members\n are nominated| step13
     step13 -->|Yes|step13-1
     step13-1 --> step-mb1
     ending(" ")
@@ -124,7 +127,9 @@ graph TB
     start -..->|GDI member creates\nSOP request| input1
     input1 -..->|ZenHub automatically\n creates ticket in Board|Zenhub1
     Zenhub1 -..->|OC/SDPC\n Notices the request| step1
-    step1 -->|Yes| step-rfc1
+    step1 -->|Yes| step_subsChange
+    step_subsChange -->|No| step2
+    step_subsChange -->|Yes| step-rfc1
     step1 -->|No| step3
     step3 -->|Yes| stepj
     stepj -->|Wait for user's answer| step1
@@ -165,7 +170,7 @@ The first step is for the Operations Committee to **evaluate the new SOP request
 - **Request**: Is the request correctly made? Is there missing information? Is the given information comprehensive enough?
 - **Motivation**: Is the creation of the SOP justified and valid? Would GDI benefit from the creation of this SOP? Is the SOP covering a repetitive process of the GDI workflow?
 
-Depending on the answer to all previous questions:
+🔀 Depending on the answer to all previous questions:
 - If the answers are **affirmative**:
     - Add the tag ``accepted`` to the GitHub issue
     ![Adding "accepted" label to GH issue](../../docs/images/GDI-SOP0007_2-label-assignment.png)
@@ -180,7 +185,53 @@ Depending on the answer to all previous questions:
 |:----------------|:----|:----|
 | ``2`` | After new SOP request has been deemed valid by the Operations Committee | OC/SDPC |
 
-Once the SOP request was accepted, it is time for the idea to be built from within GDI. For this to happen, the OC/SDPC member shall bring it forth in the shape of an RFC, with its GDI-led discussion. 
+Once the SOP request was accepted, it is time for the idea to be built from within GDI. **Depending on the relative importance of the SOP**, you may need to bring it forth in the shape of an **RFC**, to host a GDI-led discussion. Follow the checklist below (_#! TODO: this list will be at the [RFC's README](https://github.com/GenomicDataInfrastructure/rfcs?tab=readme-ov-file#when-to-follow-this-process) at some point_) to decide the course of action:
+
+- **Impact on Multiple Nodes or Stakeholders:**
+  - Does the SOP affect multiple GDI nodes or have the potential to influence operations across the network?
+  - Will the SOP change how multiple stakeholders (e.g., operations, data management, security) interact with or use GDI infrastructure?
+
+- **Introduction of New Features or Processes:**
+  - Does the SOP introduce a new feature, process, or operational procedure that was not previously part (or similar) of GDI operations?
+  - Is this SOP setting a precedent for future SOPs that would fundamentally alter existing workflows?
+
+- **Modification of Existing GDI Procedures:**
+  - Does the SOP significantly change the semantics or behavior of an existing procedure that is widely used or critical to the GDI infrastructure?
+  - Does the SOP propose removing or deprecating a feature or procedure that is currently in use by GDI nodes?
+
+- **Impact on GDI Service Levels (SLAs):**
+  - Could the SOP influence key Service Level Agreements (SLAs) within GDI, such as system uptime, helpdesk response times, or software update protocols?
+  - Does the SOP align with or potentially conflict with existing SLAs, requiring a review to ensure consistency and clarity for users?
+
+- **Cross-Functional Dependencies:**
+  - Does the SOP require coordination between different functions or teams within GDI, such as security, operations, and data management?
+  - Will the SOP impact how different GDI committees (e.g., OC, SDPC) operate or collaborate?
+
+- **Potential for User Confusion or Misalignment:**
+  - Could the SOP lead to confusion among users or stakeholders regarding their roles, responsibilities, or the functionality of GDI services?
+  - Is there a risk that the SOP might lead to a misalignment between user expectations and the services provided by GDI?
+
+- **Risk and Compliance Considerations:**
+  - Does the SOP introduce new risks or compliance requirements that need to be carefully reviewed and managed?
+  - Is there a significant risk that the SOP might not meet the necessary compliance standards without thorough review and consensus?
+
+- **Strategic Importance:**
+  - Is the SOP strategically important for the long-term goals or sustainability of the GDI?
+  - Does the SOP align with or diverge from the broader strategic vision of GDI, requiring input and consensus from a wider audience?
+
+- **Community Feedback and Consensus Building:**
+  - Would the SOP benefit from broader community feedback to ensure it is well-received and effectively implemented?
+  - Has there been significant interest or concern from the community that would warrant a more formal review and discussion process?
+
+- **Complexity and Scope of Change:**
+  - Is the SOP complex enough that its implementation could have unforeseen consequences or require extensive coordination?
+  - Does the SOP cover a wide scope, making it difficult to assess its impact without a more structured and collaborative review process?
+
+🔀 Depending on the answer to previous questions:
+- If some answers are **affirmative**:
+    - Continue with this step, creating the RFC discussion.
+- If all are **negative** or you consider the SOP not to be substantial:
+    - Skip the rest of step 2, and jump straight to [step 3](#3-draft-sop-document).
 
 Go to [**GDI's RFC GH repository**](https://github.com/GenomicDataInfrastructure/rfcs?tab=readme-ov-file#what-the-process-is) and familiarize yourself with the process of **RFC creation**. As the first step, **create a [new discussion](https://github.com/GenomicDataInfrastructure/rfcs/discussions/new/choose)** choosing the ``RFC Discussions`` category. The goal of this discussion is for the SOP, as a substantial change to GDI, to be introduced and discussed by the GDI community.
 
@@ -189,9 +240,9 @@ _#! TO-DO: the process of adding an RFC to the repository is still not fully def
 #### 3. Draft SOP document
 | Step identifier | When| Who |
 |:----------------|:----|:----|
-| ``3`` | After RFC discussion has reached consensus | OC/SDPC |
+| ``3`` | After RFC discussion has reached consensus, if an RFC was created | OC/SDPC |
 
-Once the RFC discussion has reached consensus, the OC/SDPC member shall **prepare the SOP draft**. This document will be a modified copy of the [general SOP template](../../docs/GDI-SOP_sop-template.md).
+Depending on the course of action of [step 2](#2-create-rfc-discussion), this step may start without the need of an RFC, or when the RFC discussion has reached consensus. Regardless of the origin, the OC/SDPC member shall **prepare the SOP draft**. This document will be a modified copy of the [general SOP template](../../docs/GDI-SOP_sop-template.md).
 
 Depending on the product backlog, a request may need to wait until it is picked for drafting. Once this step is started, **add yourself as an assignee** to the ZenHub ticket (i.e., the request) and move it to the ``In Progress`` column.
 
@@ -298,7 +349,9 @@ Operations Committee (OC) / Security and Data Protection Committee (SDPC)
 You shall **follow through the communication between authors and reviewers**, to ensure that once authors have drafted the SOP, reviewers are notified and proceed with their reviews.
 
 ##### 5.2 Request OC/SDPC approval
-Once the drafted SOP has been filled in by the authors, and has passed the inspection of reviewers, the SOP document shall go through approval of the OC/SDPC. Use the following template to **send an email to the OC (``gdi-oc [at] elixir-europe.org``) and SDPC (``gdi-sdpc [at] elixir-europe.org``) requesting approval**:
+Once the drafted SOP has been filled in by the authors, and has passed the inspection of reviewers, the SOP document shall go through approval of the OC/SDPC. **These committees need to nominate 2 members each** (4 in total), that will be responsible for approval of the SOP.
+
+Use the following template to **send an email to the OC (``gdi-oc [at] elixir-europe.org``) and SDPC (``gdi-sdpc [at] elixir-europe.org``) requesting approval**:
 ````
 Subject: [GDI T4.3] Requesting SOP approval
 ````
@@ -309,12 +362,13 @@ I hope this message finds you well.
 
 A new GDI Standard Operating Procedure (SOP) is in development. It was drafted by the OC/SDPC, authored, and reviewed by GDI members, and is pending approval from across the Operations Committee (OC) and Security and Data Protection Committee (SDPC).
 
-Please provide your formal approval at your earliest convenience. Find the current SOP document here: < URL of SOP document >. 
+Please appoint 2 members of each committee (4 in total) to take the role of approvers of the SOP. These shall provide a formal approval or justified rejection at the earliest convenience. Find the current SOP document here: < URL of SOP document >. 
 
 You can find more details about this SOP development at the following sources: 
+- [Charter](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md)
 - [Information Service Management](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_information-service-management.md).
 - SOP Request: < URL of the GH issue, the SOP request >
-- RFC Discussion: < URL of the RFC discussion created for this SOP >
+- RFC Discussion: < URL of the RFC discussion created for this SOP, if applicable >
 
 Thank you for your attention and collaboration.
 
@@ -327,7 +381,7 @@ Operations Committee (OC) / Security and Data Protection Committee (SDPC)
 
 **Follow through the approval process**, ensuring that all three GDI Pillars are aware of the new SOP, and have given their formal approval. It may be needed for you to bring it up at committee meetings, or to chase members to approve the SOP.
 
-##### 5.3 Request MB authorization
+##### 5.3 Contact Management Board
 Once approved by the OC/SDPC, **communicate the formal authorization request to the GDI MB**. Make use of the template below to craft the email sent to ``gdi-mb [at] elixir-europe.org``.
 
 Remember to CC the OC and SDPC mailing lists: ``gdi-oc [at] elixir-europe.org`` and ``gdi-sdpc [at] elixir-europe.org``.
@@ -341,11 +395,15 @@ We hope this message finds you well.
 
 The Operations Committee (OC) and Security and Data Protection Committee (SDPC) are pleased to inform you that a new GDI Standard Operating Procedure (SOP) has been developed. It was drafted by the OC/SDPC, authored, and reviewed by GDI members, and finally approved by the OC/SDPC. We now present this SOP to the Management Board for formal authorization.
 
-As part of the authorization process, if no issues are raised within four weeks of this notice, the OC/SDPC will consider the SOP to be authorized and we will proceed to add it to the GDI SOP GitHub repository. 
+As part of the authorization process, if no issues are raised within four weeks of this notice, the OC/SDPC will consider the SOP to be authorized and we will proceed to add it to the GDI SOP GitHub repository.
+
+Please, also let us know if:
+- An extension to this 4-week period is required to evaluate whether to veto or not the SOP.
+- You are certain the veto of the SOP will not be exercised before these 4 weeks. This will help us resume the process as early as possible.  
 
 Please, find the SOP document here: < URL of SOP document >.
 
-More information about the development process can be found within the [Information Service Management](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_information-service-management.md) at our repository.
+More information about the SOP development process can be found within the [Charter](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md) and [Information Service Management](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_information-service-management.md) at our repository.
 Thank you for your attention and collaboration.
 
 Best regards,
@@ -355,7 +413,11 @@ Best regards,
 Operations Committee (OC) / Security and Data Protection Committee (SDPC)
 ````
 
-This **step shall finish** once the **period to raise issues (4 full weeks) concluded without any complaints from the MB**. If comments are given from this body, the step shall finish when they are addressed, starting a new period of review altogether. It will be your responsibility, as a member of the OC/SDPC, to keep track of the status of development and to make sure requested changes are addressed (e.g., contacting authors).
+This **step shall finish** either:
+- When the **period to raise issues (4 full weeks) concluded without any complaints from the MB**. 
+- The **MB explicitly authorized the SOP** before the 4-week period finished.
+
+If comments are given from this body, the step shall finish when they are addressed, starting a new period of review altogether. Similar consideration is to be taken if the MB requests a period extension. It will be your responsibility, as a member of the OC/SDPC, to keep track of the status of development and to make sure requested changes are addressed (e.g., contacting authors).
 
 #### 6. Prepare final SOP Markdown document
 | Step identifier | When| Who |

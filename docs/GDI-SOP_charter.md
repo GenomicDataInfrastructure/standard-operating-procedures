@@ -79,7 +79,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | **Approver** | TBD                 |               |  |
 
 ## 4. Introduction
-The [**European Genomic Data Infrastructure (GDI)**](https://gdi.onemilliongenomes.eu) project is a pioneering initiative aims to **enable access access to genomic, phenotypic, and clinical data across Europe**. This access is crucial for advancing research, policymaking, and healthcare on a continental scale. Central to this mission is the 1+ Million Genomes (1+MG) network, which encompasses a diverse array of national human data-sharing projects, each at different stages of development.
+The [**European Genomic Data Infrastructure (GDI)**](https://gdi.onemilliongenomes.eu) project is a pioneering initiative that aims to **enable access to genomic, phenotypic, and clinical data across Europe**. This access is crucial for advancing research, policymaking, and healthcare on a continental scale. Central to this mission is the 1+ Million Genomes (1+MG) network, which encompasses a diverse array of national human data-sharing projects, each at different stages of development.
 
 Given the diversity of these projects, the **GDI serves as an essential platform for harmonizing operational practices through the development and alignment of Standard Operating Procedures** (SOPs). This harmonization not only facilitates the integration of well-established nodes but also provides critical guidance for those in the early stages of their development.
 

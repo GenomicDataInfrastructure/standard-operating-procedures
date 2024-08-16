@@ -90,7 +90,8 @@ class SOPLinter:
         # Expected format of the "Value" column of each row
         expected_metadata = {
             "template sop number": r"GDI-SOP\d{4}", # e.g.: GDI-SOP0001
-            "template sop version": self.is_valid_version, # e.g.: v1
+            "template sop version": self.is_valid_version, # e.g.: v1,
+            "topic": ["Data protection & security", "Data & metadata management", "Technical infrastructure & software development", "Helpdesk & operations"],
             "template sop type": ["Node-specific SOP", "European-level SOP"],
             "gdi node": r"^[A-Z]{3}$", # e.g.: SWE (for Sweden)
             "instance version": self.is_valid_version, # e.g.: v1

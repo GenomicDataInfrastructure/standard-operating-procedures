@@ -103,9 +103,9 @@ The scope of these SOPs is focused on roles, topics, and resources that are esse
 
 ### In-Scope
 #### Roles
-- **Helpdesk Staff and Operations Bioinformaticians**: Responsible for responding to and resolving user queries and issues within the node.
-- **Data Stewards, Data Curators, and Bioinformaticians**: Focused on the preparation, harmonization, and curation of data and metadata to ensure high-quality data management.
-- **Software Developers, Software Engineers, and DevOps Engineers**: Tasked with designing, developing, implementing, deploying, and monitoring software and services deployed at a node.
+- People **responding to and resolving user queries and issues** within the node (e.g. Helpdesk Staff and Operations Bioinformaticians)
+- People focused on the **preparation, harmonization, and curation of data and metadata** to ensure high-quality data management (e.g. Data Stewards, Data Curators, and Bioinformaticians).
+- People tasked with **designing, developing, implementing, deploying, and monitoring software and services** deployed at a node (e.g. Software Developers, Software Engineers, and DevOps Engineers)
 
 #### Topics
 - **Data Protection & Security**: Includes procedures related to security incident response, risk assessment, and compliance with data protection regulations (e.g., DPA, DAA, DPIA).
@@ -121,7 +121,7 @@ The scope of these SOPs is focused on roles, topics, and resources that are esse
 
 ### Out-of-scope
 #### Roles
-- **Researchers Using Node Services**: While crucial to the broader GDI network, their specific operational procedures are not covered by these SOPs.
+- **Users of Node Services**: While crucial to the broader GDI network, the specific operational procedures of end-users (e.g., researchers, clinicians, scientists, policy makers or data subjects) are not covered by these SOPs.
 - **Training, Outreach, and Communications Officers**: These roles, while important, are not the focus of the current SOP scope.
 
 #### Topics

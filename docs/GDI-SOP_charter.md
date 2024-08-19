@@ -13,7 +13,7 @@
 ## 1. Document History
 | Version | Author(s)               | Description of Changes                                   | Date       |
 | ------- | ----------------------- | -------------------------------------------------------- | ---------- |
-| v1      | Marcos Casado Barbero   | Filled in gaps, formatted file, added new sections, resolved comments | 12.08.2024 |
+| v1      | Marcos Casado Barbero   | Filled in gaps, formatted file, added new sections, resolved comments | 19.08.2024 |
 | v0      | Mallory Freeberg, Marcos Casado Barbero | Drafted charter | 26.03.2024 |
 
 ## 2. Glossary
@@ -76,7 +76,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | **Author**     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |
 | **Reviewer**   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |
 | **Approver**   | Erik Hedman | Task 4.3 member | UU / NBIS |
-| **Approver** | TBD                 |               |  |
+| **Approver**   | Markus Englund | Task 4.3 member | UU / NBIS |
 
 ## 4. Introduction
 The [**European Genomic Data Infrastructure (GDI)**](https://gdi.onemilliongenomes.eu) project is a pioneering initiative that aims to **enable access to genomic, phenotypic, and clinical data across Europe**. This access is crucial for advancing research, policymaking, and healthcare on a continental scale. Central to this mission is the 1+ Million Genomes (1+MG) network, which encompasses a diverse array of national human data-sharing projects, each at different stages of development.

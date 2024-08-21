@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-
+- [GDI-SOP_charter.md](docs/GDI-SOP_charter.md) - Documentation Charter of the task 4.3
 - [compare_index.py](scripts/compare_index.py) - Script to automatically check if the SOP index table is up to date
 - [sop_index.py](scripts/sop_index.py) - Script to automatically create the SOP index table
 - [utils.py](scripts/utils.py) - General functions used by other scripts

@@ -1,4 +1,4 @@
-# SOP Review checklist
+# SOP Review Checklist
 
 This checklist serves as a guide for **SOP reviewers, approvers, and authorizers**. It outlines the steps and key points to ensure that the SOPs are complete, clear, and compliant with the GDI framework. All reviewers should ensure each point is met before moving on to the next step. Approvers and authorizers have additional responsibilities as noted below.
 
@@ -6,20 +6,21 @@ This checklist serves as a guide for **SOP reviewers, approvers, and authorizers
 
 ### 1. **Document Structure & Formatting**
 - [ ] **Compliance with SOP template**: Ensure that the SOP complies with the latest SOP template (see [``GDI-SOP_sop-template.md``](./GDI-SOP_sop-template.md)). Annotations in the template (between ``<>``) contain useful information and formatting rules, including:
-    - **Required Sections**: Ensure the SOP includes the required sections (e.g., ``Index`` or ``Procedures``)
+    - **Required Sections**: Ensure the SOP includes the required sections (e.g., ``Index`` or ``Procedures``).
     - **Linting Process**: Check that key values (e.g., the SOP title, the Template SOP number...) make sense and comply with the expected format.
 - [ ] **Document Consistency**: Check for consistent formatting, structure, and numbering throughout the SOP.
 - [ ] **Metadata**: Verify that metadata in all tables (e.g., versioning, dates, authors...) is included and accurate.
 
-#### Linting script
-In order to ease this document linting, the script ``sop_linter.py`` was created. This script **checks multiple parts of the format of an SOP**, and retrieves any given errors.
+#### Linting Script
+To ease the document linting process, the script ``sop_linter.py`` was created. This script **checks multiple parts of the format of an SOP**, and retrieves any given errors.
 
-You can **manually execute** the script to ensure if a file (i.e., the SOP document) passes the linting checks as follows:
+You can **manually execute** the script to ensure a file (i.e., the SOP document) passes the linting checks as follows:
 ````
 cd standard-operating-procedures
 pip install --upgrade --no-deps -r requirements.txt
 python3 scripts/sop_linter.py tests/GDI-SOP0000_sop-template_for_linting.md -v 1
 ````
+
 Replace the test SOP (``tests/GDI-SOP0000_sop-template_for_linting.md``) with the file path of the SOP you are reviewing.
 
 If there are no linting errors, the output will look like the following:
@@ -33,8 +34,6 @@ If there are no linting errors, the output will look like the following:
 ````
 
 For your convenience, the script is automatically executed (via [``lint_sops.yml``](../.github/workflows/lint_sops.yml) workflow) whenever a [Pull Request](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pulls) (PR) containing SOPs is created. Therefore, if you are reviewing a PR, you can **easily see if the SOPs comply with the expected format** by ensuring that the **latest commit has the green check mark** (✔️) next to it.
-
-![Valid: workflow check in Pull Request](images/GDI-SOP_review-checklist-workflows.png)
 
 If, on the contrary, the latest commit has a red cross (❌), some of the checks did not pass and it requires further inspection.
 
@@ -58,10 +57,9 @@ If, on the contrary, the latest commit has a red cross (❌), some of the checks
 - [ ] **Referencing Existing SOPs**: Ensure that the SOP does not overlap or conflict with other existing SOPs, and references them if necessary. Find a full list of released SOPs [here](../sops/README.md).
 - [ ] **Compliance with SOP Development SOP**: Verify that the SOP has followed the procedure outlined in the [``GDI-SOP0007_SOP-template-creation.md``](../sops/european-level/GDI-SOP0007_SOP-template-creation.md), including review stages and deadlines.
 
-## Escalation
-**Document your feedback** at the appropriate place of review: either the Google Document or Pull Request, depending on the SOP.
-
-**Escalate your comments to both the authors and the OC/SDPC member** in charge of this SOP development. You will find them at the SOP's "Roles and Responsibilities" section.
+## Reporting and Escalation
+- [ ] **Document your feedback** in the appropriate review platform: either the Google Document or Pull Request, depending on the SOP development phase.
+- [ ] **Escalate comments to both the authors and the OC/SDPC member** in charge of this SOP development. These stakeholders are listed in the SOP's "Roles and Responsibilities" section.
 
 ## Additional Checklist for Approvers
 
@@ -72,7 +70,6 @@ If, on the contrary, the latest commit has a red cross (❌), some of the checks
 ## Additional Checklist for Authorizers
 
 - [ ] **Formal Authorization**: Confirm that the SOP is ready for final release, and provide authorization (or veto) for its inclusion in the GitHub repository.
-
 
 ## Tools & References
 

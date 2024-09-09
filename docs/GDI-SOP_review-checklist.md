@@ -35,6 +35,8 @@ If there are no linting errors, the output will look like the following:
 
 For your convenience, the script is automatically executed (via [``lint_sops.yml``](../.github/workflows/lint_sops.yml) workflow) whenever a [Pull Request](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pulls) (PR) containing SOPs is created. Therefore, if you are reviewing a PR, you can **easily see if the SOPs comply with the expected format** by ensuring that the **latest commit has the green check mark** (✔️) next to it.
 
+![Valid: workflow check in Pull Request](images/GDI-SOP_review-checklist-workflows.png)
+
 If, on the contrary, the latest commit has a red cross (❌), some of the checks did not pass and it requires further inspection.
 
 ### 2. **Content Completeness**

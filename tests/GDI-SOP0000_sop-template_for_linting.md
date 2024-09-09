@@ -4,6 +4,7 @@
 |-------------------|---------------------|
 | Template SOP number  | GDI-SOP0001 |
 | Template SOP version | ``v1``          |
+| Topic                | Data protection & security |
 | Template SOP Type    | European-level SOP |
 | GDI Node             |  |
 | Instance version     |  |

@@ -3,15 +3,24 @@
 # European GDI - Procedures for Information Service Management for SOPs
 
 ## Index
-1. [Document History](#1-document-history)
-1. [Glossary](#2-glossary)
-1. [Roles and Responsibilities](#3-roles-and-responsibilities)
-1. [Introduction](#4-introduction)
-1. [Purpose of this Charter](#5-purpose-of-this-charter)
-1. [Scope of GDI SOPs](#6-scope-of-gdi-sops)
-1. [GDI SOP Management](#7-gdi-sop-management)
-1. [GDI SOP Communication](#8-gdi-sop-communication)
-1. [References](#9-references)
+
+1. [Document History](#document-history)
+2. [Glossary](#glossary)
+3. [Roles and Responsibilities](#roles-and-responsibilities)
+4. [Purpose](#purpose)
+5. [Scope](#scope)
+6. [Introduction and Background Information](#introduction-and-background-information)
+7. [Information Service Management Procedures](#information-service-management-procedures)
+   1. [GDI SOP creation](#gdi-sop-creation)
+      1. [European-level SOPs](#european-level-sops)
+      2. [Node-specific SOP templates](#node-specific-sop-templates)
+      3. [Node-specific SOPs](#node-specific-sops)
+   2. [GDI SOP accessioning and file naming](#gdi-sop-accessioning-and-file-naming)
+   3. [GDI SOP review and revision](#gdi-sop-review-and-revision)
+   4. [GDI SOP access rules](#gdi-sop-access-rules)
+8. [References](#references)
+
+
 
 ## 1. Document History
 | Version | Author(s)               | Description of Changes                                   | Date       |
@@ -73,7 +82,8 @@ Steps:
 5. MB/1+MG WG reviews the SOP and approves or requests changes (repeat from Step 3)
 6. OC/SDPC accessions ([7.2](#7-2-gdi-sop-accessioning-and-file-naming-5)) the approved SOP according to agreed process and the SOP goes into production
 7. OC/SDPC initiates periodic review cycle (repeat Steps 3-6)
-![Valid: workflow check in Pull Request](images/GDI-SOP_review-checklist-workflows.png)
+
+![Valid: Proposal for creating and approving European-level SOPs.](images/IMS_fig1.png)
 
 
 _Figure 1: Proposal for creating and approving European-level SOPs._
@@ -85,8 +95,6 @@ For each Node-specific SOP, first a template is created and approved at the Euro
 
 Steps:
 
-
-
 1. T4.3/WP4 identifies SOP need and prepares the template
 2. T4.3/WP4 shares template with OC or SDPC (depending on the SOP type)
 3. OC/SDPC adds any shared content to the template (i.e. content that will be the same for all nodes) and internally review for completeness
@@ -94,13 +102,7 @@ Steps:
 5. MB/1+MG WG reviews the SOP template and approves or requests changes (repeat from Step 3)
 6. OC/SDPC accessions ([7.2](#7-2-gdi-sop-accessioning-and-file-naming-5)) the approved SOP template according to agreed process and informs nodes it is ready to adapt
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
+![Valid: Proposal for creating and approving node-specific SOP templates ](images/IMS_fig2.png)
 
 _Figure 2: Proposal for creating and approving node-specific SOP templates._
 
@@ -120,12 +122,7 @@ Steps:
 5. OC/SDPC members from the node accessions ([7.2](#7-2-gdi-sop-accessioning-and-file-naming-5)) the approved SOP according to agreed process and the SOP goes into production
 
 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
+![Valid: Proposal for creating and approving node-specific SOP templates ](images/IMS_fig3.png)
 
 _Figure 3: Proposal for creating and approving node-specific SOPs._
 
@@ -159,9 +156,6 @@ _&lt;to-do>_
 
 ## 8 References
 
-_&lt;Include references to useful information to understand this document.>_
-
-
 <table>
   <tr>
    <td><strong>References</strong>
@@ -170,13 +164,13 @@ _&lt;Include references to useful information to understand this document.>_
    </td>
   </tr>
   <tr>
-   <td><a href="https://docs.google.com/document/d/1b887HMySeKnJt1pN1pZspGRbEnrJ6Sfk-aAwiskYJK0/edit">1</a>
+   <td><a href="docs/GDI-SOP_charter.md">1</a>
    </td>
    <td>European GDI - SOP Charter
    </td>
   </tr>
   <tr>
-   <td><a href="https://docs.google.com/document/d/1bewArzacv-M4F6NsvG6YE4T7dKNTv84f-ga1KUothh0/edit">2</a>
+   <td><a href="docs/GDI-SOP_ORR.md">2</a>
    </td>
    <td>European GDI - Organisational Roles and Responsibilities
    </td>

@@ -164,13 +164,13 @@ _&lt;to-do>_
    </td>
   </tr>
   <tr>
-   <td><a href="docs/GDI-SOP_charter.md">1</a>
+   <td><a href="/GDI-SOP_charter.md">1</a>
    </td>
    <td>European GDI - SOP Charter
    </td>
   </tr>
   <tr>
-   <td><a href="docs/GDI-SOP_ORR.md">2</a>
+   <td><a href="/GDI-SOP_ORR.md">2</a>
    </td>
    <td>European GDI - Organisational Roles and Responsibilities
    </td>

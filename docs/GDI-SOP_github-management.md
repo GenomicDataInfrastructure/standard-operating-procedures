@@ -14,7 +14,7 @@ flowchart TD
     dec -->|Private| C(Import)    
     H[Work with node's<br> repository]
     F --> H
-    B --> H[Work with node's<br> repository]
+    B --> H
     subgraph Public Path
         B
     end

@@ -69,18 +69,18 @@ The procedures outlined here apply to all GDI node staff involved in managing an
 
 #### 7.1.1 European-level SOPs
 
-For each European-level GDI SOP, only one SOP document is produced which all GDI partners/nodes are expected to follow. The need for a new European-level GDI SOP is first identified by one or more GDI project partners who will then prepare a proposal, making use of the GitHub repository "[New SOP Request](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new/choose)" GH issue. The proposal should include the purpose and scope of the SOP and a justification for its need. Once the proposal for a new European-level GDI SOP is approved by the OC/SDPC, then work can begin on creating the new SOP following the Steps below (Figure 1).
+For each European-level GDI SOP, only one SOP document is produced which all GDI partners/nodes are expected to follow. The need for a new European-level GDI SOP is first identified by one or more GDI project partners who will then prepare a proposal, making use of the GitHub repository "[New SOP Request](/standard-operating-procedures/issues/new/choose)" GH issue. The proposal should include the purpose and scope of the SOP and a justification for its need. Once the proposal for a new European-level GDI SOP is approved by the OC/SDPC, then work can begin on creating the new SOP following the Steps below (Figure 1).
 
 Steps:
 
 
 
-1. T4.3/WP4 identifies SOP need and prepares the template (from the [GDI General SOP template](https://docs.google.com/document/d/1k9h_KFLWbdTGfX_NAtLQ3Zf4-agRnam83GmaZddwJmg/edit#heading=h.94zixl2wbth))
+1. T4.3/WP4 identifies SOP need and prepares the template (from the [GDI General SOP template](./GDI-SOP_sop-template.md))
 2. T4.3/WP4 shares template with OC or SDPC (depending on the SOP type)
 3. OC/SDPC or nominated experts write the SOP (i.e. fill in the content) and internally review for completeness
 4. OC/SDPC shares completed SOP with MB (and 1+MG corresponding WG?)
 5. MB/1+MG WG reviews the SOP and approves or requests changes (repeat from Step 3)
-6. OC/SDPC accessions ([7.2](#7-2-gdi-sop-accessioning-and-file-naming-5)) the approved SOP according to agreed process and the SOP goes into production
+6. OC/SDPC accessions ([7.2](#72-gdi-sop-accessioning-and-file-namin)) the approved SOP according to agreed process and the SOP goes into production
 7. OC/SDPC initiates periodic review cycle (repeat Steps 3-6)
 
 ![Valid: Proposal for creating and approving European-level SOPs.](images/IMS_fig1.png)
@@ -91,7 +91,7 @@ _Figure 1: Proposal for creating and approving European-level SOPs._
 
 #### 7.1.2 Node-specific SOP templates
 
-For each Node-specific SOP, first a template is created and approved at the European level ([7.1.2](#7-1-2-node-specific-sop-templates-3)). Once approved, the template is then used by each node to create their own SOP instance ([7.1.3](#7-1-3-node-specific-sops-4)) which is approved at the node level. To be determined if 1+MG WG approval is also needed to start creating a node-specific template in the first place. The Steps below describe how to get a node-specific template created and approved.
+For each Node-specific SOP, first a template is created and approved at the European level ([7.1.2](#712-node-specific-sop-templates)). Once approved, the template is then used by each node to create their own SOP instance ([7.1.3](#713-node-specific-sops)) which is approved at the node level. To be determined if 1+MG WG approval is also needed to start creating a node-specific template in the first place. The Steps below describe how to get a node-specific template created and approved.
 
 Steps:
 
@@ -100,7 +100,7 @@ Steps:
 3. OC/SDPC adds any shared content to the template (i.e. content that will be the same for all nodes) and internally review for completeness
 4. OC/SDPC shares template SOP with MB (and 1+MG corresponding WG?)
 5. MB/1+MG WG reviews the SOP template and approves or requests changes (repeat from Step 3)
-6. OC/SDPC accessions ([7.2](#7-2-gdi-sop-accessioning-and-file-naming-5)) the approved SOP template according to agreed process and informs nodes it is ready to adapt
+6. OC/SDPC accessions ([7.2](#72-gdi-sop-accessioning-and-file-naming)) the approved SOP template according to agreed process and informs nodes it is ready to adapt
 
 ![Valid: Proposal for creating and approving node-specific SOP templates ](images/IMS_fig2.png)
 
@@ -109,7 +109,7 @@ _Figure 2: Proposal for creating and approving node-specific SOP templates._
 
 #### 7.1.3 Node-specific SOPs
 
-For each Node-specific SOP, first a template is created and approved at the European level ([7.1.2](#7-1-2-node-specific-sop-templates-3)). Once approved, the template is then used by each node to create their own SOP instance ([7.1.3](#7-1-3-node-specific-sops-4)) which is approved at the node level. The Steps below describe how nodes will create their node-specific SOPs.
+For each Node-specific SOP, first a template is created and approved at the European level ([7.1.2](#712-node-specific-sop-templates)). Once approved, the template is then used by each node to create their own SOP instance ([7.1.3](#713-node-specific-sops)) which is approved at the node level. The Steps below describe how nodes will create their node-specific SOPs.
 
 Steps:
 
@@ -119,14 +119,14 @@ Steps:
 2. OC/SDPC rep (or nominated experts) uses the template to create the SOP according to their node’s needs and internally review for completeness
 3. OC/SDPC rep initiates their node-defined approval process for the node-specific SOP
 4. [Node-appointed approver] reviews the SOP and approves or requests changes (repeat from Step 2)
-5. OC/SDPC members from the node accessions ([7.2](#7-2-gdi-sop-accessioning-and-file-naming-5)) the approved SOP according to agreed process and the SOP goes into production
+5. OC/SDPC members from the node accessions ([7.2](#72-gdi-sop-accessioning-and-file-naming)) the approved SOP according to agreed process and the SOP goes into production
 
 
 ![Valid: Proposal for creating and approving node-specific SOP templates ](images/IMS_fig3.png)
 
 _Figure 3: Proposal for creating and approving node-specific SOPs._
 
-SOP template reviews and revisions should follow guidelines for GDI SOP revision and review ([7.3](#7-3-gdi-sop-review-and-revision-6)) in the GDI SOP GitHub repository.
+SOP template reviews and revisions should follow guidelines for GDI SOP revision and review ([7.3](#73-gdi-sop-review-and-revision)) in the GDI SOP GitHub repository.
 
 
 ### 7.2 GDI SOP accessioning and file naming

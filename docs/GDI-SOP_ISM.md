@@ -4,7 +4,7 @@
 
 ## Index
 
-1. [Document History](#document-history)
+1. [Document History](#1-document-history)
 2. [Glossary](#glossary)
 3. [Roles and Responsibilities](#roles-and-responsibilities)
 4. [Purpose](#purpose)

@@ -41,15 +41,15 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 ## 3. Roles and Responsibilities
 
 | Role         | Full name             | GDI/node role   | Organisation            |
-| ------------ | --------------------- | --------------- | ----------------------- | --- | --- |
+| ------------ | --------------------- | --------------- | ----------------------- | 
 | **Author**   | Mallory Freeberg      | Task 4.3 member | EMBL-EBI                |
 | **Author**   | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI                |
 | **Author**   | Silvia Bahena         | Task 4.3 member | EMBL-EBI                |
 | **Reviewer** | Jeroen Belien         | GDI-Member      | Health-RI/Amsterdam UMC |
 | **Reviewer** | Mattias Strömberg     | Task 4.3 member | UU                      |
 | **Reviewer** | Elisavet Torstensson  | Task 4.3 member | UU                      |
-| **Approver** |                       |                 |                         |     |     |
-| **Approver** |                       |                 |                         |     |     |
+| **Approver** |                       |                 |                         |     
+| **Approver** |                       |                 |                         | 
 
 ## 4 Purpose
 
@@ -60,6 +60,10 @@ This document aims to ensure the effective management of information across all 
 This document applies to all GDI staff responsible for managing and implementing GDI SOPs at both the European and national node levels, unless otherwise specified.
 
 ## 6 Introduction and Background Information
+This document provides the necessary procedures to manage information effectively across all activities involved in the delivery and management of GDI services at both the European and national node levels. It emphasises the importance of preserving the confidentiality, integrity, and accessibility of information as outlined in the GDI SOP collection.
+
+Standard Operating Procedures (SOPs) are vital to maintaining uniformity and high standards across the GDI infrastructure. They ensure consistent practices, fostering better interoperability, security, and an improved user experience. To maintain these standards, it is crucial to develop clear procedures for Information Service Management (ISM) to guide the implementation of SOPs, ensuring that all staff adhere to best practices and contribute to the optimal functioning of the GDI infrastructure.
+
 
 ## 7 Information Service Management Procedures
 
@@ -98,7 +102,7 @@ Steps:
 6. GDI MB reviews the SOP and authorise or requests changes (repeat from Step 3)
 7. OC/SDPC accessions ([7.2](#72-gdi-sop-accessioning-and-file-naming)) the approved SOP template according to agreed process and informs nodes ready to adapt to their own node processes.
 
-![Valid: Proposal for creating and approving node-specific SOP templates ](images/GDI-ISM_schema_Node_template.png)
+![Valid: Proposal for creating and approving node-specific SOP templates ](images/GDI-ISM_schema_Node_Template.png)
 
 _Figure 2: Proposal for creating and approving node-specific SOP templates._
 
@@ -136,7 +140,7 @@ Filenames for GDI SOP supporting documents must start with “GDI-SOP\_”, foll
 
 ### 7.3 GDI SOP review and revision
 
-_Describe a general plan for how GDI SOP templates, node instances of SOPs, and supporting documentation will be reviewed and revised. Include guidance for how to update “Document History” sections of all these documents._
+<_To do- describe a general plan for how GDI SOP templates, node instances of SOPs, and supporting documentation will be reviewed and revised. Include guidance for how to update “Document History” sections of all these documents._>
 
 ### 7.4 GDI SOP access rules
 
@@ -164,7 +168,7 @@ _&lt;to-do>_
    </td>
   </tr>
     <tr>
-   <td><a href="https://www.flaticon.com/authors/freepik">2</a>
+   <td><a href="https://www.flaticon.com/authors/freepik">3</a>
    </td>
    <td>Schemas Icons
    </td>

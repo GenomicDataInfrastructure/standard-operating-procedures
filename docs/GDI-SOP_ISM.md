@@ -120,7 +120,7 @@ Steps:
 
 ![Valid: Proposal for creating and approving node-specific SOP templates ](images/GDI-ISM_schema_Node_Instance.png)
 
-_Figure 3: Proposal for creating and approving node-specific SOPs templates._
+_Figure 3: Proposal for creating and approving node-specific SOPs instances._
 
 SOP template reviews and revisions should follow guidelines for GDI SOP revision and review ([7.3](#73-gdi-sop-review-and-revision)) in the GDI SOP GitHub repository.
 

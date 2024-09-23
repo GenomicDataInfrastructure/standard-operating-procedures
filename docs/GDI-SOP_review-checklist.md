@@ -57,7 +57,7 @@ If, on the contrary, the latest commit has a red cross (❌), some of the checks
 - [ ] **Feasibility**: Ensure that the procedures are feasible for the assigned roles and aligned with the technological capabilities of the nodes.
 
 ### 5. **Cross-Referencing and SOP Compliance**
-- [ ] **Referencing Existing SOPs**: Ensure that the SOP does not overlap or conflict with other existing SOPs, and references them if necessary. Find a full list of released SOPs [here](../sops/README.md).
+- [ ] **Referencing Existing SOPs**: Ensure that the SOP does not overlap or conflict with other existing SOPs, and references them if necessary. See the full [list of released SOPs](../sops/README.md).
 - [ ] **Compliance with SOP Development SOP**: Verify that the SOP has followed the procedure outlined in the [``GDI-SOP0007_SOP-template-creation.md``](../sops/european-level/GDI-SOP0007_SOP-template-creation.md), including review stages and deadlines.
 
 ## Reporting and Escalation

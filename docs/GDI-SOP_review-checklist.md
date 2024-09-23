@@ -7,7 +7,7 @@ This checklist serves as a guide for **SOP reviewers, approvers, and authorizers
 ### 1. **Document Structure & Formatting**
 - [ ] **Compliance with SOP template**: Ensure that the SOP complies with the latest SOP template (see [``GDI-SOP_sop-template.md``](./GDI-SOP_sop-template.md)). Annotations in the template (between ``<>``) contain useful information and formatting rules, including:
     - **Required Sections**: Ensure the SOP includes the required sections (e.g., ``Index`` or ``Procedures``).
-    - **Linting Process**: Check that key values (e.g., the SOP title, the Template SOP number...) make sense and comply with the expected format.
+    - **Linting Process**: Check that key values (e.g., the SOP title, the SOP number...) make sense and comply with the expected format.
 - [ ] **Document Consistency**: Check for consistent formatting, structure, and numbering throughout the SOP.
 - [ ] **Metadata**: Verify that metadata in all tables (e.g., versioning, dates, authors...) is included and accurate.
 
@@ -53,7 +53,7 @@ If, on the contrary, the latest commit has a red cross (❌), some of the checks
 
 ### 4. **Operational Feasibility**
 - [ ] **Applicability**: Evaluate whether the content of SOP is relevant to the intended operational environment and aligned with GDI objectives.
-- [ ] **Scalability**: Confirm that the SOP is applicable to all GDI nodes, or clearly states any node-specific requirements. This shall go in accordance with its SOP type (i.e., Node-specific or European-level).
+- [ ] **Scalability**: Depending on the type of SOP, ie "European-level" or "Node-specific", review how the SOP is applicable to all GDI nodes, or specifies any node-specific requirements, respectively.
 - [ ] **Feasibility**: Ensure that the procedures are feasible for the assigned roles and aligned with the technological capabilities of the nodes.
 
 ### 5. **Cross-Referencing and SOP Compliance**
@@ -68,7 +68,7 @@ If, on the contrary, the latest commit has a red cross (❌), some of the checks
 
 - [ ] **Impact Assessment**: Evaluate the potential impact of the SOP on operations, and confirm that it enhances standardization and efficiency across nodes.
 - [ ] **Node Representation**: Confirm that the SOP has been reviewed by relevant representatives from GDI nodes, and their input has been incorporated.
-- [ ] **Feedback Integration**: Ensure that all critical feedback from reviewers has been addressed in the final draft.
+- [ ] **Feedback Integration**: Ensure that all feedback from reviewers has been appropriately addressed in the final draft.
 
 ## Additional Checklist for Authorizers
 

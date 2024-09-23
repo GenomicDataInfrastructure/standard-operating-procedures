@@ -47,7 +47,7 @@ If, on the contrary, the latest commit has a red cross (❌), some of the checks
 
 ### 3. **Clarity & Usability**
 - [ ] **Language**: Verify the SOP is written in clear, simple language, avoiding jargon where possible.
-- [ ] **Consistency**: Ensure terms and abbreviations are used consistently across the SOP, particularly those defined in the glossary.
+- [ ] **Consistency**: Ensure terms and abbreviations are used consistently throughout the document, as defined in the glossary, and also across the related SOPs, where appropriate.
 - [ ] **Glossary**: Check that the glossary includes all acronyms that are being used throughout the document.
 - [ ] **Examples/Diagrams**: Check for the presence of any necessary examples, diagrams, or clarifying notes to aid understanding.
 
@@ -57,12 +57,12 @@ If, on the contrary, the latest commit has a red cross (❌), some of the checks
 - [ ] **Feasibility**: Ensure that the procedures are feasible for the assigned roles and aligned with the technological capabilities of the nodes.
 
 ### 5. **Cross-Referencing and SOP Compliance**
-- [ ] **Referencing Existing SOPs**: Ensure that the SOP does not overlap or conflict with other existing SOPs, and references them if necessary. See the full [list of released SOPs](../sops/README.md).
+- [ ] **Referencing Existing SOPs**: Check that the SOP does not significantly overlap or conflict with other existing SOPs, and ensure that references to any related SOPs are included. See the full [list of released SOPs](../sops/README.md).
 - [ ] **Compliance with SOP Development SOP**: Verify that the SOP has followed the procedure outlined in the [``GDI-SOP0007_SOP-template-creation.md``](../sops/european-level/GDI-SOP0007_SOP-template-creation.md), including review stages and deadlines.
 
 ## Reporting and Escalation
 - [ ] **Document your feedback** in the appropriate review platform: either the Google Document or Pull Request, depending on the SOP development phase.
-- [ ] **Escalate comments to both the authors and the OC/SDPC member** in charge of this SOP development. These stakeholders are listed in the SOP's "Roles and Responsibilities" section.
+- [ ] **Escalate comments to both the authors and the OC/SDPC member** in charge of this SOP development. These stakeholders are listed in the SOP's "Roles and Responsibilities" section. There are numerous ways to reach out to these roles, depending on the platform of review: ideally either Google Doc comments or GitHub Pull Request reviews; and secondarily through emails or directly GDI's slack workspace.
 
 ## Additional Checklist for Approvers
 
@@ -72,7 +72,7 @@ If, on the contrary, the latest commit has a red cross (❌), some of the checks
 
 ## Additional Checklist for Authorizers
 
-- [ ] **Formal Authorization**: Confirm that the SOP is ready for final release, and provide authorization (or veto) for its inclusion in the GitHub repository.
+- [ ] **Formal Authorization**: Confirm that the SOP is ready for final release, and provide authorization (or veto) for its inclusion in the GitHub repository. This veto period is defined in the SOP ``SOP Template creation``(../sops/european-level/GDI-SOP0007_SOP-template-creation.md) as **4 weeks** after the authorization request. If no comment is received before the veto can be exercised, the **SOP will automatically be considered authorized**.
 
 ## Tools & References
 

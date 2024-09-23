@@ -47,7 +47,8 @@ If, on the contrary, the latest commit has a red cross (❌), some of the checks
 
 ### 3. **Clarity & Usability**
 - [ ] **Language**: Verify the SOP is written in clear, simple language, avoiding jargon where possible.
-- [ ] **Consistency**: Ensure terms are used consistently across the SOP, particularly those defined in the glossary.
+- [ ] **Consistency**: Ensure terms and abbreviations are used consistently across the SOP, particularly those defined in the glossary.
+- [ ] **Glossary**: Check that the glossary includes all acronyms that are being used throughout the document.
 - [ ] **Examples/Diagrams**: Check for the presence of any necessary examples, diagrams, or clarifying notes to aid understanding.
 
 ### 4. **Operational Feasibility**

@@ -75,9 +75,9 @@ flowchart TB
             sopt_m2("`**Identifier**: GDI-SOP0001.v1`")
         end
     end
-    sopt_m1 -->|+| sopt
-    title1 -->|+| sopt
-    sopt_m2 -..->|+| sopt
+    sopt_m1 -->|#43;| sopt
+    title1 -->|#43;| sopt
+    sopt_m2 -..->|#43;| sopt
     sopt -->|Node adapts template| sopi
 
     subgraph Node's-GitHub
@@ -87,12 +87,11 @@ flowchart TB
             sopi_m2("`**Identifier**: GDI-SOP0001.v1_SWE.v1`")
         end
     end
-    sopi_m2 -..->|+|sopi
+    sopi_m2 -..->|#43;| sopi
 
     %% Styles
     class sopt Template
     class sopi SOP
-
 ````
 
 ### Supporting documents

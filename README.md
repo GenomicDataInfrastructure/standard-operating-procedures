@@ -97,9 +97,9 @@ flowchart TB
 
     subgraph Main-GitHub-repository
         aos-accessioning(SOP accessioning<br> and formatting)
-        aos-merge(PR against <br> `dev` branch)
+        aos-merge(PR against <br> &apos;dev&apos; branch)
         subgraph SOP-release-process
-            git1(Pull Request<br>to `main` branch)
+            git1(Pull Request<br>to &apos;main&apos; branch)
             git1 -->|Automatically <br> triggers| git2
             git2(Zenodo release)
         end

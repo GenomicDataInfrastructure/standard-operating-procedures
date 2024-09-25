@@ -47,3 +47,8 @@ The roles and responsibilities described in this document apply to:
 | **SOP Maintainer** | - **Monitor for updates** to GDI SOP Templates. <br> - **Ensure node-specific SOPs align with updates**. <br> - Gather feedback on SOP implementation and relay to development team. | - Proficient in GitHub version control. <br> - Detail-oriented with the ability to assess the impact of updates. <br> - Strong communication skills for feedback gathering. |
 
 Find **roles and their respective involvement** at each step of the main [README's diagram](../README.md#summary-diagram).
+
+## 7. References
+| Reference | Description |
+| --------- | ----------- |
+| [Charter](./GDI-SOP_charter.md) | Charter |

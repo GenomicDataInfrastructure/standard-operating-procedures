@@ -23,12 +23,12 @@ flowchart TB
 
     %% Nodes
     A[GDI project partners]
-    A -->|Identify the need for a<br> new GDI SOP| B
+    A -->|Identify the need for a\n new GDI SOP| B
     B[GDI project partners]
-    B -->|Write proposal of SOP.<br> inc. purpose, scope, and justification of SOP| B2
+    B -->|Write proposal of SOP.\n inc. purpose, scope, and justification of SOP| B2
     B2[GitHub Issue]
     B2 --> D
-    D{1+MG Working<br>Group Approves<br>proposal?}
+    D{1+MG Working\nGroup Approves\nproposal?}
     D -->|No| B
     D -->|Yes| E
     F[General GDI SOP Template]
@@ -44,21 +44,21 @@ flowchart TB
     %% Boxes
     subgraph European-level SOPs
         S[SOP Instance]
-        V[Finished European-level<br>SOP Instance]
-        ZA[Released European-level<br>SOP Instance]
+        V[Finished European-level\nSOP Instance]
+        ZA[Released European-level\nSOP Instance]
     end
 
-    ZA -->|Enters periodic<br>review cycle| ZA
+    ZA -->|Enters periodic\nreview cycle| ZA
 
     subgraph Node-specific SOPs
         Q[SOP Template]
-        W[Finished Node-specific<br>SOP Template]
-        Z[Released Node-specific<br>SOP Template]
-        nodeRep[OC/SDPC Representatives<br>from each node]
+        W[Finished Node-specific\nSOP Template]
+        Z[Released Node-specific\nSOP Template]
+        nodeRep[OC/SDPC Representatives\nfrom each node]
         Z -->|is used by| nodeRep
         subgraph Node's-GitHub
-            nodeTem[Node-specific<br>SOP Template]
-            nodeSOP[Node-specific<br>SOP Instance]
+            nodeTem[Node-specific\nSOP Template]
+            nodeSOP[Node-specific\nSOP Instance]
         end
         nodeRep -->|Copy SOP Template| Node's-GitHub
         subgraph Node's-Roles
@@ -67,7 +67,7 @@ flowchart TB
             nodeExp[Node's experts]
         end
         subgraph Node's-SOP-development-process
-            nodeDev(Template gets adapted<br> with the node's needs)
+            nodeDev(Template gets adapted\n with the node's needs)
             nodeDev --> nodeRev
             nodeRev(Review)
             nodeRev --> nodeApp
@@ -81,7 +81,7 @@ flowchart TB
     end
 
     subgraph Authors
-        I[Operations Committee - OC<br>Security and Data Protection Committee - SDPC]
+        I[Operations Committee - OC\nSecurity and Data Protection Committee - SDPC]
         I -->|Nominate|J
         J[Nominated experts]
     end
@@ -91,7 +91,7 @@ flowchart TB
     P -..->|Review SOP| M
     T -..->|Approve SOP|N
     U -..->|Authorize SOP| O
-    R{Is SOP<br>a template?}
+    R{Is SOP\na template?}
     R -->|Yes| Q
     R -->|No| S
     Q -->|Enters cycle|SOP-development-cycle
@@ -114,7 +114,7 @@ flowchart TB
         Authors
         P[Reviewers]
         T[Approvers]
-        U[Authorizers<br>e.g. Management Board - MB<br>e.g. 1+MG Working Group]
+        U[Authorizers\ne.g. Management Board - MB\ne.g. 1+MG Working Group]
     end
 
     V -->|Enters process| SOP-release-process
@@ -130,7 +130,7 @@ flowchart TB
     end
 
     subgraph GitHub-management
-        git1(Pull Request<br>to main branch<br>with new SOP)
+        git1(Pull Request\nto main branch\nwith new SOP)
         git1 --> git2
         git2(PR approved)
     end

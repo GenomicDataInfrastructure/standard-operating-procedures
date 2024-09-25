@@ -28,7 +28,7 @@ flowchart TB
     B2 --> E
     F[General GDI SOP Template]
     F -->|Is used by| E
-    E[Operations Committee - OC\nSecurity and Data Protection Committee - SDPC]
+    E[Operations Committee - OC<br>Security and Data Protection Committee - SDPC]
     E -->|Prepares template| G
     G[SOP Template]
     G --> I
@@ -36,30 +36,30 @@ flowchart TB
     %% Boxes
     subgraph European-level SOPs
         S[SOP Instance]
-        V[Finished European-level\nSOP Instance]
-        ZA[Released European-level\nSOP Instance]
+        V[Finished European-level<br>SOP Instance]
+        ZA[Released European-level<br>SOP Instance]
     end
 
-    ZA -->|Enters periodic\nreview cycle| ZA
+    ZA -->|Enters periodic<br>review cycle| ZA
 
     subgraph Node-specific SOPs
         Q[SOP Template]
-        W[Finished Node-specific\nSOP Template]
-        Z[Released Node-specific\nSOP Template]
-        nodeRep[OC/SDPC Representatives\nfrom each node]
+        W[Finished Node-specific<br>SOP Template]
+        Z[Released Node-specific<br>SOP Template]
+        nodeRep[OC/SDPC Representatives<br>from each node]
         Z -->|is used by| nodeRep
         subgraph Node's-GitHub
-            nodeTem[Node-specific\nSOP Template]
-            nodeSOP[Node-specific\nSOP Instance]
+            nodeTem[Node-specific<br>SOP Template]
+            nodeSOP[Node-specific<br>SOP Instance]
         end
         nodeRep -->|Copy SOP Template| Node's-GitHub
         subgraph Node's-Roles
-            nodeRep[Node's OC/SDPC \n representative]
+            nodeRep[Node's OC/SDPC <br> representative]
             nodeRep --> |Nominate| nodeExp
             nodeExp[Nominated experts]
         end
         subgraph Node's-SOP-development-process
-            nodeDev(Template gets adapted\n with the node's needs)
+            nodeDev(Template gets adapted<br> with the node's needs)
             nodeDev --> nodeRev
             nodeRev(Review)
             nodeRev --> nodeApp
@@ -69,14 +69,14 @@ flowchart TB
         nodeTem --> nodeDev
         nodeApp --> |Produces| nodeSOP
     end
-    rev2[OC/SDPC] -..->|Approves \n changes| nodeApp
+    rev2[OC/SDPC] -..->|Approves <br> changes| nodeApp
 
     I --> |Start development process| R
     Authors -..-> |Fill in SOP content| L
     Reviewers -..->|Review SOP| M
     Approvers -..->|Approve SOP|N
     Authorizers -..->|Authorize SOP| O
-    R{Is SOP\na template?}
+    R{Is SOP<br>a template?}
     R -->|Yes| Q
     R -->|No| S
     Q -->|Enters cycle|SOP-development-cycle
@@ -96,11 +96,11 @@ flowchart TB
     aos-merge -->|Produces| W
 
     subgraph Main-GitHub-repository
-        aos-accessioning(SOP accessioning\n and formatting)
-        aos-merge(PR against \n `dev` branch)
+        aos-accessioning(SOP accessioning<br> and formatting)
+        aos-merge(PR against <br> `dev` branch)
         subgraph SOP-release-process
-            git1(Pull Request\nto `main` branch)
-            git1 -->|Automatically \n triggers| git2
+            git1(Pull Request<br>to `main` branch)
+            git1 -->|Automatically <br> triggers| git2
             git2(Zenodo release)
         end
     end

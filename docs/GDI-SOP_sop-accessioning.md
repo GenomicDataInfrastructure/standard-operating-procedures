@@ -75,9 +75,9 @@ flowchart TB
             sopt_m2("`**Identifier**: GDI-SOP0001.v1`")
         end
     end
-    sopt_m1 -->|+| sopt
-    title1 -->|+| sopt
-    sopt_m2 -..->|+| sopt
+    sopt_m1 -->|#43;| sopt
+    title1 -->|#43;| sopt
+    sopt_m2 -..->|#43;| sopt
     sopt -->|Node adapts template| sopi
 
     subgraph Node's-GitHub
@@ -87,12 +87,11 @@ flowchart TB
             sopi_m2("`**Identifier**: GDI-SOP0001.v1_SWE.v1`")
         end
     end
-    sopi_m2 -..->|+|sopi
+    sopi_m2 -..->|#43;| sopi
 
     %% Styles
     class sopt Template
     class sopi SOP
-
 ````
 
 ### Supporting documents
@@ -109,13 +108,13 @@ The repository is divided in two main directories:
   - `docs/`: Contains all other supporting documents.
 
 ## SOP Life-cycle
-In this section we briefly describe the common life-cycle of an SOP within the GDI platform. For further details, take a look at the [**summary diagram**](../README.md#summary-diagram).
+In this section we briefly describe the common life-cycle of an SOP within the GDI platform. For further details, take a look at the [**summary diagram**](../README.md#summary-diagram) and the [SOP Template creation SOP](../sops/european-level/GDI-SOP0007_SOP-template-creation.md#7-summary-or-context-diagram).
 
 1. SOP is **requested** by any GDI member by making use of the [**"New SOP request"**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new/choose) GitHub Issue Template.
-2. SOP Request is evaluated by the 1+MG Working Group, which approves or denies it.
+2. SOP Request is evaluated by the OC/SDPC, who approves or denies it.
 3. The SOP starts its development phase (content filling, review, approval...). This may have multiple steps, based on the chose initial method (e.g. Google Docs, GitHub...). Regardless of the method, the [general SOP template](GDI-SOP_sop-template.md) is used to construct it.
 4. The SOP gets to a level of maturity where it can be added through a Pull Request to the source GitHub repository after approval from authorizers (e.g. Management Board, 1+MG Working Group).
-5. PR is merged with the source repository, representing the end of its development cycle, and triggering the SOP release process. This includes steps like the SOP accessioning, where it receives its ``<Identifier>``.
+5. PR is merged with the source repository, representing the end of its development cycle, soon to be released. 
 
 If the SOP is a European-level SOP instance, it enters its own periodic review cycle. On the other hand, if it is a Node-specific SOP Template, the SOP can be then adapted by nodes once these fork/import (see [rubric](/GDI-SOP_github-management.md)) the source repository. See below an example of how a Node-specific SOP Template could be adapted between the source and a GDI's node repositories.
 ````mermaid
@@ -145,7 +144,7 @@ gitGraph
 - To create something similar to a version manifest, making use of GitHub actions to:
   - Check that the accessioning and naming conventions are correct
   - Check that the SOP identifier is correct, and we place it into the SOP manifest/browser/table somewhere in the repo.
-  - Metadata in the file-content of each SOP is correct and adecuate.
+  - Metadata in the file-content of each SOP is correct and adequate.
     - We should have a table with all metadata of the SOPs, with their topics, location, id, title, type, etc. This would be used in Changelogs.
   - Generate DOIs for GDI SOPs.
   - Prepare documentation (Changelog) for tags/releases.

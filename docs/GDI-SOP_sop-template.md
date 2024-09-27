@@ -87,6 +87,7 @@ _< 1-2 sentence summary describing what is covered within this SOP, defining wha
 ### 6. Introduction and Background Information
 
 _< Include if additional information is needed to ensure the SOP can be understood as a standalone document. Include definitions of SOP-specific concepts, and also include relevant definitions in the Glossary section above. >_
+For a broader context of GDI SOPs, please refer to the [Charter](./GDI-SOP_charter.md#4-introduction).
 
 ### 7. Summary or Context Diagram
 

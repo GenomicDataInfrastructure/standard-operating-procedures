@@ -8,13 +8,13 @@ Given that the base repository is public, forks of this repository cannot be pri
 ````mermaid
 flowchart TD
     A[Source Repository] 
-    dec{Node's repo\nprivacy}
+    dec{Node's repo<br>privacy}
     A --> dec
     dec -->|Public| B(Fork public repository)
     dec -->|Private| C(Import)    
-    H[Work with node's\n repository]
+    H[Work with node's<br> repository]
     F --> H
-    B --> H[Work with node's\n repository]
+    B --> H
     subgraph Public Path
         B
     end

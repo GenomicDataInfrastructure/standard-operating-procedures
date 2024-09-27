@@ -69,54 +69,77 @@ The GDI project aims to facilitate the integration and accessibility of genomic 
 **Figure 1**: 1+MG DAC, NCP, and Permit Authority processes for approval or veto of a 1+MG recommendation 
 
 ### 8. Procedure
-#### 1. Receipt of 1+MG DAC decision
+#### 1. NCP Distribute the application recommendation
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 1               | Receipt of 1+MG DAC decision   | NCP       |
 
-Distribute the application recommendation to the appropriate 1+MG Data Holders and Permit Authority to approve or deny the recommendation, reminding them to respond within 10 working days. Move to step 2 once a decision is communicated to the NCP or after 10 working days, whichever comes earlier.
+Once the 1+MG DAC issues a decision, as the NCP, you should **distribute the application recommendation** to the appropriate 1+MG Data Holders and Permit Authority(ies), who will approve or deny the recommendation. Remind them to respond within 10 working days.
+
+Move to the following steps depending on the outcome of the step:
+- If a decision is communicated within 10 working days:
+   - If veto is not exercised, let the 1+MG know and move to **step 4**
+   - If **veto is exercised**, move to **step 2**.
+- If a decision is **not** communicated within 10 working days, move to step **step 4**.
 
 #### 2. Communicate justification of veto
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 2               | After step 1 and within 1 day  | NCP       |
 
-Communicate a detailed justification if deciding to veto the 1+MG DAC’s decision, citing discrepancies between ethical assessment of the 1+MG DAC and the national decision maker(s). 
+If the veto of the 1+MG DAC's recommendation is exercised, as the NCP you shall **communicate a detailed justification to the 1+MG DAC within one day**. In this communication, you shall cite discrepancies between the ethical assessment of the 1+MG DAC and the national decision maker(s).
+
+Move to **step 3**.
 
 #### 3. Review of veto by 1+MG DAC
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 3               | After step 2                   | 1+MG DAC  |
 
-If veto is exercised on some or all of the relevant data, check the justification provided by the NCP. If accepted, move to step 7. If the justification is not accepted in full, move to step 6. If no veto is exercised, or the time lapse from step 1 is greater than 10 working days, move to step 4.
+If veto is exercised on some or all of the relevant data, as the 1+MG DAC, **review the justification provided** by the NCP.
+
+Depending on the outcome of this evaluation:
+- If **veto is accepted**, move to **step 7**. 
+- If the **justification is not accepted** in full, move to **step 6**. 
+- If **no veto was exercised**, or the **time lapse** from step 1 is greater than **10 working days**, move to **step 4**.
 
 #### 4. Inform NCP and User of the decision
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
-| 4               | After step 3 or 8              | 1+MG DAC  |
+| 4               | After step 3 or 6              | 1+MG DAC  |
 
-Inform the NCP and User of the access decision, move to step 5. 
+As the 1+MG DAC, **inform the NCP and User** (whose request was initially recommended) of the access decision.
 
-#### 5. Inform data subjects of the proposed research
+Move to **step 5**.
+
+#### 5. Inform data subjects
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 5               | After step 4                   | NCP       |
 
-Inform the relevant data subjects of the proposed research within 1 working day.
+As the NCP, **inform the relevant data subjects** of the proposed research **within 1 working day**.
+
+This SOP is considered finished at this point.
 
 #### 6. Consensus building process
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 6               | After step 3                   | 1+MG DAC  |
 
-Initiate the consensus building process (SOP to be defined) between the 1+MG DAC and the national data holders and / or permit authorities. If this process fails to find consensus, move to step 7, otherwise move to step 4.
+If the justification is not accepted in full, as the 1+MG DAC, **initiate the consensus-building process** between the 1+MG DAC and the national data holders and/or permit authorities. 
+
+Depending on the outcome of the process:
+- If **consensus is reached**, move to **step 4**. 
+- If consensus is **not** reached, move to **step 7**.
 
 #### 7. Inform User and other NCPs of the final decision
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 7               | After step 3 or 6              | 1+MG DAC  |
 
-Inform the User and User’s institution of the decision, as well as other NCPs for whom the decision to veto may be relevant. 
+As the 1+MG DAC, **inform** the User and the User’s institution of the **final decision**, as well as other NCPs for whom the decision to veto may be relevant.
+
+This SOP is considered finished at this point.
 
 ### 9. References
 | Reference | Description |

@@ -1,4 +1,4 @@
-# European GDI - 1+MG DAC Approval Process
+# European GDI - 1+MG DAC Recommendation Approval Process
 
 | Metadata               | Value                                            |
 |------------------------|--------------------------------------------------|

@@ -1,5 +1,6 @@
 # European GDI SOP Index
 Below you can find the full list of SOPs in this repository.
-| Name                                                                                                | Identifier   | Template version   | Topic                      | Type               | GDI Node   | Instance version   |   Nº steps | Last modified   |
-|:----------------------------------------------------------------------------------------------------|:-------------|:-------------------|:---------------------------|:-------------------|:-----------|:-------------------|-----------:|:----------------|
-| [GDI-SOP0007_SOP-template-creation.md](./european-level/GDI-SOP0007_SOP-template-creation.md) | GDI-SOP0007  | v1 | Helpdesk & operations | European-Level SOP |            |                    |          7 | 2024.07.08      |
+| Name                                                                                                                        | Identifier   | Template version   | Topic                      | Type               | GDI Node   | Instance version   |   Nº steps | Last modified   |
+|:----------------------------------------------------------------------------------------------------------------------------|:-------------|:-------------------|:---------------------------|:-------------------|:-----------|:-------------------|-----------:|:----------------|
+| [GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md](./european-level/GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md) | GDI-SOP0003  | v1                 | Data & metadata management | European-Level SOP |            |                    |         10 | 2024.09.27      |
+| [GDI-SOP0007_SOP-template-creation.md](./european-level/GDI-SOP0007_SOP-template-creation.md)                               | GDI-SOP0007  | v1                 | Helpdesk & operations      | European-Level SOP |            |                    |          7 | 2024.07.08      |

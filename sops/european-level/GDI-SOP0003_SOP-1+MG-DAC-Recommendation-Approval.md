@@ -63,7 +63,7 @@ The 1+MG DAC is responsible for recommending the approval or rejection of reques
 
 ### 7. Summary or Context Diagram
 The following diagram summarises the step-by-step process for the recommendation by the 1+MG DAC of approval or rejection of data access applications.
-````
+````mermaid
 graph TD
     A[**Start**: Data Access<br>Application Received]
     B1{**Step 1**:<br> Application Checked<br> by 1+MG DAC}

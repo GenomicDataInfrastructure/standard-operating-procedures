@@ -76,7 +76,8 @@ For each European-level GDI SOP, only one SOP document is produced which all GDI
 
 **Steps:**
 
-1. After a SOP request is received in the repository, a OC/SCDP member evaluates the request. If it is a valid request,the OC/SCDP member prepares the SOP draft from the [GDI General SOP template.](./GDI-SOP_sop-template.md)
+1. After a SOP request is received in the repository, a OC/SCDP member evaluates the request. If it is valid, the OC/SCDP member prepares an SOP draft from the [GDI General SOP template.](./GDI-SOP_sop-template.md)
+
 2. OC/SCDP member shares template with the authors( OC/SDPC or nominated experts) to write the SOP (i.e. fill in the content)
 3. After the drafting is completed, the OC/SCDP member shares the draft internally or with experts to review for completeness.
 4. Both committees (OC/SDPC) approve the reviewed document.

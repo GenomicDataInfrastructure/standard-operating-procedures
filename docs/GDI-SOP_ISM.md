@@ -94,7 +94,8 @@ _Figure 1: Proposal for creating and approving European-level SOPs instances._
 
 #### 7.1.2 Node-specific SOP templates
 
-For each Node-specific SOP, first a template is created and approved at the European level, as explained above ([7.1.2](#712-node-specific-sop-templates)). Once approved, the template is then used by each node to create their own SOP instance ([7.1.3](#713-node-specific-sops)) which is approved at the node level. The steps below describe how to get a node-specific template created and approved.
+For each Node-specific SOP, first a template is created and approved at the European level, following a similar process as the one described above for European-level SOPs ([7.1.1](#711-european-level-sops)). Once the template for a node-specific template is approved, the template is then used by each node to create their own SOP instance (as described below in [7.1.3](#713-node-specific-sops)) which is approved at the node level. The steps below describe how to get a node-specific template created and approved.
+
 
 Steps:
 

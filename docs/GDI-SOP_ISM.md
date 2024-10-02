@@ -71,7 +71,8 @@ Standard Operating Procedures (SOPs) are vital to maintaining uniformity and hig
 
 #### 7.1.1 European-level SOPs
 
-For each European-level GDI SOP, only one SOP document is produced which all GDI partners/nodes are expected to follow. The need for a new European-level GDI SOP is first identified by one or more GDI project partners who will then prepare a proposal, making use of the GitHub repository "[New SOP Request](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new/choose)" GH issue. The proposal should include the purpose and scope of the SOP and a justification for its need. Once the proposal for a new European-level GDI SOP is approved by the OC/SDPC, then work can begin on creating the new SOP following the Steps below (Figure 1). For more in detail information, refer to this "[Context Diagram.](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/dev/sops/european-level/GDI-SOP0007_SOP-template-creation.md#7-summary-or-context-diagram)"
+For each European-level GDI SOP, only one SOP document is produced which all GDI partners/nodes are expected to follow. The need for a new European-level GDI SOP is first identified by one or more GDI project partners who will then prepare a proposal, making use of the GitHub repository "[New SOP Request](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new/choose)" GH issue template. The proposal should include the purpose and scope of the SOP and a justification for its need. Once the proposal for a new European-level GDI SOP is approved by the OC/SDPC, then work can begin on creating the new SOP following the Steps below (Figure 1). For more in detail information, refer to this "[Context Diagram.](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/dev/sops/european-level/GDI-SOP0007_SOP-template-creation.md#7-summary-or-context-diagram)"
+
 
 **Steps:**
 

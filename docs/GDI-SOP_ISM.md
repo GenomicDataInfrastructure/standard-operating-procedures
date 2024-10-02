@@ -84,7 +84,8 @@ For each European-level GDI SOP, only one SOP document is produced which all GDI
 5. The OC/SDPC member then shares the approved SOP with GDI MB for authorization.
 6. GDI MB reviews the SOP and vetoes its release (i.e., requests changes, going back to Step 3) or authorizes the SOP.
 
-7. OC/SDPC accessions ([7.2](#72-gdi-sop-accessioning-and-file-namin)) the authorised SOP according to agreed process and the SOP goes into production
+7. OC/SDPC accessions ([7.2](#72-gdi-sop-accessioning-and-file-naming)) the authorised SOP according to the agreed process and the SOP goes into production
+
 8. OC/SDPC initiates periodic review cycle (repeat Steps 3-6)
 
 ![Valid: Proposal for creating and approving European-level SOPs.](images/GDI-ISM_schema_European_Level.png)

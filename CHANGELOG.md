@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- [review_reminder.yml](.github/workflows/review_reminder.yml) - GH Workflow to preiodically (monthly) and automatically (through [check_sop_reviews.py](scripts/check_sop_reviews.py)) create SOP review reminders (GH issues)
+- [check_sop_reviews.py](scripts/check_sop_reviews.py) - Script to automatically check if SOPs are due for review and create GitHub issues if so
 - [GDI-SOP_review-checklist.md](docs/GDI-SOP_review-checklist.md) - Documentation guidelines in the form of checklists, for reviewers, approvers and authorizers of SOPs.
 - [GDI-SOP_charter.md](docs/GDI-SOP_charter.md) - Documentation Charter of the task 4.3
 - [compare_index.py](scripts/compare_index.py) - Script to automatically check if the SOP index table is up to date

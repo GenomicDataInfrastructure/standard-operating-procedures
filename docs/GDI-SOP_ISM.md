@@ -97,7 +97,7 @@ For each European-level GDI SOP, only one SOP document is produced which all GDI
 4. Both committees (OC/SDPC) approve the reviewed document.
 5. The OC/SDPC member then shares the approved SOP with the GDI MB for authorization.
 6. GDI MB reviews the SOP and authorises or requests changes (repeat from Step 3)
-7. OC/SDPC accessions ([7.2.](#72-gdi-sop-accessioning-and-file-namin)) the authorised SOP according to the agreed process and the SOP goes into production.
+7. OC/SDPC accessions ([7.2.](#72-gdi-sop-accessioning-and-file-naming))the authorised SOP according to the agreed process and the SOP goes into production.
 8. OC/SDPC initiates periodic review cycle ([7.3.](#73-gdi-sop-review-and-revision)), if updates are needed then repeats steps 3-6.
 
 ![Valid: Workflow for creating and approving European-level SOPs.](images/GDI-ISM_schema.svg)
@@ -116,7 +116,7 @@ For each Node-specific SOP, first a template is created and approved at the Euro
 4. Both committees (OC/SDPC) approve the reviewed document.
 5. The OC/SDPC member then shares the approved SOP with GDI MB for authorization.
 6. GDI MB reviews the SOP and authorises or requests changes (repeat from Step 3).
-7. OC/SDPC accessions ([7.2](#72-gdi-sop-accessioning-and-file-naming)) the approved SOP template according to agreed process and informs the nodes that the SOP template is ready to be adapted to their own node processes (Figure 1).
+7. OC/SDPC accessions ([7.2.](#72-gdi-sop-accessioning-and-file-naming)) the approved SOP template according to agreed process and informs the nodes that the SOP template is ready to be adapted to their own node processes (Figure 1).
 8. OC/SDPC initiates periodic review cycle ([7.3.](#73-gdi-sop-review-and-revision)), if updates are needed then repeats steps 3-6.
 
 #### 7.1.3. Node-specific SOPs
@@ -145,13 +145,13 @@ The [GDI SOP Accessioning Proposal](./GDI-SOP_sop-accessioning.md) is a speciali
 The SOPs in the GDI network will follow a structured review cycle to ensure they stay relevant, effective, and compliant. Reviews will take place both annually and on demand as described below:
 
 1. Annual Review Cycle: Each SOP will be reviewed annually. The OC/SDPC will initiate and oversee the review.
-   The OC/SDPC will check the SOP’s relevance, clarity, and effectiveness based on the based on the [SOP Review Check List](docs/GDI-SOP_review-checklist.md), then updates or changes will be made as necessary.
+   The OC/SDPC will check the SOP’s relevance, clarity, and effectiveness based on the based on the [SOP Review Check List](./GDI-SOP_review-checklist.md), then updates or changes will be made as necessary.
 
 2. Ad-Hoc Review Requests: Any GDI member can request a review if they notice a process that needs to be updated or improved.
 
 - Submission Process:
 
-  Review requests are submitted by creating a GitHub issue. We recommend to use the ["SOP Content Change Suggestion" ](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new?assignees=&labels=help+wanted%2Cenhancement&projects=&template=content_suggestion.yaml&title=%5BChange+Suggestion%5D+%3CTitle%3E) template, adding the `'SOP-review'` label to the GH issue.
+  Review requests are submitted by creating a GitHub issue. We recommend to use the [SOP Content Change Suggestion](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new?assignees=&labels=help+wanted%2Cenhancement&projects=&template=content_suggestion.yaml&title=%5BChange+Suggestion%5D+%3CTitle%3E) template, adding the `'SOP-review'` label to the GH issue.
 
 The OC/SDPC will evaluate the request and decide if the review is justified.
 
@@ -199,31 +199,31 @@ It is critical for maintaining quality and consistency across procedures to ensu
    </td>
   </tr>
     <tr>
-   <td><a href="./GDI-SOP_sop-template.md">2</a>
+   <td><a href="./GDI-SOP_sop-template.md">3</a>
    </td>
    <td>European GDI - General SOP template
    </td>
   </tr>
     <tr>
-   <td><a href="./GDI-SOP_sop-accessioning.md">2</a>
+   <td><a href="./GDI-SOP_sop-accessioning.md">4</a>
    </td>
    <td>European GDI - SOP Accessioning Proposal
    </td>
   </tr>
     <tr>
-   <td><a href="./GDI-SOP_review-checklist.md">2</a>
+   <td><a href="./GDI-SOP_review-checklist.md">5</a>
    </td>
    <td>European GDI - Review Check List
    </td>
   </tr>
       <tr>
-   <td><a href="./sops/european-level/GDI-SOP0007_SOP-template-creation.md">2</a>
+   <td><a href="./sops/european-level/GDI-SOP0007_SOP-template-creation.md">6</a>
    </td>
    <td>European GDI - GDI-SOP0007_SOP Template creation
    </td>
   </tr>
     <tr>
-   <td><a href="https://www.flaticon.com/authors/freepik">3</a>
+   <td><a href="https://www.flaticon.com/authors/freepik">7</a>
    </td>
    <td>Schemas Icons
    </td>

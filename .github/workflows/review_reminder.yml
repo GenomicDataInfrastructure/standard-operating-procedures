@@ -1,0 +1,43 @@
+# This workflow executes a comparison script on all SOP documents and decides
+#   whether the documents are due for review or not based on their last edit date
+#   and a given day(s) threshold.
+# The workflow triggers itself every month, checking if new SOP documents are due for
+#   review.
+#
+# For more information, check:
+#   https://github.com/GenomicDataInfrastructure/standard-operating-procedures/tree/main/scripts/check_sop_reviews.py
+#   https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_information-service-management.md
+#   https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md
+name: Monthly SOP Review Check
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'  # This runs at midnight on the 1st of every month
+  workflow_dispatch:  # Allows for manual triggering of the workflow
+
+jobs:
+  check-sop-reviews:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'  # Ensures the workflow only runs on the main branch
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
+
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        requirements_f="./requirements.txt"
+        if [ -f "$requirements_f" ]; then pip install -r "$requirements_f" --verbose; fi
+
+    - name: Run SOP Review Check
+      run: |
+        # To vary the day(s) threshold, modify "-dr". 365 --> One full year since last edit
+        python3 scripts/check_sop_reviews.py sops/ -dr 365 -v 1 -r 'GenomicDataInfrastructure/standard-operating-procedures' -ct
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Uses GitHub's automatic token for auth

@@ -76,16 +76,16 @@ The GDI project aims to facilitate the integration and accessibility of genomic 
 
 Once the 1+MG DAC issues a decision, as the NCP, you should **distribute the application recommendation** to the appropriate 1+MG Data Holders and Permit Authority(ies), who will approve or deny the recommendation. Remind them to respond within 10 working days.
 
-Move to the following steps depending on the outcome of the step:
-- If a decision is communicated within 10 working days:
-   - If veto is not exercised, let the 1+MG know and move to **step 4**
-   - If **veto is exercised**, move to **step 2**.
+Depending on the response that you receive from these authorities and data holders:
 - If a decision is **not** communicated within 10 working days, move to step **step 4**.
+- If a decision is communicated within 10 working days:
+   - If veto is not exercised in the response you receive, let the 1+MG DAC know and move to **step 4**
+   - If **veto is exercised** in the response you receive, move to **step 2**.
 
 #### 2. Communicate justification of veto
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
-| 2               | After step 1 and within 1 day  | NCP       |
+| 2               | After step 1 and within 1 working day  | NCP       |
 
 If the veto of the 1+MG DAC's recommendation is exercised, as the NCP you shall **communicate a detailed justification to the 1+MG DAC within one day**. In this communication, you shall cite discrepancies between the ethical assessment of the 1+MG DAC and the national decision maker(s).
 
@@ -103,7 +103,7 @@ Depending on the outcome of this evaluation:
 - If the **justification is not accepted** in full, move to **step 6**. 
 - If **no veto was exercised**, or the **time lapse** from step 1 is greater than **10 working days**, move to **step 4**.
 
-#### 4. Inform NCP and User of the decision
+#### 4. Inform NCP and User about the decision
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 4               | After step 3 or 6              | 1+MG DAC  |

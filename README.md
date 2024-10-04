@@ -1,20 +1,38 @@
-# standard-operating-procedures
+# Genomic Data Infrastructure (GDI) Standard Operating Procedures (SOPs)
 
-Welcome! ☀️ This GitHub repository contains resources managing standard operating procedure (SOP) resources for the GDI project. We use this repository to manage SOP resources so that changes can be made and reviewed easily, issues and requests can be logged, and so we can ensure consistency and clarity across node operations.
+Welcome to the GDI Standard Operating Procedures (SOPs) repository! ☀️ This repository is the **central hub for the creation, management, and dissemination of SOPs for the European Genomic Data Infrastructure (GDI) project**. We aim to standardize and harmonize operational procedures across GDI nodes to ensure interoperability and compliance.
 
-## Where can I find the SOP materials?
+This repository is publicly accessible, but GDI nodes may also maintain their own forks or cloned versions with node-specific SOP implementations.
 
-To-do
+## SOP Materials
 
-## How do I add or change SOP materials?
+All SOP documents are stored in the `sops/` folder. The SOPs are categorized as:
+- **European-level SOPs**: SOPs that can be implemented across all GDI nodes.
+- **Node-specific SOP templates**: SOP Templates that can be adapted by individual nodes based on their specific needs.
 
-To-do
+An up-to-date index of all released SOPs, along with their metadata, can be found in the [index table](sops/README.md).
 
-## How do I report an issue with SOP materials?
+## Releases and Versioning
 
-To-do
+The **[``main`` branch](https://github.com/GenomicDataInfrastructure/standard-operating-procedures) of this repository always contains the latest version of released SOPs**. Furthermore, if you require access to a snapshot of previous SOP releases, you have the following at your disposal:
+- **GitHub Releases**: Static versions of the SOP repository are tagged and available through [GitHub releases](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/releases).
+- **Zenodo Submissions**: Each GitHub release is automatically submitted to the GDI Zenodo community, where a DOI (i.e., a permanent identifier) is assigned for the SOP bundle. You can explore the releases via [Zenodo GDI community](https://zenodo.org/communities/gdi/records).
 
-## Summary diagram
+For more information on the release process and DOI minting, please refer to the [SOP Accessioning Documentation](docs/GDI-SOP_sop-accessioning.md#sop-releases-and-doi-minting).
+
+## How to Contribute
+
+We welcome contributions from all GDI members and the wider community. If you want to **request changes, propose new SOPs, or directly contribute to the repository**, please check out our [**CONTRIBUTING guide**](CONTRIBUTING.md).
+
+## Key Documents
+More documentation is available within the ``docs`` directory. For detailed information about the SOP framework, processes, and roles within the GDI project, please refer to the **[Charter](docs/GDI-SOP_charter.md)**, the **[Information Security Management (ISM)](docs/GDI-SOP_information-service-management.md)** and **[Organisational Roles and Responsibilities (ORR)](docs/GDI-SOP_organisational-roles-and-responsibilities.md)**.
+
+## Reporting Issues
+
+If you encounter any issues or have suggestions for improvements to existing SOPs, **feel free to open an issue on GitHub**. Simply go to the [Issues](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues) section and use the appropriate template to describe the problem.
+
+## Diagram Overview
+Below is a detailed overview of the SOP development and management process:
 ````mermaid
 flowchart TB
     %% Colors
@@ -57,7 +75,14 @@ flowchart TB
         ZA[Released European-level<br>SOP Instance]
     end
 
-    ZA -->|Enters periodic<br>review cycle| ZA
+    ZA -->|Enters| review_e
+    subgraph European-Review-cycle
+        review_e[Periodic SOP<br> content review]
+        review_e -->|Determines| revision_e
+        revision_e{Is revision<br>required?}
+    end
+    revision_e -->|No| review_e
+    revision_e -->|Yes| SOP-development-cycle
 
     subgraph Node-specific SOPs
         Q[SOP Template draft]
@@ -85,6 +110,15 @@ flowchart TB
         Node's-Roles -..->|Responsible for| Node's-SOP-development-process        
         nodeTem --> nodeDev
         nodeApp --> |Produces| nodeSOP
+        nodeSOP -->|Enters| review_n
+        
+        subgraph Node's-Review-cycle
+            review_n[Periodic SOP<br> content review]
+            review_n -->|Determines| revision_n
+            revision_n{Is revision<br>required?}
+        end
+        revision_n -->|No| review_n
+        revision_n -->|Yes| nodeDev
     end
     nodeRep -..->|Approves <br> changes| nodeApp
 
@@ -181,6 +215,7 @@ flowchart TB
     nodeSOP --> SOPtraining
     ZA --> SOPtraining
     Trainers -..-> |Provides|SOPtraining
+    revision[Revision is due]
     
     %% Styles
     class S,V,ZA,nodeSOP,l_sopInstance SOP

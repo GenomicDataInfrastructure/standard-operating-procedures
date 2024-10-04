@@ -29,3 +29,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [``README.md``](README.md) - Main repository's readme
 - [``LICENSE``](LICENSE) - Repository license
 - [CONTRIBUTING.md](CONTRIBUTING.md) - Guidance for repository contributions
+- [GDI-SOP_information-service-management.md](GDI-SOP_information-service-management.md) - Framework designed to systematically manage SOPs information flows across the GDI infrastructure

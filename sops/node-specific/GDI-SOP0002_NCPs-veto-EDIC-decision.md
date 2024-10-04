@@ -36,7 +36,7 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 | 1+MG         | 1+ Million Genomes                                 |
 | DAC          | Data Access Committee                              |
 | EDIC         | European Digital Infrastructure Consortium         |
-| NCP          | Node Contact Point                                 |
+| NCP          | National Coordination Point                                 |
 | SOP          | Standard Operating Procedure                       |
 
 | Term          | Definition                                         |

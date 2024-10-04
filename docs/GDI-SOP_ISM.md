@@ -157,7 +157,7 @@ The OC/SDPC will evaluate the request and decide if the review is justified.
 
 #### Automating reminders for the Review Cycle
 
-An automated workflow in [GitHub](./github/workflows/review_reminder.yml) was created to streamline the annual review process. The workflow will get automatically triggered run every month, calling a [python script](scripts/check_sop_reviews.py) that performs the following:
+An automated GitHub workflow ([``review_reminder.yml``](./github/workflows/review_reminder.yml)) was created to streamline the annual review process. The workflow gets automatically triggered every month, calling a python script ([``check_sop_reviews.py``](scripts/check_sop_reviews.py)) that performs the following:
 
 Checks all SOPs, one by one, if they are due for review, using the last date entry of each SOP's Document History. If this value is older than one full year, the SOP is considered for review.
 For each SOP due for review, the script creates a new GitHub issue, labelled with `'SOP-review'`, listing the actions to take for the SOP to be reviewed. This happens only if there are no other open GH issues for that same SOP with the same label.

@@ -146,6 +146,14 @@ The SOPs in the GDI network will follow a structured review cycle to ensure they
 
 1. **Annual Review Cycle**: Each SOP will be reviewed annually. The OC/SDPC will initiate and oversee the review.
    The OC/SDPC will check the SOP’s relevance, clarity, and effectiveness based on the based on the [SOP Review Check List](./GDI-SOP_review-checklist.md), then updates or changes will be made as necessary.
+   
+#### Automating reminders for the Review Cycle
+
+An automated GitHub workflow ([``review_reminder.yml``](./github/workflows/review_reminder.yml)) was created to streamline the annual review process. The workflow gets automatically triggered every month, calling a python script ([``check_sop_reviews.py``](scripts/check_sop_reviews.py)) that performs the following:
+
+Checks all SOPs, one by one, if they are due for review, using the last date entry of each SOP's Document History. If this value is older than one full year, the SOP is considered for review.
+For each SOP due for review, the script creates a new GitHub issue, labelled with `'SOP-review'`, listing the actions to take for the SOP to be reviewed. This happens only if there are no other open GH issues for that same SOP with the same label.
+GitHub issues propagate automatically to the ZenHub board, and those labeled with `'SOP-review'` shall go into the "SOP-reviews" pipeline in the board for clarity.
 
 2. **Ad-Hoc Review Requests**: Any GDI member can request a review if they believe a process needs to be updated or improved.
 
@@ -154,14 +162,6 @@ The SOPs in the GDI network will follow a structured review cycle to ensure they
   Review requests are submitted by creating a GitHub issue. We recommend to use the [SOP Content Change Suggestion](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new?assignees=&labels=help+wanted%2Cenhancement&projects=&template=content_suggestion.yaml&title=%5BChange+Suggestion%5D+%3CTitle%3E) template, adding the `'SOP-review'` label to the GH issue.
 
 The OC/SDPC will evaluate the request and decide if the review is justified.
-
-#### Automating reminders for the Review Cycle
-
-An automated GitHub workflow ([``review_reminder.yml``](./github/workflows/review_reminder.yml)) was created to streamline the annual review process. The workflow gets automatically triggered every month, calling a python script ([``check_sop_reviews.py``](scripts/check_sop_reviews.py)) that performs the following:
-
-Checks all SOPs, one by one, if they are due for review, using the last date entry of each SOP's Document History. If this value is older than one full year, the SOP is considered for review.
-For each SOP due for review, the script creates a new GitHub issue, labelled with `'SOP-review'`, listing the actions to take for the SOP to be reviewed. This happens only if there are no other open GH issues for that same SOP with the same label.
-GitHub issues propagate automatically to the ZenHub board, and those labeled with `'SOP-review'` shall go into the "SOP-reviews" pipeline in the board for clarity.
 
 All reviews, regardless of the trigger, will be recorded in the SOP’s revision history (i.e., their Document History). The status of each review will be monitored through the ZenHub board to ensure that actions are taken timely. If a review deems that an SOP needs to be updated in content (i.e., revision is due), the changes will undergo similar development stages as those described in [GDI-SOP0007_SOP Template creation](sops/european-level/GDI-SOP0007_SOP-template-creation.md).
 

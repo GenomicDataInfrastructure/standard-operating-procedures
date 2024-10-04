@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- [``GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md``](sops/european-level/GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md) - European-level SOP describing how the 1+MG DAC is to review data access requests and recommend their rejection or approval.
 - [``GDI-SOP0002_NCPs-veto-EDIC-decision.md``](sops/node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md) - Node-specific SOP Template describing how NCPs may veto EDIC decisions on data requests.
 - [``GDI-SOP0007_SOP-template-creation.md``](sops/european-level/GDI-SOP0007_SOP-template-creation.md) - European-level SOP describing how to develop new SOP templates.
 - [``compare_index.py``](scripts/compare_index.py) - Script to automatically check if the SOP index table is up to date

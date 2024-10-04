@@ -25,7 +25,7 @@
 
 | Template Version | Instance version | Author(s)         | Description of changes           | Date       |
 |------------------|------------------|-------------------|----------------------------------|------------|
-| ``v1``               |                  | Marcos Casado Barbero    | Transform document to markdown and complete version | ``2024.09.27`` |
+| ``v1``               |                  | Marcos Casado Barbero    | Transform document to markdown and complete version | ``2024.10.04`` |
 | ``v0``               |                  | Dylan Spalding    | First version of SOP drafted     | ``2024.04.11`` |
 
 ### 2. Glossary

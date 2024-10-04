@@ -149,7 +149,7 @@ The SOPs in the GDI network will follow a structured review cycle to ensure they
 
 2. **Ad-Hoc Review Requests**: Any GDI member can request a review if they believe a process needs to be updated or improved.
 
-- Submission Process:
+#### Ad-hoc requests
 
   Review requests are submitted by creating a GitHub issue. We recommend to use the [SOP Content Change Suggestion](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new?assignees=&labels=help+wanted%2Cenhancement&projects=&template=content_suggestion.yaml&title=%5BChange+Suggestion%5D+%3CTitle%3E) template, adding the `'SOP-review'` label to the GH issue.
 

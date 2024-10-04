@@ -155,7 +155,7 @@ The SOPs in the GDI network will follow a structured review cycle to ensure they
 
 The OC/SDPC will evaluate the request and decide if the review is justified.
 
-**Automating reminders for the Review Cycle**
+#### Automating reminders for the Review Cycle
 
 An automated workflow in [GitHub](./github/workflows/review_reminder.yml) was created to streamline the annual review process. The workflow will get automatically triggered run every month, calling a [python script](scripts/check_sop_reviews.py) that performs the following:
 

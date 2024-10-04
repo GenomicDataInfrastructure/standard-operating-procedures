@@ -51,8 +51,8 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 | Author     | Dylan Spalding        | Finland / Pillar II co-lead | CSC          |
 | Author     | Marcos Casado Barbero | Task 4.3 Lead | EMBL-EBI          |
 | Reviewer   | Regina Becker | LU / Pillar I co-lead | LNDS |
-| Approver   | _#! TO-DO_         |    |          |
-| Authorizer | _#! TO-DO_         |    |          |
+| **Approver**   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |
+| **Approver**   | Markus Englund | Task 4.3 member | UU / NBIS |
 
 ### 4. Purpose
 The purpose of this SOP is to delineate a standardised process for NCPs to review and potentially veto decisions made by the 1+MG EDIC regarding data access requests. This will ensure that data access is consistent with national regulations and ethical standards.
@@ -108,7 +108,7 @@ Depending on the outcome of this evaluation:
 |:----------------|:-------------------------------|:----------|
 | 4               | After step 3 or 6              | 1+MG DAC  |
 
-As the 1+MG DAC, **inform the NCP and User** (whose request was initially recommended) of the access decision.
+As the 1+MG DAC, **inform the NCP and User** (whose request was initially recommended) of the decision: approved access request.
 
 Move to **step 5**.
 
@@ -119,7 +119,7 @@ Move to **step 5**.
 
 As the NCP, **inform the relevant data subjects** of the proposed research **within 1 working day**.
 
-This SOP is considered finished at this point.
+This concludes the process resulting in final approval of the data access request.
 
 #### 6. Consensus building process
 | Step identifier | When                           | Who       |
@@ -139,7 +139,7 @@ Depending on the outcome of the process:
 
 As the 1+MG DAC, **inform** the User and the User’s institution of the **final decision**, as well as other NCPs for whom the decision to veto may be relevant.
 
-This SOP is considered finished at this point.
+This concludes the process resulting in the rejection of the data access request.
 
 ### 9. References
 | Reference | Description |

@@ -215,7 +215,6 @@ flowchart TB
     nodeSOP --> SOPtraining
     ZA --> SOPtraining
     Trainers -..-> |Provides|SOPtraining
-
     revision[Revision is due]
     
     %% Styles

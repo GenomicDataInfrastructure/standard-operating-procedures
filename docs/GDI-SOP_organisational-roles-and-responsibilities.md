@@ -3,7 +3,7 @@
 ## 1. Document History
 | Version | Author(s) | Description of changes | Date |
 | -- | -- | -- | -- |
-| v1 | Marcos Casado Barbero | First ORR document released in the GH repository | 2024.09.25 |
+| v1 | Marcos Casado Barbero | First ORR document released in the GH repository | 2024.10.04 |
 | v0 | Mallory Freeberg, Marcos Casado Barbero | First draft of the ORR document | 2024.03.12 |
 
 ## 2. Glossary

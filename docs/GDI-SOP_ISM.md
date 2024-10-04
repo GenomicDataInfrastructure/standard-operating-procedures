@@ -147,7 +147,7 @@ The SOPs in the GDI network will follow a structured review cycle to ensure they
 1. **Annual Review Cycle**: Each SOP will be reviewed annually. The OC/SDPC will initiate and oversee the review.
    The OC/SDPC will check the SOP’s relevance, clarity, and effectiveness based on the based on the [SOP Review Check List](./GDI-SOP_review-checklist.md), then updates or changes will be made as necessary.
 
-2. Ad-Hoc Review Requests: Any GDI member can request a review if they notice a process that needs to be updated or improved.
+2. **Ad-Hoc Review Requests**: Any GDI member can request a review if they believe a process needs to be updated or improved.
 
 - Submission Process:
 

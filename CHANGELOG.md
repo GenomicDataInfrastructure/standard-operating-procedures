@@ -7,13 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- [GDI-SOP_organisational-roles-and-responsibilities.md](docs/GDI-SOP_organisational-roles-and-responsibilities.md) - Documentation containing Organisational Roles and Responsibilities for GDI SOPs.
-- [GDI-SOP_review-checklist.md](docs/GDI-SOP_review-checklist.md) - Documentation guidelines in the form of checklists, for reviewers, approvers and authorizers of SOPs.
-- [GDI-SOP_charter.md](docs/GDI-SOP_charter.md) - Documentation Charter of the task 4.3
-- [compare_index.py](scripts/compare_index.py) - Script to automatically check if the SOP index table is up to date
-- [sop_index.py](scripts/sop_index.py) - Script to automatically create the SOP index table
-- [utils.py](scripts/utils.py) - General functions used by other scripts
-- [sops/README.md](sops/README.md) - Markdown containing the SOP index table
+- [``review_reminder.yml``](.github/workflows/review_reminder.yml) - GH Workflow to preiodically (monthly) and automatically (through [check_sop_reviews.py](scripts/check_sop_reviews.py)) create SOP review reminders (GH issues)
+- [``check_sop_reviews.py``](scripts/check_sop_reviews.py) - Script to automatically check if SOPs are due for review and create GitHub issues if so
+- [``GDI-SOP_organisational-roles-and-responsibilities.md``](docs/GDI-SOP_organisational-roles-and-responsibilities.md) - Documentation containing Organisational Roles and Responsibilities for GDI SOPs.
+- [``GDI-SOP_review-checklist.md``](docs/GDI-SOP_review-checklist.md) - Documentation guidelines in the form of checklists, for reviewers, approvers and authorizers of SOPs.
+- [``GDI-SOP_charter.md``](docs/GDI-SOP_charter.md) - Documentation Charter of the task 4.3
+- [``compare_index.py``](scripts/compare_index.py) - Script to automatically check if the SOP index table is up to date
+- [``sop_index.py``](scripts/sop_index.py) - Script to automatically create the SOP index table
+- [``utils.py``](scripts/utils.py) - General functions used by other scripts
+- [``sops/README.md``](sops/README.md) - Markdown containing the SOP index table
 - [``tests/``](tests/) - Directory containing tests to run GH repo's code
 - [``requirements.txt``](requirements.txt) - Needed modules to run GH repo's code
 - [``lint_sops.yml``](.github/workflows/lint_sops.yml) - GH Workflow to trigger linter on PRs
@@ -28,5 +30,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [``GDI-SOP_style-guide.md``](docs/GDI-SOP_style-guide.md) - Draft of styling guide
 - [``README.md``](README.md) - Main repository's readme
 - [``LICENSE``](LICENSE) - Repository license
-- [CONTRIBUTING.md](CONTRIBUTING.md) - Guidance for repository contributions
-- [GDI-SOP_information-service-management.md](GDI-SOP_information-service-management.md) - Framework designed to systematically manage SOPs information flows across the GDI infrastructure
+- [``CONTRIBUTING.md``](CONTRIBUTING.md) - Guidance for repository contributions
+- [``GDI-SOP_information-service-management.md``](GDI-SOP_information-service-management.md) - Framework designed to systematically manage SOPs information flows across the GDI infrastructure

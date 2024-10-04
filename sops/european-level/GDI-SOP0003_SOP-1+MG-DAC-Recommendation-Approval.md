@@ -49,8 +49,7 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 | Author     | Dylan Spalding        | Finland / Pillar II co-lead | CSC          |
 | Author     | Marcos Casado Barbero | Task 4.3 Lead | EMBL-EBI          |
 | Reviewer   | Regina Becker | LU / Pillar I co-lead | LNDS |
-| Approver   | _#! TO-DO_         |    |          |
-| Authorizer | _#! TO-DO_         |    |          |
+| Approver   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |
 
 ### 4. Purpose
 To access controlled access data within the European Genomic Data Infrastructure a research user must apply for authorisation to access the data from the 1+ Million Genomes Data Access Committee (1+MG DAC). The 1+MG DAC (a.k.a. 1+MG EDIC) will **review applications** to ensure they conform to the 1+MG Data Governance requirements, and **make recommendations** to the relevant National Coordination Points (NCPs) who may agree or disagree with the recommendation.
@@ -96,7 +95,7 @@ graph TD
 ````
 
 ### 8. Procedure
-#### 1. Initiate application check
+#### 8.1. Initiate application check
 | Step identifier | When                                       | Who          |
 |-----------------|--------------------------------------------|--------------|
 | 1               | On receipt of notification of a new data access authorisation application | 1+MG DAC     |
@@ -112,12 +111,12 @@ As the 1+MG DAC, check the requester's application, based on the requirement in 
 - Any peer review of the scientific validity of the proposed research exists, and if not, ensure the scientific validity of the proposed research.
 
 Depending on the outcome of this evaluation:
-- If all steps are correct, move to **[step 2](#2-recommend-application-for-approval)**.
+- If all steps are correct, move to **[step 2](#82-recommend-application-for-approval)**.
 - If **any step fails**, the **application must be rejected**:
    - Inform the relevant NCPs, who may veto the rejection (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)).
-   - After 11 working days (``DATE:A``) since NCPs were notified, move to **[step 10](#10-inform-data-requestor-rejection-confirmed)**.
+   - After 11 working days (``DATE:A``) since NCPs were notified, move to **[step 10](#810-inform-data-requestor-rejection-confirmed)**.
 
-#### 2. Recommend application for approval
+#### 8.2. Recommend application for approval
 | Step identifier | When                                           | Who      |
 |-----------------|------------------------------------------------|----------|
 | 2               | Once a completed application has been reviewed by the 1+MG DAC and recommended for approval | 1+MG DAC |
@@ -127,60 +126,60 @@ Once initial evaluation of data request is positive, **mark application** as 'Re
 **Inform the relevant NCP(s)** of the review outcome, and pass the application to them for further action as per [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md). Record the date of recommendation and set a reminder for 11 working days (``DATE:A``).
 
 Depending on the response from NCPs:
-- If **no response** before the end of DATE:A, move to **[step 3](#3-confirm-approval-no-ncp-response)**.
-- If **NCPs agree** with recommendation, move to **[step 4](#4-confirm-approval-ncp-agrees)**.
-- If **NCPs disagree** with recommendation, move to **[step 5](#5-initiate-ncp-review-process)**.
+- If **no response** before the end of DATE:A, move to **[step 3](#83-confirm-approval-no-ncp-response)**.
+- If **NCPs agree** with recommendation, move to **[step 4](#84-confirm-approval-ncp-agrees)**.
+- If **NCPs disagree** with recommendation, move to **[step 5](#85-initiate-ncp-review-process)**.
 
-#### 3. Confirm approval (no NCP response)
+#### 8.3. Confirm approval (no NCP response)
 | Step identifier | When                                           | Who      |
 |-----------------|------------------------------------------------|----------|
 | 3               | DATE:A is reached or past, and no response from the NCP has been received | 1+MG DAC |
 
-After the end of ``DATE:A`` is reached with no response from relevant NCPs, **confirm the approval of the data access request**: move to **[step 9](#9-inform-data-user-approval-confirmed)**.
+After the end of ``DATE:A`` is reached with no response from relevant NCPs, **confirm the approval of the data access request**: move to **[step 9](#89-inform-data-user-approval-confirmed)**.
 
-#### 4. Confirm approval (NCP agrees)
+#### 8.4. Confirm approval (NCP agrees)
 | Step identifier | When                                           | Who      |
 |-----------------|------------------------------------------------|----------|
 | 4               | DATE:A has not been passed, and the NCP agrees with the 1+MG DAC recommendation | 1+MG DAC |
 
-If the **NCP agrees** with the recommendation, then **confirm the approval of the data access request**: move to **[step 9](#9-inform-data-user-approval-confirmed)**.
+If the **NCP agrees** with the recommendation, then **confirm the approval of the data access request**: move to **[step 9](#89-inform-data-user-approval-confirmed)**.
 
-#### 5. Initiate NCP review process
+#### 8.5. Initiate NCP review process
 | Step identifier | When                                           | Who      |
 |-----------------|------------------------------------------------|----------|
 | 5               | DATE:A has not been passed, and the NCP disagrees with the 1+MG DAC recommendation | 1+MG DAC |
 
 If the NCP disagrees with the recommendation, **initiate the review process for handling NCP disagreements** as per SOP [NCP review process of disagreement with 1+MG DAC recommendation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/33). This process must be completed by the time limit set in that SOP (``DATE:B``).
 
-Depending on the outcome of the NCP review SOP:
-- If **no response** before the end of ``DATE:B``, move to **[step 8](#8-inform-data-user-process-delayed)**.
-- If **NCPs upholds recommendation**, move to **[step 6](#6-confirm-approval-recommendation-upheld)**.
-- If **NCPs overrules recommendation**, move to **[step 5](#5-initiate-ncp-review-process)**.
+Depending on the outcome of the NCP review process:
+- If **no response** before the end of ``DATE:B``, move to **[step 8](#88-inform-data-user-process-delayed)**.
+- If **NCPs upholds recommendation**, move to **[step 6](#86-confirm-approval-recommendation-upheld)**.
+- If **NCPs overrules recommendation**, move to **[step 5](#85-initiate-ncp-review-process)**.
 
-#### 6. Confirm approval (recommendation upheld)
+#### 8.6. Confirm approval (recommendation upheld)
 | Step identifier | When                                           | Who      |
 |-----------------|------------------------------------------------|----------|
 | 6               | DATE:B has not been passed, and the NCP review process upholds the 1+MG DAC recommendation | 1+MG DAC |
 
-If the outcome of the NCP review process is positive, then **confirm the approval of the data access request**: move to **[step 9](#9-inform-data-user-approval-confirmed)**.
+If the outcome of the NCP review process is positive, then **confirm the approval of the data access request**: move to **[step 9](#89-inform-data-user-approval-confirmed)**.
 
-#### 7. Reject application (recommendation overruled)
+#### 8.7. Reject application (recommendation overruled)
 | Step identifier | When                                           | Who      |
 |-----------------|------------------------------------------------|----------|
 | 7               | DATE:B has not been passed, and the NCP review process overrules the 1+MG DAC recommendation | 1+MG DAC |
 
-If the NCPs overrule the initial recommendation, **reject the application**: move to **[step 10](#10-inform-data-requestor-rejection-confirmed)**.
+If the NCPs overrule the initial recommendation, **reject the application**: move to **[step 10](#810-inform-data-requestor-rejection-confirmed)**.
 
-#### 8. Inform data user (process delayed)
+#### 8.8. Inform data user (process delayed)
 | Step identifier | When                                           | Who      |
 |-----------------|------------------------------------------------|----------|
 | 8               | DATE:B has passed, and the review process has not returned a decision within 2 months | 1+MG DAC |
 
 After the end of ``DATE:B``, if no decision is obtained **after 2 months**, **inform the data user that the application is still under review**.
 
-Move back to **[step 5](#5-initiate-ncp-review-process)**.
+Move back to **[step 5](#85-initiate-ncp-review-process)**.
 
-#### 9. Inform data requestor (Approval confirmed)
+#### 8.9. Inform data requestor (Approval confirmed)
 | Step identifier | When                                           | Who      |
 |-----------------|------------------------------------------------|----------|
 | 9               | After confirmation of approval is reached      | 1+MG DAC |
@@ -189,9 +188,9 @@ Regardless of the path of confirmation, once the approval has been confirmed:
 - **Record the decision and reasons**.
 - **Inform the data requestor**.
 
-This SOP is considered finished at this point.
+This concludes the process resulting in confirmation of the data request.
 
-#### 10. Inform data requestor (Rejection confirmed)
+#### 8.10. Inform data requestor (Rejection confirmed)
 | Step identifier | When                                           | Who      |
 |-----------------|------------------------------------------------|----------|
 | 10               | After rejection of request is reached          | 1+MG DAC |
@@ -200,7 +199,7 @@ Regardless of the path of rejection:
 - **Record the decision and reasons** (e.g., missing documents, invalid data, non-compliance with ethical standards...). Include options to rectify these issues for the data requestor to amend and re-submit the application.
 - **Inform the data requestor**.
 
-This SOP is considered finished at this point.
+This concludes the process resulting in rejection of the data request.
 
 ### 9. References
 | Reference                                                                                                  | Description                                                          |

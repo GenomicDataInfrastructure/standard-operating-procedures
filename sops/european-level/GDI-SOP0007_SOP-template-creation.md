@@ -78,36 +78,36 @@ graph TB
     input1[SOP Request]
     Zenhub1[ZenHub ticket]
     subgraph 'Operations Committee' and 'Security and Data Protection Committee'
-        step1{Is SOP\n request valid?}
-        step_subsChange{Does this SOP represent\n a 'substantial' change?}
-        step3{More information\n needed?}
-        stepj(Request more\n information from user)
-        step4(Justify rejection\n and close GH issue)
-        step2(Update ZenHub ticket\n & GH issue)
+        step1{Is SOP<br> request valid?}
+        step_subsChange{Does this SOP represent<br> a 'substantial' change?}
+        step3{More information<br> needed?}
+        stepj(Request more<br> information from user)
+        step4(Justify rejection<br> and close GH issue)
+        step2(Update ZenHub ticket<br> & GH issue)
         step5{"`Will the template be created 
                 in **Google Docs** first?`"}
-        step6(Create Google\n Document draft)
-        step7(Create Markdown\n document draft)
+        step6(Create Google<br> Document draft)
+        step7(Create Markdown<br> document draft)
         step8(Assign SOP Template authors)
         step9(Contact the authors)
         step13_prev(Request nomination of approvers)
-        step13{Document\n approved?}
+        step13{Document<br> approved?}
         r3(Contact authors)
-        step13-1(Contact \n Management Board)
+        step13-1(Contact <br> Management Board)
 
         step-rfc1(Create RFC discussion)
         step-rfc2(Update RFC discussion)
         step-rfc3(Update RFC discussion)
 
-        step14(Prepare final\n SOP Markdown document)
-        step15(Create PR against\n 'dev' branch)
+        step14(Prepare final<br> SOP Markdown document)
+        step15(Create PR against<br> 'dev' branch)
         step16(Review and merge PR)
     end
     step-rfc1 --> step2
     step8 -..->|Set as Active|step-rfc2
     step16 -..->|Set as Landed|step-rfc3
     subgraph Management Board
-        step-mb1{Document\nauthorization\nvetoed?}
+        step-mb1{Document<br>authorization<br>vetoed?}
         r1(Contact authors)
     end
     subgraph Authors
@@ -115,18 +115,18 @@ graph TB
     end
     step10 -->|Request review| step12
     subgraph Reviewers
-        step12{Document\n reviewed?}
+        step12{Document<br> reviewed?}
         r2(Contact authors)
     end
     step12 -->|Yes|step13_prev
-    step13_prev -->|2 OC and 2 SDPC members\n are nominated| step13
+    step13_prev -->|2 OC and 2 SDPC members<br> are nominated| step13
     step13 -->|Yes|step13-1
     step13-1 --> step-mb1
     ending(" ")
 
-    start -..->|GDI member creates\nSOP request| input1
-    input1 -..->|ZenHub automatically\n creates ticket in Board|Zenhub1
-    Zenhub1 -..->|OC/SDPC\n Notices the request| step1
+    start -..->|GDI member creates<br>SOP request| input1
+    input1 -..->|ZenHub automatically<br> creates ticket in Board|Zenhub1
+    Zenhub1 -..->|OC/SDPC<br> Notices the request| step1
     step1 -->|Yes| step_subsChange
     step_subsChange -->|No| step2
     step_subsChange -->|Yes| step-rfc1
@@ -142,16 +142,16 @@ graph TB
     step8 -->|Authors are given the SOP draft| step9
     step9 -->|Authors are requested to fill in the draft| step10
 
-    step-mb1 -->|Requested\nchanges| r1
+    step-mb1 -->|Requested<br>changes| r1
     r1 -->|Amendments| step-mb1
-    step12 -->|Requested\nchanges| r2
+    step12 -->|Requested<br>changes| r2
     r2 -->|Amendments| step12
-    step13 -->|Requested\nchanges| r3
+    step13 -->|Requested<br>changes| r3
     r3 -->|Amendments|step13
 
-    step-mb1 -->|No changes\n requested|step14
+    step-mb1 -->|No changes<br> requested|step14
     step14 -->|SOP is accessioned| step15
-    step15 -->|Request review from\n other OC/SDPC members | step16
+    step15 -->|Request review from<br> other OC/SDPC members | step16
     step-rfc3 -..- ending
 ```
 

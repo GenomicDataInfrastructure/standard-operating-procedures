@@ -110,12 +110,19 @@ class SOPLinter:
 
         for key, value in table_dict.items():
             # Linting rules for node-specific SOPs should not apply for european-level ones
-            if key in ["gdi node", "instance version"]:
+            node_specific_keys = ["gdi node", "instance version"]
+            if key in node_specific_keys:
                 try:
                     if table_dict["template sop type"].lower() == "European-level SOP".lower():
                         continue
                 except:
                     pass
+
+                # We only want to evaluate each key Node-specific key format if any is present.
+                #   Otherwise, it could be a Node-specific SOP template (correct without these keys)
+                if all(table_dict.get(key) in [None, "", []] for key in node_specific_keys):
+                    self.report_issue(f"At the metadata table, value column for '{key}' was empty. If the SOP is a Node-specific SOP Instance (not a template), it should have a value.", file_path, warning=True)
+                    continue
 
             if key in expected_metadata:
                 # Depending on the type of format rules for each row, we apply them differently

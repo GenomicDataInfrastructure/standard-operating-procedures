@@ -144,7 +144,7 @@ The [GDI SOP Accessioning Proposal](./GDI-SOP_sop-accessioning.md) is a speciali
 
 The SOPs in the GDI network will follow a structured review cycle to ensure they stay relevant, effective, and compliant. Reviews will take place both annually and on demand as described below:
 
-1. Annual Review Cycle: Each SOP will be reviewed annually. The OC/SDPC will initiate and oversee the review.
+1. **Annual Review Cycle**: Each SOP will be reviewed annually. The OC/SDPC will initiate and oversee the review.
    The OC/SDPC will check the SOP’s relevance, clarity, and effectiveness based on the based on the [SOP Review Check List](./GDI-SOP_review-checklist.md), then updates or changes will be made as necessary.
 
 2. Ad-Hoc Review Requests: Any GDI member can request a review if they notice a process that needs to be updated or improved.

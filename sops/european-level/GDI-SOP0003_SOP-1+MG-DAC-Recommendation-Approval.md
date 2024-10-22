@@ -49,6 +49,7 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 | Author     | Dylan Spalding        | Finland / Pillar II co-lead | CSC          |
 | Author     | Marcos Casado Barbero | Task 4.3 Lead | EMBL-EBI          |
 | Reviewer   | Regina Becker | LU / Pillar I co-lead | LNDS |
+| Reviewer   | Gergő Csarnai | LU / Senior ELSI Specialist | LNDS |
 | Approver   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |
 
 ### 4. Purpose
@@ -107,7 +108,7 @@ graph TD
 | 1               | On receipt of notification of a new data access application | 1+MG DAC     |
 
 As the 1+MG DAC, check the requester's application, based on the requirement in the Data Governance document. The application form, which is used to help the data requester enter valid and complete information for the application, must be checked to ensure that:
-- Confirm the research has [institutional sign-off](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth).
+- Confirm the research has [institutional sign-off](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth), if applicable (i.e., if the requestor is employed by a suitable institution).
 - The data analysis plan is present and suitable for the proposed research.
 - The data minimisation principle is met.
 - Algorithms (such as artificial intelligence) are suitable for the proposed purpose and transparent.

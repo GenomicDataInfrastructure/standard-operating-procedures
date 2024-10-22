@@ -122,9 +122,9 @@ You must **finish this initial assessment within 5 working days**. After this pe
 Depending on the outcome of this initial evaluation:
 - If all steps are correct, move to **[step 2](#82-recommend-application-for-approval)**.
 - If **any step fails**, the **application must be rejected**:
-   - Inform the relevant NCPs, who may veto the rejection (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)). In your communication to the NCPs, clearly state the date for which their veto expires.
-   - After 6 _calendar_ days since NCPs were notified, **send a reminder** to the NCPs. 
-   - After 11 working days (``DATE:A``) since NCPs were notified, move to **[step 10](#810-inform-data-requestor-rejection-confirmed)**.
+   - Inform the relevant NCPs, who may veto the rejection (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)). In your communication to the NCPs, clearly state the date for which their veto expires. Also inform NCPs about the possibility, in exceptional and justified cases (as defined in the [1+MG Data Access Governance for Research](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU))
+   - After 6 _calendar_ days since NCPs were notified, **send a reminder** to the NCPs.
+   - After 11 working days (``DATE:A``) since NCPs were notified, if no response was given from NCPs, move to **[step 10](#810-inform-data-requestor-rejection-confirmed)**.
 
 #### 8.2. Recommend application for approval
 | Step identifier | When                                           | Who      |
@@ -217,5 +217,6 @@ This concludes the process resulting in rejection of the data request.
 | [1](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md) | European GDI - SOP Charter |
 | [2](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) | European GDI - Organisational Roles and Responsibilities (ORR) |
 | [3](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md) | European GDI SOP - NCPs veto EDIC Decision                               |
-| [4](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/33)                  | European GDI - NCP review process of disagreement with 1+MG DAC recommendation |
-| [5](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth) | European GDI - Obtain Institutional Sign-off                         |
+| [4](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU) | 1+MG Data Access Governance for Research |
+| [5](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/33)                  | European GDI - NCP review process of disagreement with 1+MG DAC recommendation |
+| [6](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth) | European GDI - Obtain Institutional Sign-off                         |

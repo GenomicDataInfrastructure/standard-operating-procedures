@@ -52,13 +52,19 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 | Approver   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |
 
 ### 4. Purpose
-To access controlled access data within the European Genomic Data Infrastructure a research user must apply for authorisation to access the data from the 1+ Million Genomes Data Access Committee (1+MG DAC). The 1+MG DAC (a.k.a. 1+MG EDIC) will **review applications** to ensure they conform to the 1+MG Data Governance requirements, and **make recommendations** to the relevant National Coordination Points (NCPs) who may agree or disagree with the recommendation.
+The purpose of this SOP is to define the process for **requesting and granting access to controlled data within the European Genomic Data Infrastructure (GDI)**. This SOP ensures that:
+
+- **Access to data is granted only in justified cases**, following thorough review by the 1+MG Data Access Committee (DAC) and involving all necessary stakeholders to protect the rights and freedoms of the data subjects.
+- The 1+MG DAC **reviews applications** to ensure **compliance with the 1+MG Data Governance requirements**, and **makes recommendations** to National Coordination Points (NCPs), who may agree or exercise their veto rights.
+- The **process is transparent**, and **disputes are resolved in a timely manner**, adhering to the allocated timeframes for each request.
 
 ### 5. Scope
 This SOP covers the process **from when a data access application is received by the 1+MG DAC to when the application is approved or rejected** by the 1+MG DAC. The **input** is a completed application form, and the **output** is a notification of approval or rejection of the request for authorisation to access the controlled access data described in the application.
 
 ### 6. Introduction and Background Information
-The 1+MG DAC is responsible for recommending the approval or rejection of requests for access to data held within the GDI to the relevant NCP(s). Additionally, the 1+MG DAC will follow a review process when the NCP disagrees with its recommendation (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)). Once an agreement is reached, or the review process completes, the data user will be informed of the decision.
+To access controlled access data within the European Genomic Data Infrastructure a research user must apply for authorisation to access the data from the 1+ Million Genomes Data Access Committee (1+MG DAC). The 1+MG DAC (a.k.a. 1+MG EDIC) will **review applications** to ensure they conform to the 1+MG Data Governance requirements, and **make recommendations** to the relevant National Coordination Points (NCPs) who may agree or disagree with the recommendation.
+
+Additionally, the 1+MG DAC will follow a review process when the NCP disagrees with its recommendation (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)). Once an agreement is reached, or the review process completes, the data user will be informed of the decision.
 
 ### 7. Summary or Context Diagram
 The following diagram summarises the step-by-step process for the recommendation by the 1+MG DAC of approval or rejection of data access applications.

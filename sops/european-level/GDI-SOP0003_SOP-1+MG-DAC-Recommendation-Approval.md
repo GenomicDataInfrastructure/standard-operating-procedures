@@ -33,7 +33,7 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 
 | Abbreviation | Description                                                                                               |
 |--------------|-----------------------------------------------------------------------------------------------------------|
-| DAC          | Data Access Committee, responsible for reviewing access requests and approving or denying the requests     |
+| 1+MG DAC     | 1+MG Data Access Committee (1+MG DAC) - Data Access Committee, which may include several domain-specific sub-committees, provided by 1+MG that receives and reviews access requests and moderates consensus discussions on access requests where necessary |
 | EDIC         | European Digital Infrastructure Consortium, will serve as the DAC for managing access requests to data in GDI |
 | NCP          | National Coordination Point                                                                               |
 

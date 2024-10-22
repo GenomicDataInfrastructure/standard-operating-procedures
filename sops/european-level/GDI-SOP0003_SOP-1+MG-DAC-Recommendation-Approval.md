@@ -164,7 +164,7 @@ If the NCPs disagree with the recommendation, **initiate the review process for 
 Depending on the outcome of the NCP review process:
 - If **no response** before the end of ``DATE:B``, move to **[step 8](#88-inform-data-user-process-delayed)**.
 - If **NCPs upholds recommendation**, move to **[step 6](#86-confirm-approval-recommendation-upheld)**.
-- If **NCPs overrules recommendation**, move to **[step 5](#85-initiate-ncp-review-process)**.
+- If **NCPs overrules recommendation**, move to **[step 7](#87-reject-application-recommendation-overruled)**.
 
 #### 8.6. Confirm approval (recommendation upheld)
 | Step identifier | When                                           | Who      |

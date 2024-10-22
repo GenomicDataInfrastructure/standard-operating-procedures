@@ -117,7 +117,9 @@ As the 1+MG DAC, check the requester's application, based on the requirement in 
 - The project description corresponds with the data analysis plan and the ELSI that exist with respect to the requested data.
 - Any peer review of the scientific validity of the proposed research exists, and if not, ensure the scientific validity of the proposed research.
 
-Depending on the outcome of this evaluation:
+You must **finish this initial assessment within 5 working days**. After this period,you shall **transmit the outcome of the review and a decision recommendation** to the 1+MG NCPs who can channel it to relevant bodies on the national level.
+
+Depending on the outcome of this initial evaluation:
 - If all steps are correct, move to **[step 2](#82-recommend-application-for-approval)**.
 - If **any step fails**, the **application must be rejected**:
    - Inform the relevant NCPs, who may veto the rejection (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)).

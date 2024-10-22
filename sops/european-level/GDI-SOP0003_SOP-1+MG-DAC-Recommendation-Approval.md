@@ -104,7 +104,7 @@ graph TD
 #### 8.1. Initiate application check
 | Step identifier | When                                       | Who          |
 |-----------------|--------------------------------------------|--------------|
-| 1               | On receipt of notification of a new data access authorisation application | 1+MG DAC     |
+| 1               | On receipt of notification of a new data access application | 1+MG DAC     |
 
 As the 1+MG DAC, check the requester's application, based on the requirement in the Data Governance document. The application form, which is used to help the data requester enter valid and complete information for the application, must be checked to ensure that:
 - Confirm the research has [institutional sign-off](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth).

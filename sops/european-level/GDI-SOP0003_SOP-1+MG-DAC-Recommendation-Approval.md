@@ -122,7 +122,7 @@ You must **finish this initial assessment within 5 working days**. After this pe
 Depending on the outcome of this initial evaluation:
 - If all steps are correct, move to **[step 2](#82-recommend-application-for-approval)**.
 - If **any step fails**, the **application must be rejected**:
-   - Inform the relevant NCPs, who may veto the rejection (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)). In your communication to the NCPs, clearly state the date for which their veto expires. Also inform NCPs about the possibility, in exceptional and justified cases (as defined in the [1+MG Data Access Governance for Research](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU))
+   - Inform the relevant NCPs, who may veto the rejection (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)). In your communication to the NCPs, clearly state the date for which their veto expires. Also inform NCPs about the possibility of extending the veto period, in exceptional and justified cases (as defined in the [1+MG Data Access Governance for Research](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU)).
    - After 6 _calendar_ days since NCPs were notified, **send a reminder** to the NCPs.
    - After 11 working days (``DATE:A``) since NCPs were notified, if no response was given from NCPs, move to **[step 10](#810-inform-data-requestor-rejection-confirmed)**.
 
@@ -152,7 +152,7 @@ After the end of ``DATE:A`` is reached with no response from relevant NCPs, **co
 |-----------------|------------------------------------------------|----------|
 | 4               | DATE:A has not been passed, and the NCP agrees with the 1+MG DAC recommendation | 1+MG DAC |
 
-If the **NCP agrees** with the recommendation, then **confirm the approval of the data access request**: move to **[step 9](#89-inform-data-user-approval-confirmed)**.
+If the **NCPs agree** with the recommendation, then **confirm the approval of the data access request**: move to **[step 9](#89-inform-data-user-approval-confirmed)**.
 
 #### 8.5. Initiate NCP review process
 | Step identifier | When                                           | Who      |

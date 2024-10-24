@@ -25,15 +25,18 @@
 
 | Template Version | Instance version | Author(s)         | Description of changes           | Date       |
 |------------------|------------------|-------------------|----------------------------------|------------|
+| ``v1.0.1``               |                  | Marcos Casado Barbero    | Transform document to markdown and complete version | ``2024.10.24`` |
 | ``v1``               |                  | Marcos Casado Barbero    | Transform document to markdown and complete version | ``2024.10.04`` |
 | ``v0``               |                  | Dylan Spalding    | First version of SOP drafted     | ``2024.04.11`` |
 
 ### 2. Glossary
 Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
 
+For this SOP in particular, the source of truth for most definitions and terms is the [1+MG Data Access Governance for Research](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU).
 | Abbreviation | Description                                                                                               |
 |--------------|-----------------------------------------------------------------------------------------------------------|
 | DAC          | Data Access Committee, responsible for reviewing access requests and approving or denying the requests     |
+| 1+MG DAC     | 1+MG Data Access Committee - Data Access Committee, which may include several domain-specific sub-committees, provided by 1+MG that receives and reviews access requests and moderates consensus discussions on access requests where necessary |
 | EDIC         | European Digital Infrastructure Consortium, will serve as the DAC for managing access requests to data in GDI |
 | NCP          | National Coordination Point                                                                               |
 
@@ -49,16 +52,23 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 | Author     | Dylan Spalding        | Finland / Pillar II co-lead | CSC          |
 | Author     | Marcos Casado Barbero | Task 4.3 Lead | EMBL-EBI          |
 | Reviewer   | Regina Becker | LU / Pillar I co-lead | LNDS |
+| Reviewer   | Gergő Csarnai | LU / Senior ELSI Specialist | LNDS |
 | Approver   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |
 
 ### 4. Purpose
-To access controlled access data within the European Genomic Data Infrastructure a research user must apply for authorisation to access the data from the 1+ Million Genomes Data Access Committee (1+MG DAC). The 1+MG DAC (a.k.a. 1+MG EDIC) will **review applications** to ensure they conform to the 1+MG Data Governance requirements, and **make recommendations** to the relevant National Coordination Points (NCPs) who may agree or disagree with the recommendation.
+The purpose of this SOP is to define the process for **requesting and granting access to controlled data within the European Genomic Data Infrastructure (GDI)**. This SOP ensures that:
+
+- **Access to data is granted only in justified cases**, following thorough review by the 1+MG Data Access Committee (DAC) and involving all necessary stakeholders to protect the rights and freedoms of the data subjects.
+- The 1+MG DAC **reviews applications** to ensure **compliance with the 1+MG Data Governance requirements**, and **makes recommendations** to National Coordination Points (NCPs), who may agree or exercise their veto rights.
+- The **process is transparent**, and **disputes are resolved in a timely manner**, adhering to the allocated timeframes for each request.
 
 ### 5. Scope
 This SOP covers the process **from when a data access application is received by the 1+MG DAC to when the application is approved or rejected** by the 1+MG DAC. The **input** is a completed application form, and the **output** is a notification of approval or rejection of the request for authorisation to access the controlled access data described in the application.
 
 ### 6. Introduction and Background Information
-The 1+MG DAC is responsible for recommending the approval or rejection of requests for access to data held within the GDI to the relevant NCP(s). Additionally, the 1+MG DAC will follow a review process when the NCP disagrees with its recommendation (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)). Once an agreement is reached, or the review process completes, the data user will be informed of the decision.
+To access controlled access data within the European Genomic Data Infrastructure a user must apply for authorisation to access the data from the 1+ Million Genomes Data Access Committee (1+MG DAC). The 1+MG DAC will **review applications** to ensure they conform to the 1+MG Data Governance requirements, and **make recommendations** to the relevant National Coordination Points (NCPs) who may agree or disagree with the recommendation.
+
+Additionally, the 1+MG DAC will follow a review process when the NCP disagrees with its recommendation (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)). Once an agreement is reached, or the review process completes, the data user will be informed of the decision.
 
 ### 7. Summary or Context Diagram
 The following diagram summarises the step-by-step process for the recommendation by the 1+MG DAC of approval or rejection of data access applications.
@@ -98,23 +108,28 @@ graph TD
 #### 8.1. Initiate application check
 | Step identifier | When                                       | Who          |
 |-----------------|--------------------------------------------|--------------|
-| 1               | On receipt of notification of a new data access authorisation application | 1+MG DAC     |
+| 1               | On receipt of notification of a new data access application | 1+MG DAC     |
 
-As the 1+MG DAC, check the requester's application, based on the requirement in the Data Governance document. The application form, which is used to help the data requester enter valid and complete information for the application, must be checked to ensure that:
-- Confirm the research has [institutional sign-off](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth).
-- The data analysis plan is present and suitable for the proposed research.
-- The data minimisation principle is met.
-- Algorithms (such as artificial intelligence) are suitable for the proposed purpose and transparent.
-- The ethical approval has been obtained for the proposed research, where applicable, and that the approval is applicable for the proposed research and conclusions of the ethics review are followed.
-- The funding mechanisms for the proposed research are in place (if required).
-- The project description corresponds with the data analysis plan and the ELSI that exist with respect to the requested data.
-- Any peer review of the scientific validity of the proposed research exists, and if not, ensure the scientific validity of the proposed research.
+As the 1+MG DAC, **check the requester's application**, based on the criteria in the [**Data Access Review**](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU/edit?tab=t.0#bookmark=kix.9o5agsar78sq) section of the Data Governance document. The application form, which is used to help the data requester enter valid and complete information for the application, must be checked to ensure that:
+- The research has [institutional sign-off](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth), if applicable.
+- The **data analysis plan** is present and suitable for the proposed research.
+- The **data minimisation principle** is met.
+- **Algorithms** (such as artificial intelligence) **are suitable** for the proposed purpose and transparent.
+- The **ethical approval** has been obtained for the proposed research, where applicable, and that the approval is applicable for the proposed research and conclusions of the ethics review are followed.
+- The **funding mechanisms** for the proposed research are in place (if required).
+- The **project description** corresponds with the data analysis plan, and the **ethical approval and legal requirements** exist with respect to the requested data.
+- Any **peer review** of the scientific validity of the proposed research exists. In case it does not, follow [**section II.3**](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU/edit?tab=t.0#bookmark=id.utnaek5ua0aa) of the Data Governance document.
 
-Depending on the outcome of this evaluation:
+You must **finish this initial assessment within 5 working days** (review [**agreed timelines**](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU/edit?tab=t.0#bookmark=kix.9o5agsar78sq) if needed). After this period,you shall **transmit the outcome of the review and a decision recommendation** to the 1+MG NCPs who can channel it to relevant bodies on the national level.
+
+Be mindful that **this timeline may be affected** where the planned research affects vulnerable subjects or groups, as specified in [**section III.2**](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU/edit?tab=t.0#bookmark=id.xez4tqfoy9hq) of the Data Governance document.
+
+Depending on the outcome of this initial evaluation:
 - If all steps are correct, move to **[step 2](#82-recommend-application-for-approval)**.
 - If **any step fails**, the **application must be rejected**:
-   - Inform the relevant NCPs, who may veto the rejection (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)).
-   - After 11 working days (``DATE:A``) since NCPs were notified, move to **[step 10](#810-inform-data-requestor-rejection-confirmed)**.
+   - Inform the relevant NCPs, who may veto the rejection (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)). In your communication to the NCPs, clearly state the date for which their veto expires. Also inform NCPs about the possibility of extending the veto period, in exceptional and justified cases (as defined in the [1+MG Data Access Governance for Research](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU)).
+   - After 6 _calendar_ days since NCPs were notified, **send a reminder** to the NCPs.
+   - After 11 working days (``DATE:A``) since NCPs were notified, if no response was given from NCPs, move to **[step 10](#810-inform-data-requestor-rejection-confirmed)**.
 
 #### 8.2. Recommend application for approval
 | Step identifier | When                                           | Who      |
@@ -142,19 +157,19 @@ After the end of ``DATE:A`` is reached with no response from relevant NCPs, **co
 |-----------------|------------------------------------------------|----------|
 | 4               | DATE:A has not been passed, and the NCP agrees with the 1+MG DAC recommendation | 1+MG DAC |
 
-If the **NCP agrees** with the recommendation, then **confirm the approval of the data access request**: move to **[step 9](#89-inform-data-user-approval-confirmed)**.
+If the **NCPs agree** with the recommendation, then **confirm the approval of the data access request**: move to **[step 9](#89-inform-data-user-approval-confirmed)**.
 
 #### 8.5. Initiate NCP review process
 | Step identifier | When                                           | Who      |
 |-----------------|------------------------------------------------|----------|
 | 5               | DATE:A has not been passed, and the NCP disagrees with the 1+MG DAC recommendation | 1+MG DAC |
 
-If the NCP disagrees with the recommendation, **initiate the review process for handling NCP disagreements** as per SOP [NCP review process of disagreement with 1+MG DAC recommendation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/33). This process must be completed by the time limit set in that SOP (``DATE:B``).
+If the NCPs disagree with the recommendation (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)), **initiate the review process for handling NCP disagreements** as per SOP [NCP review process of disagreement with 1+MG DAC recommendation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/33). This process must be completed by the time limit set in that SOP (``DATE:B``).
 
 Depending on the outcome of the NCP review process:
 - If **no response** before the end of ``DATE:B``, move to **[step 8](#88-inform-data-user-process-delayed)**.
 - If **NCPs upholds recommendation**, move to **[step 6](#86-confirm-approval-recommendation-upheld)**.
-- If **NCPs overrules recommendation**, move to **[step 5](#85-initiate-ncp-review-process)**.
+- If **NCPs overrules recommendation** (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)), move to **[step 7](#87-reject-application-recommendation-overruled)**.
 
 #### 8.6. Confirm approval (recommendation upheld)
 | Step identifier | When                                           | Who      |
@@ -207,5 +222,6 @@ This concludes the process resulting in rejection of the data request.
 | [1](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md) | European GDI - SOP Charter |
 | [2](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) | European GDI - Organisational Roles and Responsibilities (ORR) |
 | [3](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md) | European GDI SOP - NCPs veto EDIC Decision                               |
-| [4](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/33)                  | European GDI - NCP review process of disagreement with 1+MG DAC recommendation |
-| [5](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth) | European GDI - Obtain Institutional Sign-off                         |
+| [4](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU) | 1+MG Data Access Governance for Research |
+| [5](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/33)                  | European GDI - NCP review process of disagreement with 1+MG DAC recommendation |
+| [6](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth) | European GDI - Obtain Institutional Sign-off                         |

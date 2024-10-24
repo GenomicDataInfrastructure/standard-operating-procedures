@@ -32,9 +32,11 @@
 ### 2. Glossary
 Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
 
+For this SOP in particular, the source of truth for most definitions and terms is the [1+MG Data Access Governance for Research](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU).
 | Abbreviation | Description                                                                                               |
 |--------------|-----------------------------------------------------------------------------------------------------------|
-| 1+MG DAC     | 1+MG Data Access Committee (1+MG DAC) - Data Access Committee, which may include several domain-specific sub-committees, provided by 1+MG that receives and reviews access requests and moderates consensus discussions on access requests where necessary |
+| DAC          | Data Access Committee, responsible for reviewing access requests and approving or denying the requests     |
+| 1+MG DAC     | 1+MG Data Access Committee - Data Access Committee, which may include several domain-specific sub-committees, provided by 1+MG that receives and reviews access requests and moderates consensus discussions on access requests where necessary |
 | EDIC         | European Digital Infrastructure Consortium, will serve as the DAC for managing access requests to data in GDI |
 | NCP          | National Coordination Point                                                                               |
 
@@ -108,17 +110,19 @@ graph TD
 |-----------------|--------------------------------------------|--------------|
 | 1               | On receipt of notification of a new data access application | 1+MG DAC     |
 
-As the 1+MG DAC, check the requester's application, based on the requirement in the Data Governance document. The application form, which is used to help the data requester enter valid and complete information for the application, must be checked to ensure that:
-- Confirm the research has [institutional sign-off](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth), if applicable (i.e., if the requestor is employed by a suitable institution).
-- The data analysis plan is present and suitable for the proposed research.
-- The data minimisation principle is met.
-- Algorithms (such as artificial intelligence) are suitable for the proposed purpose and transparent.
-- The ethical approval has been obtained for the proposed research, where applicable, and that the approval is applicable for the proposed research and conclusions of the ethics review are followed.
-- The funding mechanisms for the proposed research are in place (if required).
-- The project description corresponds with the data analysis plan and the ELSI that exist with respect to the requested data.
-- Any peer review of the scientific validity of the proposed research exists, and if not, ensure the scientific validity of the proposed research.
+As the 1+MG DAC, **check the requester's application**, based on the criteria in the [**Data Access Review**](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU/edit?tab=t.0#bookmark=kix.9o5agsar78sq) section of the Data Governance document. The application form, which is used to help the data requester enter valid and complete information for the application, must be checked to ensure that:
+- The research has [institutional sign-off](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth), if applicable.
+- The **data analysis plan** is present and suitable for the proposed research.
+- The **data minimisation principle** is met.
+- **Algorithms** (such as artificial intelligence) **are suitable** for the proposed purpose and transparent.
+- The **ethical approval** has been obtained for the proposed research, where applicable, and that the approval is applicable for the proposed research and conclusions of the ethics review are followed.
+- The **funding mechanisms** for the proposed research are in place (if required).
+- The **project description** corresponds with the data analysis plan, and the **ethical approval and legal requirements** exist with respect to the requested data.
+- Any **peer review** of the scientific validity of the proposed research exists. In case it does not, follow [**section II.3**](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU/edit?tab=t.0#bookmark=id.utnaek5ua0aa) of the Data Governance document.
 
-You must **finish this initial assessment within 5 working days**. After this period,you shall **transmit the outcome of the review and a decision recommendation** to the 1+MG NCPs who can channel it to relevant bodies on the national level.
+You must **finish this initial assessment within 5 working days** (review [**agreed timelines**](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU/edit?tab=t.0#bookmark=kix.9o5agsar78sq) if needed). After this period,you shall **transmit the outcome of the review and a decision recommendation** to the 1+MG NCPs who can channel it to relevant bodies on the national level.
+
+Be mindful that **this timeline may be affected** where the planned research affects vulnerable subjects or groups, as specified in [**section III.2**](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU/edit?tab=t.0#bookmark=id.xez4tqfoy9hq) of the Data Governance document.
 
 Depending on the outcome of this initial evaluation:
 - If all steps are correct, move to **[step 2](#82-recommend-application-for-approval)**.
@@ -160,12 +164,12 @@ If the **NCPs agree** with the recommendation, then **confirm the approval of th
 |-----------------|------------------------------------------------|----------|
 | 5               | DATE:A has not been passed, and the NCP disagrees with the 1+MG DAC recommendation | 1+MG DAC |
 
-If the NCPs disagree with the recommendation, **initiate the review process for handling NCP disagreements** as per SOP [NCP review process of disagreement with 1+MG DAC recommendation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/33). This process must be completed by the time limit set in that SOP (``DATE:B``).
+If the NCPs disagree with the recommendation (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)), **initiate the review process for handling NCP disagreements** as per SOP [NCP review process of disagreement with 1+MG DAC recommendation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/33). This process must be completed by the time limit set in that SOP (``DATE:B``).
 
 Depending on the outcome of the NCP review process:
 - If **no response** before the end of ``DATE:B``, move to **[step 8](#88-inform-data-user-process-delayed)**.
 - If **NCPs upholds recommendation**, move to **[step 6](#86-confirm-approval-recommendation-upheld)**.
-- If **NCPs overrules recommendation**, move to **[step 7](#87-reject-application-recommendation-overruled)**.
+- If **NCPs overrules recommendation** (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)), move to **[step 7](#87-reject-application-recommendation-overruled)**.
 
 #### 8.6. Confirm approval (recommendation upheld)
 | Step identifier | When                                           | Who      |

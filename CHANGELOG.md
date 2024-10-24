@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- [``GDI-SOP_github-introduction-for-maintainers.md``](docs/GDI-SOP_github-introduction-for-maintainers.md) - Introductory guide for GDI SOP Repository maintainers.
 - [``review_reminder.yml``](.github/workflows/review_reminder.yml) - GH Workflow to preiodically (monthly) and automatically (through [check_sop_reviews.py](scripts/check_sop_reviews.py)) create SOP review reminders (GH issues)
 - [``check_sop_reviews.py``](scripts/check_sop_reviews.py) - Script to automatically check if SOPs are due for review and create GitHub issues if so
 - [``GDI-SOP_organisational-roles-and-responsibilities.md``](docs/GDI-SOP_organisational-roles-and-responsibilities.md) - Documentation containing Organisational Roles and Responsibilities for GDI SOPs.

@@ -161,6 +161,33 @@ For **more details on the reviewing process**, refer to the [**review checklist*
 
 ## Workflows and Linting
 
-GitHub Workflows, also known as GitHub Actions, help automate certain actions in the repository. In the GDI SOP repository, workflows are used, for example, to ensure SOPs follow proper formatting and style guidelines before merging them.
+GitHub Workflows, also known as GitHub Actions, help **automate certain actions in the repository**. In the GDI SOP repository, workflows are used, for example, to ensure SOPs follow proper formatting and style guidelines before merging them.
 
 You can **find the workflow configurations for this repository** in the [`.github/workflows/`](../.github/workflows/) directory, and the scripts they run in the [`scripts/`](../scripts/) folder. To learn more about each specific workflow, see the description at the top of the corresponding workflow file in `.github/workflows/`.
+
+Generally speaking, if everything works as expected, you will not need to dive much into this repository's workflows. Instead, they will simply aid you with visually appealing icons at Pull Requests:
+- ✔️ - Implies that the **workflow(s) finished correctly** and all checks were passed. 
+- ❌ - Implies that **something went wrong**. This requires further investigation (see example below).
+
+Let's go over a simple example of how a workflow aided in a [recent Pull Request](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/38). In this PR, ``M-casado`` created a PR against the ``dev`` branch, which triggered some of the workflows:
+- Compare SOP index table ([``compare_index.yml``](../.github/workflows/compare_index.yml)). It has a ❌, letting us know that something went wrong.
+- Linter of SOPs ([``lint_sops.yml``](../.github/workflows/lint_sops.yml)). It has a ✔️, so it checked the SOPs in this branch and lets us know that they seem to be well formatted.
+
+Notice at the bottom of the image below that, once the owner of the PR noticed the error through this workflow, it was amended and a checkmark ✔️ was obtained.
+![Detecting something went wrong](images/GDI-SOP_github-introduction-for-maintainers_workflow.png)
+
+To see further we can click on the **Details** next to the workflow that failed (see image below). You can inspect for yourself the same page [**here**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/actions/runs/11477389761/job/31939356879). 
+
+In the details of the workflow, you can see that something went wrong at the ``Run SOP index comparison`` step. If we take a closer look, we can see that there is some code executed at this step, and the exit code was ``1`` (i.e., there was an error). Instead of having to dig up exactly why ourselves, the message (in JSON format) that the script prints (see highlighted green below) gives us all the needed clues:
+- There were some differences between the existing [SOP index table](../sops/README.md) and the one that the script created (representing the latest version).
+- The difference was identified for ``GDI-SOP0003`` and specifically at the ``Last modified`` column of the table, where the values were not matching.
+
+![Details of a failed workflow](images/GDI-SOP_github-introduction-for-maintainers_workflow-errors.png)
+
+To fix it was simple, ``M-casado`` updated the index table in the [**next commit**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/38/commits/e92709896a20f4ab1cf58d18472e87594cdcdc97), and pushed the changes back to the remote branch (the one with changes), which triggered again the workflow and this time both returned with no errors (✔️).
+
+It is crucial to know that the execution details of each workflow are heavily tied to how they were written. Therefore, the defined exit codes and printed messages across workflows will likely vary.
+
+You can find a full list of all executed actions in the corresponding [**Actions**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/actions) tab of the repository.
+
+Documentation on GitHub workflows is very detailed, _perhaps too much_ for the level aimed in this guide. If you want to know more about workflows, it may be best to refer to the [**Creating an example workflow**](https://docs.github.com/en/actions/use-cases-and-examples/creating-an-example-workflow) page.

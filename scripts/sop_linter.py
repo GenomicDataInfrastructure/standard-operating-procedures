@@ -47,6 +47,7 @@ class SOPLinter:
         self.lr_check_document_history(soup, file_path)
         self.lr_check_roles_and_responsibilities(soup, file_path)
         self.lr_check_procedure_step_numbering(soup, file_path)
+        self.lr_check_step_consistency(soup, file_path)
 
         if self.verbosity > 1:
             print(f"- Finished linting for {file_path}")
@@ -366,6 +367,79 @@ class SOPLinter:
 
                 # Increment the expected step number for the next header
                 current_step_number += 1
+
+        if self.verbosity > 1:
+            print(f"{json.dumps(self.results[file_path], indent=2)}\n")
+
+    def lr_check_step_consistency(self, soup: BeautifulSoup, file_path: str):
+        """
+        Checks that each header in the "### 8. Procedure" section has a matching "Step identifier"
+        in the following table, consistent with the step number in the header, allowing for complex 
+        identifiers (e.g., 8.1, 8.2.1, 8.2.1.1) and capturing any header level.
+        
+        :param soup: BeautifulSoup object of the parsed SOP content.
+        :param file_path: Path to the SOP file.
+        """
+        if self.verbosity > 1:
+            print("-- Linting rule: checking step consistency in Procedure section...")
+
+        # Locate the "### 8. Procedure" header
+        procedure_header = soup.find('h3', string=re.compile(r"^8\.\s*Procedure$", re.IGNORECASE))
+        if not procedure_header:
+            self.report_issue("Missing '### 8. Procedure' section header.", file_path, error=True)
+            return
+
+        # Iterate through all headers within the Procedure section that start with "8."
+        for header in procedure_header.find_all_next(string=re.compile(r"^8\.(?!Procedure\b)")):
+            # Stop if we reach a new section at the same or higher level than the Procedure header
+            if header.name and re.match(r'^h[1-3]$', header.name) and header.name <= procedure_header.name:
+                break
+            
+            if header == '8. Procedure':
+                continue
+            
+            # Extract only the numeric part of the step identifier from header text
+            step_match = re.match(r'^(8(?:\.\d+)+)', header.strip())
+            if not step_match:
+                # Report if a header in the Procedure section doesn't start with the expected format
+                self.report_issue(
+                    f"Header formatting error in Procedure section. Expected a header starting with '8.' but found '{header.strip()}'.",
+                    file_path,
+                    error=True
+                )
+                continue
+
+            # Capture the stripped numeric identifier for comparison with "Step identifier"
+            step_identifier = step_match.group(1).lstrip("8.")
+
+            # Locate the next table after the header to check the "Step identifier" field
+            next_table = header.find_next('table')
+            if not next_table:
+                self.report_issue(
+                    f"No table found immediately after step header '{header.strip()}'. Each step must have an associated table.",
+                    file_path,
+                    error=True
+                )
+                continue
+
+            # Find the "Step identifier" cell in the first row of the table
+            step_identifier_cell = next_table.find('td')
+            if not step_identifier_cell:
+                self.report_issue(
+                    f"Table immediately following '{header.strip()}' does not contain a 'Step identifier' entry.",
+                    file_path,
+                    error=True
+                )
+                continue
+
+            # Compare the numeric part of the header identifier with the table's Step identifier
+            table_step_identifier = step_identifier_cell.text.strip()
+            if table_step_identifier != step_identifier:
+                self.report_issue(
+                    f"Step identifier mismatch for '{header.strip()}'. Expected 'Step identifier' '{step_identifier}', but found '{table_step_identifier}' in the table.",
+                    file_path,
+                    error=True
+                )
 
         if self.verbosity > 1:
             print(f"{json.dumps(self.results[file_path], indent=2)}\n")

@@ -77,7 +77,7 @@ graph TB
 ```
 
 ### 8. Procedure
-#### 1. < Evaluate input 1 >
+#### 8.1. < Evaluate input 1 >
 | Step identifier            | When             | Who |
 |:------------------|:----|:----|
 | 1                     | When input 1 is received... | The 1+MG Management Board at ... |
@@ -85,24 +85,35 @@ graph TB
 After input 1 is received by ..., it is evaluated following this checklist:
 - It is ...
 - It contains ...>_
-#### 2.1. < Do X >
+#### 8.2. < Do X >
 | Step identifier            | When             | Who |
 |:------------------|:----|:----|
-| 2.1                     | After positive evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
+| 2                     | After positive evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
 
 If positive evaluation is received, then ... executes the following code:
 ```bash
 echo "Hello world"
 ```
-#### 2.2. < Do X >
+##### 8.2.1 < Do X >
 | Step identifier            | When             | Who |
 |:---------------------------|:-----------------|:----|
-| 2.2                  | After negative evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
+| 2.1                 | After negative evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
 
 If negative evaluation is received, then ... executes the following code:
 ```bash
 echo "Bye world"
 ```
+##### 8.2.2 < Do X >
+| Step identifier            | When             | Who |
+|:---------------------------|:-----------------|:----|
+| 2.2                 | After negative evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
+
+#### 8.3. < Do X 2 >
+| Step identifier            | When             | Who |
+|:------------------|:----|:----|
+| 3                     | After positive evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
+
+Finish the SOP
 
 ### 9. References
 | Reference | Description                                          |

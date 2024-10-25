@@ -46,6 +46,7 @@ class SOPLinter:
         self.lr_check_metadata_table(soup, file_path)
         self.lr_check_document_history(soup, file_path)
         self.lr_check_roles_and_responsibilities(soup, file_path)
+        self.lr_check_procedure_step_numbering(soup, file_path)
 
         if self.verbosity > 1:
             print(f"- Finished linting for {file_path}")
@@ -153,9 +154,7 @@ class SOPLinter:
         :param file_path: Path to the SOP file.
         """
         if self.verbosity > 1:
-            print("-- Linting rule: checking required sections...")
-
-        
+            print("-- Linting rule: checking required sections...")       
 
         for section, selector in self.required_sections.items():
             if not soup.select_one(selector):
@@ -315,6 +314,58 @@ class SOPLinter:
 
             if not section_content or all(not sibling.text.strip() for sibling in section_content):
                 self.report_issue(f"The section '{section_title}' is empty.", file_path, error=True)
+
+        if self.verbosity > 1:
+            print(f"{json.dumps(self.results[file_path], indent=2)}\n")
+
+    def lr_check_procedure_step_numbering(self, soup: BeautifulSoup, file_path: str):
+        """
+        Checks that the headers under "### 8. Procedure" section are sequentially numbered 
+        as "#### 8.1", "#### 8.2", etc., without skipping any numbers and ensure they start with "8.".
+        
+        :param soup: BeautifulSoup object of the parsed SOP content.
+        :param file_path: Path to the SOP file.
+        """
+        if self.verbosity > 1:
+            print("-- Linting rule: checking header numbering in Procedure section...")
+
+        # Locate the "### 8. Procedure" header
+        procedure_header = soup.find('h3', string=re.compile(r"^8\.\s*Procedure", re.IGNORECASE))
+        if not procedure_header:
+            self.report_issue("Missing '### 8. Procedure' section header.", file_path, error=True)
+            return
+
+        # Initialize the expected step number
+        current_step_number = 1
+
+        # Iterate through all h4 headers within the Procedure section
+        for header in procedure_header.find_all_next('h4'):
+            # Stop if we reach a new section at the same or higher level than the Procedure header
+            if re.match(r'^h[1-3]$', header.name) and header.name <= procedure_header.name:
+                break
+
+            # Check if the header starts with "8." followed by the expected step number
+            match = re.match(r'^8\.(\d+)', header.text.strip())
+            if not match:
+                # If the header doesn't start with "8.", report it as an error
+                self.report_issue(
+                    f"Header formatting error in '8. Procedure' section. Expected '#### 8.{current_step_number} ...' or similar correct numbering, but found '#### {header.text.strip()}'.",
+                    file_path,
+                    error=True
+                )
+            else:
+                step_number = int(match.group(1))
+                if step_number != current_step_number:
+                    self.report_issue(
+                        f"Step numbering error in '8. Procedure' section. Expected '#### 8.{current_step_number}' or similar correct numbering, but found '#### {header.text.strip()}'.",
+                        file_path,
+                        error=True
+                    )
+                    # Update to the actual step number to attempt to continue checking from this point
+                    current_step_number = step_number
+
+                # Increment the expected step number for the next header
+                current_step_number += 1
 
         if self.verbosity > 1:
             print(f"{json.dumps(self.results[file_path], indent=2)}\n")

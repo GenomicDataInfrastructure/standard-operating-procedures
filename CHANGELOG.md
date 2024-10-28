@@ -7,10 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+### Modified
+### Fixed
+
+## [1.0.0](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/releases/tag/v1.0.0) - 2024-10-28
+
+### Added
 - [``GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md``](sops/european-level/GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md) - European-level SOP describing how the 1+MG DAC is to review data access requests and recommend their rejection or approval.
 - [``GDI-SOP0002_NCPs-veto-EDIC-decision.md``](sops/node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md) - Node-specific SOP Template describing how NCPs may veto EDIC decisions on data requests.
 - [``GDI-SOP0007_SOP-template-creation.md``](sops/european-level/GDI-SOP0007_SOP-template-creation.md) - European-level SOP describing how to develop new SOP templates.
-- [``review_reminder.yml``](.github/workflows/review_reminder.yml) - GH Workflow to preiodically (monthly) and automatically (through [check_sop_reviews.py](scripts/check_sop_reviews.py)) create SOP review reminders (GH issues)
+- [``review_reminder.yml``](.github/workflows/review_reminder.yml) - GH Workflow to periodically (monthly) and automatically (through [check_sop_reviews.py](scripts/check_sop_reviews.py)) create SOP review reminders (GH issues)
 - [``check_sop_reviews.py``](scripts/check_sop_reviews.py) - Script to automatically check if SOPs are due for review and create GitHub issues if so
 - [``GDI-SOP_organisational-roles-and-responsibilities.md``](docs/GDI-SOP_organisational-roles-and-responsibilities.md) - Documentation containing Organisational Roles and Responsibilities for GDI SOPs.
 - [``GDI-SOP_information-service-management.md``](GDI-SOP_information-service-management.md) - Framework designed to systematically manage SOPs information flows across the GDI infrastructure

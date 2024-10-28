@@ -1,7 +1,8 @@
 import os
 import re
 from bs4 import BeautifulSoup
-from typing import List
+from typing import List, Dict
+import requests
 
 def find_tables(soup: BeautifulSoup, aim_headers: List[str], tables: List[BeautifulSoup] = None) -> List[BeautifulSoup]:
     """
@@ -83,3 +84,23 @@ def build_hyperlink(file_path: str, relative_directory: str = "sops"):
     name_with_link = f"[{file_name}](./{relative_path})"
 
     return name_with_link
+
+def get_gh_issues(gh_repo: str, gh_token: str, issue_params: Dict):
+    """
+    Gets all GH issues of the given repository with specific criteria
+
+    :param gh_repo: GitHub repository path (e.g., 'GenomicDataInfrastructure/standard-operating-procedures')
+    :param gh_token: GitHub token to authorize
+    :param issue_params: Parameters used to filter the GH issues (e.g., '{"state": "open", "labels": "SOP-Review"}')
+    """
+    url = f"https://api.github.com/repos/{gh_repo}/issues"
+    headers = {"Authorization": f"token {gh_token}"}
+
+    response = requests.get(url, headers=headers, params=issue_params)
+    if response.status_code != 200:
+        raise ValueError(f"Failed to fetch GH issues: {response.status_code}, {response.text}")
+    
+    # GH's API treats issues and pull requests similarly, so we filter them here
+    all_issues = [issue for issue in response.json() if "pull_request" not in issue]
+    
+    return all_issues

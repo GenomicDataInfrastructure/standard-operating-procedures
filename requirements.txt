@@ -1,4 +1,14 @@
+# Required for parsing HTML content in SOP documents
 beautifulsoup4>=4.12.3
+
+# Required for parsing markdown SOP documents
 markdown>=3.6
+
+# Required for checking versioning and packaging in SOPs
 packaging>=24
+
+# Required for handling data processing if needed in future expansions
 pandas>=2.0,<2.2
+
+# Required for making HTTP requests to GitHub API
+requests>=2.31.0

@@ -19,7 +19,7 @@
 ## 2. Glossary
 The following table defines the abbreviations and terms relevant to GDI SOPs.
 
-| Abbreviation | Description                                                         |
+| **Abbreviation** | **Description**                                                         |
 | ------------ | ------------------------------------------------------------------- |
 | 1+MG         | [1+ Million Genomes](https://framework.onemilliongenomes.eu/)       |
 | AAI          | Authentication and Authorization Infrastructure                     |

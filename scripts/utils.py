@@ -104,3 +104,31 @@ def get_gh_issues(gh_repo: str, gh_token: str, issue_params: Dict):
     all_issues = [issue for issue in response.json() if "pull_request" not in issue]
     
     return all_issues
+
+def parse_glossary(soup: BeautifulSoup) -> Dict[str, str]:
+    """
+    Parses glossary tables in a BeautifulSoup object, looking for tables that 
+    contain headers such as 'Abbreviation' or 'Term' and extracts them into a dictionary.
+    
+    :param soup: BeautifulSoup object of the SOP or Charter content.
+    :return: Dictionary of glossary items with their descriptions.
+    """
+    glossary = {}
+
+    # Define headers to match glossary tables
+    aim_headers_list = [["Abbreviation", "Description"], ["Term", "Definition"]]
+
+    # Loop through possible glossary header types
+    for aim_headers in aim_headers_list:
+        tables = find_tables(soup, aim_headers)
+        for table in tables:
+            rows = table.find_all('tr')
+            for row in rows[1:]:  # Skip the header row
+                columns = row.find_all('td')
+                if len(columns) >= 2:
+                    # First column is the term, second is the description
+                    key = columns[0].text.strip()
+                    description = columns[1].text.strip()
+                    glossary[key] = description
+
+    return glossary

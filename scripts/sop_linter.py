@@ -6,7 +6,7 @@ from typing import List, Dict, Any
 from packaging.version import Version, InvalidVersion
 import markdown
 from bs4 import BeautifulSoup
-from utils import find_tables, collect_sop_files
+from utils import find_tables, collect_sop_files, parse_glossary
 
 class SOPLinter:
     def __init__(self, verbosity: int = 0, strict: bool = False, required_sections: dict = {}):
@@ -48,6 +48,7 @@ class SOPLinter:
         self.lr_check_roles_and_responsibilities(soup, file_path)
         self.lr_check_procedure_step_numbering(soup, file_path)
         self.lr_check_step_consistency(soup, file_path)
+        self.lr_check_glossary_in_charter(soup, file_path)
 
         if self.verbosity > 1:
             print(f"- Finished linting for {file_path}")
@@ -397,7 +398,7 @@ class SOPLinter:
             
             if header == '8. Procedure':
                 continue
-            
+
             # Extract only the numeric part of the step identifier from header text
             step_match = re.match(r'^(8(?:\.\d+)+)', header.strip())
             if not step_match:
@@ -422,7 +423,7 @@ class SOPLinter:
                 )
                 continue
 
-            # Find the "Step identifier" cell in the first row of the table
+            # Find the "Step identifier" (first column) cell in the first row of the table
             step_identifier_cell = next_table.find('td')
             if not step_identifier_cell:
                 self.report_issue(
@@ -443,6 +444,98 @@ class SOPLinter:
 
         if self.verbosity > 1:
             print(f"{json.dumps(self.results[file_path], indent=2)}\n")
+    
+    def lr_check_glossary_in_charter(self, sop_soup: BeautifulSoup, file_path: str):
+        """
+        Checks that all abbreviations and terms in the SOP's glossary are also present in the Charter glossary.
+
+        :param sop_soup: BeautifulSoup object of the SOP content.
+        :param file_path: Path to the SOP file.
+        """
+        if self.verbosity > 1:
+            print("-- Linting rule: checking SOP glossary terms against Charter glossary...")
+
+        # Get the Charter soup, parsing if it hasn't been done already
+        charter_soup = self.get_charter_soup()
+
+        # Parse glossaries from SOP and Charter
+        sop_glossary = parse_glossary(sop_soup)
+        charter_glossary = parse_glossary(charter_soup)
+
+        # Check if all items in the SOP glossary are also in the Charter glossary
+        for term in sop_glossary.keys():
+            if term not in charter_glossary:
+                self.report_issue(
+                    f"Glossary mismatch: '{term}' in SOP glossary is not found in Charter glossary.",
+                    file_path,
+                    error=True
+                )
+
+        if self.verbosity > 1:
+            print(f"{json.dumps(self.results[file_path], indent=2)}\n")
+
+
+    def lr_check_undefined_acronyms(self, sop_soup: BeautifulSoup, file_path: str):
+        """
+        Detects any acronyms in the SOP content that are not defined in the SOP glossary.
+
+        :param sop_soup: BeautifulSoup object of the SOP content.
+        :param file_path: Path to the SOP file.
+        """
+        if self.verbosity > 1:
+            print("-- Linting rule: checking for undefined acronyms in SOP...")
+
+        # Parse glossary from SOP
+        sop_glossary = parse_glossary(sop_soup)
+
+        # Identify any acronyms in SOP content that are missing in the SOP glossary
+        sop_text = sop_soup.get_text()
+        detected_acronyms = re.findall(r'\b[A-Z]{2,}\b', sop_text)  # Regex for uppercase acronyms of 2+ characters
+        for acronym in set(detected_acronyms):
+            if acronym not in sop_glossary:
+                self.report_issue(
+                    f"Undefined acronym detected: '{acronym}' is used in the SOP but is not defined in the SOP glossary.",
+                    file_path,
+                    warning=True
+                )
+
+        if self.verbosity > 1:
+            print(f"{json.dumps(self.results[file_path], indent=2)}\n")
+
+    def get_charter_soup(self, input_file: str) -> BeautifulSoup:
+        """
+        Parses the Charter document into a BeautifulSoup object if it hasn't been parsed already.
+        Dynamically determines the Charter path based on the input file's repository structure.
+        
+        :param input_file: Path to one of the input SOP files, used to determine the repo root.
+        :return: BeautifulSoup object of the parsed Charter document.
+        """
+        if hasattr(self, 'charter_soup') and self.charter_soup:
+            return self.charter_soup
+
+        # Determine the repository root by searching for .git in parent directories
+        repo_root = os.path.dirname(os.path.abspath(input_file))
+        while not os.path.isdir(os.path.join(repo_root, '.git')):
+            parent_dir = os.path.dirname(repo_root)
+            if parent_dir == repo_root:  # We've reached the root of the file system
+                raise ValueError("Repository root not found. Ensure the script is run within a GitHub repository.")
+            repo_root = parent_dir
+
+        # Construct the Charter path relative to the repository root
+        charter_path = os.path.join(repo_root, 'docs', 'GDI-SOP_charter.md')
+
+        # Parse the Charter document
+        try:
+            with open(charter_path, 'r') as charter_file:
+                charter_content = charter_file.read()
+            charter_html = markdown.markdown(charter_content, extensions=['tables'])
+            self.charter_soup = BeautifulSoup(charter_html, 'html.parser')
+        except FileNotFoundError:
+            raise ValueError(f"Charter document not found at '{charter_path}'. Please verify the file path.")
+        except Exception as e:
+            raise ValueError(f"Error parsing the Charter document: {str(e)}")
+
+        return self.charter_soup
 
     def find_tables(self, soup: BeautifulSoup, file_path: str, aim_headers: List[str]) -> List[BeautifulSoup]:
         """

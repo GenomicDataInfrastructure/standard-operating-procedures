@@ -22,7 +22,7 @@
 9. [References](#9-references)
 
 ### 1. Document History
-![myimage](../docs/images/GDI-ISM_schema.svg)
+![MyImage](../docs/images/GDI-ISM_schema.svg)
 
 
 | Template Version | Instance version | Author(s) | Description of changes       | Date       |

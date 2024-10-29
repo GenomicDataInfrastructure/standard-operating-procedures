@@ -146,3 +146,12 @@ def is_remote_reference_resolvable(url: str) -> bool:
         return response.status_code != 404
     except requests.RequestException:
         return False
+
+def get_image_paths(soup: BeautifulSoup) -> List[str]:
+    """
+    Extracts all image paths (source - src) referenced in the SOP content.
+
+    :param soup: BeautifulSoup object of the parsed SOP content.
+    :return: List of image paths.
+    """
+    return [img['src'] for img in soup.find_all('img') if 'src' in img.attrs]

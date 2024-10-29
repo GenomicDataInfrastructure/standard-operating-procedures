@@ -6,7 +6,7 @@ from typing import List, Dict, Any
 from packaging.version import Version, InvalidVersion
 import markdown
 from bs4 import BeautifulSoup
-from utils import find_tables, collect_sop_files, parse_glossary, is_remote_reference_resolvable
+from utils import find_tables, collect_sop_files, parse_glossary, is_remote_reference_resolvable, get_image_paths
 
 class SOPLinter:
     def __init__(self, verbosity: int = 0, strict: bool = False, required_sections: dict = {}):
@@ -54,6 +54,7 @@ class SOPLinter:
         self.lr_check_resolvable_references(soup, file_path)
         self.lr_check_identifier_and_casing(file_path, all_inputs)
         self.lr_check_title_match(soup, file_path)
+        self.lr_check_image_paths(soup, file_path)
 
         if self.verbosity > 1:
             print(f"- Finished linting for {file_path}")
@@ -647,6 +648,22 @@ class SOPLinter:
         if self.verbosity > 1:
             print(f"{json.dumps(self.results[file_path], indent=2)}\n")
 
+    def lr_check_image_paths(self, soup: BeautifulSoup, file_path: str):
+        """
+        Checks that all image references in the SOP contain the correct 'docs/images' folder in their file paths.
+
+        :param soup: BeautifulSoup object of the parsed SOP content.
+        :param file_path: Path to the SOP file.
+        """
+        image_paths = get_image_paths(soup)
+        incorrect_images = [img_path for img_path in image_paths if "docs/images" not in img_path]
+
+        for img_path in incorrect_images:
+            self.report_issue(
+                f"Referenced image '{img_path}' should be located in the 'docs/images' folder or a subdirectory within it.",
+                file_path,
+                error=True
+            )
 
     def get_charter_soup(self, input_file: str) -> BeautifulSoup:
         """

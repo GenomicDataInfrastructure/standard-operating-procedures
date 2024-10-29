@@ -6,7 +6,7 @@ from typing import List, Dict, Any
 from packaging.version import Version, InvalidVersion
 import markdown
 from bs4 import BeautifulSoup
-from utils import find_tables, collect_sop_files, parse_glossary
+from utils import find_tables, collect_sop_files, parse_glossary, is_remote_reference_resolvable
 
 class SOPLinter:
     def __init__(self, verbosity: int = 0, strict: bool = False, required_sections: dict = {}):
@@ -50,6 +50,7 @@ class SOPLinter:
         self.lr_check_step_consistency(soup, file_path)
         self.lr_check_glossary_in_charter(soup, file_path)
         self.lr_check_undefined_acronyms(soup, file_path)
+        self.lr_check_resolvable_references(soup, file_path)
 
         if self.verbosity > 1:
             print(f"- Finished linting for {file_path}")
@@ -495,20 +496,60 @@ class SOPLinter:
         # Parse glossary from SOP
         sop_glossary = parse_glossary(sop_soup)
 
-        # Identify any acronyms in SOP content that are missing in the SOP glossary
+        # Identify any acronyms in SOP content
         sop_text = sop_soup.get_text()
         # Regex for uppercase acronyms of 2+ characters, with possible "s" ending (e.g., SOPs)
-        detected_acronyms = re.findall(r'\b[A-Z]{2,}s?\b', sop_text)  
+        detected_acronyms = re.findall(r'\b[A-Z]{2,}s?\b', sop_text)
         for acronym in set(detected_acronyms):
             if acronym not in sop_glossary:
                 if acronym[-1] == 's' and acronym[:-1] in sop_glossary:
-                    # We skip acronym plurals that would be false positives
+                    # We skip acronym plurals (e.g., SOPs) that would be false positives (e.g., since SOP is already there)
                     continue
                 self.report_issue(
                     f"Undefined acronym detected: '{acronym}' is used in the SOP but is not defined in the SOP glossary.",
                     file_path,
                     warning=True
                 )
+
+        if self.verbosity > 1:
+            print(f"{json.dumps(self.results[file_path], indent=2)}\n")
+
+    def lr_check_resolvable_references(self, soup: BeautifulSoup, file_path: str):
+        """
+        Checks if GitHub references in the SOP content are resolvable.
+        Relative paths are checked against the file system, and remote GitHub links are checked via HTTP.
+
+        :param soup: BeautifulSoup object of the SOP content.
+        :param file_path: Path to the SOP file.
+        """
+        if self.verbosity > 1:
+            print("-- Linting rule: checking resolvable GitHub references...")
+
+        # Find all <a> tags with href attributes in the HTML content
+        links = soup.find_all('a', href=True)
+
+        # Check each link to classify and verify its resolvability
+        for link in links:
+            href = link['href']
+            
+            # Relative path check (starts with ./ or ../)
+            if href.startswith('./') or href.startswith('../'):
+                absolute_path = os.path.abspath(os.path.join(os.path.dirname(file_path), href))
+                if not os.path.exists(absolute_path):
+                    self.report_issue(
+                        f"Unresolvable relative reference: '{href}' cannot be resolved (i.e., the target file does not exist).",
+                        file_path,
+                        error=True
+                    )
+            
+            # Remote GitHub link check (starts with https://github.com/)
+            elif href.startswith('https://github.com/'):
+                if not is_remote_reference_resolvable(href):
+                    self.report_issue(
+                        f"Unresolvable GitHub reference: '{href}' returns a 404 (not found).",
+                        file_path,
+                        error=True
+                    )
 
         if self.verbosity > 1:
             print(f"{json.dumps(self.results[file_path], indent=2)}\n")

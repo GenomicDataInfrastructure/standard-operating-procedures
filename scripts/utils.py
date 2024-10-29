@@ -133,3 +133,16 @@ def parse_glossary(soup: BeautifulSoup) -> Dict[str, str]:
                         glossary[key] = description
 
     return glossary
+
+def is_remote_reference_resolvable(url: str) -> bool:
+    """
+    Checks if a remote reference URL is resolvable (does not return 404).
+    
+    :param url: The URL to check.
+    :return: True if the URL is reachable and does not return 404, False otherwise.
+    """
+    try:
+        response = requests.head(url, allow_redirects=True)
+        return response.status_code != 404
+    except requests.RequestException:
+        return False

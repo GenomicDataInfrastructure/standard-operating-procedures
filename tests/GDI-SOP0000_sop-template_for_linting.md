@@ -116,9 +116,9 @@ echo "Bye world"
 #### 8.3. < Do X 2 >
 | Step identifier            | When             | Who |
 |:------------------|:----|:----|
-| 3                     | After positive evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
+| 3                     | After step 2.2 | The 1+MG Management Board at ... |
 
-Finish the SOP
+Finish the [Charter](../docs/GDI-SOP_charter.md)
 
 ### 9. References
 | Reference | Description                                          |

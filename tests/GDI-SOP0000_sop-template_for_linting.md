@@ -34,11 +34,11 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 
 | Abbreviation | Description     |
 |---------------|-----------------|
-|               |                 |
+| SOP | Standard Operating Procedure |
 
 | Term          | Definition      |
 |---------------|-----------------|
-|               |                 |
+| FitSM | ... |
 
 ### 3. Roles and Responsibilities
 See qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.

@@ -456,7 +456,7 @@ class SOPLinter:
             print("-- Linting rule: checking SOP glossary terms against Charter glossary...")
 
         # Get the Charter soup, parsing if it hasn't been done already
-        charter_soup = self.get_charter_soup()
+        charter_soup = self.get_charter_soup(file_path)
 
         # Parse glossaries from SOP and Charter
         sop_glossary = parse_glossary(sop_soup)
@@ -466,7 +466,7 @@ class SOPLinter:
         for term in sop_glossary.keys():
             if term not in charter_glossary:
                 self.report_issue(
-                    f"Glossary mismatch: '{term}' in SOP glossary is not found in Charter glossary.",
+                    f"Glossary mismatch: '{term}' in SOP glossary is not found in Charter glossary. Make sure that the Charter is updated accordingly with new acronyms from this SOP.",
                     file_path,
                     error=True
                 )

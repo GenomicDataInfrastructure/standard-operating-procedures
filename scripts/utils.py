@@ -129,6 +129,7 @@ def parse_glossary(soup: BeautifulSoup) -> Dict[str, str]:
                     # First column is the term, second is the description
                     key = columns[0].text.strip()
                     description = columns[1].text.strip()
-                    glossary[key] = description
+                    if key:
+                        glossary[key] = description
 
     return glossary

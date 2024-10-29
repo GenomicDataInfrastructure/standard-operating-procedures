@@ -43,6 +43,7 @@ This document outlines the format and style required for all Standard Operating 
 - Use **Markdown tables**, not HTML, where applicable. This is relevant for scripts automatically parsing the SOPs for different tasks. Tables should be used to organize structured information like roles, metadata, and steps.
 - Ensure that all tables are easy to read, with no excessive or complex formatting.
 - When possible, keep tables concise and avoid horizontal scrolling.
+- **Always** leave an empty line right before a new table (i.e., right above the header). Otherwise, the table may be interpreted as a continuation of the previous paragraph instead. This may lead to tables not being found by the maintenance scripts.
 
 ### Example:
 ````markdown

@@ -33,12 +33,25 @@
 Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
 
 For this SOP in particular, the source of truth for most definitions and terms is the [1+MG Data Access Governance for Research](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU).
+
 | Abbreviation | Description                                                                                               |
 |--------------|-----------------------------------------------------------------------------------------------------------|
 | DAC          | Data Access Committee, responsible for reviewing access requests and approving or denying the requests     |
 | 1+MG DAC     | 1+MG Data Access Committee - Data Access Committee, which may include several domain-specific sub-committees, provided by 1+MG that receives and reviews access requests and moderates consensus discussions on access requests where necessary |
 | EDIC         | European Digital Infrastructure Consortium, will serve as the DAC for managing access requests to data in GDI |
 | NCP          | National Coordination Point                                                                               |
+| SOP          | Standard Operating Procedure                                                                              |
+| IT          | Information Technology                                                                              |
+| CSC          | Finnish IT center for science                                                                                     |
+| LNDS         | Luxembourg National Data Service                                                                                   |
+| ELSI         | Ethical, Legal, and Social Implications                                                                   |
+| EMBL         | European Molecular Biology Laboratory                                                                     |
+| MG           | Million Genomes                                                                                           |
+| TB           | Top to Bottom                                                                                             |
+| LU           | Luxembourg                                                                                                |
+| GDI          | European Genomic Data Infrastructure                                                                      |
+| ORR          | Organisational Roles and Responsibilities                                                                 |
+| EBI          | European Bioinformatics Institute                                                                         |
 
 | Term          | Definition                                                                                                |
 |---------------|-----------------------------------------------------------------------------------------------------------|
@@ -73,7 +86,7 @@ Additionally, the 1+MG DAC will follow a review process when the NCP disagrees w
 ### 7. Summary or Context Diagram
 The following diagram summarises the step-by-step process for the recommendation by the 1+MG DAC of approval or rejection of data access applications.
 ````mermaid
-graph TD
+graph TB
     A[**Start**: Data Access<br>Application Received]
     B1{**Step 1**:<br> Application Checked<br> by 1+MG DAC}
     B2[**Step 2**: Application<br>Recommended for Approval]

@@ -29,22 +29,38 @@
 ### 2. Glossary
 Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
 
-| Abbreviation  | Description                             |
-|---------------|-----------------------------------------|
-| EBI           | European Bioinformatics Institute       |
-| EMBL          | European Molecular Biology Laboratory   |
-| GH            | GitHub                                  |
-| HRI           | Health Research Infrastructure          |
-| IST           | Instituto Superior Técnico              |
-| NBIS          | National Bioinformatics Infrastructure Sweden |
-| PR            | Pull Request                            |
-| RFC           | Request For Comments                    |
-| SLA           | Service Level Agreements                |
-| UU            | University of Uppsala                   |
+| Abbreviation  | Description                                                         |
+|---------------|---------------------------------------------------------------------|
+| CC            | Carbon Copy (used in communications to send a copy to others)       |
+| CSC           | Finnish IT center for science                                       |
+| EBI           | European Bioinformatics Institute                                   |
+| EMBL          | European Molecular Biology Laboratory                               |
+| GH            | GitHub                                                              |
+| GDI           | European Genomic Data Infrastructure                                |
+| HRI           | Health Research Infrastructure                                      |
+| ISM           | Information Service Management                                      |
+| IST           | Instituto Superior Técnico                                          |
+| IT            | Information Technology                                              |
+| MB            | Management Board                                                    |
+| NBIS          | National Bioinformatics Infrastructure Sweden                       |
+| OC            | Operations Committee                                                |
+| ORR           | Organisational Roles and Responsibilities                           |
+| PR            | Pull Request                                                        |
+| RFC           | Request For Comments                                                |
+| SDPC          | Security and Data Protection Committee                              |
+| SLA           | Service Level Agreement                                             |
+| SOP           | Standard Operating Procedure                                        |
+| TBD           | To Be Determined                                                    |
+| TB            | Top to Bottom                                                       |
+| TODO          | A list of pending tasks                                             |
+| URL           | Uniform Resource Locator                                            |
+| UU            | University of Uppsala                                               |
 
-| Term          | Definition      |
-|---------------|-----------------|
-|               |                 |
+| Term          | Definition                                                          |
+|---------------|---------------------------------------------------------------------|
+| CHANGELOG     | Log or record of all notable changes made to a project              |
+| README        | File that provides information about a project or directory         |
+| YYYYMMDD      | Date format in year-month-day                                       |
 
 ### 3. Roles and Responsibilities
 See the qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
@@ -235,7 +251,7 @@ Once the SOP request was accepted, it is time for the idea to be built from with
 
 Go to [**GDI's RFC GH repository**](https://github.com/GenomicDataInfrastructure/rfcs?tab=readme-ov-file#what-the-process-is) and familiarize yourself with the process of **RFC creation**. As the first step, **create a [new discussion](https://github.com/GenomicDataInfrastructure/rfcs/discussions/new/choose)** choosing the ``RFC Discussions`` category. The goal of this discussion is for the SOP, as a substantial change to GDI, to be introduced and discussed by the GDI community.
 
-_#! TO-DO: the process of adding an RFC to the repository is still not fully defined, but the idea is for a discussion to be opened in GH, for consensus to be reached and a final markdown RFC document to be merged with the repo._
+_#! TODO: the process of adding an RFC to the repository is still not fully defined, but the idea is for a discussion to be opened in GH, for consensus to be reached and a final markdown RFC document to be merged with the repo._
 
 #### 3. Draft SOP document
 | Step identifier | When| Who |

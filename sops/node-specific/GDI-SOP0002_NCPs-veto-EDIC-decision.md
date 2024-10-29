@@ -34,14 +34,23 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 | Abbreviation | Description                                        |
 |--------------|----------------------------------------------------|
 | 1+MG         | 1+ Million Genomes                                 |
+| CSC          | Finnish IT Center for Science                      |
 | DAC          | Data Access Committee                              |
+| EBI          | European Bioinformatics Institute                  |
 | EDIC         | European Digital Infrastructure Consortium         |
-| NCP          | National Coordination Point                                 |
+| EMBL         | European Molecular Biology Laboratory              |
+| GDI          | European Genomic Data Infrastructure               |
+| LNDS         | Luxembourg National Data Service                   |
+| LU           | Luxembourg                                         |
+| MG           | Million Genomes                                    |
+| NBIS         | National Bioinformatics Infrastructure Sweden      |
+| NCP          | National Coordination Point                        |
 | SOP          | Standard Operating Procedure                       |
+| UU           | University of Uppsala                              |
 
-| Term          | Definition                                         |
-|---------------|----------------------------------------------------|
-| Permit Authority | National body responsible for data access decisions |
+| Term             | Definition                                           |
+|------------------|------------------------------------------------------|
+| Permit Authority | National body responsible for data access decisions  |
 
 ### 3. Roles and Responsibilities
 See the qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.

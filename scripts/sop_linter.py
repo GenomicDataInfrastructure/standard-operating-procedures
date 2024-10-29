@@ -440,7 +440,7 @@ class SOPLinter:
                 continue
 
             # Capture the stripped numeric identifier for comparison with "Step identifier"
-            step_identifier = step_match.group(1).lstrip("8.")
+            step_identifier = re.sub(r'^8\.', '', step_match.group(1))
 
             # Locate the next table after the header to check the "Step identifier" field
             next_table = header.find_next('table')
@@ -466,7 +466,7 @@ class SOPLinter:
             table_step_identifier = step_identifier_cell.text.strip()
             if table_step_identifier != step_identifier:
                 self.report_issue(
-                    f"Step identifier mismatch for '{header.strip()}'. Expected 'Step identifier' '{step_identifier}', but found '{table_step_identifier}' in the table.",
+                    f"Step identifier mismatch for '{header.strip()}'. Expected 'Step identifier' '{step_identifier}', but found '{table_step_identifier}' in the table. Check that the table of that step is correct and existing.",
                     file_path,
                     error=True
                 )
@@ -638,7 +638,7 @@ class SOPLinter:
             document_title = title_header.text.strip()
             if document_title.lower() != expected_document_title.lower():
                 self.report_issue(
-                    f"Document title '{document_title}' does not match the expected format (regardless of upper/lowercase) based on the filename: '{expected_document_title}'",
+                    f"Title within the document ('{document_title}') does not match the expected format (regardless of upper/lowercase) based on the filename: '{expected_document_title}'",
                     file_path,
                     error=True
                 )

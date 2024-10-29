@@ -25,6 +25,7 @@
 
 | Template Version | Instance version | Author(s)         | Description of changes               | Date       |
 |------------------|------------------|-------------------|--------------------------------------|------------|
+| ``v1.0.1`` |  | Marcos Casado Barbero | Updated to linting rules - [PR46](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/46) | ``2024.10.29`` |
 | ``v1``               |                  | Marcos Casado Barbero    | Transform document to markdown     | ``2024.09.27`` |
 | ``v0.1``             |                  | Dylan Spalding    | Comments addressed and first draft of SOP | ``2024.08.14`` |
 

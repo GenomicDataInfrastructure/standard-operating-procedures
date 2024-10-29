@@ -156,6 +156,22 @@ class SOPLinter:
         except Exception:
             # The missing rows are already reported above
             pass
+        
+        try:
+            sop_type = table_dict["template sop type"].lower()
+            expected_folder = sop_type.split(" ", 1)[0]  # "european-level" or "node-specific"
+            parent_directory = os.path.basename(os.path.dirname(file_path)).lower()
+            
+            # Check if the immediate parent directory matches the expected folder name
+            if parent_directory != expected_folder:
+                self.report_issue(
+                    f"SOP type '{table_dict['template sop type']}' should be in the '{expected_folder}' folder, but the file path shows it's in '{parent_directory}'.",
+                    file_path,
+                    error=True
+                )
+        except KeyError:
+            # SOP type errors (e.g., missing type) should be reported by metadata checks
+            pass
 
         if self.verbosity > 1:
             print(f"{json.dumps(self.results[file_path], indent=2)}\n")

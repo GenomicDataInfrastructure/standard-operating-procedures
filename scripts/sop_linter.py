@@ -534,7 +534,8 @@ class SOPLinter:
             
             # Relative path check (starts with ./ or ../)
             if href.startswith('./') or href.startswith('../'):
-                absolute_path = os.path.abspath(os.path.join(os.path.dirname(file_path), href))
+                path_only = href.split('#')[0]
+                absolute_path = os.path.abspath(os.path.join(os.path.dirname(file_path), path_only))
                 if not os.path.exists(absolute_path):
                     self.report_issue(
                         f"Unresolvable relative reference: '{href}' cannot be resolved (i.e., the target file does not exist).",

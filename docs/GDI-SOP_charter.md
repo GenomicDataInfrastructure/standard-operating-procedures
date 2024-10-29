@@ -47,6 +47,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | IST          | Instituto Superior Técnico                                          |
 | KT           | Knowledge Transfer                                                  |
 | MB           | Management Board                                                    |
+| MG           | Million Genomes                                                     |
 | MS           | Milestone                                                           |
 | NBIS         | National Bioinformatics Infrastructure Sweden                       |
 | NCP          | Node Contact Point                                                  |
@@ -57,6 +58,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | RFC          | Request For Comments                                                |
 | SDPC         | Security and Data Protection Committee                              |
 | SOP          | Standard Operating Procedure                                        |
+| TB           | Top to Bottom                                                       |
 | TBD          | To Be Determined                                                    |
 | UI           | User Interface                                                      |
 | UU           | University of Uppsala                                               |

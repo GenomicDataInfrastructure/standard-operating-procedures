@@ -49,6 +49,7 @@ class SOPLinter:
         self.lr_check_procedure_step_numbering(soup, file_path)
         self.lr_check_step_consistency(soup, file_path)
         self.lr_check_glossary_in_charter(soup, file_path)
+        self.lr_check_undefined_acronyms(soup, file_path)
 
         if self.verbosity > 1:
             print(f"- Finished linting for {file_path}")
@@ -481,7 +482,6 @@ class SOPLinter:
         if self.verbosity > 1:
             print(f"{json.dumps(self.results[file_path], indent=2)}\n")
 
-
     def lr_check_undefined_acronyms(self, sop_soup: BeautifulSoup, file_path: str):
         """
         Detects any acronyms in the SOP content that are not defined in the SOP glossary.
@@ -497,9 +497,13 @@ class SOPLinter:
 
         # Identify any acronyms in SOP content that are missing in the SOP glossary
         sop_text = sop_soup.get_text()
-        detected_acronyms = re.findall(r'\b[A-Z]{2,}\b', sop_text)  # Regex for uppercase acronyms of 2+ characters
+        # Regex for uppercase acronyms of 2+ characters, with possible "s" ending (e.g., SOPs)
+        detected_acronyms = re.findall(r'\b[A-Z]{2,}s?\b', sop_text)  
         for acronym in set(detected_acronyms):
             if acronym not in sop_glossary:
+                if acronym[-1] == 's' and acronym[:-1] in sop_glossary:
+                    # We skip acronym plurals that would be false positives
+                    continue
                 self.report_issue(
                     f"Undefined acronym detected: '{acronym}' is used in the SOP but is not defined in the SOP glossary.",
                     file_path,

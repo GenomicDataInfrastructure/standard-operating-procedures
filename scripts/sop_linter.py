@@ -22,11 +22,12 @@ class SOPLinter:
         self.tables = {}
         self.required_sections = required_sections
 
-    def lint_sop(self, file_path: str):
+    def lint_sop(self, file_path: str, all_inputs: List[str] = []):
         """
         Lints a single SOP file for compliance with the required rules.
 
         :param file_path: Path to the SOP file.
+        :param all_inputs: List of all input filepaths to compare with.
         """
         if self.verbosity > 1:
             print(f"- Starting linting for {file_path}")
@@ -51,6 +52,8 @@ class SOPLinter:
         self.lr_check_glossary_in_charter(soup, file_path)
         self.lr_check_undefined_acronyms(soup, file_path)
         self.lr_check_resolvable_references(soup, file_path)
+        self.lr_check_identifier_and_casing(file_path, all_inputs)
+        self.lr_check_title_match(soup, file_path)
 
         if self.verbosity > 1:
             print(f"- Finished linting for {file_path}")
@@ -555,6 +558,80 @@ class SOPLinter:
         if self.verbosity > 1:
             print(f"{json.dumps(self.results[file_path], indent=2)}\n")
 
+    def lr_check_identifier_and_casing(self, file_path: str, all_files: List[str]):
+        """
+        Checks if the SOP filename has a unique SOP identifier, and follows proper casing rules:
+        Identifier is uppercase, followed by an underscore-separated, lowercase title.
+
+        :param file_path: Path to the current SOP file.
+        :param all_files: List of all SOP file paths for uniqueness checks.
+        """
+        filename = os.path.basename(file_path)
+        filename_without_extension = os.path.splitext(filename)[0]
+
+        # Enforce filename structure with uppercase identifier and lowercase title
+        sop_identifier_match = re.match(r"^(GDI-SOP\d{4})_(.+)$", filename_without_extension)
+        if sop_identifier_match:
+            identifier = sop_identifier_match.group(1)
+            title_part = sop_identifier_match.group(2)
+            
+            # Validate title format
+            if title_part != title_part.lower():
+                self.report_issue(
+                    f"Filename '{filename}' must be in lowercase after the identifier. See further details at 'docs/GDI-SOP_sop-accessioning.md'.",
+                    file_path,
+                    error=True
+                )
+
+            # Check for unique identifier
+            if sum(1 for f in all_files if identifier in f) > 1:
+                self.report_issue(
+                    f"Duplicate SOP identifier found among the SOPs filenames: '{identifier}'.",
+                    file_path,
+                    error=True
+                )
+        else:
+            self.report_issue(
+                "Filename must follow the format 'GDI-SOPXXXX_lowercase-title.md'. See further details at 'docs/GDI-SOP_sop-accessioning.md'.", 
+                file_path, 
+                error=True
+            )
+
+        if self.verbosity > 1:
+            print(f"{json.dumps(self.results[file_path], indent=2)}\n")
+
+    def lr_check_title_match(self, soup: BeautifulSoup, file_path: str):
+        """
+        Checks if the title in the SOP document matches the title implied by the filename,
+        ensuring it starts with "European GDI - ".
+
+        :param soup: BeautifulSoup object of the SOP content.
+        :param file_path: Path to the SOP file.
+        """
+        filename = os.path.basename(file_path)
+        filename_without_extension = os.path.splitext(filename)[0]
+
+        # Extract the human-readable title part from the filename after the identifier
+        title_from_filename = filename_without_extension.split("_", 1)[1].replace("-", " ").capitalize()
+        expected_document_title = f"European GDI - {title_from_filename}"
+        
+        # Find the first h1 header and check if it matches the expected format
+        title_header = soup.find('h1')
+        if title_header:
+            document_title = title_header.text.strip()
+            if document_title.lower() != expected_document_title.lower():
+                self.report_issue(
+                    f"Document title '{document_title}' does not match the expected format (regardless of upper/lowercase) based on the filename: '{expected_document_title}'",
+                    file_path,
+                    error=True
+                )
+        else:
+            self.report_issue("Document does not contain a title header (h1).", file_path, error=True)
+
+        if self.verbosity > 1:
+            print(f"{json.dumps(self.results[file_path], indent=2)}\n")
+
+
     def get_charter_soup(self, input_file: str) -> BeautifulSoup:
         """
         Parses the Charter document into a BeautifulSoup object if it hasn't been parsed already.
@@ -671,7 +748,7 @@ def main():
 
     linter = SOPLinter(verbosity=args.verbosity, strict=args.strict, required_sections=required_sections)
     for sop_file in sop_files:
-        linter.lint_sop(sop_file)
+        linter.lint_sop(sop_file, sop_files)
 
     report, has_errors = linter.generate_report()
     if args.verbosity > 0:

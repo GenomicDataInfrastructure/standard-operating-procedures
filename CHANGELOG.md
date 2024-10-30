@@ -8,7 +8,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Modified
+- [``sop_linter.py``](scripts/sop_linter.py)
+   - Added new Linting Rules (LR) modules: ``lr_check_procedure_step_numbering``, ``lr_check_step_consistency``, ``lr_check_glossary_in_charter``, ``lr_check_undefined_acronyms``, ``lr_check_resolvable_references``, ``lr_check_identifier_and_casing``, ``lr_check_title_match``, ``lr_check_image_paths``
+   - Improved code and added a new file location check to ``lr_check_metadata_table``.
+- [``utils.py``](scripts/utils.py) - Added additional helper functions: ``parse_glossary``, ``is_remote_reference_resolvable``, ``get_image_paths``.
+- [``tests/``](tests/) - Updated ``tests/GDI-SOP0000_sop-template-for-linting.md`` to fit testing standards of the linting script.
+- [``GDI-SOP_charter.md``](docs/GDI-SOP_charter.md) - Updated Glossary section with new acronyms and terms from other three SOPs.
+- [``GDI-SOP_style-guide.md``](docs/GDI-SOP_style-guide.md) - Added section regarding positioning of tables in MD files.
 ### Fixed
+- [``GDI-SOP0002_ncps-veto-edic-decision.md``](sops/node-specific/GDI-SOP0002_ncps-veto-edic-decision.md):
+    - ``v1.0.1``: Updated Glossary, fixed Procedure headers, and renamed file (previously in uppercase).
+- [``GDI-SOP0003_1+mg-dac-recommendation-approval.md``](sops/european-level/GDI-SOP0003_1+mg-dac-recommendation-approval.md):
+    - ``v1.0.2``: Updated Glossary, fixed Procedure headers, fixed SOP title (in doc.), fixed relative references, and renamed file (previously ``GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md``).
+- [``GDI-SOP0007_sop-template-creation.md``](sops/european-level/GDI-SOP0007_sop-template-creation.md):
+    - ``v1.0.1``: Updated Glossary, fixed Procedure headers and tables, and renamed file (previously in uppercase).
 
 ## [1.0.0](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/releases/tag/v1.0.0) - 2024-10-28
 

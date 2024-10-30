@@ -43,7 +43,7 @@ From left to right:
 - More work was done on `dev` (e.g., adding new documents, SOPs, modifying content). Keep in mind that so far, the `main` branch remained unaltered.
 - Eventually, when the new changes in `dev` (including the "new SOP") were ready, `dev` was merged into `main`.
 
-````
+````mermaid
 gitGraph
     commit id: "Initial project"
     commit id: "New changes"

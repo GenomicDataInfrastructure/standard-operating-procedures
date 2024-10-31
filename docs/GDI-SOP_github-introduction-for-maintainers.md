@@ -173,12 +173,13 @@ Let's go over a simple example of how a workflow aided in a [recent Pull Request
 - Compare SOP index table ([``compare_index.yml``](../.github/workflows/compare_index.yml)). It has a ❌, letting us know that something went wrong.
 - Linter of SOPs ([``lint_sops.yml``](../.github/workflows/lint_sops.yml)). It has a ✔️, so it checked the SOPs in this branch and lets us know that they seem to be well formatted.
 
-Notice at the bottom of the image below that, once the owner of the PR noticed the error through this workflow, it was amended and a checkmark ✔️ was obtained.
+Notice at the bottom of the image below that, once the owner of the PR noticed the error through this workflow, it was amended and a checkmark ✔️ was obtained. We will see below how to identify errors from the report of these workflows, and based on them one simply needs to edit the files that were affected.
+
 ![Detecting something went wrong](images/GDI-SOP_github-introduction-for-maintainers_workflow.png)
 
-To see further we can click on the **Details** next to the workflow that failed (see image below). You can inspect for yourself the same page [**here**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/actions/runs/11477389761/job/31939356879). 
+To see further we can click on the **Details** next to the workflow that failed (see image below). You can inspect for yourself the same page [**here**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/actions/runs/11477389761/job/31939356879). This is the report that each workflow gives, besides the simple emoji above mentioned.
 
-In the details of the workflow, you can see that something went wrong at the ``Run SOP index comparison`` step. If we take a closer look, we can see that there is some code executed at this step, and the exit code was ``1`` (i.e., there was an error). Instead of having to dig up exactly why ourselves, the message (in JSON format) that the script prints (see highlighted green below) gives us all the needed clues:
+In the details of the workflow, you can see that something went wrong at the ``Run SOP index comparison`` step (the only one with 🔴). If we take a closer look, we can see that there is some code executed at this step, and the error displayed at the bottom says "Process completed with exit code ``1``" (i.e., there was an error). Instead of having to dig up exactly why ourselves, the message (in JSON format) that the script prints (see highlighted green below) gives us all the needed clues:
 - There were some differences between the existing [SOP index table](../sops/README.md) and the one that the script created (representing the latest version).
 - The difference was identified for ``GDI-SOP0003`` and specifically at the ``Last modified`` column of the table, where the values were not matching.
 

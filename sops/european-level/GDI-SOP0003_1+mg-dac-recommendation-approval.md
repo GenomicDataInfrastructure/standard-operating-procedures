@@ -37,22 +37,22 @@ For this SOP in particular, the source of truth for most definitions and terms i
 
 | Abbreviation | Description                                                                                               |
 |--------------|-----------------------------------------------------------------------------------------------------------|
-| DAC          | Data Access Committee, responsible for reviewing access requests and approving or denying the requests     |
 | 1+MG DAC     | 1+MG Data Access Committee - Data Access Committee, which may include several domain-specific sub-committees, provided by 1+MG that receives and reviews access requests and moderates consensus discussions on access requests where necessary |
+| CSC          | Finnish IT center for science                                                                             |
+| DAC          | Data Access Committee, responsible for reviewing access requests and approving or denying the requests    |
+| EBI          | European Bioinformatics Institute                                                                         |
 | EDIC         | European Digital Infrastructure Consortium, will serve as the DAC for managing access requests to data in GDI |
-| NCP          | National Coordination Point                                                                               |
-| SOP          | Standard Operating Procedure                                                                              |
-| IT          | Information Technology                                                                              |
-| CSC          | Finnish IT center for science                                                                                     |
-| LNDS         | Luxembourg National Data Service                                                                                   |
 | ELSI         | Ethical, Legal, and Social Implications                                                                   |
 | EMBL         | European Molecular Biology Laboratory                                                                     |
-| MG           | Million Genomes                                                                                           |
-| TB           | Top to Bottom                                                                                             |
-| LU           | Luxembourg                                                                                                |
 | GDI          | European Genomic Data Infrastructure                                                                      |
+| IT           | Information Technology                                                                                     |
+| LNDS         | Luxembourg National Data Service                                                                           |
+| LU           | Luxembourg                                                                                                |
+| MG           | Million Genomes                                                                                           |
+| NCP          | National Coordination Point                                                                               |
 | ORR          | Organisational Roles and Responsibilities                                                                 |
-| EBI          | European Bioinformatics Institute                                                                         |
+| SOP          | Standard Operating Procedure                                                                              |
+| TB           | Top to Bottom                                                                                             |
 
 | Term          | Definition                                                                                                |
 |---------------|-----------------------------------------------------------------------------------------------------------|

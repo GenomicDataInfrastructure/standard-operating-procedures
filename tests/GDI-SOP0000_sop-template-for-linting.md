@@ -34,14 +34,14 @@
 ### 2. Glossary
 Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
 
-| Abbreviation | Description     |
-|---------------|-----------------|
-| SOP | Standard Operating Procedure |
-| ORR | Organisational Roles and Responsibilities |
-| GDI | European Genomic Data Infrastructure |
-| MG | Million Genomes |
-| TB | Top to Bottom |
-| ISM | Information Service Management |
+| Abbreviation | Description                                         |
+|--------------|-----------------------------------------------------|
+| GDI          | European Genomic Data Infrastructure                |
+| ISM          | Information Service Management                      |
+| MG           | Million Genomes                                     |
+| ORR          | Organisational Roles and Responsibilities           |
+| SOP          | Standard Operating Procedure                        |
+| TB           | Top to Bottom                                       |
 
 | Term          | Definition      |
 |---------------|-----------------|

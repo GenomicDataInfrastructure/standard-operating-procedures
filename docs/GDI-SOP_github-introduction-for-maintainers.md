@@ -4,6 +4,8 @@ This guide is designed to **help maintainers** (see [ORR](../docs/GDI-SOP_organi
 
 It is worth noting that this guide is a fraction of the incredibly detailed (and much better written) [**official GitHub documentation**](https://docs.github.com/en/get-started). This guide of ours is specifically targeted to this repository and covers the bare minimum.
 
+If you are a member of GDI, you are welcome to go through the [**recorded session**](https://drive.google.com/file/d/1bECkeSBS4k7-64QWVyoNrZEWhGJZxnpw/view?usp=drive_link) where we covered this introduction.
+
 ## Index
 1. [What is GitHub?](#what-is-github)
 2. [Understanding the Repository](#understanding-the-repository)

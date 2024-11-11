@@ -1,4 +1,4 @@
-# European GDI - 1+MG DAC Recommendation Approval Process
+# European GDI - 1+MG DAC Recommendation Approval
 
 | Metadata               | Value                                            |
 |------------------------|--------------------------------------------------|
@@ -25,6 +25,7 @@
 
 | Template Version | Instance version | Author(s)         | Description of changes           | Date       |
 |------------------|------------------|-------------------|----------------------------------|------------|
+| ``v1.0.2`` |  | Marcos Casado Barbero | Updated to linting rules - [PR46](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/46) | ``2024.10.29`` |
 | ``v1.0.1``               |                  | Marcos Casado Barbero    | Transform document to markdown and complete version | ``2024.10.24`` |
 | ``v1``               |                  | Marcos Casado Barbero    | Transform document to markdown and complete version | ``2024.10.04`` |
 | ``v0``               |                  | Dylan Spalding    | First version of SOP drafted     | ``2024.04.11`` |
@@ -33,12 +34,25 @@
 Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
 
 For this SOP in particular, the source of truth for most definitions and terms is the [1+MG Data Access Governance for Research](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU).
+
 | Abbreviation | Description                                                                                               |
 |--------------|-----------------------------------------------------------------------------------------------------------|
-| DAC          | Data Access Committee, responsible for reviewing access requests and approving or denying the requests     |
 | 1+MG DAC     | 1+MG Data Access Committee - Data Access Committee, which may include several domain-specific sub-committees, provided by 1+MG that receives and reviews access requests and moderates consensus discussions on access requests where necessary |
+| CSC          | Finnish IT center for science                                                                             |
+| DAC          | Data Access Committee, responsible for reviewing access requests and approving or denying the requests    |
+| EBI          | European Bioinformatics Institute                                                                         |
 | EDIC         | European Digital Infrastructure Consortium, will serve as the DAC for managing access requests to data in GDI |
+| ELSI         | Ethical, Legal, and Social Implications                                                                   |
+| EMBL         | European Molecular Biology Laboratory                                                                     |
+| GDI          | European Genomic Data Infrastructure                                                                      |
+| IT           | Information Technology                                                                                     |
+| LNDS         | Luxembourg National Data Service                                                                           |
+| LU           | Luxembourg                                                                                                |
+| MG           | Million Genomes                                                                                           |
 | NCP          | National Coordination Point                                                                               |
+| ORR          | Organisational Roles and Responsibilities                                                                 |
+| SOP          | Standard Operating Procedure                                                                              |
+| TB           | Top to Bottom                                                                                             |
 
 | Term          | Definition                                                                                                |
 |---------------|-----------------------------------------------------------------------------------------------------------|
@@ -68,12 +82,12 @@ This SOP covers the process **from when a data access application is received by
 ### 6. Introduction and Background Information
 To access controlled access data within the European Genomic Data Infrastructure a user must apply for authorisation to access the data from the 1+ Million Genomes Data Access Committee (1+MG DAC). The 1+MG DAC will **review applications** to ensure they conform to the 1+MG Data Governance requirements, and **make recommendations** to the relevant National Coordination Points (NCPs) who may agree or disagree with the recommendation.
 
-Additionally, the 1+MG DAC will follow a review process when the NCP disagrees with its recommendation (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)). Once an agreement is reached, or the review process completes, the data user will be informed of the decision.
+Additionally, the 1+MG DAC will follow a review process when the NCP disagrees with its recommendation (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_ncps-veto-edic-decision.md)). Once an agreement is reached, or the review process completes, the data user will be informed of the decision.
 
 ### 7. Summary or Context Diagram
 The following diagram summarises the step-by-step process for the recommendation by the 1+MG DAC of approval or rejection of data access applications.
 ````mermaid
-graph TD
+graph TB
     A[**Start**: Data Access<br>Application Received]
     B1{**Step 1**:<br> Application Checked<br> by 1+MG DAC}
     B2[**Step 2**: Application<br>Recommended for Approval]
@@ -127,7 +141,7 @@ Be mindful that **this timeline may be affected** where the planned research aff
 Depending on the outcome of this initial evaluation:
 - If all steps are correct, move to **[step 2](#82-recommend-application-for-approval)**.
 - If **any step fails**, the **application must be rejected**:
-   - Inform the relevant NCPs, who may veto the rejection (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)). In your communication to the NCPs, clearly state the date for which their veto expires. Also inform NCPs about the possibility of extending the veto period, in exceptional and justified cases (as defined in the [1+MG Data Access Governance for Research](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU)).
+   - Inform the relevant NCPs, who may veto the rejection (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_ncps-veto-edic-decision.md)). In your communication to the NCPs, clearly state the date for which their veto expires. Also inform NCPs about the possibility of extending the veto period, in exceptional and justified cases (as defined in the [1+MG Data Access Governance for Research](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU)).
    - After 6 _calendar_ days since NCPs were notified, **send a reminder** to the NCPs.
    - After 11 working days (``DATE:A``) since NCPs were notified, if no response was given from NCPs, move to **[step 10](#810-inform-data-requestor-rejection-confirmed)**.
 
@@ -138,7 +152,7 @@ Depending on the outcome of this initial evaluation:
 
 Once initial evaluation of data request is positive, **mark application** as 'Recommended for Approval'.
 
-**Inform the relevant NCP(s)** of the review outcome, and pass the application to them for further action as per [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md). Record the date of recommendation and set a reminder for 11 working days (``DATE:A``).
+**Inform the relevant NCP(s)** of the review outcome, and pass the application to them for further action as per [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_ncps-veto-edic-decision.md). Record the date of recommendation and set a reminder for 11 working days (``DATE:A``).
 
 Depending on the response from NCPs:
 - If **no response** before the end of DATE:A, move to **[step 3](#83-confirm-approval-no-ncp-response)**.
@@ -164,12 +178,12 @@ If the **NCPs agree** with the recommendation, then **confirm the approval of th
 |-----------------|------------------------------------------------|----------|
 | 5               | DATE:A has not been passed, and the NCP disagrees with the 1+MG DAC recommendation | 1+MG DAC |
 
-If the NCPs disagree with the recommendation (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)), **initiate the review process for handling NCP disagreements** as per SOP [NCP review process of disagreement with 1+MG DAC recommendation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/33). This process must be completed by the time limit set in that SOP (``DATE:B``).
+If the NCPs disagree with the recommendation (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_ncps-veto-edic-decision.md)), **initiate the review process for handling NCP disagreements** as per SOP [NCP review process of disagreement with 1+MG DAC recommendation](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/33). This process must be completed by the time limit set in that SOP (``DATE:B``).
 
 Depending on the outcome of the NCP review process:
 - If **no response** before the end of ``DATE:B``, move to **[step 8](#88-inform-data-user-process-delayed)**.
 - If **NCPs upholds recommendation**, move to **[step 6](#86-confirm-approval-recommendation-upheld)**.
-- If **NCPs overrules recommendation** (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md)), move to **[step 7](#87-reject-application-recommendation-overruled)**.
+- If **NCPs overrules recommendation** (see [GDI-SOP0002_NCPs-veto-EDIC-decision.md](../node-specific/GDI-SOP0002_ncps-veto-edic-decision.md)), move to **[step 7](#87-reject-application-recommendation-overruled)**.
 
 #### 8.6. Confirm approval (recommendation upheld)
 | Step identifier | When                                           | Who      |
@@ -221,7 +235,7 @@ This concludes the process resulting in rejection of the data request.
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | [1](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md) | European GDI - SOP Charter |
 | [2](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) | European GDI - Organisational Roles and Responsibilities (ORR) |
-| [3](../node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md) | European GDI SOP - NCPs veto EDIC Decision                               |
+| [3](../node-specific/GDI-SOP0002_ncps-veto-edic-decision.md) | European GDI SOP - NCPs veto EDIC Decision                               |
 | [4](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU) | 1+MG Data Access Governance for Research |
 | [5](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/33)                  | European GDI - NCP review process of disagreement with 1+MG DAC recommendation |
 | [6](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth) | European GDI - Obtain Institutional Sign-off                         |

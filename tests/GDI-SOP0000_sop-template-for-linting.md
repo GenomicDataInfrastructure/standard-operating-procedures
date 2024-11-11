@@ -1,4 +1,4 @@
-# European GDI - Test SOP for linting
+# European GDI - SOP Template for linting
 
 | Metadata          | Value               |
 |-------------------|---------------------|
@@ -22,6 +22,8 @@
 9. [References](#9-references)
 
 ### 1. Document History
+![MyImage](../docs/images/GDI-ISM_schema.svg)
+
 
 | Template Version | Instance version | Author(s) | Description of changes       | Date       |
 |---------|-----------|-----------|------------------------------|------------|
@@ -32,13 +34,18 @@
 ### 2. Glossary
 Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
 
-| Abbreviation | Description     |
-|---------------|-----------------|
-|               |                 |
+| Abbreviation | Description                                         |
+|--------------|-----------------------------------------------------|
+| GDI          | European Genomic Data Infrastructure                |
+| ISM          | Information Service Management                      |
+| MG           | Million Genomes                                     |
+| ORR          | Organisational Roles and Responsibilities           |
+| SOP          | Standard Operating Procedure                        |
+| TB           | Top to Bottom                                       |
 
 | Term          | Definition      |
 |---------------|-----------------|
-|               |                 |
+| FitSM | ... |
 
 ### 3. Roles and Responsibilities
 See qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
@@ -77,7 +84,7 @@ graph TB
 ```
 
 ### 8. Procedure
-#### 1. < Evaluate input 1 >
+#### 8.1. < Evaluate input 1 >
 | Step identifier            | When             | Who |
 |:------------------|:----|:----|
 | 1                     | When input 1 is received... | The 1+MG Management Board at ... |
@@ -85,24 +92,35 @@ graph TB
 After input 1 is received by ..., it is evaluated following this checklist:
 - It is ...
 - It contains ...>_
-#### 2.1. < Do X >
+#### 8.2. < Do X >
 | Step identifier            | When             | Who |
 |:------------------|:----|:----|
-| 2.1                     | After positive evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
+| 2                     | After positive evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
 
 If positive evaluation is received, then ... executes the following code:
 ```bash
 echo "Hello world"
 ```
-#### 2.2. < Do X >
+##### 8.2.1 < Do X >
 | Step identifier            | When             | Who |
 |:---------------------------|:-----------------|:----|
-| 2.2                  | After negative evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
+| 2.1                 | After negative evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
 
 If negative evaluation is received, then ... executes the following code:
 ```bash
 echo "Bye world"
 ```
+##### 8.2.2 < Do X >
+| Step identifier            | When             | Who |
+|:---------------------------|:-----------------|:----|
+| 2.2                 | After negative evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
+
+#### 8.3. < Do X 2 >
+| Step identifier            | When             | Who |
+|:------------------|:----|:----|
+| 3                     | After step 2.2 | The 1+MG Management Board at ... |
+
+Finish the [Charter](../docs/GDI-SOP_charter.md)
 
 ### 9. References
 | Reference | Description                                          |

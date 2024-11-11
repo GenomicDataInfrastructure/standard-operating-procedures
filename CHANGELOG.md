@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Modified
 - [``GDI-SOP_github-management.md``](docs/GDI-SOP_github-management.md) - Added reference to recorded session
+- [``GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md``](sops/european-level/GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md) - Updated references to _[Data Governance for Research](https://docs.google.com/document/d/1P_nzGxMXG4CWzqkVbceY2fA3MQ7PEAwW/edit)_ document.
 
 ### Fixed
 

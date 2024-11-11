@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [``GDI-SOP_github-introduction-for-maintainers.md``](docs/GDI-SOP_github-introduction-for-maintainers.md) - Introductory guide for GDI SOP Repository maintainers.
 
 ### Modified
+- [``GDI-SOP_github-management.md``](docs/GDI-SOP_github-management.md) - Added reference to recorded session
+
 ### Fixed
 
 ## [1.0.0](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/releases/tag/v1.0.0) - 2024-10-28

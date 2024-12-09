@@ -1,6 +1,8 @@
 # Copying GDI SOP repository
 The GDI SOP repository ([**GenomicDataInfrastructure/standard-operating-procedures**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures)) contains both European-level SOP _instances_ and Node-specific SOP _templates_. In order to adapt the Node-specific SOP templates, GDI nodes are expected to make a copy of this GitHub repository and modify them to suit them to their needs.
 
+If you are a member of GDI, you are welcome to go through the [**recorded session**](https://drive.google.com/file/d/1DMbFP1xwu48aOPARTK2y_IVjFYt1bz10/view?usp=drive_link) where we covered this introduction.
+
 Given that the base repository is public, forks of this repository cannot be private. Therefore, making a node's copy of the repository can be done in different ways, explained in this document, depending on the level of privacy that each node may require:
 - **Public node's repository**. If the node does not require a private repository, copying the source repository is straightforward. See section _[1. Public repository](#1-public-repository)_.
 - **Private node's repository**. On the contrary, if nodes need their SOP instances to be private (e.g. for security reasons), an alternative route is taken. See section _[2. Private repository](#2-private-repository)_.

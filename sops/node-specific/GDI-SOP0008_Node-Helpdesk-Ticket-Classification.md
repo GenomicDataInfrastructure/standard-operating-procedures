@@ -32,9 +32,7 @@
 
 | Template Version | Instance version | Author(s) | Description of changes | Date |
 |---|---|---|---|---|
-|  v1  |  | Elisavet Torstensson| Created the first version of the SOP | 2025.02.04 |
-|  |  | Mattias Strömberg |  |  |
-|  |  |  Silvia Bahena|  |  |
+|  v1  |  | Elisavet Torstensson, Mattias Strömberg, Silvia Bahena| Created the first version of the SOP | 2025.02.04 |
 
 ### **2. Glossary**
 

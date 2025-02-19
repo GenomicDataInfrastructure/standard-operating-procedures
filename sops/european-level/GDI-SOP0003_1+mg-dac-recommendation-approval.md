@@ -25,6 +25,7 @@
 
 | Template Version | Instance version | Author(s)         | Description of changes           | Date       |
 |------------------|------------------|-------------------|----------------------------------|------------|
+| ``v1.0.3``               |                  | Marcos Casado Barbero    | Update references to Data Governance for Research document | ``2024.11.11`` |
 | ``v1.0.2`` |  | Marcos Casado Barbero | Updated to linting rules - [PR46](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/46) | ``2024.10.29`` |
 | ``v1.0.1``               |                  | Marcos Casado Barbero    | Transform document to markdown and complete version | ``2024.10.24`` |
 | ``v1``               |                  | Marcos Casado Barbero    | Transform document to markdown and complete version | ``2024.10.04`` |
@@ -124,7 +125,7 @@ graph TB
 |-----------------|--------------------------------------------|--------------|
 | 1               | On receipt of notification of a new data access application | 1+MG DAC     |
 
-As the 1+MG DAC, **check the requester's application**, based on the criteria in the [**Data Access Review**](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU/edit?tab=t.0#bookmark=kix.9o5agsar78sq) section of the Data Governance document. The application form, which is used to help the data requester enter valid and complete information for the application, must be checked to ensure that:
+As the 1+MG DAC, **check the requester's application**, based on the criteria in the _**Data Access Review**_ section of the [**Data Governance document**](https://docs.google.com/document/d/1P_nzGxMXG4CWzqkVbceY2fA3MQ7PEAwW/edit) (``v1.0``). The application form, which is used to help the data requester enter valid and complete information for the application, must be checked to ensure that:
 - The research has [institutional sign-off](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth), if applicable.
 - The **data analysis plan** is present and suitable for the proposed research.
 - The **data minimisation principle** is met.
@@ -132,11 +133,11 @@ As the 1+MG DAC, **check the requester's application**, based on the criteria in
 - The **ethical approval** has been obtained for the proposed research, where applicable, and that the approval is applicable for the proposed research and conclusions of the ethics review are followed.
 - The **funding mechanisms** for the proposed research are in place (if required).
 - The **project description** corresponds with the data analysis plan, and the **ethical approval and legal requirements** exist with respect to the requested data.
-- Any **peer review** of the scientific validity of the proposed research exists. In case it does not, follow [**section II.3**](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU/edit?tab=t.0#bookmark=id.utnaek5ua0aa) of the Data Governance document.
+- Any **peer review** of the scientific validity of the proposed research exists. In case it does not, follow section _**II.3**_ of the [**Data Governance document**](https://docs.google.com/document/d/1P_nzGxMXG4CWzqkVbceY2fA3MQ7PEAwW/edit) (``v1.0``).
 
-You must **finish this initial assessment within 5 working days** (review [**agreed timelines**](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU/edit?tab=t.0#bookmark=kix.9o5agsar78sq) if needed). After this period,you shall **transmit the outcome of the review and a decision recommendation** to the 1+MG NCPs who can channel it to relevant bodies on the national level.
+You must **finish this initial assessment within 5 working days** (review **agreed timelines** at section _**III. DATA ACCESS REVIEW**_ of the [**Data Governance document**](https://docs.google.com/document/d/1P_nzGxMXG4CWzqkVbceY2fA3MQ7PEAwW/edit) (``v1.0``) if needed). After this period, you shall **transmit the outcome of the review and a decision recommendation** to the 1+MG NCPs who can channel it to relevant bodies on the national level.
 
-Be mindful that **this timeline may be affected** where the planned research affects vulnerable subjects or groups, as specified in [**section III.2**](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU/edit?tab=t.0#bookmark=id.xez4tqfoy9hq) of the Data Governance document.
+Be mindful that **this timeline may be affected** where the planned research affects vulnerable subjects or groups, as specified in section _**III.2**_ of the [**Data Governance document**](https://docs.google.com/document/d/1P_nzGxMXG4CWzqkVbceY2fA3MQ7PEAwW/edit) (``v1.0``).
 
 Depending on the outcome of this initial evaluation:
 - If all steps are correct, move to **[step 2](#82-recommend-application-for-approval)**.
@@ -239,3 +240,4 @@ This concludes the process resulting in rejection of the data request.
 | [4](https://docs.google.com/document/d/19HVf7SP2R_fCI-KugVStZR4yEAkV6vhvSbVd6a2ZviU) | 1+MG Data Access Governance for Research |
 | [5](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/33)                  | European GDI - NCP review process of disagreement with 1+MG DAC recommendation |
 | [6](https://docs.google.com/document/d/1LJa_vWhqUtpNnw8hW7cmPoihImqELv9dgK7Bd826EHg/edit#heading=h.94zixl2wbth) | European GDI - Obtain Institutional Sign-off                         |
+| [7](https://docs.google.com/document/d/1P_nzGxMXG4CWzqkVbceY2fA3MQ7PEAwW/edit) | Data Governance document (``v1.0``) |

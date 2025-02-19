@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [``GDI-SOP_github-introduction-for-maintainers.md``](docs/GDI-SOP_github-introduction-for-maintainers.md) - Introductory guide for GDI SOP Repository maintainers.
 
 ### Modified
+- [``GDI-SOP_github-management.md``](docs/GDI-SOP_github-management.md) - Added reference to recorded session
+- [``GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md``](sops/european-level/GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md) - Updated references to _[Data Governance for Research](https://docs.google.com/document/d/1P_nzGxMXG4CWzqkVbceY2fA3MQ7PEAwW/edit)_ document.
 - [``sop_linter.py``](scripts/sop_linter.py)
    - Added new Linting Rules (LR) modules: ``lr_check_procedure_step_numbering``, ``lr_check_step_consistency``, ``lr_check_glossary_in_charter``, ``lr_check_undefined_acronyms``, ``lr_check_resolvable_references``, ``lr_check_identifier_and_casing``, ``lr_check_title_match``, ``lr_check_image_paths``
    - Improved code and added a new file location check to ``lr_check_metadata_table``.
@@ -17,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [``tests/``](tests/) - Updated ``tests/GDI-SOP0000_sop-template-for-linting.md`` to fit testing standards of the linting script.
 - [``GDI-SOP_charter.md``](docs/GDI-SOP_charter.md) - Updated Glossary section with new acronyms and terms from other three SOPs.
 - [``GDI-SOP_style-guide.md``](docs/GDI-SOP_style-guide.md) - Added section regarding positioning of tables in MD files.
+
 ### Fixed
 - [``GDI-SOP0002_ncps-veto-edic-decision.md``](sops/node-specific/GDI-SOP0002_ncps-veto-edic-decision.md):
     - ``v1.0.1``: Updated Glossary, fixed Procedure headers, and renamed file (previously in uppercase).

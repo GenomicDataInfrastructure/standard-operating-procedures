@@ -25,6 +25,7 @@
 
 | Template Version | Instance version | Author(s)         | Description of changes               | Date       |
 |------------------|------------------|-------------------|--------------------------------------|------------|
+| ``v1.0.1`` |  | Marcos Casado Barbero | Updated to linting rules - [PR46](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/46) | ``2024.10.29`` |
 | ``v1``               |                  | Marcos Casado Barbero    | Transform document to markdown     | ``2024.09.27`` |
 | ``v0.1``             |                  | Dylan Spalding    | Comments addressed and first draft of SOP | ``2024.08.14`` |
 
@@ -34,14 +35,23 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 | Abbreviation | Description                                        |
 |--------------|----------------------------------------------------|
 | 1+MG         | 1+ Million Genomes                                 |
+| CSC          | Finnish IT Center for Science                      |
 | DAC          | Data Access Committee                              |
+| EBI          | European Bioinformatics Institute                  |
 | EDIC         | European Digital Infrastructure Consortium         |
-| NCP          | National Coordination Point                                 |
+| EMBL         | European Molecular Biology Laboratory              |
+| GDI          | European Genomic Data Infrastructure               |
+| LNDS         | Luxembourg National Data Service                   |
+| LU           | Luxembourg                                         |
+| MG           | Million Genomes                                    |
+| NBIS         | National Bioinformatics Infrastructure Sweden      |
+| NCP          | National Coordination Point                        |
 | SOP          | Standard Operating Procedure                       |
+| UU           | University of Uppsala                              |
 
-| Term          | Definition                                         |
-|---------------|----------------------------------------------------|
-| Permit Authority | National body responsible for data access decisions |
+| Term             | Definition                                           |
+|------------------|------------------------------------------------------|
+| Permit Authority | National body responsible for data access decisions  |
 
 ### 3. Roles and Responsibilities
 See the qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
@@ -69,7 +79,7 @@ The GDI project aims to facilitate the integration and accessibility of genomic 
 **Figure 1**: 1+MG DAC, NCP, and Permit Authority processes for approval or veto of a 1+MG recommendation 
 
 ### 8. Procedure
-#### 1. NCP Distribute the application recommendation
+#### 8.1. NCP Distribute the application recommendation
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 1               | Receipt of 1+MG DAC decision   | NCP       |
@@ -82,7 +92,7 @@ Depending on the response that you receive from these authorities and data holde
    - If veto is not exercised in the response you receive, let the 1+MG DAC know and move to **step 4**
    - If **veto is exercised** in the response you receive, move to **step 2**.
 
-#### 2. Communicate justification of veto
+#### 8.2. Communicate justification of veto
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 2               | After step 1 and within 1 working day  | NCP       |
@@ -91,7 +101,7 @@ If the veto of the 1+MG DAC's recommendation is exercised, as the NCP you shall 
 
 Move to **step 3**.
 
-#### 3. Review of veto by 1+MG DAC
+#### 8.3. Review of veto by 1+MG DAC
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 3               | After step 2                   | 1+MG DAC  |
@@ -103,7 +113,7 @@ Depending on the outcome of this evaluation:
 - If the **justification is not accepted** in full, move to **step 6**. 
 - If **no veto was exercised**, or the **time lapse** from step 1 is greater than **10 working days**, move to **step 4**.
 
-#### 4. Inform NCP and User about the decision
+#### 8.4. Inform NCP and User about the decision
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 4               | After step 3 or 6              | 1+MG DAC  |
@@ -112,7 +122,7 @@ As the 1+MG DAC, **inform the NCP and User** (whose request was initially recomm
 
 Move to **step 5**.
 
-#### 5. Inform data subjects
+#### 8.5. Inform data subjects
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 5               | After step 4                   | NCP       |
@@ -121,7 +131,7 @@ As the NCP, **inform the relevant data subjects** of the proposed research **wit
 
 This concludes the process resulting in final approval of the data access request.
 
-#### 6. Consensus building process
+#### 8.6. Consensus building process
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 6               | After step 3                   | 1+MG DAC  |
@@ -132,7 +142,7 @@ Depending on the outcome of the process:
 - If **consensus is reached**, move to **step 4**. 
 - If consensus is **not** reached, move to **step 7**.
 
-#### 7. Inform User and other NCPs of the final decision
+#### 8.7. Inform User and other NCPs of the final decision
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
 | 7               | After step 3 or 6              | 1+MG DAC  |

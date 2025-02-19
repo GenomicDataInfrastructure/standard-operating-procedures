@@ -20,54 +20,72 @@
 The following table defines the abbreviations and terms relevant to GDI SOPs.
 
 | **Abbreviation** | **Description**                                                         |
-| ------------ | ------------------------------------------------------------------- |
-| 1+MG         | [1+ Million Genomes](https://framework.onemilliongenomes.eu/)       |
-| AAI          | Authentication and Authorization Infrastructure                     |
-| AE           | Associated Entity                                                   |
-| AI           | Action Item                                                         |
-| BEN          | Beneficiary                                                         |
-| DAA          | Data Access Agreement                                               |
-| DAC          | Data Access Committee                                               |
-| DMP          | Data Management Plan                                                |
-| DP           | Data Protection                                                     |
-| DPA          | Data Processing Agreement                                           |
-| DPbDD        | Data Protection by Design and Default                               |
-| DPIA         | Data Protection Impact Assessment                                   |
-| EBI          | European Bioinformatics Institute                                   |
-| EDIC         | European Digital Infrastructure Consortium                          |
-| EMBL         | European Molecular Biology Laboratory                               |
-| GDI          | European Genomic Data Infrastructure                                |
-| GDI-CO       | GDI Project Management Team (GDI coordinators)                      |
-| GDPR         | General Data Protection Regulation                                  |
-| GH           | GitHub                                                              |
-| HD           | Helpdesk                                                            |
-| HRI          | Health Research Infrastructure                                      |
-| INSERM       | L'Institut national de la santé et de la recherche médicale (France)|
-| ISM          | Information Service Management                                      |
-| IST          | Instituto Superior Técnico                                          |
-| KT           | Knowledge Transfer                                                  |
-| MB           | Management Board                                                    |
-| MS           | Milestone                                                           |
-| NBIS         | National Bioinformatics Infrastructure Sweden                       |
-| NCP          | Node Contact Point                                                  |
-| OC           | Operations Committee                                                |
-| ORR          | Organisational Roles and Responsibilities                           |
-| PR           | Pull Request                                                        |
-| QMS          | Quality Management System                                           |
-| RFC          | Request For Comments                                                |
-| SDPC         | Security and Data Protection Committee                              |
-| SOP          | Standard Operating Procedure                                        |
-| TBD          | To Be Determined                                                    |
-| UI           | User Interface                                                      |
-| UU           | University of Uppsala                                               |
-| VPN          | Virtual Private Network                                             |
-| WG           | Working Group                                                       |
-| WP           | Work Package                                                        |
-| ZH           | ZenHub                                                              |
+|------------------|-------------------------------------------------------------------------|
+| 1+MG             | [1+ Million Genomes](https://framework.onemilliongenomes.eu/)           |
+| 1+MG DAC         | 1+MG Data Access Committee                                              |
+| AAI              | Authentication and Authorization Infrastructure                         |
+| AE               | Associated Entity                                                       |
+| AI               | Action Item                                                             |
+| BEN              | Beneficiary                                                             |
+| CC               | Carbon Copy (used in communications to send a copy to others)           |
+| CSC              | Finnish IT Center for Science                                           |
+| DAA              | Data Access Agreement                                                   |
+| DAC              | Data Access Committee                                                   |
+| DMP              | Data Management Plan                                                    |
+| DO               | Data Object                                                             |
+| DP               | Data Protection                                                         |
+| DPA              | Data Processing Agreement                                               |
+| DPbDD            | Data Protection by Design and Default                                   |
+| DPIA             | Data Protection Impact Assessment                                       |
+| EBI              | European Bioinformatics Institute                                       |
+| EDIC             | European Digital Infrastructure Consortium                              |
+| ELSI             | Ethical, Legal, and Social Implications                                 |
+| EMBL             | European Molecular Biology Laboratory                                   |
+| GDI              | European Genomic Data Infrastructure                                    |
+| GDI-CO           | GDI Project Management Team (GDI coordinators)                          |
+| GDPR             | General Data Protection Regulation                                      |
+| GH               | GitHub                                                                  |
+| HD               | Helpdesk                                                                |
+| HRI              | Health Research Infrastructure                                          |
+| INSERM           | L'Institut national de la santé et de la recherche médicale (France)    |
+| ISM              | Information Service Management                                          |
+| IST              | Instituto Superior Técnico                                              |
+| IT               | Information Technology                                                  |
+| KT               | Knowledge Transfer                                                      |
+| LNDS             | Luxembourg National Data Service                                        |
+| LU               | Luxembourg                                                              |
+| MB               | Management Board                                                        |
+| MG               | Million Genomes                                                         |
+| MS               | Milestone                                                               |
+| NBIS             | National Bioinformatics Infrastructure Sweden                           |
+| NCP              | Node Contact Point                                                      |
+| OC               | Operations Committee                                                    |
+| ORR              | Organisational Roles and Responsibilities                               |
+| PR               | Pull Request                                                            |
+| QMS              | Quality Management System                                               |
+| RFC              | Request For Comments                                                    |
+| SDPC             | Security and Data Protection Committee                                  |
+| SLA              | Service Level Agreement                                                 |
+| SOP              | Standard Operating Procedure                                            |
+| TB               | Top to Bottom                                                           |
+| TBD              | To Be Determined                                                        |
+| TODO             | A list of pending tasks                                                 |
+| UI               | User Interface                                                          |
+| URL              | Uniform Resource Locator                                                |
+| UU               | University of Uppsala                                                   |
+| VPN              | Virtual Private Network                                                 |
+| WG               | Working Group                                                           |
+| WP               | Work Package                                                            |
+| ZH               | ZenHub                                                                  |
 
-| **Term**     | **Definition**                 |
-| ------------ | ------------------------------ |
-| FitSM        | Standards for lightweight IT Services Management; developed initially through The FedSM Project, funded by the European Commission, now maintained by ITEMO (<https://www.fitsm.eu/>) |
+| **Term**         | **Definition**                                                         |
+|------------------|-------------------------------------------------------------------------|
+| CHANGELOG        | Log or record of all notable changes made to a project                 |
+| FitSM            | Standards for lightweight IT Services Management; developed initially through The FedSM Project, funded by the European Commission, now maintained by ITEMO (<https://www.fitsm.eu/>) |
+| Permit Authority | National body responsible for data access decisions                    |
+| README           | File that provides information about a project or directory            |
+| YYYYMMDD         | Date format in year-month-day                                          |
+
 
 ## 3. Roles and Responsibilities
 | Role       | Full name       | GDI/node role   | Organisation |

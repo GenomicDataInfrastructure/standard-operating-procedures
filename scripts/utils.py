@@ -104,3 +104,54 @@ def get_gh_issues(gh_repo: str, gh_token: str, issue_params: Dict):
     all_issues = [issue for issue in response.json() if "pull_request" not in issue]
     
     return all_issues
+
+def parse_glossary(soup: BeautifulSoup) -> Dict[str, str]:
+    """
+    Parses glossary tables in a BeautifulSoup object, looking for tables that 
+    contain headers such as 'Abbreviation' or 'Term' and extracts them into a dictionary.
+    
+    :param soup: BeautifulSoup object of the SOP or Charter content.
+    :return: Dictionary of glossary items with their descriptions.
+    """
+    glossary = {}
+
+    # Define headers to match glossary tables
+    aim_headers_list = [["Abbreviation", "Description"], ["Term", "Definition"]]
+
+    # Loop through possible glossary header types
+    for aim_headers in aim_headers_list:
+        tables = find_tables(soup, aim_headers)
+        for table in tables:
+            rows = table.find_all('tr')
+            for row in rows[1:]:  # Skip the header row
+                columns = row.find_all('td')
+                if len(columns) >= 2:
+                    # First column is the term, second is the description
+                    key = columns[0].text.strip()
+                    description = columns[1].text.strip()
+                    if key:
+                        glossary[key] = description
+
+    return glossary
+
+def is_remote_reference_resolvable(url: str) -> bool:
+    """
+    Checks if a remote reference URL is resolvable (does not return 404).
+    
+    :param url: The URL to check.
+    :return: True if the URL is reachable and does not return 404, False otherwise.
+    """
+    try:
+        response = requests.head(url, allow_redirects=True)
+        return response.status_code != 404
+    except requests.RequestException:
+        return False
+
+def get_image_paths(soup: BeautifulSoup) -> List[str]:
+    """
+    Extracts all image paths (source - src) referenced in the SOP content.
+
+    :param soup: BeautifulSoup object of the parsed SOP content.
+    :return: List of image paths.
+    """
+    return [img['src'] for img in soup.find_all('img') if 'src' in img.attrs]

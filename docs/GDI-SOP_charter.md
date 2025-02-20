@@ -59,6 +59,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | MS               | Milestone                                                               |
 | NBIS             | National Bioinformatics Infrastructure Sweden                           |
 | NCP              | Node Contact Point                                                      |
+| NHD              | Node Helpdesk                                                  |
 | OC               | Operations Committee                                                    |
 | ORR              | Organisational Roles and Responsibilities                               |
 | PR               | Pull Request                                                            |
@@ -73,6 +74,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | UI               | User Interface                                                          |
 | URL              | Uniform Resource Locator                                                |
 | UU               | University of Uppsala                                                   |
+| VHD              | Virtual Helpdesk                                                        |
 | VPN              | Virtual Private Network                                                 |
 | WG               | Working Group                                                           |
 | WP               | Work Package                                                            |
@@ -82,8 +84,12 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 |------------------|-------------------------------------------------------------------------|
 | CHANGELOG        | Log or record of all notable changes made to a project                 |
 | FitSM            | Standards for lightweight IT Services Management; developed initially through The FedSM Project, funded by the European Commission, now maintained by ITEMO (<https://www.fitsm.eu/>) |
+| Node Helpdesk    | The support team is responsible for handling tickets related to data management issues associated with the node in the GDI Project.  |
 | Permit Authority | National body responsible for data access decisions                    |
 | README           | File that provides information about a project or directory            |
+| Ticket           | Incoming issues from the GDI Virtual Helpdesk, are to be processed within the Node Helpdesk and, after that, returned to the Virtual Helpdesk |
+| Ticket Classification | The process of categorising support requests is based on their nature so that they can be assigned to the appropriate individual or team for resolution.  |
+| Virtual Helpdesk | The initial point of contact for inquiries and requests related to data management in the GDI project. |
 | YYYYMMDD         | Date format in year-month-day                                          |
 
 

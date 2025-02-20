@@ -116,11 +116,11 @@ This is a proposed workflow for how the ticket will be classified at the Node le
 
 The NHD receives a ticket from the VHD requiring action by the specific node. Using a node-specific checklist, the ticket is evaluated to determine whether it is within the scope (positive evaluation) of the node or not (negative evaluation).
 
-#### 8.1.1.  Positive Evaluation - Proceeding with the Ticket**
+#### 8.2.  Positive Evaluation - Proceeding with the Ticket**
 
 | Step identifier | When | Who |
 |:---|:---|:---|
-|  ``1.1`` | After step 1, if the evaluation is positive, within xx working days| Helpdesk officer |
+|  ``2`` | After step 1, if the evaluation is positive, within xx working days| Helpdesk officer |
 
 If the ticket is within the scope of the NHD, a **new issue** will be created in the **dedicated system** to record the ticket's arrival and document the positive evaluation. Each ticket will be assigned **four tags** from the [provided list. ](https://docs.google.com/document/d/1KTAfpV5qLH9YTs8IXZWGXe_9InQg2ID3pAxWqoULrDU/edit?tab=t.0)
 
@@ -134,23 +134,26 @@ If the ticket is within the scope of the NHD, a **new issue** will be created in
 
 4. **Status**: Specifies the ticket's status (initially set to "New").
 
-#### 8.1.2.  Negative Evaluation - Closing the Ticket
+#### 8.3.  Negative Evaluation - Closing the Ticket
 
 | Step identifier | When | Who |
 |:---|:---|:---|
-| ``1.2.1`` | After step 1, if the evaluation is negative, within xx working days | Helpdesk officer |
+| ``3`` | After step 1, if the evaluation is negative, within xx working days | Helpdesk officer |
 
 If the ticket is out of the scope of the NHD, a new issue will be created in the designated system to record the ticket's arrival and document the negative evaluation.
 
+##### 8.3.1 Create a new issue in the system
 | Step identifier | When | Who |
 |:---|:---|:---|
-| ``1.2.2`` | After creating a new issue in the dedicated system and documenting the negative evaluation | Helpdesk officer |
+| ``3.1`` | After creating a new issue in the dedicated system and documenting the negative evaluation | Helpdesk officer |
 
 The VHD will be informed that the issue is not within the scope of the NHD. A brief explanation for this decision will be provided.
 
+##### 8.3.2 Inform the VHD and close the ticket
+
 | Step identifier | When | Who |
 |:---|:---|:---|
-| ``1.2.3`` | After informing the VHD about the negative evaluation of the issue  | Helpdesk officer |
+| ``3.2`` | After informing the VHD about the negative evaluation of the issue  | Helpdesk officer |
 
 The ticket will be closed in the node’s ticketing system, with a clear note stating why the ticket was closed.
 

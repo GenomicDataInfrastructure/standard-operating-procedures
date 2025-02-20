@@ -11,23 +11,23 @@
 
 ## Index
 
-1.  [Document History](#1-document-history)
+1. [Document History](#1-document-history)
 
-2. [Glossary](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-template.md#2-glossary)
+2. [Glossary](#2-glossary)
 
-3. [Roles and Responsibilities](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-template.md#3-roles-and-responsibilities)
+3. [Roles and Responsibilities](#3-roles-and-responsibilities)
 
-4. [Purpose](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-template.md#4-purpose)
+4. [Purpose](#4-purpose)
 
-5. [Scope](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-template.md#5-scope)
+5. [Scope](#5-scope)
 
-6. [Introduction and Background Information - as needed](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-template.md#6-introduction-and-background-information)
+6. [Introduction and Background Information](#6-introduction-and-background-information)
 
-7. [Summary or Context Diagram - as needed](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-template.md#7-summary-or-context-diagram)
+7. [Summary or Context Diagram](#7-summary-or-context-diagram)
 
-8. [Procedure](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-template.md#8-procedure)
+8. [Procedure](#8-procedure)
 
-9. [References](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-template.md#9-references)
+9. [References](#9-references)
 
 ### 1. Document History
 

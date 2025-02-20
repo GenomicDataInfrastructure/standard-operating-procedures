@@ -11,7 +11,7 @@
 
 ## Index
 
-1. [Document History](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-template.md#1-document-history)
+1.  [Document History](#1-document-history)
 
 2. [Glossary](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-template.md#2-glossary)
 

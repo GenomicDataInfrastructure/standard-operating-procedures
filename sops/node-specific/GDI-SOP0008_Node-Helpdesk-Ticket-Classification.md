@@ -3,7 +3,8 @@
 | Metadata | Value |
 |---|---|
 | Template SOP number | ``GDI-SOP0008_Node-Helpdesk-Ticket-Classification`` |
-| Template SOP version |  ``v1.``  |
+| Topic                | Helpdesk & operations |
+| Template SOP version |  ``v1``  |
 | Template SOP Type | Node-specific SOP |
 | GDI Node |  |
 | Instance version |  |
@@ -43,8 +44,10 @@ Find GDI SOPs common Glossary at the [charter document](https://github.com/Genom
 | EBI | European Bioinformatics Institute |
 | EMBL | European Molecular Biology Laboratory |
 | GDI | Genomic Data Infrastructure |
+| ISM | Information Service Management |
 | NBIS | National Bioinformatics Infrastructure Sweden |
 | NHD | Node Helpdesk |
+| ORR | Organisational Roles and Responsibilities |
 | SOP | Standard Operating Procedure |
 | UU | University of Uppsala |
 | VHD | Virtual Helpdesk  |

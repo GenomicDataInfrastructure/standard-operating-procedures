@@ -104,7 +104,16 @@ Below is defined the importance of creating custom tags for the ticket managemen
 
 This is a proposed workflow for how the ticket will be classified at the Node level.
 
-[![](https://mermaid.ink/img/pako:eNqVUjtvwjAQ_isnz4DUx5ShEhAKDDxUUIcmDFZyCVYTX2SfoYjy33tJgaVTPdl3330P22eVUY4qUkVFx2yvHcM2Tu0wecMMzQFha7JPZCgc1fA-i3fQ77_A6Dw56Cpovvc3GTV4Se2o7X-vyRtup68wQ_YbxsnYYTuyxCPMvQ8IxsJS5G8kC211iTVa4Tt5xnqX2nEnGCdD701pYatLD0zXidS25wgeBttTg_A4WDtDzvAJnga_A4jwPNiw5uCFLO7IJskrVRIXNqs1FORgOYtvFmba5pWx5e4WZYml_hNl-v8onVBMWWhrHY1ITDs_s2RupdvdL1ABq8B9KvrdlUKMmfGC7sHa0cGIwuSrqYS9pQBxC-OKPF5dHA3vxQdjmxZkqZ6q0dXa5PLG57aWKt6LsVRFss2x0KHiVKX2IlAdmDYnm6mIXcCechTKvYoKXXk5hSaXzLHRpdP1DdJo-0FU30GYGya3-P1U3d-6_ADVodLm?type=png)](https://mermaid.live/edit#pako:eNqVUjtvwjAQ_isnz4DUx5ShEhAKDDxUUIcmDFZyCVYTX2SfoYjy33tJgaVTPdl3330P22eVUY4qUkVFx2yvHcM2Tu0wecMMzQFha7JPZCgc1fA-i3fQ77_A6Dw56Cpovvc3GTV4Se2o7X-vyRtup68wQ_YbxsnYYTuyxCPMvQ8IxsJS5G8kC211iTVa4Tt5xnqX2nEnGCdD701pYatLD0zXidS25wgeBttTg_A4WDtDzvAJnga_A4jwPNiw5uCFLO7IJskrVRIXNqs1FORgOYtvFmba5pWx5e4WZYml_hNl-v8onVBMWWhrHY1ITDs_s2RupdvdL1ABq8B9KvrdlUKMmfGC7sHa0cGIwuSrqYS9pQBxC-OKPF5dHA3vxQdjmxZkqZ6q0dXa5PLG57aWKt6LsVRFss2x0KHiVKX2IlAdmDYnm6mIXcCechTKvYoKXXk5hSaXzLHRpdP1DdJo-0FU30GYGya3-P1U3d-6_ADVodLm)
+````mermaid
+flowchart TD
+A[Receive Ticket from VHD] --> B{Evaluate Ticket Scope}
+B -->|Positive Evaluation| C[Create New Issue in Node Ticket Management System]
+C --> D[Assign Tags to Ticket
+Tags: 1.Type 2.Priority 3.Assignee 4.Status]
+D --> E[Follow SOP for NHD Ticket Handling]
+B -->|Negative Evaluation| G[Create New Issue in Node Ticket Management System for Documentation]
+G --> H[Inform VHD of Out-of-Scope Decision, Provide Explanation and Close Issue with Notes]
+````
 
 ### 8. Procedure
 

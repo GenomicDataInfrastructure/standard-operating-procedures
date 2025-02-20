@@ -2,7 +2,7 @@
 
 | Metadata | Value |
 |---|---|
-| Template SOP number | ``GDI-SOP0008_Node-Helpdesk-Ticket-Classification`` |
+| Template SOP number | ``GDI-SOP0008`` |
 | Template SOP version |  ``v1``  |
 | Topic                | Helpdesk & operations |
 | Template SOP Type | Node-specific SOP |

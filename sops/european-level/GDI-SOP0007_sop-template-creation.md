@@ -281,9 +281,9 @@ Proceed to ⏩[step 4](#84-contact-authors).
 
 Once the SOP document has been drafted, experts are required to fill in the gaps and finalize it. These **authors are to be appointed and contacted by you as part of the OC/SDPC**. Who the authors are will depend on the background and requirements of each SOP, and thus it is your responsibility to **find the best-suited people for the task**. The only requirements are for authors to be part of the GDI project and to know about, or be part of, the subject the SOP revolves around. An approach to identify authors is to go through the contributors of the RFC discussion at [step 2](#82-create-rfc-discussion). Alternatively, you may contact the GDI Work Package (WP) leaders to point you in the right direction.
 
-The communication may vary depending on the selected authors. For example, if the experts are part of the OC/SDPC themselves, then it may be best to let the group know through GDI's Slack workspace or mailing lists (``gdi_operations_committee@elixir-europe.org`` and ``gdi_security_data_protection@elixir-europe.org``). On the other hand, if authors are external to these two committees, the following email template could be used to contact them.
+The communication may vary depending on the selected authors. For example, if the experts are part of the OC/SDPC themselves, then it may be best to let the group know through GDI's Slack workspace or mailing lists (``gdi_operations_committee [at] elixir-europe.org`` and ``gdi_security_data_protection [at] elixir-europe.org``). On the other hand, if authors are external to these two committees, the following email template could be used to contact them.
 
-Remember to CC the OC and SDPC mailing lists: ``gdi_operations_committee@elixir-europe.org`` and ``gdi_security_data_protection@elixir-europe.org``.
+Remember to CC the OC and SDPC mailing lists: ``gdi_operations_committee [at] elixir-europe.org`` and ``gdi_security_data_protection [at] elixir-europe.org``.
 ````
 Subject: [GDI T4.3] Requesting expert input for drafted SOP
 ````
@@ -342,7 +342,7 @@ Proceed to ⏩[step 5.1](#851-appoint-reviewers).
 
 Similar to how authors were nominated and contacted, you shall **appoint reviewers and contact them** requesting their review. Depending on the SOP, who are the reviewers and how to contact them will vary. If by email, you can use the email template below.
 
-Remember to CC the OC and SDPC mailing lists: ``gdi_operations_committee@elixir-europe.org`` and ``gdi_security_data_protection@elixir-europe.org``.
+Remember to CC the OC and SDPC mailing lists: ``gdi_operations_committee [at] elixir-europe.org`` and ``gdi_security_data_protection [at] elixir-europe.org``.
 ````
 Subject: [GDI T4.3] Requesting SOP review
 ````
@@ -379,7 +379,7 @@ Once the reviews are finished (i.e., feedback has been addressed), proceed to �
 
 Once the drafted SOP has been filled in by the authors, and has passed the inspection of reviewers, the SOP document shall go through approval of the OC/SDPC. **These committees need to nominate 2 members each** (4 in total), that will be responsible for approval of the SOP.
 
-Use the following template to **send an email to the OC (``gdi_operations_committee@elixir-europe.org``) and SDPC (``gdi_security_data_protection@elixir-europe.org``) requesting approval**:
+Use the following template to **send an email to the OC (``gdi_operations_committee [at] elixir-europe.org``) and SDPC (``gdi_security_data_protection [at] elixir-europe.org``) requesting approval**:
 ````
 Subject: [GDI T4.3] Requesting SOP approval
 ````
@@ -418,7 +418,7 @@ Once the SOP has been approved, proceed to ⏩[step 5.3](#853-contact-management
 
 Once approved by the OC/SDPC, **communicate the formal authorisation request to the GDI MB**. Make use of the template below to craft the email and send it to ``gdi-mb [at] elixir-europe.org``.
 
-Remember to CC the OC and SDPC mailing lists: ``gdi_operations_committee@elixir-europe.org`` and ``gdi_security_data_protection@elixir-europe.org``.
+Remember to CC the OC and SDPC mailing lists: ``gdi_operations_committee [at] elixir-europe.org`` and ``gdi_security_data_protection [at] elixir-europe.org``.
 ````
 Subject: [GDI T4.3] Requesting SOP authorisation
 ````

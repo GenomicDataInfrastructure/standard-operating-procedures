@@ -29,6 +29,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | BEN              | Beneficiary                                                             |
 | CC               | Carbon Copy (used in communications to send a copy to others)           |
 | CSC              | Finnish IT Center for Science                                           |
+| DCAT             | Data Catalog Vocabulary                                                 |
 | DAA              | Data Access Agreement                                                   |
 | DAC              | Data Access Committee                                                   |
 | DMP              | Data Management Plan                                                    |
@@ -41,6 +42,8 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | EDIC             | European Digital Infrastructure Consortium                              |
 | ELSI             | Ethical, Legal, and Social Implications                                 |
 | EMBL             | European Molecular Biology Laboratory                                   |
+| FAIR             | Findable, Accessible, Interoperable, and Reusable                       |
+| FDP              | FAIR Data Point                                                         |
 | GDI              | European Genomic Data Infrastructure                                    |
 | GDI-CO           | GDI Project Management Team (GDI coordinators)                          |
 | GDPR             | General Data Protection Regulation                                      |
@@ -65,6 +68,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | QMS              | Quality Management System                                               |
 | RFC              | Request For Comments                                                    |
 | SDPC             | Security and Data Protection Committee                                  |
+| SHACL            | Shapes Constraint Language                                              |
 | SLA              | Service Level Agreement                                                 |
 | SOP              | Standard Operating Procedure                                            |
 | TB               | Top to Bottom                                                           |

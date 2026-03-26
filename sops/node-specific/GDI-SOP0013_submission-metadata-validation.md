@@ -119,7 +119,7 @@ Review the validation result shown by the FDP and treat the applied SHACL constr
 
 If validation fails, update the metadata in the FAIR Data Point and save again. Repeat the correction cycle until the SHACL validation passes.
 
-Once the record passes validation, complete the local review or approval step and retain or publish the valid metadata according to node practice. Record the outcome in the local log or audit trail if applicable.
+When validation succeeds, the data can be harvested. Record the outcome in the local log or audit trail if applicable.
 
 ### 9. References
 

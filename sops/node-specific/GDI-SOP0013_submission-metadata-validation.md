@@ -82,7 +82,7 @@ graph TB
     review["Review validation report"]
     decision{"Validation passed?"}
     correct["Correct metadata in FDP"]
-    accept["Record accepted for local approval or publication"]
+    accept["Harvestable by central node"]
 
     source --> enter --> save --> validate --> review --> decision
     decision -->|No| correct --> save

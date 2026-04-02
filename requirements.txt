@@ -9,6 +9,7 @@ packaging>=24
 
 # Required for handling data processing if needed in future expansions
 pandas>=2.0,<2.2
+tabulate
 
 # Required for making HTTP requests to GitHub API
 requests>=2.31.0

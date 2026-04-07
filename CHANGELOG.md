@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - [``GDI-SOP_github-introduction-for-maintainers.md``](docs/GDI-SOP_github-introduction-for-maintainers.md) - Introductory guide for GDI SOP Repository maintainers.
-- [``GDI-SOP0013_submission-metadata-validation.md``](sops/node-specific/GDI-SOP0013_submission-metadata-validation.md) - Node-specific SOP template describing how a node FAIR Data Point should validate dataset metadata through save-triggered SHACL validation.
+- [``GDI-SOP0013_fdp-submission-metadata-validation.md``](sops/node-specific/GDI-SOP0013_fdp-submission-metadata-validation.md) - Node-specific SOP template describing how a node FAIR Data Point should validate dataset metadata through save-time validation, local escalation, and a harvestable end state.
 - [``GDI-SOP0008_node-helpdesk-ticket-classification.md``](sops/node-specific/GDI-SOP0008_node-helpdesk-ticket-classification.md) - GDI Node Helpdesk Ticket Classification SOP. 
 - [``GDI-SOP0009_dataset-withdrawal.md``](sops/european-level/GDI-SOP0009_dataset-withdrawal.md) - Withdrawal request GDI SOP.
 - [``.gitignore``](.gitignore) - File to ignore certain files in git commits.

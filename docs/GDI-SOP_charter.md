@@ -27,6 +27,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | AE               | Associated Entity                                                       |
 | AI               | Action Item                                                             |
 | AF               | Application Form                                                        |
+| AP               | Application Profile                                                     |
 | API              | Application Programming Interface                                       |
 | BEN              | Beneficiary                                                             |
 | CC               | Carbon Copy (used in communications to send a copy to others)           |
@@ -56,6 +57,8 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | GDPR             | General Data Protection Regulation                                      |
 | GH               | GitHub                                                                  |
 | HD               | Helpdesk                                                                |
+| HDM              | Harmonised Data Model                                                   |
+| HealthDCAT-AP    | Health Data Catalogue Application Profile                               |
 | HRI              | Health Research Infrastructure                                          |
 | ID               | Identity Document                                                       |
 | IdP              | Identity Provider                                                       |

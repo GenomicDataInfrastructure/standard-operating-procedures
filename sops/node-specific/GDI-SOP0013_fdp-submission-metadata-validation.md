@@ -126,7 +126,7 @@ If the node uses helper tooling around the FDP, such as a local upload or onboar
 
 Save the metadata record in the FDP and review the validation feedback returned by the FDP. Treat the deployed SHACL constraints as the authoritative pass or fail criteria for this SOP.
 
-If the validation passes, proceed to [step 8.6](#86-confirm-harvestable-state-and-record-the-outcome). If the validation fails, determine whether the outcome reflects metadata content errors or a likely validator, schema, or configuration issue before proceeding.
+If the validation passes, proceed to ⏩[step 8.6](#86-confirm-harvestable-state-and-record-the-outcome). If the validation fails, determine whether the outcome reflects metadata content errors or a likely validator, schema, or configuration issue before proceeding.
 
 #### 8.4. Correct metadata content errors and resave
 
@@ -136,7 +136,7 @@ If the validation passes, proceed to [step 8.6](#86-confirm-harvestable-state-an
 
 Correct the metadata content in the FDP record and save it again. Repeat this correction loop until the validation passes or until the output indicates a local FDP validator, shape, or configuration issue that cannot be resolved immediately.
 
-If the issue is corrected, return to [step 8.3](#83-save-the-record-and-review-validation-output). If the problem is not a record-content issue, continue to [step 8.5](#85-escalate-validator-schema-or-configuration-issues-locally).
+If the issue is corrected, return to ⏩[step 8.3](#83-save-the-record-and-review-validation-output). If the problem is not a record-content issue, continue to ⏩[step 8.5](#85-escalate-validator-schema-or-configuration-issues-locally).
 
 #### 8.5. Escalate validator, schema, or configuration issues locally
 
@@ -146,7 +146,7 @@ If the issue is corrected, return to [step 8.3](#83-save-the-record-and-review-v
 
 Treat persistent failures, unexpected validation gaps, wrong resource targeting, or shape deployment problems as local FDP operational issues. Escalate them through the node's local FDP support path, for example `<Node FDP support contact or ticket workflow>`, and stop the record from being treated as harvestable until the issue is resolved.
 
-If the problem is resolved, return to [step 8.3](#83-save-the-record-and-review-validation-output). If the node keeps a ticket, log, or audit trail, record the issue type, the FDP component affected, and the resolution outcome.
+If the problem is resolved, return to ⏩[step 8.3](#83-save-the-record-and-review-validation-output). If the node keeps a ticket, log, or audit trail, record the issue type, the FDP component affected, and the resolution outcome.
 
 #### 8.6. Confirm harvestable state and record the outcome
 

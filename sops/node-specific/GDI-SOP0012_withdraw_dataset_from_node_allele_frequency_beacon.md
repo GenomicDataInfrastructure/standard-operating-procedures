@@ -1,4 +1,4 @@
-# European GDI - Withdraw dataset from Node Allele Frequency Beacon
+# European GDI - Withdraw_dataset_from_node_allele_frequency_beacon
 
 | Metadata             | Value                                                                 |
 | -------------------- | --------------------------------------------------------------------- |
@@ -36,18 +36,21 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | ------------- | ------------------------------------------------- |
 | CRG           | Centre for Genomic Regulation                     |
 | GDI           | European Genomic Data Infrastructure              |
+| GDPR          | General Data Protection Regulation.               |
 | EBI           | European Bioinformatics Institute                 |
 | EMBL          | European Molecular Biology Laboratory             |
+| FAIR          | Findability, Accessibility, Interoperability and Reusability             |
 | HTTP          | Hypertext Transfer Protocol                       |
+| ID            | Identifier                                        |
 | SOP           | Standard Operating Procedure                      |
 | VHD           | Virtual Helpdesk                                  |
 
 | Term          | Definition                                                                                                |
 | ------------- | ----------------------------------------------------------------------------------------------------------|
-| Hard-deletion | Removal of the whole beacon dataset related records and references.                                       |
+| Hard-deletion | Complete data removal from primary systems, plus documented handling of backups according to retention policy, with escalation if the request requires something stricter.                                     |
 | Permissions   | All the information related to the dataset grants and its security level configuration.                   |
 | Query         | HTTP request to an endpoint of the node’s Allele Frequency beacon.                                        |
-| Soft-deletion | Removal of the minimum part of the beacon dataset so it is withdrawn but it becomes easy to be restored in case it is needed.|
+| Soft-deletion | Data is marked as withdrawn and made inaccessible to users but retained internally for audit or limited-term retention.|
 | Withdrawal    | A performance action to remove the dataset from beacon responses.                                         |
 
 ### 3. Roles and Responsibilities
@@ -200,7 +203,6 @@ Add the dataset id to the file in path `/beacon/conf/datasets/datasets/datasets_
 ```
 Record the action in the local audit or change log, including who performed the change, when it was performed, what was changed, the approved scope, and the reason when that information is available in the request package.
 Report completion back to the GDI Virtual Helpdesk so that requester communication continues through the VHD workflow.
-
 
 ### 9. References
 

@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [``GDI-SOP0008_node-helpdesk-ticket-classification.md``](sops/node-specific/GDI-SOP0008_node-helpdesk-ticket-classification.md) - GDI Node Helpdesk Ticket Classification SOP. 
 - [``GDI-SOP0009_dataset-withdrawal.md``](sops/european-level/GDI-SOP0009_dataset-withdrawal.md) - Withdrawal request GDI SOP.
 - [``.gitignore``](.gitignore) - File to ignore certain files in git commits.
+- [GDI-SOP0012_withdraw_dataset_from_node_allele_frequency_beacon.md](../node-specific/GDI-SOP0012_withdraw_dataset_from_node_allele_frequency_beacon.md) - Node-specific SOP template describing how a node FAIR Data Point should process soft withdrawal of a dataset or linked distributions.
 
 ### Modified
 - [``GDI-SOP_github-management.md``](docs/GDI-SOP_github-management.md) - Added reference to recorded session

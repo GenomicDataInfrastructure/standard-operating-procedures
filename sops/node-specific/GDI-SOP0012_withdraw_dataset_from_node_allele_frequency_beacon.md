@@ -107,11 +107,11 @@ As the node aggregated beacon maintainer, confirm that the incoming request pack
 - The relevant dataset identifier matching the node FAIR Data Point’s dataset to be withdrawn
 Send an HTTP GET request to your beacon’s datasets endpoint and locate the record corresponding to the ID of the dataset to be deleted,
 ```bash
-https://<yourBeaconDomain>/datasets
+curl 'https://<yourBeaconDomain>/datasets'
 ```
 or perform the id query directly,
 ```bash
-https://<yourBeaconDomain>/datasets/<id>
+curl 'https://<yourBeaconDomain>/datasets/<id>'
 ```
 Record the dataset identifier and the deletion type (soft or hard). Record the dataset title only as an additional verification check.
 - If the request package is complete and the dataset is found, proceed to ⏩[Step 2](#82-remove-the-dataset-from-the-beacon-database).
@@ -190,11 +190,17 @@ Save the file.
 
 | Step identifier | When | Who |
 | :-------------- | :--------------------------------------- | :-------------------------------------- |
-| `5`             | After successful completion of Step 3 | Node aggregated beacon maintainer |
+| `4`             | After successful completion of Step 3 | Node aggregated beacon maintainer |
 
-Verify in the beacon that the withdrawal results in the dataset not appearing in a query of datasets and a query of variants.
+Verify in the beacon that the withdrawn records in the dataset are not appearing in a query of datasets and a query of variants.
+Add the dataset id to the file in path `/beacon/conf/datasets/datasets/datasets_conf.yml` and add a new item under it called isDeprecated setting it as True:
+```yaml
+<dataset id>:
+  isDeprecated: True
+```
 Record the action in the local audit or change log, including who performed the change, when it was performed, what was changed, the approved scope, and the reason when that information is available in the request package.
 Report completion back to the GDI Virtual Helpdesk so that requester communication continues through the VHD workflow.
+
 
 ### 9. References
 

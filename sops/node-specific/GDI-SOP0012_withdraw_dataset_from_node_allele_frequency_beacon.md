@@ -34,6 +34,7 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 
 | Abbreviation  | Description                                       |
 | ------------- | ------------------------------------------------- |
+| AF            | Allele Frequency                                  |
 | CRG           | Centre for Genomic Regulation                     |
 | GDI           | European Genomic Data Infrastructure              |
 | GDPR          | General Data Protection Regulation.               |

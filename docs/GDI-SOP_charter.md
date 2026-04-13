@@ -25,6 +25,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | 1+MG DAC         | 1+MG Data Access Committee                                              |
 | AAI              | Authentication and Authorization Infrastructure                         |
 | AE               | Associated Entity                                                       |
+| AF               | Allele Frequency                                                        |
 | AI               | Action Item                                                             |
 | AF               | Application Form                                                        |
 | API              | Application Programming Interface                                       |

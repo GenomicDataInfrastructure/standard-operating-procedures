@@ -69,17 +69,17 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 
 ### 4. Purpose
 
-AF Beacons expose population-level allele counts. A node-level SOP to withdraw data from Allele Frequency Beacons guarantees consistent, auditable removal of frequency contributions in line with GDPR and the GDI overarching withdrawal workflow.
+AF Beacons provide access to population-level allele counts. This node-level SOP defines the process for withdrawing data from Allele Frequency Beacons, ensuring consistent and auditable removal of these contributions in line with GDPR and the overarching GDI withdrawal workflow.
 
 ### 5. Scope
 
-This SOP covers the steps required to withdraw a dataset from a Node's Allele Frequency Beacon. Included steps are the identification of dataset records to withdraw, assessing the withdrawal scope, executing the removal of data, validating frequency integrity, auditing and logging the withdrawal, and reporting completion.
+This SOP covers the steps required to withdraw a dataset from a Node's Allele Frequency Beacon. Included steps are the identification of dataset records to withdraw, assessing the withdrawal scope, executing the removal of data, auditing and logging the withdrawal, and reporting completion.
 It is part of the higher level Dataset Withdrawal SOP (SOP0009).
 
 ### 6. Introduction and Background Information
 
-An aggregated data beacon hosts information for variants and minimal metadata for datasets that these variants belong to. These two types of different information are often stored separately in a database but linked through some reference property that contains the dataset id for the records. This dataset id is the pivotal piece of information, under which the records are displayed in a client response and that allows to integrate the response with other services in GDI.
-When attempting a withdrawal of the beacon records related to a dataset, it will be necessary to determine which is the exact id of the dataset, as case sensitivity and other character inferences may result in an unsuccessful withdrawal attempt. The withdrawal procedure of a soft-deletion is slightly different from a hard-deletion, where the amount of records to be deleted is significantly higher. Withdrawal by hard-deletion includes variants and dataset records type, whereas soft-deletion includes only the latter. 
+An AF beacon hosts information for variants and metadata for datasets that these variants belong to. These two types of information are often stored separately in a database but linked through some reference property that contains the dataset ID for the records. This dataset ID is the pivotal piece of information, under which the records are displayed in a client response and that allows to integrate the response with other services in GDI.
+When attempting a withdrawal of the beacon records related to a dataset, it will be necessary to determine which is the exact ID of the dataset, as case sensitivity and other character inferences may result in an unsuccessful withdrawal attempt. The withdrawal procedure of a soft-deletion is slightly different from a hard-deletion, where the amount of records to be deleted is significantly higher. Withdrawal by hard-deletion includes variants and dataset records type, whereas soft-deletion includes only the latter. 
 It is important that the withdrawal procedure is preceded by a double-check of the dataset requested for withdrawal in coordination with the Fair Data Point service.
 For a broader context of GDI SOPs, please refer to the [Charter](../../docs/GDI-SOP_charter.md#4-introduction).
 
@@ -113,7 +113,7 @@ Send an HTTPS GET request to your beacon’s datasets endpoint and locate the re
 ```bash
 curl 'https://<yourBeaconDomain>/datasets'
 ```
-or perform the id beacon query directly,
+or perform the ID beacon query directly,
 ```bash
 curl 'https://<yourBeaconDomain>/datasets/<id>'
 ```
@@ -151,7 +151,7 @@ docker exec mongoprod /bin/bash -c 'mongosh beacon -u <user> -p <password> --aut
 | :-------------- | :--------------------------------------- | :-------------------------------------- |
 | `2.2`             | The deletion type was identified as hard. | Node aggregated beacon maintainer |
 
-Located at the server where your beacon is running, execute the following command line script on the terminal adding the id for the dataset to be removed with the -d flag.
+Located at the server where your beacon is running, execute the following command line script on the terminal adding the ID for the dataset to be removed with the -d flag.
 ```bash
 docker exec ri-tools python remove_dataset.py -d <id>
 ```
@@ -197,7 +197,7 @@ Save the file.
 | `4`             | After successful completion of Step 3 | Node aggregated beacon maintainer |
 
 Verify in the beacon that the withdrawn records in the dataset are not appearing in a beacon query of datasets and a beacon query of variants.
-Add the dataset id to the file in path `/beacon/conf/datasets/datasets/datasets_conf.yml` and add a new item under it called isDeprecated setting it as True:
+Add the dataset ID to the file in path `/beacon/conf/datasets/datasets/datasets_conf.yml` and add a new item under it called isDeprecated setting it as True:
 ```yaml
 <dataset id>:
   isDeprecated: True

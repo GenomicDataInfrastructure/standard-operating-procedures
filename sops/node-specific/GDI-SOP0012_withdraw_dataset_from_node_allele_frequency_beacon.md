@@ -197,7 +197,7 @@ Save the file.
 | `4`             | After successful completion of Step 3 | Node aggregated beacon maintainer |
 
 Verify in the beacon that the withdrawn records in the dataset are not appearing in a beacon query of datasets and a beacon query of variants.
-Add the dataset ID to the file in path `/beacon/conf/datasets/datasets/datasets_conf.yml` and add a new item under it called isDeprecated setting it as True:
+Add the dataset ID to the file in path `/beacon/conf/datasets/datasets_conf.yml` and add a new item under it called isDeprecated setting it as True:
 ```yaml
 <dataset id>:
   isDeprecated: True

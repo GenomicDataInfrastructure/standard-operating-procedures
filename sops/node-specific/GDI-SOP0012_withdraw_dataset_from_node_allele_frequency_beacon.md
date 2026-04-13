@@ -40,18 +40,18 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | EBI           | European Bioinformatics Institute                 |
 | EMBL          | European Molecular Biology Laboratory             |
 | FAIR          | Findability, Accessibility, Interoperability and Reusability             |
-| HTTP          | Hypertext Transfer Protocol                       |
+| HTTPS          | Hypertext Transfer Protocol Secure                     |
 | ID            | Identifier                                        |
 | SOP           | Standard Operating Procedure                      |
 | VHD           | Virtual Helpdesk                                  |
 
 | Term          | Definition                                                                                                |
-| ------------- | ----------------------------------------------------------------------------------------------------------|
-| Hard-deletion | Complete data removal from primary systems, plus documented handling of backups according to retention policy, with escalation if the request requires something stricter.                                     |
-| Permissions   | All the information related to the dataset grants and its security level configuration.                   |
-| Query         | HTTP request to an endpoint of the node’s Allele Frequency beacon.                                        |
+| ------------- | ----------------------------------------------------------------------------------------------------------|                          |
+| Beacon query         | HTTPS request to an endpoint of the node’s Allele Frequency beacon.                                        |
+| Dataset permissions   | All the information related to the dataset grants and its security level configuration.                   |
+| Hard-deletion | Complete data removal from primary systems, plus documented handling of backups according to retention policy, with escalation if the request requires something stricter.           
 | Soft-deletion | Data is marked as withdrawn and made inaccessible to users but retained internally for audit or limited-term retention.|
-| Withdrawal    | A performance action to remove the dataset from beacon responses.                                         |
+| Withdrawal    | An exceptional action where a dataset (or research object) is removed from public access, typically retaining its persistent identifier and replacing access with a notice (often via a tombstone page/record)                                        |
 
 ### 3. Roles and Responsibilities
 
@@ -108,11 +108,11 @@ As the node aggregated beacon maintainer, confirm that the incoming request pack
 - The original approved withdrawal request or ticket reference
 - The requested scope of the withdrawal (soft or hard-deletion)
 - The relevant dataset identifier matching the node FAIR Data Point’s dataset to be withdrawn
-Send an HTTP GET request to your beacon’s datasets endpoint and locate the record corresponding to the ID of the dataset to be deleted,
+Send an HTTPS GET request to your beacon’s datasets endpoint and locate the record corresponding to the ID of the dataset to be deleted,
 ```bash
 curl 'https://<yourBeaconDomain>/datasets'
 ```
-or perform the id query directly,
+or perform the id beacon query directly,
 ```bash
 curl 'https://<yourBeaconDomain>/datasets/<id>'
 ```
@@ -195,7 +195,7 @@ Save the file.
 | :-------------- | :--------------------------------------- | :-------------------------------------- |
 | `4`             | After successful completion of Step 3 | Node aggregated beacon maintainer |
 
-Verify in the beacon that the withdrawn records in the dataset are not appearing in a query of datasets and a query of variants.
+Verify in the beacon that the withdrawn records in the dataset are not appearing in a beacon query of datasets and a beacon query of variants.
 Add the dataset id to the file in path `/beacon/conf/datasets/datasets/datasets_conf.yml` and add a new item under it called isDeprecated setting it as True:
 ```yaml
 <dataset id>:

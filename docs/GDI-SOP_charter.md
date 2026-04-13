@@ -57,7 +57,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | GH               | GitHub                                                                  |
 | HD               | Helpdesk                                                                |
 | HRI              | Health Research Infrastructure                                          |
-| HTTP             | Hypertext Transfer Protocol                                             |
+| HTTPS            | Hypertext Transfer Protocol Secure                                        |
 | ID               | Identity Document                                                       |
 | IdP              | Identity Provider                                                       |
 | INSERM           | L'Institut national de la santé et de la recherche médicale (France)    |
@@ -109,8 +109,10 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 |------------------|-------------------------------------------------------------------------|
 | API              | Application Programming Interface is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. |
 | Beacon           |A web-accessible service implementing the GA4GH Beacon specification, enabling federated discovery (and sometimes retrieval) of genomic variant and related biomedical data across distributed resources|
+| Beacon Query      | HTTPS request to an endpoint of the node’s Allele Frequency beacon.          |
 | CHANGELOG        | Log or record of all notable changes made to a project                 |
 | Data controller  |The legal owner or organisation that determines the purposes and means of processing the dataset and can authorise its withdrawal|
+| Dataset permissions      | All the information related to the dataset grants and its security level configuration.          |
 | Dataset version  |A specific released state of a dataset identified by a version label/number, used to distinguish minor or major changes between releases|
 | FitSM            | Standards for lightweight IT Services Management; developed initially through The FedSM Project, funded by the European Commission, now maintained by ITEMO (<https://www.fitsm.eu/>) |
 | Hard-deletion    |Complete, irreversible erasure of the data from all storage media so it cannot be recovered|
@@ -118,8 +120,6 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | JSON             | JavaScript Object Notation is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of name–value pairs and arrays (or other serializable values).|
 | Node Helpdesk    | The support team is responsible for handling tickets related to data management issues associated with the node in the GDI Project.  |
 | Permit Authority | National body responsible for data access decisions                    |
-| Permissions      | All the information related to the dataset grants and its security level configuration.          |
-| Query      | HTTP request to an endpoint of the node’s Allele Frequency beacon.          |
 | README           | File that provides information about a project or directory            |
 | Requester        |The person that initiates the request to the VHD for the dataset to be withdrawn|
 | Soft-deletion    |Data is marked as withdrawn and made inaccessible to users but retained internally for audit or limited-term retention|

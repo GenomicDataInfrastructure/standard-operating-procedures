@@ -74,7 +74,8 @@ AF Beacons provide access to population-level allele counts. This node-level SOP
 ### 5. Scope
 
 This SOP covers the steps required to withdraw a dataset from a Node's Allele Frequency Beacon. Included steps are the identification of dataset records to withdraw, assessing the withdrawal scope, executing the removal of data, auditing and logging the withdrawal, and reporting completion.
-It is part of the higher level Dataset Withdrawal SOP (SOP0009).
+It is part of the higher level Dataset Withdrawal SOP ([SOP0009](../european-level
+/GDI-SOP0009_dataset-withdrawal.md)).
 
 ### 6. Introduction and Background Information
 

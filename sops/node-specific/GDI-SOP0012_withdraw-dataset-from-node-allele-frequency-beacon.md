@@ -63,6 +63,7 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | Author     | Liina Nagirnaja             | Beacon Manager                                   | CRG                                   |
 | Author     | Jordi Rambla                | Beacon Product Owner                             | CRG                                   |
 | Author     | Oriol López-Doriga Sagalés  | Beacon Developer                                 | CRG                                   |
+| Author     | Aleš Čep                    | Task 4.3 member                                  | CRG                                   |
 | Reviewer   | Marcos Casado Barbero       | Task 4.3 member                                  | EMBL-EBI                              |
 | Approver   | Gabriele Rinck              | Task 4.3 member                                  | EMBL-EBI                              |
 | Authorizer | Management Board            | Authorizer according to GDI SOP governance       | GDI                                   |
@@ -80,7 +81,7 @@ It is part of the higher level Dataset Withdrawal SOP ([SOP0009](../european-lev
 ### 6. Introduction and Background Information
 
 An AF beacon hosts information for variants and metadata for datasets that these variants belong to. These two types of information are often stored separately in a database but linked through some reference property that contains the dataset ID for the records. This dataset ID is the pivotal piece of information, under which the records are displayed in a client response and that allows to integrate the response with other services in GDI.
-When attempting a withdrawal of the beacon records related to a dataset, it will be necessary to determine which is the exact ID of the dataset, as case sensitivity and other character inferences may result in an unsuccessful withdrawal attempt. The withdrawal procedure of a soft-deletion is slightly different from a hard-deletion, where the amount of records to be deleted is significantly higher. Withdrawal by hard-deletion includes variants and dataset records type, whereas soft-deletion includes only the latter. 
+When attempting a withdrawal of the beacon records related to a dataset, it will be necessary to determine which is the exact ID of the dataset, as case sensitivity and other character inferences may result in an unsuccessful withdrawal attempt. The withdrawal procedure of a soft-deletion is slightly different from a hard-deletion, where the amount of records to be deleted is significantly higher. Withdrawal by hard-deletion includes variant and dataset record type, whereas soft-deletion includes only the latter. 
 It is important that the withdrawal procedure is preceded by a double-check of the dataset requested for withdrawal in coordination with the Fair Data Point service.
 For a broader context of GDI SOPs, please refer to the [Charter](../../docs/GDI-SOP_charter.md#4-introduction).
 
@@ -109,7 +110,7 @@ flowchart TD
 As the node aggregated beacon maintainer, confirm that the incoming request package is complete before performing any deletion in beacon. Double check first:
 - The original approved withdrawal request or ticket reference
 - The requested scope of the withdrawal (soft or hard-deletion)
-- The relevant dataset identifier matching the node FAIR Data Point’s dataset to be withdrawn
+- The relevant dataset identifier matching the node FAIR Data Point’s dataset to be withdrawn, see [GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md](/sops/node-specific/GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md)
 Send an HTTPS GET request to your beacon’s datasets endpoint and locate the record corresponding to the ID of the dataset to be deleted,
 ```bash
 curl 'https://<yourBeaconDomain>/datasets'

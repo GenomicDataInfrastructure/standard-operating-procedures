@@ -105,7 +105,7 @@ flowchart TD
 
 | Step identifier | When | Who |
 | :-------------- | :------------------------------------------------------------------ | :-------------------------------------- |
-| `1`             | When a dataset withdrawal request has been approved under the overarching withdrawal process described in [GDI-SOP0009 dataset withdrawal](../european-level/GDI-SOP0009_dataset-withdrawal.md#87-per-system-dataset-withdrawal). | Node aggregated beacon maintainer |
+| `1`             | When a dataset withdrawal request has been approved under the overarching withdrawal process described in [GDI-SOP0009 dataset withdrawal](../european-level/GDI-SOP0009_dataset-withdrawal.md#87-per-system-dataset-withdrawal). | Node's AF Beacon maintainer |
 
 As the node aggregated beacon maintainer, confirm that the incoming request package is complete before performing any deletion in beacon. Double check first:
 - The original approved withdrawal request or ticket reference

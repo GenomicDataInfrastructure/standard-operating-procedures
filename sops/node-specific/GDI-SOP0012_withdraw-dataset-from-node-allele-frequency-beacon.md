@@ -1,4 +1,4 @@
-# European GDI - Withdraw_dataset_from_node_allele_frequency_beacon
+# European GDI - Withdraw dataset from node allele frequency beacon
 
 | Metadata             | Value                                                                 |
 | -------------------- | --------------------------------------------------------------------- |
@@ -50,7 +50,7 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | ------------- | ----------------------------------------------------------------------------------------------------------|                          |
 | Beacon query         | HTTPS request to an endpoint of the node’s Allele Frequency beacon.                                        |
 | Dataset permissions   | All the information related to the dataset grants and its security level configuration.                   |
-| Hard-deletion | Complete data removal from primary systems, plus documented handling of backups according to retention policy, with escalation if the request requires something stricter.           
+| Hard-deletion | Complete, irreversible erasure of the data from all storage media so it cannot be recovered.          |
 | Soft-deletion | Data is marked as withdrawn and made inaccessible to users but retained internally for audit or limited-term retention.|
 | Withdrawal    | An exceptional action where a dataset (or research object) is removed from public access, typically retaining its persistent identifier and replacing access with a notice (often via a tombstone page/record)                                        |
 
@@ -139,9 +139,19 @@ After deletion type of the dataset withdrawal is confirmed:
 
 Locate yourself in the server where your beacon is running and execute the following command line script to remove the dataset record approved for  withdrawal.
 ```bash
-docker exec mongoprod /bin/bash -c 'mongosh beacon -u <user> -p <password> --authenticationDatabase admin --eval "db.datasets.deleteMany({\"id\": \"<id>\"})"'
-```
+bash -c '
+read -s -p "Mongo user: " MONGO_USER; echo
+read -s -p "Mongo password: " MONGO_PASS; echo
 
+
+docker exec -i mongoprod mongosh <<EOF
+db = connect("mongodb://${MONGO_USER}:${MONGO_PASS}@localhost:27017/admin");
+db = db.getSiblingDB("beacon");
+db.datasets.deleteMany({ id: "<id>" });
+EOF
+'
+```
+You will be asked to enter the mongodb credentials on the terminal prompt.
 - If the removal is successful, proceed to ⏩[Step 3](#83-remove-dataset-permissions).
 - If the removal is not successful, record the response obtained from the used commands, adding all the information about the actions performed and the intended goal of performing them and report to the GDI Virtual Helpdesk so that requester communication continues through the VHD workflow and proceed to ⏩[Step 3](#83-remove-dataset-permissions).
 
@@ -170,9 +180,20 @@ docker exec beaconprod python -m beacon.connections.mongo.reindex
 
 Located at the server where your beacon is running, execute the following command line scripts to remove the dataset record and variants records related to the dataset to withdraw.
 ```bash
-docker exec mongoprod /bin/bash -c 'mongosh beacon -u <user> -p <password> --authenticationDatabase admin --eval "db.datasets.deleteMany({\"id\": \"<id>\"})"'
-docker exec mongoprod /bin/bash -c 'mongosh beacon -u <user> -p <password> --authenticationDatabase admin --eval "db.genomicVariations.deleteMany({\"datasetId\": \"<id>\"})"'
+bash -c '
+read -s -p "Mongo user: " MONGO_USER; echo
+read -s -p "Mongo password: " MONGO_PASS; echo
+
+
+docker exec -i mongoprod mongosh <<EOF
+db = connect("mongodb://${MONGO_USER}:${MONGO_PASS}@localhost:27017/admin");
+db = db.getSiblingDB("beacon");
+db.datasets.deleteMany({ id: "<id>" });
+db.genomicVariations.deleteMany({ datasetId: "<id>" });
+EOF
+'
 ```
+You will be asked to enter the mongodb credentials on the terminal prompt.
 Next, execute the following command line script on the terminal to remove index references for that dataset.
 ```bash
 docker exec beaconprod python -m beacon.connections.mongo.reindex

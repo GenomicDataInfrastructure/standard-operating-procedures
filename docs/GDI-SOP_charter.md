@@ -58,8 +58,8 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | GH               | GitHub                                                                  |
 | HD               | Helpdesk                                                                |
 | HRI              | Health Research Infrastructure                                          |
-| HTTPS            | Hypertext Transfer Protocol Secure                                        |
-| ID               | Identity Document                                                       |
+| HTTPS            | Hypertext Transfer Protocol Secure                                      |
+| ID               | Identifier                                                              |
 | IdP              | Identity Provider                                                       |
 | INSERM           | L'Institut national de la santé et de la recherche médicale (France)    |
 | ISM              | Information Service Management                                          |
@@ -116,7 +116,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | Dataset permissions      | All the information related to the dataset grants and its security level configuration.          |
 | Dataset version  |A specific released state of a dataset identified by a version label/number, used to distinguish minor or major changes between releases|
 | FitSM            | Standards for lightweight IT Services Management; developed initially through The FedSM Project, funded by the European Commission, now maintained by ITEMO (<https://www.fitsm.eu/>) |
-| Hard-deletion    |Complete, irreversible erasure of the data from all storage media so it cannot be recovered|
+| Hard-deletion    | Complete, irreversible erasure of the data from all storage media so it cannot be recovered|
 | JIRA             | Software product developed by Atlassian that allows bug tracking, issue tracking and agile project management. |
 | JSON             | JavaScript Object Notation is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of name–value pairs and arrays (or other serializable values).|
 | Node Helpdesk    | The support team is responsible for handling tickets related to data management issues associated with the node in the GDI Project.  |

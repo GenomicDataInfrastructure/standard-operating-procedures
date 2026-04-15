@@ -88,15 +88,24 @@ For a broader context of GDI SOPs, please refer to the [Charter](../../docs/GDI-
 ### 7. Summary or Context Diagram
 
 ```mermaid
-flowchart TD
-    A[Approved dataset withdrawal request] --> B
-    B{Confirm withdrawal request and identify dataset}
-    B -->|Soft-deletion| C[Remove dataset record]
-    B -->|Hard-deletion| D[Remove dataset and variants records]
-    C --> E[Remove permissions for the dataset]
-    D --> E
-    E --> F[Log action]
-    F --> G[Report completion to VHD]
+    A["Confirm withdrawal request and identify dataset"] --> B{"Package complete and dataset found?"}
+    A -- Clarification received --> D["Request clarification from VHD and pause"]
+    B -- yes --> C["Deletion type?"]
+    B -- no --> D
+    C -- hard --> E["Hard-deletion Option A:use remove_dataset.py+reindex"]
+    C -- soft --> F["Soft-deletion:Remove dataset record"]
+    E --> G{"Removal successful?"}
+    G -- no --> H["Hard-deletion Option B: Manual delete datasets + variants + reindex"]
+    G -- yes --> K["Remove dataset permissions"]
+    F --> I{"Removal successful?"}
+    H --> I
+    I -- no --> J["Record failure details and report to VHD"]
+    I -- yes --> K
+    J --> K
+    K --> L["Remove dataset permissions"]
+    L --> M["Add isDeprecated flag to config"]
+    M --> N["Record in audit / change log"]
+    N --> O["Report completion to VHD"]
 ```
 
 ### 8. Procedure
@@ -212,7 +221,7 @@ docker exec beaconprod python -m beacon.connections.mongo.reindex
 
 Proceed to verify the dataset is not found in your database.
 - If the removal performed was a soft-deletion, proceed to ⏩[Step 3.1](#831-soft-deletion).
-- If the removal performed was a soft-deletion, proceed to ⏩[Step 3.2](#831-hard-deletion).
+- If the removal performed was a hard-deletion, proceed to ⏩[Step 3.2](#832-hard-deletion).
 
 ##### 8.3.1. Soft-deletion
 
@@ -236,7 +245,7 @@ curl 'https://<yourBeaconDomain>/datasets/<id>/g_variants'
 
 | Step identifier | When | Who |
 | :-------------- | :--------------------------------------- | :-------------------------------------- |
-| `3`             | After ⏩[Step 3](#83-check-that-the-dataset-was-removed-successfully) or after  ⏩[Step 2](#82-remove-the-dataset-from-the-beacon-database) if dataset removal was not successful. | AF beacon maintainer |
+| `3`             | After ⏩[Step 3](#83-check-that-the-dataset-was-removed-successfully) or after ⏩[Step 2](#82-remove-the-dataset-from-the-beacon-database) if dataset removal was not successful. | AF beacon maintainer |
 
 Located at the server where your beacon is running, proceed to edit the file at the path `/beacon/permissions/datasets/datasets_permissions.yml` and remove the dataset entry.
 Save the file.

@@ -253,7 +253,7 @@ curl 'https://<yourBeaconDomain>/datasets/<id>/g_variants'
 
 | Step identifier | When | Who |
 | :-------------- | :--------------------------------------- | :-------------------------------------- |
-| `4`             | After ⏩[Step 3.1](#831-soft-deletion) or  ⏩[Step 3.2](#831-hard-deletion) | AF beacon maintainer |
+| `4`             | After ⏩[Step 3.1](#831-soft-deletion) or  ⏩[Step 3.2](#832-hard-deletion) | AF beacon maintainer |
 
 Located at the server where your beacon is running, proceed to edit the file at the path `/beacon/permissions/datasets/datasets_permissions.yml` and remove the dataset entry.
 Save the file.

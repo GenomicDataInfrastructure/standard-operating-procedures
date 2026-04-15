@@ -119,7 +119,7 @@ or perform the ID beacon query directly,
 ```bash
 curl 'https://<yourBeaconDomain>/datasets/<id>'
 ```
-Record the dataset identifier and the deletion type (soft or hard). Record the dataset title only as an additional verification check.
+Take note of the dataset identifier and the deletion type (soft or hard), as you will need it later. Similarly, record the dataset title only as an additional verification check.
 - If the request package is complete and the dataset is found, proceed to ⏩[Step 2](#82-remove-the-dataset-from-the-beacon-database).
 - If the request package is incomplete or the dataset is not found, request clarification from the GDI Virtual Helpdesk and pause the workflow until clarification is provided.
 

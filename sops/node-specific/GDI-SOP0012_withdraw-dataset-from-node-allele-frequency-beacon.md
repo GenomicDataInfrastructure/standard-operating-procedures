@@ -254,7 +254,16 @@ curl 'https://<yourBeaconDomain>/datasets/<id>/g_variants'
 | :-------------- | :--------------------------------------- | :-------------------------------------- |
 | `4`             | After ⏩[Step 3.1](#831-soft-deletion) or  ⏩[Step 3.2](#832-hard-deletion) | AF beacon maintainer |
 
-Located at the server where your beacon is running, proceed to edit the file at the path `/beacon/permissions/datasets/datasets_permissions.yml` and remove the dataset entry.
+Located at the server where your beacon is running, proceed to edit the file at the path `/beacon/permissions/datasets/datasets_permissions.yml`,
+find the entry using your dataset ID, like e.g.,
+```yaml
+<dataset id>:
+  public:
+    default_entry_types_granularity: record
+    entry_types_exceptions:
+    - cohort: boolean
+```
+and remove the whole dataset entry (from dataset ID until end of all lines under it).
 Save the file.
 - Continue to ⏩[Step 5](#85-verify-log-and-report-completion).
 
@@ -264,7 +273,6 @@ Save the file.
 | :-------------- | :--------------------------------------- | :-------------------------------------- |
 | `5`             | After successful completion of ⏩[Step 4](#84-remove-dataset-permissions) | AF beacon maintainer |
 
-Verify in the beacon that the withdrawn records in the dataset are not appearing in a beacon query of datasets and a beacon query of variants.
 Add the dataset ID to the file in path `/beacon/conf/datasets/datasets_conf.yml` and add a new item under it called isDeprecated setting it as True:
 ```yaml
 <dataset id>:

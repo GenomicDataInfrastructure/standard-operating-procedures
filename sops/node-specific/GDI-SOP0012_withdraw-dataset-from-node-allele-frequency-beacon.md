@@ -119,7 +119,8 @@ As the AF beacon maintainer, confirm that the incoming request package is comple
 - The original approved withdrawal request or ticket reference
 - The requested scope of the withdrawal (soft or hard-deletion)
 - The relevant dataset identifier matching the node FAIR Data Point’s dataset to be withdrawn, see [GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md](/sops/node-specific/GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md)
-Send an HTTPS GET request to your beacon’s datasets endpoint and locate the record corresponding to the ID of the dataset to be deleted, use the method you prefer (e.g., curl, postman...)...",
+
+Send a HTTPS GET request to your beacon’s datasets endpoint and locate the record corresponding to the ID of the dataset to be deleted, use the method you prefer (e.g., curl, postman...)...",
 ```bash
 curl 'https://<yourBeaconDomain>/datasets'
 ```

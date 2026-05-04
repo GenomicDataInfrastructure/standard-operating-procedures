@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [``GDI-SOP0008_node-helpdesk-ticket-classification.md``](sops/node-specific/GDI-SOP0008_node-helpdesk-ticket-classification.md) - GDI Node Helpdesk Ticket Classification SOP. 
 - [``GDI-SOP0009_dataset-withdrawal.md``](sops/european-level/GDI-SOP0009_dataset-withdrawal.md) - Withdrawal request GDI SOP.
 - [``.gitignore``](.gitignore) - File to ignore certain files in git commits.
+- [GDI-SOP0012_withdraw-dataset-from-node-allele-frequency-beacon.md](/sops/node-specific/GDI-SOP0012_withdraw-dataset-from-node-allele-frequency-beacon.md) - Node-specific SOP template describing how a node's allele frequency beacon should dataset should be removed.
 
 ### Modified
 - [``GDI-SOP_github-management.md``](docs/GDI-SOP_github-management.md) - Added reference to recorded session

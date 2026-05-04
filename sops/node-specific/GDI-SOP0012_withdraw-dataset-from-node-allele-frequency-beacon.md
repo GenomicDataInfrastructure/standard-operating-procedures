@@ -44,6 +44,7 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | HTTPS          | Hypertext Transfer Protocol Secure                     |
 | ID            | Identifier                                        |
 | SOP           | Standard Operating Procedure                      |
+| UM            | University of Maribor                             |
 | VHD           | Virtual Helpdesk                                  |
 
 | Term          | Definition                                                                                                |
@@ -63,7 +64,7 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | Author     | Liina Nagirnaja             | Beacon Manager                                   | CRG                                   |
 | Author     | Jordi Rambla                | Beacon Product Owner                             | CRG                                   |
 | Author     | Oriol López-Doriga Sagalés  | Beacon Developer                                 | CRG                                   |
-| Author     | Aleš Čep                    | Task 4.3 member                                  | CRG                                   |
+| Reviewer   | Aleš Čep                    | Task 4.3 member                                  | UM                                   |
 | Reviewer   | Marcos Casado Barbero       | Task 4.3 member                                  | EMBL-EBI                              |
 | Approver   | Gabriele Rinck              | Task 4.3 member                                  | EMBL-EBI                              |
 | Authorizer | Management Board            | Authorizer according to GDI SOP governance       | GDI                                   |

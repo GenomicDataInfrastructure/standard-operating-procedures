@@ -100,6 +100,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | UX               | User experience                                                         |
 | VHD              | Virtual Helpdesk                                                        |
 | VPN              | Virtual Private Network                                                 |
+| UM               | University of Maribor                                                   |
 | UP               | User portal                                                             |
 | WG               | Working Group                                                           |
 | WP               | Work Package                                                            |

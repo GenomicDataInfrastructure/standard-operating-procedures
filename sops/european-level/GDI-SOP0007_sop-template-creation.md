@@ -122,30 +122,30 @@ graph TB
     subgraph Authors
         step10(Fill in SOP Draft)
     end
-    step10 -->|Request review| step12
+    step10 hp8@-->|Request review| step12
     subgraph Reviewers
         step12{Document<br> reviewed?}
         r2(Contact authors)
     end
-    step12 -->|Yes|step13_prev
-    step13_prev -->|2 OC and 2 SDPC members<br> are nominated| step13
-    step13 -->|Yes|step13-1
-    step13-1 --> step-mb1
+    step12 hp9@-->|Yes|step13_prev
+    step13_prev hp10@-->|2 OC and 2 SDPC members<br> are nominated| step13
+    step13 hp11@-->|Yes|step13-1
+    step13-1 hp12@--> step-mb1
     ending(" ")
 
-    start -..->|GDI member creates<br>SOP request| input1
-    input1 -..->|OC<br> Notices the request| step1
-    step1 -->|Yes| step5
+    start hp1@-..->|GDI member creates<br>SOP request| input1
+    input1 hp2@-..->|OC<br> Notices the request| step1
+    step1 hp3@-->|Yes| step5
     step1 -->|No| step3
     step3 -->|Yes| stepj
     stepj -->|Wait for user's answer| step1
     step3 -->|No| step4
     step5 -->|Yes| step6
-    step5 -->|No| step7
+    step5 hp4@-->|No| step7
     step6 --> step8
-    step7 --> step8
-    step8 -->|Authors are given the SOP draft| step9
-    step9 -->|Authors are requested to fill in the draft| step10
+    step7 hp5@--> step8
+    step8 hp6@-->|Authors are given the SOP draft| step9
+    step9 hp7@-->|Authors are requested to fill in the draft| step10
 
     step-mb1 -->|Requested<br>changes| r1
     r1 -->|Amendments| step-mb1
@@ -154,10 +154,27 @@ graph TB
     step13 -->|Requested<br>changes| r3
     r3 -->|Amendments|step13
 
-    step-mb1 -->|No changes<br> requested|step14
-    step14 -->|SOP is accessioned| step15
-    step15 -->|Request review from<br> other OC members | step16
-    step16 -..- ending
+    step-mb1 hp13@-->|No changes<br> requested|step14
+    step14 hp14@-->|SOP is accessioned| step15
+    step15 hp15@-->|Request review from<br> other OC members | step16
+    step16 hp16@-..- ending
+
+    hp1@{ animation: slow }
+    hp2@{ animation: slow }
+    hp3@{ animation: slow }
+    hp4@{ animation: slow }
+    hp5@{ animation: slow }
+    hp6@{ animation: slow }
+    hp7@{ animation: slow }
+    hp8@{ animation: slow }
+    hp9@{ animation: slow }
+    hp10@{ animation: slow }
+    hp11@{ animation: slow }
+    hp12@{ animation: slow }
+    hp13@{ animation: slow }
+    hp14@{ animation: slow }
+    hp15@{ animation: slow }
+    hp16@{ animation: slow }
 ```
 
 ### 8. Procedure

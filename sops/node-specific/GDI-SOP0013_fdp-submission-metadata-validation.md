@@ -59,19 +59,21 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 
 ### 4. Purpose
 
-This SOP defines how a GDI node prepares, enters, validates, corrects, and locally escalates dataset metadata in its FDP. It ensures that metadata saved in the FDP is checked against the node's applied GDI SHACL rules before the record becomes harvestable by the central node.
+This SOP defines the node-level FDP workflow for preparing, entering or updating, validating, correcting, and locally escalating dataset metadata in the FDP. It ensures that metadata saved in the FDP is checked against the node's applied GDI SHACL rules before the record becomes harvestable by the central node.
 
 ### 5. Scope
 
-This SOP covers dataset-level metadata entry in the FDP, review of the validation output returned when a record is saved, iterative correction of metadata content errors, and local escalation of validator, schema, or configuration issues.
+This SOP covers dataset-level metadata entry and update in the FDP, save-time SHACL validation in the FDP, review of the validation output returned when a record is saved, iterative correction of metadata content errors, and local escalation of validator, schema, or configuration issues.
 
-It does not cover full GDI HDM compliance, Beacon validation, or downstream catalogue validation outside the FDP. It also does not define the central harvesting workflow itself or any scientific or technical processing of the underlying dataset.
+It does not cover full GDI HDM compliance, broader metadata quality assessment beyond SHACL conformance, Beacon validation, or downstream catalogue validation outside the FDP workflow. It also does not define standalone offline validation against arbitrary SHACL validators, the central harvesting validation logic itself, or any scientific or technical processing of the underlying dataset.
 
 ### 6. Introduction and Background Information
 
 Dataset descriptions are entered and maintained in the node's FDP instance, for example at `<Node FDP address>`, following the node's operational FDP documentation such as `<Node FDP operational documentation>`.
 
 The operational source of truth for required metadata is the deployed GDI SHACL shape set used by the node. These shapes implement the node's current DCAT and HealthDCAT-AP constraints in the FDP and supersede any simplified prose summary in this SOP. The recommended GDI SHACL release to reference is [4], and nodes should document which shape release is deployed locally.
+
+Nodes may deploy local SHACL shape sets that differ in implementation detail, provided they conform to the central GDI SHACL constraints required for interoperable harvesting. Central interoperability does not require every node to use byte-identical SHACL files.
 
 In this SOP, required metadata means the metadata constraints enforced by the node's deployed SHACL shapes in the FDP. Passing FDP SHACL validation does not by itself imply full GDI HDM compliance, Beacon compliance, or compliance with future central catalogue validation rules.
 

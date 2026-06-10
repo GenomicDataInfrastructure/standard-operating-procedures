@@ -25,14 +25,17 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | 1+MG DAC         | 1+MG Data Access Committee                                              |
 | AAI              | Authentication and Authorization Infrastructure                         |
 | AE               | Associated Entity                                                       |
+| AF               | Allele Frequency                                                        |
 | AI               | Action Item                                                             |
 | AF               | Application Form                                                        |
 | API              | Application Programming Interface                                       |
 | BEN              | Beneficiary                                                             |
 | CC               | Carbon Copy (used in communications to send a copy to others)           |
+| CRG              | Centre for Genomic Regulation                                           |
 | CSC              | Finnish IT Center for Science                                           |
 | DAA              | Data Access Agreement                                                   |
 | DAC              | Data Access Committee                                                   |
+| DKFZ           | Deutsches Krebsforschungszentrum                   |
 | DMP              | Data Management Plan                                                    |
 | DO               | Data Object                                                             |
 | DP               | Data Protection                                                         |
@@ -56,7 +59,8 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | GH               | GitHub                                                                  |
 | HD               | Helpdesk                                                                |
 | HRI              | Health Research Infrastructure                                          |
-| ID               | Identity Document                                                       |
+| HTTPS            | Hypertext Transfer Protocol Secure                                      |
+| ID               | Identifier                                                              |
 | IdP              | Identity Provider                                                       |
 | INSERM           | L'Institut national de la santé et de la recherche médicale (France)    |
 | ISM              | Information Service Management                                          |
@@ -97,6 +101,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | UX               | User experience                                                         |
 | VHD              | Virtual Helpdesk                                                        |
 | VPN              | Virtual Private Network                                                 |
+| UM               | University of Maribor                                                   |
 | UP               | User portal                                                             |
 | WG               | Working Group                                                           |
 | WP               | Work Package                                                            |
@@ -107,11 +112,13 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 |------------------|-------------------------------------------------------------------------|
 | API              | Application Programming Interface is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. |
 | Beacon           |A web-accessible service implementing the GA4GH Beacon specification, enabling federated discovery (and sometimes retrieval) of genomic variant and related biomedical data across distributed resources|
+| Beacon Query      | HTTPS request to an endpoint of the node’s Allele Frequency beacon.          |
 | CHANGELOG        | Log or record of all notable changes made to a project                 |
 | Data controller  |The legal owner or organisation that determines the purposes and means of processing the dataset and can authorise its withdrawal|
+| Dataset permissions      | All the information related to the dataset grants and its security level configuration.          |
 | Dataset version  |A specific released state of a dataset identified by a version label/number, used to distinguish minor or major changes between releases|
 | FitSM            | Standards for lightweight IT Services Management; developed initially through The FedSM Project, funded by the European Commission, now maintained by ITEMO (<https://www.fitsm.eu/>) |
-| Hard-deletion    |Complete, irreversible erasure of the data from all storage media so it cannot be recovered|
+| Hard-deletion    | Complete, irreversible erasure of the data from all storage media so it cannot be recovered|
 | JIRA             | Software product developed by Atlassian that allows bug tracking, issue tracking and agile project management. |
 | JSON             | JavaScript Object Notation is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of name–value pairs and arrays (or other serializable values).|
 | Node Helpdesk    | The support team is responsible for handling tickets related to data management issues associated with the node in the GDI Project.  |

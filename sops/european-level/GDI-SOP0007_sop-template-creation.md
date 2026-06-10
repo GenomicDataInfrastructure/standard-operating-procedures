@@ -35,7 +35,7 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 | Abbreviation  | Description                                                         |
 |---------------|---------------------------------------------------------------------|
 | CC            | Carbon Copy (used in communications to send a copy to others)       |
-| CSC           | Finnish IT center for science                                       |
+| CSC           | Finnish IT centre for science                                       |
 | EBI           | European Bioinformatics Institute                                   |
 | EMBL          | European Molecular Biology Laboratory                               |
 | GH            | GitHub                                                              |
@@ -85,10 +85,10 @@ This SOP will help maintainers of the [``GenomicDataInfrastructure/standard-oper
 ### 5. Scope
 This SOP **starts with the need to create a new GDI SOP Template**, triggered by the creation of a new GH issue through the [``New SOP Request``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new?assignees=&labels=new-sop-request%2Cenhancement&projects=&template=new_sop_request.yaml&title=%5BSOP+Request%5D+%3CShort+title%3E) issue template.
 
-The SOP encompasses the steps after the need for an SOP has been identified, until the addition of the markdown SOP within the GitHub repository itself. The **output of this SOP will be the finalized document added to the repository**.
+The SOP encompasses the steps after the need for an SOP has been identified, until the addition of the markdown SOP within the GitHub repository itself. The **output of this SOP will be the finalised document added to the repository**.
 
 ### 6. Introduction and Background Information
-Given the size of GDI as a project, in order to minimise the heterogeneity among GDI nodes, this repository contains SOPs, templates, and instances, standardizing procedures for GDI members to follow. How these SOPs are created is a process in itself, which task 4.3 of the project aims to define. This document aids the creators and maintainers of these SOP Templates along that process.
+Given the size of GDI as a project, in order to minimise the heterogeneity among GDI nodes, this repository contains SOPs, templates, and instances, standardising procedures for GDI members to follow. How these SOPs are created is a process in itself, which task 4.3 of the project aims to define. This document aids the creators and maintainers of these SOP Templates along that process.
 
 ### 7. Summary or Context Diagram
 ```mermaid
@@ -230,7 +230,7 @@ Proceed to ⏩[step 3](#83-contact-authors).
 |:----------------|:----|:----|
 | ``3`` | After SOP document has been drafted | OC |
 
-Once the SOP document has been drafted, experts are required to fill in the gaps and finalize it. These **authors are to be appointed and contacted by you, as part of the OC**. Who the authors are will depend on the background and requirements of each SOP, and thus it is your responsibility as an OC member to **find the best-suited people for the task**. The only requirements are for authors to be part of the GDI project and to know about, or be part of, the subject the SOP revolves around. Alternatively, you may contact the GDI Work Package (WP) leaders to point you in the right direction.
+Once the SOP document has been drafted, experts are required to fill in the gaps and finalise it. These **authors are to be appointed and contacted by you, as part of the OC**. Who the authors are will depend on the background and requirements of each SOP, and thus it is your responsibility as an OC member to **find the best-suited people for the task**. The only requirements are for authors to be part of the GDI project and to know about, or be part of, the subject the SOP revolves around. Alternatively, you may contact the GDI Work Package (WP) leaders to point you in the right direction.
 
 The communication may vary depending on the selected authors. For example, if the experts are part of the OC themselves, then it may be best to let the group know through GDI's Slack workspace or mailing lists (``gdi_operations_committee [at] elixir-europe.org``). On the other hand, if authors are external to the OC, the following email template could be used to contact them.
 
@@ -243,7 +243,7 @@ Dear < Recipient's Name(s) >,
 
 We hope this message finds you well.
 
-The GDI's Operations Committee (OC) has drafted a new Standard Operating Procedure (SOP): "< SOP Title >". We now seek your expertise to fill in the gaps and help us finalize it. Given your background and involvement in the GDI project, we believe you are well-suited as an author of the SOP.
+The GDI's Operations Committee (OC) has drafted a new Standard Operating Procedure (SOP): "< SOP Title >". We now seek your expertise to fill in the gaps and help us finalise it. Given your background and involvement in the GDI project, we believe you are well-suited as an author of the SOP.
 
 We kindly request you to review the SOP draft and provide the necessary input. Please find the draft SOP document here: < URL of drafted document >
 

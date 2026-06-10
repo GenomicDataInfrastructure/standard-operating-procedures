@@ -1,4 +1,4 @@
-# European GDI - Add dataset’s metadata to Node beacon
+# European GDI - Add datasets metadata to Node beacon
 
 | Metadata             | Value                                                                 |
 | -------------------- | --------------------------------------------------------------------- |
@@ -155,7 +155,11 @@ curl 'https://<yourBeaconDomain>/api/datasets/<id>'
 - If the dataset ID to upload metadata for was found, proceed to ⏩[Step 3.2](#832-update-metadata-for-existing-dataset)
 
 
-##### 8.3. Adding dataset's metadata into beacon
+#### 8.3. Adding dataset's metadata into beacon
+
+| Step identifier | When | Who |
+| :-------------- | :--------------------------------------- | :-------------------------------------- |
+| `3`             | After confirming the type of operation to perform. | Node beacon maintainer |
 
 ##### 8.3.1. Insert metadata for new dataset
 
@@ -249,7 +253,7 @@ curl 'https://<yourBeaconDomain>/api/datasets/<id>'
 
 | Step identifier | When | Who |
 | :-------------- | :--------------------------------------- | :-------------------------------------- |
-| `4`             | After successfully updating new dataset metadata ⏩[Step 3.2](#832-update-metadata-for-existing-dataset), after adding permissions for the new dataset ⏩[Step 4](#84-add-permissions-for-your-new-dataset) or after making additional declarations for your dataset ⏩[Step 5](#85-make-additional-statements-for-your-dataset). | Node beacon maintainer |
+| `5`             | After successfully updating new dataset metadata ⏩[Step 3.2](#832-update-metadata-for-existing-dataset), after adding permissions for the new dataset ⏩[Step 4](#84-add-permissions-for-your-new-dataset) or after making additional declarations for your dataset ⏩[Step 5](#85-make-additional-statements-for-your-dataset). | Node beacon maintainer |
 
 In case you want your dataset to be declared as meant for test mode, specify its nature or deprecate it, you can by editing the `/beacon/conf/datasets/datasets_conf.yml` file. Add a new entry with the dataset id as the main property and add whatever three optional following items you want to declare for the dataset, setting them as `True`.
 ```yaml

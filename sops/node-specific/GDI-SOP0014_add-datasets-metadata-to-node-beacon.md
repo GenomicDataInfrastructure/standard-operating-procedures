@@ -49,7 +49,7 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | VHD           | Virtual Helpdesk                                  |
 
 | Term          | Definition                                                                                                |
-| ------------- | ----------------------------------------------------------------------------------------------------------|                          |
+| ------------- | ----------------------------------------------------------------------------------------------------------|
 | Beacon query         | HTTPS request to an endpoint of the node’s Allele Frequency beacon.                                        |
 | Dataset permissions   | All the information related to the dataset grants and its security level configuration.                   |
 
@@ -92,6 +92,7 @@ For a broader context of GDI SOPs, please refer to the [Charter](../../docs/GDI-
 ### 7. Summary or Context Diagram
 
 ```mermaid
+flowchart TD;
   A["Generate metadata file with the dataset's information"] --> B{"Confirm the type of operation to perform"}
   A -- Failure --> D["Record failure details and report to VHD"]
   B -- Insert new --> C["Insert metadata for new dataset"]

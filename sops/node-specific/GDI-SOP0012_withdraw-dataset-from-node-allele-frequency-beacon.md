@@ -90,7 +90,7 @@ For a broader context of GDI SOPs, please refer to the [Charter](../../docs/GDI-
 ```mermaid
 flowchart TD;
     A["Confirm withdrawal request and identify dataset"] --> B{"Package complete and dataset found?"}
-    A -- Clarification received --> D["Request clarification from VHD and pause"]
+    D["Request clarification from VHD and pause"] -- Clarification received --> A
     B -- yes --> C["Deletion type?"]
     B -- no --> D
     C -- hard --> E["Hard-deletion Option A:use remove_dataset.py+reindex"]

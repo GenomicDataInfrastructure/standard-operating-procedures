@@ -238,7 +238,7 @@ In beacon container, add the dataset ID to the file in path `/beacon/permissions
       default_entry_types_granularity: record
 ```
 This is only an example, set the security level as it is meant for the dataset and add further restrictions as needed. More information about security levels and granularity types can be found here: [link](https://github.com/EGA-archive/beacon2-pi-api/tree/main#making-a-dataset-publicregisteredcontrolled).
-Verify that your dataset appears correctly by sending an HTTPS GET request to your beacon’s datasets endpoint and locate the record corresponding to the ID of the dataset to be deleted, use the method you prefer (e.g., curl, postman...)...",
+Verify that your dataset appears correctly by sending an HTTPS GET request to your beacon’s datasets endpoint and locate the record corresponding to the ID of the dataset to be inserted, use the method you prefer (e.g., curl, postman...)...",
 ```bash
 curl 'https://<yourBeaconDomain>/datasets'
 ```

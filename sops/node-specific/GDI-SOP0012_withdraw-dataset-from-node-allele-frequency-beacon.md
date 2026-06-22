@@ -48,7 +48,7 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | VHD           | Virtual Helpdesk                                  |
 
 | Term          | Definition                                                                                                |
-| ------------- | ----------------------------------------------------------------------------------------------------------|                          |
+| ------------- | ----------------------------------------------------------------------------------------------------------|
 | Beacon query         | HTTPS request to an endpoint of the node’s Allele Frequency beacon.                                        |
 | Dataset permissions   | All the information related to the dataset grants and its security level configuration.                   |
 | Hard-deletion | Complete, irreversible erasure of the data from all storage media so it cannot be recovered.          |
@@ -88,6 +88,7 @@ For a broader context of GDI SOPs, please refer to the [Charter](../../docs/GDI-
 ### 7. Summary or Context Diagram
 
 ```mermaid
+flowchart TD;
     A["Confirm withdrawal request and identify dataset"] --> B{"Package complete and dataset found?"}
     A -- Clarification received --> D["Request clarification from VHD and pause"]
     B -- yes --> C["Deletion type?"]

@@ -103,10 +103,9 @@ flowchart TD;
     I -- no --> J["Record failure details and report to VHD"]
     I -- yes --> K
     J --> K
-    K --> L["Remove dataset permissions"]
-    L --> M["Add isDeprecated flag to config"]
-    M --> N["Record in audit / change log"]
-    N --> O["Report completion to VHD"]
+    K --> L["Add isDeprecated flag to config"]
+    L --> M["Record in audit / change log"]
+    M --> N["Report completion to VHD"]
 ```
 
 ### 8. Procedure
@@ -266,7 +265,7 @@ find the entry using your dataset ID, like e.g.,
     entry_types_exceptions:
     - cohort: boolean
 ```
-and remove the whole dataset entry (from dataset ID until end of all lines under it).
+Before removing a dataset from datasets_permissions.yml, ensure that any information required for auditing or compliance purposes is recorded and retained according to your organization's policies. This is particularly important for controlled-access datasets, where it may be necessary to preserve details such as the dataset identifier, affected users or exceptions and the reason for removing access. Once the required information has been captured, proceed with removing the  the whole dataset entry (from dataset ID until end of all lines under it).
 Save the file.
 - Continue to ⏩[Step 5](#85-verify-log-and-report-completion).
 

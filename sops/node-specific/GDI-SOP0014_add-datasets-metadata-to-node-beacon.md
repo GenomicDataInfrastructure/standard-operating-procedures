@@ -42,6 +42,7 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | EBI           | European Bioinformatics Institute                 |
 | EMBL          | European Molecular Biology Laboratory             |
 | FAIR          | Findability, Accessibility, Interoperability and Reusability             |
+| HD               | Helpdesk                                                                |
 | HTTPS          | Hypertext Transfer Protocol Secure                     |
 | ID            | Identifier                                        |
 | SOP           | Standard Operating Procedure                      |
@@ -70,7 +71,7 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 
 ### 4. Purpose
 
-Data loaded into GDI, be it through beacon or through FAIR Data Points (FDP), need to be consistent and queryable. In order to do so, validation of the data prior to submission needs to be performed. 
+Data loaded into GDI, be it through beacon or through FAIR Data Points (FDP), need to be consistent and queryable. This SOP aims to clarify how to proceed when new dataset metadata needs to be added to a Node's beacon, covering the cases for updating or inserting datasets and full validation of the incoming metadata. 
 
 ### 5. Scope
 
@@ -80,8 +81,8 @@ The SOP covers node-level guidance for uploading dataset metadata to beacon  and
 - Validating the dataset endpoint with Verifier
 
 Out of scope for this SOP are:
-- Full GDI HDM entry or validation
-- Uploading variant records to beacon. For MAP1, the specific requirements are covered in the beacon guidelines documentation (here and here).
+- Full GDI HD management entry or validation
+- Uploading variant records to beacon. For MAP1, the specific requirements are covered in the beacon guidelines documentation ([here](https://docs.google.com/document/d/1LLzp6zZT3fSM1XxOXHuRqwJje1v726Z2/edit?rtpof=true&tab=t.0) and [here](https://docs.google.com/document/d/1rc0591dFHNghAYqv3SE6pNkfFmGrQgWAemmR1Iek3ss/edit?tab=t.0)).
 - Broader validation across services
 
 ### 6. Introduction and Background Information
@@ -121,7 +122,7 @@ After collecting all the information related to the dataset’s metadata, create
 id
 name
 ```
-Fill in the metadata in the row after the header. Ensure that the id  follows the required [link](https://raw.githubusercontent.com/GenomicDataInfrastructure/gdi-metadata/refs/heads/main/Formulasation(shacl)/core/PiecesShape/Dataset.ttl) FDP identifier format and check that it is spelled exactly as the FDP dataset identifier for the same dataset.
+Fill in the metadata in the row after the header. Ensure that the id  follows the required [Dataset SHACL](https://raw.githubusercontent.com/GenomicDataInfrastructure/gdi-metadata/refs/heads/main/Formulasation(shacl)/core/PiecesShape/Dataset.ttl), which needs to be consistent with the SHACL that the Node is currently using in their FDP and doesn't need to be the latest version from the gdi metadata repository.
 Next step is to tell the ri-tools tool where the metadata file is stored. In `/ri-tools/conf/conf.py` update the value of the `csv_folder` configuration variable so that it points to the folder containing the dataset metadata file, datasets.csv. Example:
 ```python
 csv_folder = './csv/'
@@ -237,7 +238,7 @@ In beacon container, add the dataset ID to the file in path `/beacon/permissions
    public:
       default_entry_types_granularity: record
 ```
-This is only an example, set the security level as it is meant for the dataset and add further restrictions as needed. More information about security levels and granularity types can be found here: [link](https://github.com/EGA-archive/beacon2-pi-api/tree/main#making-a-dataset-publicregisteredcontrolled).
+This is only an example, set the security level as it is meant for the dataset and add further restrictions as needed. More information about security levels and granularity types can be found in the [beacon2 pi repository"](https://github.com/EGA-archive/beacon2-pi-api/tree/main#making-a-dataset-publicregisteredcontrolled).
 Verify that your dataset appears correctly by sending an HTTPS GET request to your beacon’s datasets endpoint and locate the record corresponding to the ID of the dataset to be inserted, use the method you prefer (e.g., curl, postman...)...",
 ```bash
 curl 'https://<yourBeaconDomain>/datasets'
@@ -272,7 +273,7 @@ After that, proceed to ⏩[Step 6](#86-validate-your-new-datasets-metadata-recor
 | :-------------- | :--------------------------------------- | :-------------------------------------- |
 | `6`             | After successfully updating new dataset metadata ⏩[Step 3.2](#832-update-metadata-for-existing-dataset), after adding permissions for the new dataset ⏩[Step 4](#84-add-permissions-for-your-new-dataset) or after making additional declarations for your dataset ⏩[Step 5](#85-make-additional-statements-for-your-dataset). | Node beacon maintainer |
 
-As the node beacon maintainer, proceed to validate your new dataset metadata by running the [beacon verifier](https://beacon-verifier-demo.ega-archive.org/) on your beacon instance.
+As the node beacon maintainer, proceed to validate your new dataset metadata by running the [beacon verifier](https://beacon-verifier-demo.ega-archive.org/) on your beacon instance. In case the service is not operative, please, proceed to [download and run the software locally](https://github.com/EGA-archive/beacon-verifier-v2) in order to verify your beacon.
 Focus on the `/datasets` endpoint.
 - If the endpoint is valid, record the action in the local audit or change log, including who performed the change, when it was performed, what was changed and the approved scope.
 - If the endpoint is not valid, record the response obtained from the used commands, adding all the information about the actions performed and the intended goal of performing them and report to the GDI Virtual Helpdesk so that requester communication continues through the VHD workflow.

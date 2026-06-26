@@ -122,7 +122,7 @@ After collecting all the information related to the dataset’s metadata, create
 id
 name
 ```
-Fill in the metadata in the row after the header. Ensure that the id  follows the required [Dataset SHACL](https://raw.githubusercontent.com/GenomicDataInfrastructure/gdi-metadata/refs/heads/main/Formulasation(shacl)/core/PiecesShape/Dataset.ttl), which needs to be consistent with the SHACL that the Node is currently using in their FDP and doesn't need to be the latest version from the gdi metadata repository.
+Fill in the metadata in the row after the header. Ensure that the id  follows the required [Dataset SHACL](https://raw.githubusercontent.com/GenomicDataInfrastructure/gdi-metadata/refs/heads/main/Formulasation(shacl)/core/PiecesShape/Dataset.ttl). It should be consistent with the SHACL version currently used by the Node's FDP, which does not necessarily have to be the latest version available in the GDI Metadata Repository.
 Next step is to tell the ri-tools tool where the metadata file is stored. In `/ri-tools/conf/conf.py` update the value of the `csv_folder` configuration variable so that it points to the folder containing the dataset metadata file, datasets.csv. Example:
 ```python
 csv_folder = './csv/'

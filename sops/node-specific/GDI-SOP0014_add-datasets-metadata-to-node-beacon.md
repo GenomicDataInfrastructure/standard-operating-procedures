@@ -255,7 +255,7 @@ curl 'https://<yourBeaconDomain>/api/datasets/<id>'
 
 | Step identifier | When | Who |
 | :-------------- | :--------------------------------------- | :-------------------------------------- |
-| `5`             | After successfully updating new dataset metadata ⏩[Step 3.2](#832-update-metadata-for-existing-dataset), after adding permissions for the new dataset ⏩[Step 4](#84-add-permissions-for-your-new-dataset) or after making additional declarations for your dataset ⏩[Step 5](#85-make-additional-statements-for-your-dataset). | Node beacon maintainer |
+| `5`             | After successfully updating new dataset metadata ⏩[Step 3.2](#832-update-metadata-for-existing-dataset) or after adding permissions for the new dataset ⏩[Step 4](#84-add-permissions-for-your-new-dataset) | Node beacon maintainer |
 
 In case you want your dataset to be declared as meant for test mode, specify its nature or deprecate it, you can by editing the `/beacon/conf/datasets/datasets_conf.yml` file. Add a new entry with the dataset id as the main property and add whatever three optional following items you want to declare for the dataset, setting them as `True`.
 ```yaml
@@ -271,7 +271,7 @@ After that, proceed to ⏩[Step 6](#86-validate-your-new-datasets-metadata-recor
 
 | Step identifier | When | Who |
 | :-------------- | :--------------------------------------- | :-------------------------------------- |
-| `6`             | After successfully updating new dataset metadata ⏩[Step 3.2](#832-update-metadata-for-existing-dataset), after adding permissions for the new dataset ⏩[Step 4](#84-add-permissions-for-your-new-dataset) or after making additional declarations for your dataset ⏩[Step 5](#85-make-additional-statements-for-your-dataset). | Node beacon maintainer |
+| `6`             | After adding permissions for the new dataset ⏩[Step 4](#84-add-permissions-for-your-new-dataset) or after making additional declarations for your dataset ⏩[Step 5](#85-make-additional-statements-for-your-dataset). | Node beacon maintainer |
 
 As the node beacon maintainer, proceed to validate your new dataset metadata by running the [beacon verifier](https://beacon-verifier-demo.ega-archive.org/) on your beacon instance. In case the service is not operative, please, proceed to [download and run the software locally](https://github.com/EGA-archive/beacon-verifier-v2) in order to verify your beacon.
 Focus on the `/datasets` endpoint.

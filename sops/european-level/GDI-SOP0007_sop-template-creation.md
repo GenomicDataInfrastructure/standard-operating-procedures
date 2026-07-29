@@ -24,7 +24,7 @@
 ### 1. Document History
 | Template Version | Instance version | Author(s) | Description of changes       | Date       |
 |---------|-----------|-----------|------------------------------|------------|
-| ``v1.0.3`` |  | Marcos Casado Barbero | Updated process: OC sole managing body, removed RFC step - [PR#70](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/70) | ``2026.05.26`` |
+| ``v1.0.3`` |  | Marcos Casado Barbero | Annual review: updated OC management and OC/SDPC approval processes, removed request-for-comments (RFC) step - [PR#70](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/70) | ``2026.07.29`` |
 | ``v1.0.2`` |  | Marcos Casado Barbero | Annual review - [#67](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/67) | ``2026.01.15`` |
 | ``v1.0.1`` |  | Marcos Casado Barbero | Updated to linting rules - [PR46](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/46) | ``2024.10.29`` |
 | ``v1`` |  | Marcos Casado Barbero | Created first version of the SOP | ``2024.07.08`` |
@@ -106,9 +106,7 @@ graph TB
         step7(Create Markdown<br> document draft)
         step8(Assign SOP Template authors)
         step9(Contact the authors)
-        step13_prev(Request nomination of approvers)
-        step13{Document<br> approved?}
-        r3(Contact authors)
+        step13_prev(Request ~2 approval<br>positions per committee)
         step13-1(Contact <br> Management Board)
 
         step14(Prepare final<br> SOP Markdown document)
@@ -127,8 +125,12 @@ graph TB
         step12{Document<br> reviewed?}
         r2(Contact authors)
     end
+    subgraph 'OC and SDPC Approvers'
+        step13{Document approved<br>within 2 weeks?}
+        r3(Contact authors)
+    end
     step12 hp9@-->|Yes|step13_prev
-    step13_prev hp10@-->|2 OC and 2 SDPC members<br> are nominated| step13
+    step13_prev hp10@-->|3-4 approvers nominated,<br>Reviewer may also approve,<br>Delegators remain accountable| step13
     step13 hp11@-->|Yes|step13-1
     step13-1 hp12@--> step-mb1
     ending(" ")
@@ -277,10 +279,10 @@ Proceed to ⏩[step 4](#84-monitor-sop-development).
 
 It is your duty, as a member of the OC, to monitor the entire SOP development process, ensuring that:
 - **Authors** are engaged with the development of the SOP. Checking the content of the SOP or contacting the authors recurrently may be required.
-- **Reviewers and approvers are appointed**, diverse across GDI nodes, and engaged in the process. Beyond the role definitions in the [ORR](../../docs/GDI-SOP_organisational-roles-and-responsibilities.md), the rule of thumb is for these roles to span multiple GDI Pillars and nodes. Reviewers may be selected directly by the OC or by the authors themselves. Approvers will be part of the OC and SDPC.
+- **Reviewers and approvers are appointed**, diverse across GDI nodes, and engaged in the process. Beyond the role definitions in the [ORR](../../docs/GDI-SOP_organisational-roles-and-responsibilities.md), the rule of thumb is for these roles to span multiple GDI Pillars and nodes. Reviewers may be selected directly by the OC or by the authors themselves. The OC and SDPC appoint their respective approval positions.
 - **Communication is efficient** throughout the process. For example, ensuring that GDI Management Board (MB) receives the request to authorise the final SOP, or that authors are aware of any requested changes.
-- All **people involved are included in the _Roles and Responsibilities_ section** of the drafted SOP. This includes all authors, reviewers, approvers, authorisers and any other role pertinent to the SOP.
-- Every **gate-keeping event** (review, approval, authorisation) **is documented in the GH issue**. In other words, when the SOP draft passes through any of these steps, the OC should document it in the GH issue. For example: ``SOP draft has been reviewed by reviewers X, X and X...``.
+- All **people involved are included in the _Roles and Responsibilities_ section** of the drafted SOP. This includes all authors, reviewers, approvers, authorisers, approval delegates and responsible delegators, and any other role pertinent to the SOP.
+- Every **gate-keeping event** (review, approval, authorisation) **is documented in the GH issue**. The OC should record reviewer and approver appointments (e.g., ``Reviewed by ...; pending approval by ...``), the committee represented by each approver, any delegation and its responsible delegator, the two-week approval deadlines, and all approval or justified rejection outcomes.
 
 In each of the subsequent sub-steps, back and forth communication between all actors may be needed to address requests.
 
@@ -321,14 +323,26 @@ Operations Committee (OC)
 ````
 
 You shall **follow through the communication between authors and reviewers**, to ensure that once authors have drafted the SOP, reviewers are notified and proceed with their reviews.
+
+A person who participated in the SOP review may **also** be appointed as an approver of the same SOP.
+
 Once the reviews are finished (i.e., feedback has been addressed), proceed to ⏩[step 4.2](#842-request-ocsdpc-approval).
 
 ##### 8.4.2 Request OC/SDPC approval
 | Step identifier | When| Who |
 |:----------------|:----|:----|
-| ``4.2``         | After reviewers have completed SOP review | OC/SDPC |
+| ``4.2``         | After reviewers have completed SOP review | OC and SDPC |
 
-Once the drafted SOP has been filled in by the authors, and has passed the inspection of reviewers, the SOP document shall go through approval of the OC and SDPC. **These committees need to nominate 2 members each** (4 in total), that will be responsible for approval of the SOP.
+Once the drafted SOP has been filled in by the authors and has passed the inspection of reviewers, it shall go through approval by the OC and SDPC. The following rules apply:
+
+- **Each committee appoints two approval positions** for the SOP. Commonly, this results in **four** distinct approvers.
+- A person who is a **member of both committees** may be appointed by both and approve on behalf of both. In this case, one additional approver must be appointed by each committee, resulting in **three distinct approvers**.
+- A **reviewer** may also be appointed as an approver of the same SOP.
+- Each committee may use a **rota to share approval appointments evenly** among its members.
+- An appointed OC or SDPC member may **delegate the approval task** to another GDI member, including someone who is not a committee member. The delegation fulfils the delegator's committee approval position, but the **delegating member retains responsibility** and accountability for that approval. Both the delegate and responsible delegator must be documented in the GH issue and the Roles and Responsibilities section of the SOP.
+
+> [!IMPORTANT] Deadline
+> Each approver must provide a formal approval or justified rejection **within two weeks of being appointed**.
 
 Use the following template to **send an email to the OC (``gdi_operations_committee [at] elixir-europe.org``) and SDPC (``gdi_security_data_protection [at] elixir-europe.org``) requesting approval**:
 ````
@@ -341,9 +355,17 @@ I hope this message finds you well.
 
 A new GDI Standard Operating Procedure (SOP) is in development. It was drafted by the OC, authored, and reviewed by GDI members, and is pending approval from across the Operations Committee (OC) and Security and Data Protection Committee (SDPC).
 
-Please appoint 2 members of each committee (4 in total) to take the role of approvers of the SOP. These shall provide a formal approval or justified rejection at the earliest convenience. Find the current SOP document here: < URL of SOP document >. 
+Please appoint two approval positions from each committee for this SOP. This will normally result in four distinct approvers. A member of both committees may be appointed on behalf of both, provided that one additional approver is appointed by each committee, resulting in three distinct approvers. A previous reviewer of this SOP may also serve the role of an approver.
 
-You can find more details about this SOP development at the following sources: 
+An appointed committee member may delegate the approval task to another GDI member, including a non-committee member, but the delegating member retains responsibility and accountability for the approval. 
+
+Please document the appointment of approvers or their delegates and responsible delegators in the SOP Request GH issue. 
+
+Each committee may use an optional rota to distribute approval appointments.
+
+Each approver shall provide a formal approval or justified rejection **within two weeks** of their appointment. Find the current SOP document here: < URL of SOP document >.
+
+You can find more details about this SOP development at the following sources:
 - [Charter](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md)
 - [Information Service Management](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_information-service-management.md).
 - SOP Request: < URL of the GH issue, the SOP request >
@@ -357,7 +379,7 @@ Best regards,
 Operations Committee (OC) / Security and Data Protection Committee (SDPC)
 ````
 
-**Follow through the approval process**, ensuring that all three GDI Pillars are aware of the new SOP, and have given their formal approval. It may be needed for you to bring it up at committee meetings, or to chase members to approve the SOP.
+**Follow through the approval process**, ensuring that both committees complete their required approvals within two weeks and that all three GDI Pillars are aware of the new SOP. It may be necessary to raise the SOP at committee meetings or remind appointed approvers of the deadline. Record each appointment, delegation, responsible delegator, deadline, approval or justified rejection in the GH issue and/or Pull Request.
 
 Once the SOP has been approved, proceed to ⏩[step 4.3](#843-contact-management-board).
 
@@ -398,10 +420,10 @@ Operations Committee (OC)
 ````
 
 This **step shall finish** either:
-- When the **period to raise issues (4 full weeks) concluded without any complaints from the MB**. 
+- When the **period to raise issues (4 full weeks) has concluded without any complaints from the MB**.
 - The **MB explicitly authorised the SOP** before the 4-week period finished.
 
-If comments are given from this body, the step shall finish when they are addressed, starting a new period of review altogether. Similar consideration is to be taken if the MB requests a period extension. It will be your responsibility, as the OC member, to keep track of the status of development and to make sure requested changes are addressed (e.g., contacting authors).
+If comments are received from this body, the step shall finish when they are addressed, starting a new period of review altogether. Similar consideration is to be taken if the MB requests a period extension. It will be your responsibility, as an OC member, to keep track of the status of development and to make sure requested changes are addressed (e.g., contacting authors).
 
 Proceed to ⏩[step 5](#85-prepare-final-sop-markdown-document).
 
@@ -410,7 +432,7 @@ Proceed to ⏩[step 5](#85-prepare-final-sop-markdown-document).
 |:----------------|:----|:----|
 | ``5`` | After authorisation is confirmed (explicitly or by the end of the veto period) | OC |
 
-Now that we have the content reviewed and ready, we need to **format it to fit into the GH repository**. The difficulty of this step will vary depending on the chosen format for the draft at [step 2](#82-draft-sop-document). In both cases, it is assumed that you are familiar with GH and already have a local copy of the GDI SOP repository (i.e., you have cloned it). If you are not familiar with GitHub, refer to the documentation (and its recorded sessions) available at [Introduction to Github for GDI SOP Maintainers](../../docs/GDI-SOP_github-introduction-for-maintainers.md) and [SOP GitHub Management](../../docs/GDI-SOP_github-management.md).
+Now that we have the content reviewed and ready, we need to **format it to fit into the GH repository**. The difficulty of this step will vary depending on the chosen format for the draft at [step 2](#82-draft-sop-document). In both cases, it is assumed that you are familiar with GH and already have a local copy of the GDI SOP repository (i.e., you have cloned it). If you are not familiar with GitHub, refer to the documentation (and its recorded sessions) available at [Introduction to GitHub for GDI SOP Maintainers](../../docs/GDI-SOP_github-introduction-for-maintainers.md) and [SOP GitHub Management](../../docs/GDI-SOP_github-management.md).
 
 If the **document was drafted using Google Drive**, its format must be modified before it is added to the repository. On the other hand, if the **document was drafted in markdown** format natively, there are no format changes required and thus you can skip the first two of the following:
 1. [_Only if the document was drafted using Google Drive_] **Copy the whole Google Document and paste it** into the left box at [**gdoc2md**](https://gdoc2md.com/). There are many tools to format a Google Document into markdown but, in our experience, this one keeps the markdown format the closest to the native template, which is especially relevant regarding tables. Bear in mind that anything copied here would be processed by the tool deployed at someone else's server. If the document contains information that should not be public (yet), consider other choices, like locally installing [gdoc2md](https://github.com/mr0grog/google-docs-to-markdown) or [pandoc](https://pandoc.org/installing.html).
@@ -426,7 +448,7 @@ At this point, **assign an accession to the new SOP**. This includes modifying b
 Finally, update secondary documentation of the repository:
 - **Update the [SOP Index table](../README.md)** with the new SOP. You can either do it manually, or copy the output of the following snippet (assuming you have the required libraries installed):
 ````
-python3.8 scripts/sop_index.py sops/ -v 1
+python3 scripts/sop_index.py sops/ -v 1
 ````
 - Add **any new changes to the [CHANGELOG.md](../../CHANGELOG.md)** document.
 
@@ -437,19 +459,19 @@ Proceed to ⏩[step 6](#86-create-pr-review-and-merge).
 |:----------------|:----|:----|
 | ``6`` | After final document was created | OC |
 
-Once the markdown file has the required content in the proper format, it is time to add it to the other SOPs in the repository. To do so,  **create a PR against the ``dev`` branch**, containing the new SOP document.
+Once the markdown file has the required content in the proper format, it is time to add it to the other SOPs in the repository. To do so, **create a PR against the ``dev`` branch**, containing the new SOP document.
 
 ![PR creation](../../docs/images/GDI-SOP0007_6-PR-image.png)
 
-Remember to **comment the GH issue** (i.e., its URL) of the SOP request in this PR, so that it is automatically tracked by GH.
+Remember to **reference (i.e., comment) the GH issue** (i.e., its URL) of the SOP request in this PR, so that it is automatically tracked by GH.
 
-Members of the OC are to be listed as **reviewers** in the PR. Given that the content is not supposed to be modified, this review is merely for format changes that occurred (or should have occurred) between the formal authorisation and the final document ([step 5](#85-prepare-final-sop-markdown-document)). This is assuming that review, approval and authorisation were already given before adding reviewers. Otherwise, you can make use of the PR review process to request feedback at these steps. 
+Members of the OC are to be listed as **reviewers** in the PR. Given that the content is not supposed to be modified, this review is merely for format changes that occurred (or should have occurred) between the formal authorisation and the final document ([step 5](#85-prepare-final-sop-markdown-document)). This assumes that review, approval and authorisation were already given before adding reviewers. Otherwise, you can use the PR review process to request feedback at these steps.
 
 Furthermore, any **GH workflows** (e.g., SOP linter) **should be addressed** (i.e., assert that they pass) before merging. See in the [GH Introduction for Maintainers](../../docs/GDI-SOP_github-introduction-for-maintainers.md#workflows-and-linting) and the image below where to look at:
 
 ![Checking GH workflows](../../docs/images/GDI-SOP0007_7-GH-workflows-checks.png)
 
-Finally, **once the PR was reviewed** and there are no conflicting checks, **merge it** against the ``dev`` branch. At this point, **this SOP development is finished**. The new content will stay there until it is to be released and merged with ``main``.
+Finally, **once the PR has been reviewed** and all required checks pass, **merge it** against the ``dev`` branch. At this point, **this SOP development is finished**. The new content will stay there until it is to be released and merged with ``main``.
 
 In case there are merge conflicts, resolve them either through GH's user interface or command line before merging (see [documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)).
 
@@ -467,4 +489,3 @@ Congratulations! 🔚
 | [5](https://gdoc2md.com/) | gdoc2md - Document formatter from Google Document to Markdown|
 | [6](https://github.com/GenomicDataInfrastructure/standard-operating-procedures) | European GDI - standard-operating-procedures GH repository|
 | [7](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new?assignees=&labels=new-sop-request%2Cenhancement&projects=&template=new_sop_request.yaml&title=%5BSOP+Request%5D+%3CShort+title%3E) | European GDI - New SOP request GH issue template |
-| [8](https://github.com/GenomicDataInfrastructure/rfcs?tab=readme-ov-file) | European GDI - Request for comments (RFC) |

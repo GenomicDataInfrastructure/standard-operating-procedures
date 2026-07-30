@@ -64,9 +64,9 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | Author     | Liina Nagirnaja             | Beacon Manager                                   | CRG                                   |
 | Author     | Jordi Rambla                | Beacon Product Owner                             | CRG                                   |
 | Author     | Oriol López-Doriga Sagalés  | Beacon Developer                                 | CRG                                   |
-| Reviewer     | Òscar Martínez Llobet  | Task 4.3 member                                  | CRG                                   |
-| Reviewer     | Kjell Petersen  | Task 4.3 member                                  | University of Bergen                                   |
-| Reviewer     | Nejc Nadizar  | Task 4.3 member                                  | University of Ljubljana                                |
+| Approver | Òscar Martínez Llobet  | Task 4.3 member                                  | CRG                                   |
+| Approver | Kjell Petersen  | Task 4.3 member                                  | University of Bergen                                   |
+| Approver | Nejc Nadizar  | Task 4.3 member                                  | University of Ljubljana                                |
 | Reviewer   | Aleš Čep                    | Task 4.3 member                                  | UM                                   |
 | Reviewer   | Marcos Casado Barbero       | Task 4.3 member                                  | EMBL-EBI                              |
 | Approver   | Gabriele Rinck              | Task 4.3 member                                  | EMBL-EBI                              |

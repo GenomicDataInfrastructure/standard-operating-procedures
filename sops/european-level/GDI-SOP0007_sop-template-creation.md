@@ -76,9 +76,8 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 | Reviewer   | Bianca Hendriksze | Task 4.3 member | HRI |       |
 | Reviewer   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |       |
 | Reviewer   | Mattias Strömberg | Task 4.3 member | UU / NBIS |       |
-| Approver   | Markus Englund | Task 4.3 member | UU / NBIS |       |
-| Approver   | Dylan Spalding | WP5 Leader | CSC |       |
-| Approver   | Mattias Strömberg | Task 4.3 member | UU / NBIS |       |
+| Approver   | Óscar Martínez | SDPC member | CRG |       |
+| Approver   | Gabriele Rinck |  | EMBL-EBI |       |
 
 ### 4. Purpose
 This SOP will help maintainers of the [``GenomicDataInfrastructure/standard-operating-procedures``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures) repository, as well as GDI's Operations Committee (OC), to **transform SOP Requests into SOP templates**. The OC manages the entire development process, with the Security and Data Protection Committee (SDPC) participating in the approval phase. In doing so, the process will be reproducible and straightforward, ensuring consistency and quality in SOP development across the GDI project.

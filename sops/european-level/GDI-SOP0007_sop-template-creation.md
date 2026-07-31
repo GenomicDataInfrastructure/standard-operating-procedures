@@ -24,7 +24,7 @@
 ### 1. Document History
 | Template Version | Instance version | Author(s) | Description of changes       | Date       |
 |---------|-----------|-----------|------------------------------|------------|
-| ``v1.0.3`` |  | Marcos Casado Barbero | Annual review: updated OC management and OC/SDPC approval processes, removed request-for-comments (RFC) step - [PR#70](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/70) | ``2026.07.29`` |
+| ``v1.0.3`` |  | Marcos Casado Barbero | Annual review: updated OC management and OC/SDPC approval processes, removed request-for-comments (RFC) step, added Notes and delegation-aware Roles and Responsibilities entries - [PR#70](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/70) | ``2026.07.31`` |
 | ``v1.0.2`` |  | Marcos Casado Barbero | Annual review - [#67](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/67) | ``2026.01.15`` |
 | ``v1.0.1`` |  | Marcos Casado Barbero | Updated to linting rules - [PR46](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/46) | ``2024.10.29`` |
 | ``v1`` |  | Marcos Casado Barbero | Created first version of the SOP | ``2024.07.08`` |
@@ -69,15 +69,16 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 ### 3. Roles and Responsibilities
 See the qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
 
-| Role       | Full name       | GDI/node role   | Organisation |
-|------------|-----------------|-----------------|--------------|
-| Author     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |
-| Reviewer   | Pedro Ferreira | Task 4.3 member | IST |
-| Reviewer   | Bianca Hendriksze | Task 4.3 member | HRI |
-| Reviewer   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |
-| Reviewer   | Mattias Strömberg | Task 4.3 member | UU / NBIS |
-| Approver   | Markus Englund | Task 4.3 member | UU / NBIS |
-| Approver   | Dylan Spalding | WP5 Leader | CSC |
+| Role       | Full name       | GDI/node role   | Organisation | Notes |
+|------------|-----------------|-----------------|--------------|-------|
+| Author     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |       |
+| Reviewer   | Pedro Ferreira | Task 4.3 member | IST |       |
+| Reviewer   | Bianca Hendriksze | Task 4.3 member | HRI |       |
+| Reviewer   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |       |
+| Reviewer   | Mattias Strömberg | Task 4.3 member | UU / NBIS |       |
+| Approver   | Markus Englund | Task 4.3 member | UU / NBIS |       |
+| Approver   | Dylan Spalding | WP5 Leader | CSC |       |
+| Approver   | Mattias Strömberg | Task 4.3 member | UU / NBIS |       |
 
 ### 4. Purpose
 This SOP will help maintainers of the [``GenomicDataInfrastructure/standard-operating-procedures``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures) repository, as well as GDI's Operations Committee (OC), to **transform SOP Requests into SOP templates**. The OC manages the entire development process, with the Security and Data Protection Committee (SDPC) participating in the approval phase. In doing so, the process will be reproducible and straightforward, ensuring consistency and quality in SOP development across the GDI project.
@@ -340,6 +341,8 @@ Once the drafted SOP has been filled in by the authors and has passed the inspec
 - A **reviewer** may also be appointed as an approver of the same SOP.
 - Each committee may use a **rota to share approval appointments evenly** among its members.
 - An appointed OC or SDPC member may **delegate the approval task** to another GDI member, including someone who is not a committee member. The delegation fulfils the delegator's committee approval position, but the **delegating member retains responsibility** and accountability for that approval. Both the delegate and responsible delegator must be documented in the GH issue and the Roles and Responsibilities section of the SOP.
+
+If an approver delegates on someone else, both _Approver_ and _Delegate_ need to be properly added to the SOP's Roles and Responsibilities table. This includes recording the delegation in both roles' _Notes_ cells. For example, `Delegated approval to X` (at Approver's) and `Approval delegated by Y` (at Delegate's).
 
 > [!IMPORTANT]
 > Each approver must provide a formal approval or justified rejection **within two weeks of being appointed**.

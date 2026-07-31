@@ -25,6 +25,7 @@
 
 | Template Version | Instance version | Author(s)         | Description of changes           | Date       |
 |------------------|------------------|-------------------|----------------------------------|------------|
+| ``v1.0.4``               |                  | Marcos Casado Barbero    | Added Notes and delegation-aware Roles and Responsibilities entries | ``2026.07.31`` |
 | ``v1.0.3``               |                  | Marcos Casado Barbero    | Update references to Data Governance for Research document | ``2024.11.11`` |
 | ``v1.0.2`` |  | Marcos Casado Barbero | Updated to linting rules - [PR46](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/46) | ``2024.10.29`` |
 | ``v1.0.1``               |                  | Marcos Casado Barbero    | Transform document to markdown and complete version | ``2024.10.24`` |
@@ -62,13 +63,15 @@ For this SOP in particular, the source of truth for most definitions and terms i
 ### 3. Roles and Responsibilities
 See the qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
 
-| Role       | Full name             | GDI/node role           | Organisation |
-|------------|-----------------------|-------------------------|--------------|
-| Author     | Dylan Spalding        | Finland / Pillar II co-lead | CSC          |
-| Author     | Marcos Casado Barbero | Task 4.3 Lead | EMBL-EBI          |
-| Reviewer   | Regina Becker | LU / Pillar I co-lead | LNDS |
-| Reviewer   | Gergő Csarnai | LU / Senior ELSI Specialist | LNDS |
-| Approver   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |
+| Role       | Full name             | GDI/node role           | Organisation | Notes |
+|------------|-----------------------|-------------------------|--------------|-------|
+| Author     | Dylan Spalding        | Finland / Pillar II co-lead | CSC          |       |
+| Author     | Marcos Casado Barbero | Task 4.3 Lead | EMBL-EBI          |       |
+| Reviewer   | Regina Becker | LU / Pillar I co-lead | LNDS |       |
+| Reviewer   | Gergő Csarnai | LU / Senior ELSI Specialist | LNDS |       |
+| Approver   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |       |
+| Approver   | Regina Becker | LU / Pillar I co-lead | LNDS |       |
+| Approver   | Gergő Csarnai | LU / Senior ELSI Specialist | LNDS |       |
 
 ### 4. Purpose
 The purpose of this SOP is to define the process for **requesting and granting access to controlled data within the European Genomic Data Infrastructure (GDI)**. This SOP ensures that:

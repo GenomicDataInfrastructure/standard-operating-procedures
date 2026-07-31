@@ -25,6 +25,7 @@
 
 | Template Version | Instance version | Author(s)         | Description of changes               | Date       |
 |------------------|------------------|-------------------|--------------------------------------|------------|
+| ``v1.0.2`` |  | Marcos Casado Barbero | Added Notes and delegation-aware Roles and Responsibilities entries | ``2026.07.31`` |
 | ``v1.0.1`` |  | Marcos Casado Barbero | Updated to linting rules - [PR46](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/46) | ``2024.10.29`` |
 | ``v1``               |                  | Marcos Casado Barbero    | Transform document to markdown     | ``2024.09.27`` |
 | ``v0.1``             |                  | Dylan Spalding    | Comments addressed and first draft of SOP | ``2024.08.14`` |
@@ -56,13 +57,14 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 ### 3. Roles and Responsibilities
 See the qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
 
-| Role       | Full name             | GDI/node role           | Organisation |
-|------------|-----------------------|-------------------------|--------------|
-| Author     | Dylan Spalding        | Finland / Pillar II co-lead | CSC          |
-| Author     | Marcos Casado Barbero | Task 4.3 Lead | EMBL-EBI          |
-| Reviewer   | Regina Becker | LU / Pillar I co-lead | LNDS |
-| **Approver**   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |
-| **Approver**   | Markus Englund | Task 4.3 member | UU / NBIS |
+| Role       | Full name             | GDI/node role           | Organisation | Notes |
+|------------|-----------------------|-------------------------|--------------|-------|
+| Author     | Dylan Spalding        | Finland / Pillar II co-lead | CSC          |       |
+| Author     | Marcos Casado Barbero | Task 4.3 Lead | EMBL-EBI          |       |
+| Reviewer   | Regina Becker | LU / Pillar I co-lead | LNDS |       |
+| Approver   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |       |
+| Approver   | Markus Englund | Task 4.3 member | UU / NBIS |       |
+| Approver   | Regina Becker | LU / Pillar I co-lead | LNDS |       |
 
 ### 4. Purpose
 The purpose of this SOP is to delineate a standardised process for NCPs to review and potentially veto decisions made by the 1+MG EDIC regarding data access requests. This will ensure that data access is consistent with national regulations and ethical standards.

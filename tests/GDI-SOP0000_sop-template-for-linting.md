@@ -50,12 +50,15 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 ### 3. Roles and Responsibilities
 See qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
 
-| Role       | Full name       | GDI/node role   | Organisation |
-|------------|-----------------|-----------------|--------------|
-| Author     | Bruce Wayne |                 |              |
-| Reviewer   | Batman |                 |              |
-| Approver   | Alfred |                 |              |
-| Authorizer |  |                 |              |
+| Role       | Full name       | GDI/node role   | Organisation | Notes |
+|------------|-----------------|-----------------|--------------|-------|
+| Author     | Bruce Wayne |                 |              |       |
+| Reviewer   | Batman |                 |              |       |
+| Approver   | Alfred |                 |              | Delegated approval to Lucius Fox. |
+| Approver   | Robin |                 |              |       |
+| Approver   | Commissioner Gordon |                 |              |       |
+| Delegate   | Lucius Fox |                 |              | Approval delegated by Alfred. |
+| Authorizer |  |                 |              |       |
 
 ### 4. Purpose
 Test scope

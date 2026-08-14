@@ -23,7 +23,7 @@
 ### 1. Document History
 | Template Version | Instance version | Author(s) | Description of changes       | Date       |
 |---------|-----------|-----------|------------------------------|------------|
-| ``v1.0.1`` |  | Marcos Casado Barbero | Address PR review comments | 2026.03.10 |
+| ``v1.0.1`` |  | Marcos Casado Barbero | Address pull request review comments | 2026.03.10 |
 | ``v1`` |  | Marcos Casado Barbero | Draft SOP | 2026.01.16 |
 
 ### 2. Glossary
@@ -313,7 +313,7 @@ Request details:
 - Deadline requested: <Deadline of withdrawal if applicable>
 
 ACTIONS NEEDED [Within 5 working days]:
-1. Please follow through with the dataset withdrawal request as per [Step 5](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/dev/sops/european-level/GDI-SOP0009_dataset-withdrawal.md#85-assign-withdrawal-response-team). 
+1. Please follow through with the dataset withdrawal request as per [Step 5](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/dev/sops/european-level/GDI-SOP0009_dataset-withdrawal.md#85-assign-withdrawal-response-team).
 2. Update the VHD ticket with assigned leads and expected completion timeline.
 
 Once withdrawal is confirmed, the VHD will resume control to verify, notify the requester, and close the ticket.

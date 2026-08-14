@@ -51,6 +51,7 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | OC | Operations Committee |
 | ORR | Organisational Roles and Responsibilities |
 | PID | Permanent Identifier |
+| PR | Pull Request |
 | REMS | Resource Entitlement Management System |
 | SDPC | Security and Data Protection Committee |
 | SOP | Standard Operating Procedure |
@@ -312,7 +313,7 @@ Request details:
 - Deadline requested: <Deadline of withdrawal if applicable>
 
 ACTIONS NEEDED [Within 5 working days]:
-1. Please follow through with the dataset withdrawal request as per [Step 5](#85-assign-withdrawal-response-team). 
+1. Please follow through with the dataset withdrawal request as per [Step 5](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/dev/sops/european-level/GDI-SOP0009_dataset-withdrawal.md#85-assign-withdrawal-response-team).
 2. Update the VHD ticket with assigned leads and expected completion timeline.
 
 Once withdrawal is confirmed, the VHD will resume control to verify, notify the requester, and close the ticket.
@@ -385,10 +386,10 @@ You are appointed **Technical Lead** (TL) for the dataset-withdrawal request det
 ACTIONS NEEDED:
 1. Acknowledge receipt of this email **within 3 working days**.
 2. Determine whether any (meta)data of the dataset resides in the specified GDI system.
-3. If present, remove it (within the given scope) as per system SOP (see [Step 7](#87-per-system-dataset-withdrawal)).
+3. If present, remove it (within the given scope) as per system SOP (see [Step 7](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/dev/sops/european-level/GDI-SOP0009_dataset-withdrawal.md#87-per-system-dataset-withdrawal)).
 4. Report dataset withdrawal status in the ticket or directly contacting GDI's VHD.
 
-You can find more details about how these tasks have been fulfilled previously at [Step 7](#87-per-system-dataset-withdrawal).
+You can find more details about how these tasks have been fulfilled previously at [Step 7](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/dev/sops/european-level/GDI-SOP0009_dataset-withdrawal.md#87-per-system-dataset-withdrawal).
 
 If you need additional context or support, contact the OC/SDPC (gdi-sdpc [at] elixir-europe.org, gdi-oc [at] elixir-europe.org) or the VHD Officer (<VHD_OFFICER_CONTACT_DETAILS>).
 Thank you for your prompt attention.
@@ -434,7 +435,7 @@ To accomplish these tasks, **follow the appropriate SOP** for your specified sys
    - Beacon Browser (_#! SOP TBD_).
       - Nodes' Beacons (_#! SOP TBD, see https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/64 #!_).
    - Dataset Browser (_#! SOP TBD_).
-      - Nodes' FAIR Data Points (FDP) (_#! SOP TBD, see https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/63 #!_).
+      - Nodes' FAIR Data Points (FDP) ([`GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md`](../node-specific/GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md), soft withdrawal in node FDP metadata).
    - Allele Frequency Browser (_#! SOP TBD_).
       - Nodes' Allele Frequency Beacons (_#! SOP TBD, see https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/65 #!_).
 - **Nodes' Secure Processing Environment** (SPE) (_#! SOP TBD_).

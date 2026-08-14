@@ -1,6 +1,5 @@
 # European GDI SOP Index
 Below you can find the full list of SOPs in this repository.
-
 | Name                                                                                                                     | Identifier   | Template version   | Topic                      | Type               | GDI Node   | Instance version   |   Nº steps | Last modified   |
 |:-------------------------------------------------------------------------------------------------------------------------|:-------------|:-------------------|:---------------------------|:-------------------|:-----------|:-------------------|-----------:|:----------------|
 | [GDI-SOP0002_ncps-veto-edic-decision.md](./node-specific/GDI-SOP0002_ncps-veto-edic-decision.md)                         | GDI-SOP0002  | v1                 | Helpdesk & operations      | Node-specific SOP  |            |                    |          7 | 2024.10.29      |
@@ -8,4 +7,5 @@ Below you can find the full list of SOPs in this repository.
 | [GDI-SOP0007_sop-template-creation.md](./european-level/GDI-SOP0007_sop-template-creation.md)                            | GDI-SOP0007  | v1                 | Helpdesk & operations      | European-Level SOP |            |                    |          7 | 2024.10.29      |
 | [GDI-SOP0008_node-helpdesk-ticket-classification.md](./node-specific/GDI-SOP0008_node-helpdesk-ticket-classification.md) | GDI-SOP0008  | v1.0.0             | Helpdesk & operations      | Node-specific SOP  |            |                    |          4 | 2026.03.10      |
 | [GDI-SOP0009_dataset-withdrawal.md](./european-level/GDI-SOP0009_dataset-withdrawal.md)                                  | GDI-SOP0009  | v1                 | Data & metadata management | European-level SOP |            |                    |          9 | 2026.03.10      |
+| [GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md](./node-specific/GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md) | GDI-SOP0011  | v1                 | Technical infrastructure & software development | Node-specific SOP  |            |                    |          5 | 2026.05.20      |
 | [GDI-SOP0013_fdp-submission-metadata-validation.md](./node-specific/GDI-SOP0013_fdp-submission-metadata-validation.md)   | GDI-SOP0013  | v1                 | Data & metadata management | Node-specific SOP  |            |                    |          6 | 2026.04.07      |

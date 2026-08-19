@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - [``GDI-SOP_github-introduction-for-maintainers.md``](docs/GDI-SOP_github-introduction-for-maintainers.md) - Introductory guide for GDI SOP Repository maintainers.
+- [``GDI-SOP0008_node-helpdesk-ticket-classification.md``](sops/node-specific/GDI-SOP0008_node-helpdesk-ticket-classification.md) - GDI Node Helpdesk Ticket Classification SOP. 
+- [``GDI-SOP0009_dataset-withdrawal.md``](sops/european-level/GDI-SOP0009_dataset-withdrawal.md) - Withdrawal request GDI SOP.
+- [``.gitignore``](.gitignore) - File to ignore certain files in git commits.
+- [``GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md``](sops/node-specific/GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md) - Node-specific SOP template describing how a node FAIR Data Point should process soft withdrawal of a dataset or linked distributions.
 
 ### Modified
 - [``GDI-SOP_github-management.md``](docs/GDI-SOP_github-management.md) - Added reference to recorded session
@@ -20,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [``GDI-SOP_charter.md``](docs/GDI-SOP_charter.md) - Updated Glossary section with new acronyms and terms from other three SOPs.
 - [``GDI-SOP_style-guide.md``](docs/GDI-SOP_style-guide.md) - Added section regarding positioning of tables in MD files.
 - [``GDI-SOP0007_sop-template-creation.md``](sops/european-level/GDI-SOP0007_sop-template-creation.md) - Annual review (https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/70).
+- [``sops/README.md``](sops/README.md) - Added new SOPs to index table.
 
 ### Fixed
 - [``GDI-SOP0002_ncps-veto-edic-decision.md``](sops/node-specific/GDI-SOP0002_ncps-veto-edic-decision.md):
@@ -28,6 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - ``v1.0.2``: Updated Glossary, fixed Procedure headers, fixed SOP title (in doc.), fixed relative references, and renamed file (previously ``GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md``).
 - [``GDI-SOP0007_sop-template-creation.md``](sops/european-level/GDI-SOP0007_sop-template-creation.md):
     - ``v1.0.1``: Updated Glossary, fixed Procedure headers and tables, and renamed file (previously in uppercase).
+- [``GDI-SOP_sop-template.md``](docs/GDI-SOP_sop-template.md) - Amended header numbers.
 
 ## [1.0.0](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/releases/tag/v1.0.0) - 2024-10-28
 

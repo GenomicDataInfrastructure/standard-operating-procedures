@@ -24,7 +24,7 @@
 ### 1. Document History
 | Template Version | Instance version | Author(s) | Description of changes       | Date       |
 |---------|-----------|-----------|------------------------------|------------|
-| ``v1.0.3`` |  | Marcos Casado Barbero | Annual review: updated OC management and OC/SDPC approval processes, removed request-for-comments (RFC) step, added Notes and delegation-aware Roles and Responsibilities entries - [PR#70](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/70) | ``2026.07.31`` |
+| ``v1.0.3`` |  | Marcos Casado Barbero | Annual review: updated OC management and OC/SDPC approval processes, removed request-for-comments (RFC) step, added Notes and delegation-aware Roles and Responsibilities entries - [PR#70](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/70) | ``2026.08.19`` |
 | ``v1.0.2`` |  | Marcos Casado Barbero | Annual review - [#67](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/67) | ``2026.01.15`` |
 | ``v1.0.1`` |  | Marcos Casado Barbero | Updated to linting rules - [PR46](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/46) | ``2024.10.29`` |
 | ``v1`` |  | Marcos Casado Barbero | Created first version of the SOP | ``2024.07.08`` |
@@ -35,6 +35,7 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 | Abbreviation  | Description                                                         |
 |---------------|---------------------------------------------------------------------|
 | CC            | Carbon Copy (used in communications to send a copy to others)       |
+| CRG           | Centre for Genomic Regulation                                       |
 | CSC           | Finnish IT centre for science                                       |
 | EBI           | European Bioinformatics Institute                                   |
 | EMBL          | European Molecular Biology Laboratory                               |
@@ -56,6 +57,7 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 | TBD           | To Be Determined                                                    |
 | TB            | Top to Bottom                                                       |
 | TODO          | A list of pending tasks                                             |
+| UL-MF         | Faculty of Medicine at the University of Ljubljana                  |
 | URL           | Uniform Resource Locator                                            |
 | UU            | University of Uppsala                                               |
 | WP            | Work Package                                                        |
@@ -79,7 +81,7 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 | Reviewer   | Gabriele Rinck |  | EMBL-EBI |       |
 | Approver   | Óscar Martínez | SDPC member | CRG |       |
 | Approver   | Dylan Spalding | OC member | CSC |       |
-| Approver   | Nejc Nadižar | OC member / SDPC member | UL MF |       |
+| Approver   | Nejc Nadižar | OC member / SDPC member | UL-MF |       |
 
 ### 4. Purpose
 This SOP defines the process of creating an SOP, from the [initial SOP request](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues?q=is%3Aissue%20state%3Aopen%20label%3Anew-sop-request) to a fully authorised, released SOP. This helps everyone involved in the process, such as the maintainers of the `GenomicDataInfrastructure/standard-operating-procedures` repository, members of GDI's Operations Committee (OC) or those involved in drafting, reviewing, approval and authorisation. In doing so, the process is reproducible and straightforward, ensuring consistency and quality in SOP development across the GDI project.

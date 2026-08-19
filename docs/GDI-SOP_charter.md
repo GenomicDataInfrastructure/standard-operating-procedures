@@ -30,6 +30,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | API              | Application Programming Interface                                       |
 | BEN              | Beneficiary                                                             |
 | CC               | Carbon Copy (used in communications to send a copy to others)           |
+| CRG              | Centre for Genomic Regulation                                           |
 | CSC              | Finnish IT Center for Science                                           |
 | DAA              | Data Access Agreement                                                   |
 | DAC              | Data Access Committee                                                   |
@@ -92,6 +93,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | TL               | Technical Lead                                                          |
 | TODO             | A list of pending tasks                                                 |
 | UI               | User Interface                                                          |
+| UL-MF            | Faculty of Medicine at the University of Ljubljana                      |
 | URL              | Uniform Resource Locator                                                |
 | UU               | University of Uppsala                                                   |
 | UX               | User experience                                                         |

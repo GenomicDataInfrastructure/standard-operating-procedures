@@ -295,7 +295,7 @@ Proceed to ⏩[step 4.1](#841-appoint-reviewers).
 
 Similar to how authors were nominated and contacted, you shall **appoint reviewers and contact them** requesting their review. Depending on the SOP, who are the reviewers and how to contact them will vary. If by email, you can use the email template below.
 
-Remember to CC the OC and SDPC mailing lists: ``gdi_operations_committee [at] elixir-europe.org`` and ``gdi_security_data_protection [at] elixir-europe.org``.
+Remember to CC the OC mailing list: ``gdi_operations_committee [at] elixir-europe.org`` 
 ````
 Subject: [GDI T4.3] Requesting SOP review
 ````

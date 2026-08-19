@@ -76,8 +76,10 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 | Reviewer   | Bianca Hendriksze | Task 4.3 member | HRI |       |
 | Reviewer   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |       |
 | Reviewer   | Mattias Strömberg | Task 4.3 member | UU / NBIS |       |
+| Reviewer   | Gabriele Rinck |  | EMBL-EBI |       |
 | Approver   | Óscar Martínez | SDPC member | CRG |       |
-| Approver   | Gabriele Rinck |  | EMBL-EBI |       |
+| Approver   | Dylan Spalding | OC member | CSC |       |
+| Approver   | Nejc Nadižar | OC member / SDPC member | UL MF |       |
 
 ### 4. Purpose
 This SOP defines the process of creating an SOP, from the [initial SOP request](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues?q=is%3Aissue%20state%3Aopen%20label%3Anew-sop-request) to a fully authorised, released SOP. This helps everyone involved in the process, such as the maintainers of the `GenomicDataInfrastructure/standard-operating-procedures` repository, members of GDI's Operations Committee (OC) or those involved in drafting, reviewing, approval and authorisation. In doing so, the process is reproducible and straightforward, ensuring consistency and quality in SOP development across the GDI project.
@@ -232,7 +234,7 @@ Proceed to ⏩[step 3](#83-contact-authors).
 |:----------------|:----|:----|
 | ``3`` | After SOP document has been drafted | OC |
 
-Once the SOP document has been drafted, experts are required to fill in the gaps and finalise it. These **authors are to be appointed and contacted by you, as part of the OC**. Who the authors are will depend on the background and requirements of each SOP, and thus it is your responsibility as an OC member to **find the best-suited people for the task**. The only requirements are for authors to be part of the GDI project and to know about, or be part of, the subject the SOP revolves around. Alternatively, you may contact the GDI Work Package (WP) leaders to point you in the right direction.
+Once a basic draft of the SOP has been prepared, experts are required to fill in the gaps and finalise it. These **authors are to be appointed and contacted by you, as part of the OC**. Who the authors are will depend on the background and requirements of each SOP, and thus it is your responsibility as an OC member to **find the best-suited people for the task**. The only requirements are for authors to be part of the GDI project and to know about, or be part of, the subject the SOP revolves around. Alternatively, you may contact the GDI Work Package (WP) leaders to point you in the right direction.
 
 The communication may vary depending on the selected authors. For example, if the experts are part of the OC themselves, then it may be best to let the group know through GDI's Slack workspace or mailing lists (``gdi_operations_committee [at] elixir-europe.org``). On the other hand, if authors are external to the OC, the following email template could be used to contact them.
 
@@ -245,7 +247,7 @@ Dear < Recipient's Name(s) >,
 
 We hope this message finds you well.
 
-The GDI's Operations Committee (OC) has drafted a new Standard Operating Procedure (SOP): "< SOP Title >". We now seek your expertise to fill in the gaps and help us finalise it. Given your background and involvement in the GDI project, we believe you are well-suited as an author of the SOP.
+The GDI's Operations Committee (OC) has prepared a basic draft for a new Standard Operating Procedure (SOP): "< SOP Title >". We now seek your expertise to fill in the gaps and help us finalise it. Given your background and involvement in the GDI project, we believe you are well-suited as an author of the SOP.
 
 We kindly request you to review the SOP draft and provide the necessary input. Please find the draft SOP document here: < URL of drafted document >
 

@@ -80,7 +80,7 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 | Approver   | Gabriele Rinck |  | EMBL-EBI |       |
 
 ### 4. Purpose
-This SOP will help maintainers of the [``GenomicDataInfrastructure/standard-operating-procedures``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures) repository, as well as GDI's Operations Committee (OC), to **transform SOP Requests into SOP templates**. The OC manages the entire development process, with the Security and Data Protection Committee (SDPC) participating in the approval phase. In doing so, the process will be reproducible and straightforward, ensuring consistency and quality in SOP development across the GDI project.
+This SOP defines the process of creating an SOP, from the [initial SOP request](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues?q=is%3Aissue%20state%3Aopen%20label%3Anew-sop-request) to a fully authorised, released SOP. This helps everyone involved in the process, such as the maintainers of the `GenomicDataInfrastructure/standard-operating-procedures` repository, members of GDI's Operations Committee (OC) or those involved in drafting, reviewing, approval and authorisation. In doing so, the process is reproducible and straightforward, ensuring consistency and quality in SOP development across the GDI project.
 
 ### 5. Scope
 This SOP **starts with the need to create a new GDI SOP Template**, triggered by the creation of a new GH issue through the [``New SOP Request``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new?assignees=&labels=new-sop-request%2Cenhancement&projects=&template=new_sop_request.yaml&title=%5BSOP+Request%5D+%3CShort+title%3E) issue template.

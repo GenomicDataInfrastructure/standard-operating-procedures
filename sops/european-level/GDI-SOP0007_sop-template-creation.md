@@ -422,7 +422,7 @@ Operations Committee (OC)
 ````
 
 This **step shall finish** either:
-- When the **period to raise issues (4 full weeks) has concluded without any complaints from the MB**.
+- When the **period to raise issues (4 full weeks) has concluded without any objections from the MB**.
 - The **MB explicitly authorised the SOP** before the 4-week period finished.
 
 If comments are received from this body, the step shall finish when they are addressed, starting a new period of review altogether. Similar consideration is to be taken if the MB requests a period extension. It will be your responsibility, as an OC member, to keep track of the status of development and to make sure requested changes are addressed (e.g., contacting authors).

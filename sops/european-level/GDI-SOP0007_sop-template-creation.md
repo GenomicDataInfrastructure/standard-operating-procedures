@@ -341,7 +341,7 @@ Once the drafted SOP has been filled in by the authors and has passed the inspec
 - Each committee may use a **rota to share approval appointments evenly** among its members.
 - An appointed OC or SDPC member may **delegate the approval task** to another GDI member, including someone who is not a committee member. The delegation fulfils the delegator's committee approval position, but the **delegating member retains responsibility** and accountability for that approval. Both the delegate and responsible delegator must be documented in the GH issue and the Roles and Responsibilities section of the SOP.
 
-If an approver delegates on someone else, both _Approver_ and _Delegate_ need to be properly added to the SOP's Roles and Responsibilities table. This includes recording the delegation in both roles' _Notes_ cells. For example, `Delegated approval to X` (at Approver's) and `Approval delegated by Y` (at Delegate's).
+If an approver delegates to someone else, both _Approver_ and _Delegate_ need to be properly added to the SOP's Roles and Responsibilities table. This includes recording the delegation in both roles' _Notes_ cells. For example, `Delegated approval to X` (at Approver's) and `Approval delegated by Y` (at Delegate's).
 
 > [!IMPORTANT]
 > Each approver must provide a formal approval or justified rejection **within two weeks of being appointed**.

@@ -268,7 +268,7 @@ Depending on the format of the draft, the above-mentioned ``< URL of drafted doc
 
 Remember to **leave a comment in the GitHub issue**, briefly mentioning that authors have been contacted. Be mindful of the information you share (e.g., no email addresses), since _anything_ that is in this GitHub repository will be **publicly displayed**!
 
-This step of the process ends when enough GDI members accepted authoring the SOP. For this to happen, it may be needed for you, as an OC member, to engage in conversations to find the best-suited authors. These conversations will be useful when reviewers are needed.
+This step of the process ends when enough GDI members accepted authoring the SOP. For this to happen, it may require you, as an OC member, to engage in conversations to find the best-suited authors. These conversations will also be useful for the selection of reviewers (step 4.1 below).
 
 Proceed to ⏩[step 4](#84-monitor-sop-development).
 

@@ -26,14 +26,14 @@ Find GDI SOPs common Glossary at the [charter document](./GDI-SOP_charter.md#2-g
 | SOP resources | All SOP-related documentation and processes, including but not limited to supporting documents, SOP templates and SOP instances. |
 
 ## 3. Roles and Responsibilities
-| Role       | Full name       | GDI/node role   | Organisation |
-|------------|-----------------|-----------------|--------------|
-| **Author**     | Mallory Freeberg | Task 4.3 member | EMBL-EBI |
-| **Author**     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |
-| **Reviewer**   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |
-| **Reviewer**   | Markus Englund | Task 4.3 member | UU / NBIS |
-| **Approver**   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |
-| **Approver**   | Markus Englund | Task 4.3 member | UU / NBIS |
+| Role       | Full name       | GDI/node role   | Organisation | Notes |
+|------------|-----------------|-----------------|--------------|-------|
+| **Author**     | Mallory Freeberg | Task 4.3 member | EMBL-EBI |       |
+| **Author**     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |       |
+| **Reviewer**   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |       |
+| **Reviewer**   | Markus Englund | Task 4.3 member | UU / NBIS |       |
+| **Approver**   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |       |
+| **Approver**   | Markus Englund | Task 4.3 member | UU / NBIS |       |
 
 ## 4. Purpose
 This document outlines the roles, responsibilities, and tasks for individuals involved in the writing, implementation, management, and use of GDI SOP resources. It contributes to the framework, defined in the [Charter](./GDI-SOP_charter.md), for SOP development, review, approval, authorisation, maintenance and training within the GDI network.
@@ -51,6 +51,7 @@ The roles and responsibilities described in this document apply to:
 | **Author**   | European and Node level | - **Fill in content of SOP Templates** based on expertise and input from stakeholders across GDI nodes. <br> - Ensure **compliance with data policies** (e.g., GDPR). <br> - Ensure consistency with related GDI SOPs and resolve potential conflicts between documents where necessary. <br> - Take the role of "SOP Trainer" for their authored SOP Templates if required. | - Expertise in the relevant area. <br> - Strong communication and collaboration skills. <br> - Knowledge of GDPR and data handling requirements. |
 | **Reviewer** | European and Node level | - **Review SOP Templates** for accuracy, compliance and consistency. <br> - Suggest improvements and ensure alignment with GDI objectives. <br> - Facilitate inter-node communication. | - Broad understanding of GDI's objectives. <br> - Detail-oriented with a critical eye for potential issues. <br> - Experience in collaborative reviews and multi-disciplinary teams. |
 | **Approver** | European and Node level | - **Confirm SOP Templates readiness** post-review. <br> - **Ensure compliance** with **GDI standards and GDPR**. <br> - Document and store released SOP Templates and instances in designated platforms (i.e., GitHub). <br> - Oversee SOP lifecycle and ensure periodic reviews.  | - Leadership and decision-making capabilities. <br> - Deep understanding of GDI strategic goals. <br> - Proficiency in managing project documentation platforms. <br> - Experience in document lifecycle management. |
+| **Delegate** | European and Node level | - Act on behalf of a named Approver within the delegated scope and deadline. <br> - Assess the SOP's technical and operational readiness, including relevant GDI standards and data-protection requirements. <br> - Record a formal approval or justified rejection in the relevant GitHub issue or Pull Request and escalate out-of-scope concerns to the responsible Approver. | - Authority to make the delegated decision and subject-matter expertise relevant to the SOP. <br> - Ability to assess technical correctness, operational feasibility, and security or data-protection implications. <br> - Proficiency with GitHub issues and Pull Requests, Markdown SOPs, and the repository's validation workflow. |
 | **Authoriser** | European level | - **Grant (or veto) official permission for SOPs to be released**. | - High-level management skills. <br> - Part of the GDI executive leadership. <br> - Understanding of GDI scope and operations. <br> - Time-management skills: where necessary, exercise veto rights within a set time period.  |
 | **Main repository Maintainer (OC/SDPC)** | European level | - **Oversee SOP creation and review process** for the GDI GitHub repository. <br> - **Coordinate with Authors, Reviewers, Approvers and Authorizers** to ensure SOP templates meet GDI standards. <br> - Manage version control, ensure updates are made consistently. <br> - **Conduct periodic audits** of the SOP repository to maintain quality and compliance. | - Strong project management and oversight skills. <br> - Proficiency in GitHub repository management, including version control and collaborative document handling. <br> - Comprehensive understanding of GDI operations and objectives. <br> - Ability to work effectively with multidisciplinary teams and manage stakeholder expectations. |
 | **Trainer** | European and Node level | - **Conduct training** on SOP Templates for relevant stakeholders. <br> - Ensure understanding of procedures and compliance requirements. <br> - Provide updates on SOP revisions. | - In-depth knowledge of SOPs and the GDI context. <br> - Strong communication and training skills. <br> - Experience in adult education and training methodologies.        |

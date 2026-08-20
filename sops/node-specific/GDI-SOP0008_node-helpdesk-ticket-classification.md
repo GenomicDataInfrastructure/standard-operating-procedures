@@ -91,7 +91,9 @@ See the qualifications and responsibilities of the roles in the [Organisational 
 | Author    | Silvia Bahena         | Task 4.3 member  | EMBL-EBI     |       |
 | Reviewer  | Marcos Casado Barbero | Task 4.3 Lead    | EMBL-EBI     |       |
 | Reviewer  | Bianca Hendriksze     | Task 4.3 member  | Health-RI    |       |
-| Approver  | Marcos Casado Barbero | Task 4.3 Lead    | EMBL-EBI     |       |
+| Approver   | Gabriele Rinck       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
+| Approver   | Marcos Casado Barbero       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
+| Approver   | Silvia Bahena       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
 | Authorizer|                       |                  |              |       |
 
 ### 4. Purpose

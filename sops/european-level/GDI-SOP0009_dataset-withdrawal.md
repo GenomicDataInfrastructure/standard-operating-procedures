@@ -84,7 +84,9 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | Author     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI           |       |
 | Reviewer   | Silvia Bahena        | Task 4.3 member | EMBL-EBI           |       |
 | Reviewer   | Kjell Petersen       | Task 4.3 member | University of Bergen |     |
-| Approver   | Gabriele Rinck       | Task 4.3 member | EMBL-EBI           |       |
+| Approver   | Gabriele Rinck       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
+| Approver   | Marcos Casado Barbero       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
+| Approver   | Silvia Bahena       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
 | Authorizer |                      | Management Board |                    |       |
 
 ### 4. Purpose

@@ -94,7 +94,7 @@ See the qualifications and responsibilities of the roles in the [Organisational 
 | Approver   | Gabriele Rinck       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
 | Approver   | Marcos Casado Barbero       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
 | Approver   | Silvia Bahena       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
-| Authorizer|                       |                  |              |       |
+| Authorizer | Management Board            | Authorizer according to GDI SOP governance    | GDI                  |       |
 
 ### 4. Purpose
 

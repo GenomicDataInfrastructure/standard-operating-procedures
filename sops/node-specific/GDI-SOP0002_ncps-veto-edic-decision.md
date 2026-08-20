@@ -65,6 +65,7 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 | Approver   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |       |
 | Approver   | Markus Englund | Task 4.3 member | UU / NBIS |       |
 | Approver   | Regina Becker | LU / Pillar I co-lead | LNDS |       |
+| Authorizer | Management Board            | Authorizer according to GDI SOP governance    | GDI                  |       |
 
 ### 4. Purpose
 The purpose of this SOP is to delineate a standardised process for NCPs to review and potentially veto decisions made by the 1+MG EDIC regarding data access requests. This will ensure that data access is consistent with national regulations and ethical standards.

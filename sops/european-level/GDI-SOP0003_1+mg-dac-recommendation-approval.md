@@ -72,6 +72,7 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 | Approver   | Gabriele Rinck | Task 4.3 member | EMBL-EBI |       |
 | Approver   | Regina Becker | LU / Pillar I co-lead | LNDS |       |
 | Approver   | Gergő Csarnai | LU / Senior ELSI Specialist | LNDS |       |
+| Authorizer | Management Board            | Authorizer according to GDI SOP governance    | GDI                  |       |
 
 ### 4. Purpose
 The purpose of this SOP is to define the process for **requesting and granting access to controlled data within the European Genomic Data Infrastructure (GDI)**. This SOP ensures that:

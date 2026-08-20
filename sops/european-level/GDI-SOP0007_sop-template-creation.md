@@ -74,14 +74,11 @@ See the qualifications and responsibilities of the roles at the [**Organisationa
 | Role       | Full name       | GDI/node role   | Organisation | Notes |
 |------------|-----------------|-----------------|--------------|-------|
 | Author     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |       |
-| Reviewer   | Pedro Ferreira | Task 4.3 member | IST |       |
-| Reviewer   | Bianca Hendriksze | Task 4.3 member | HRI |       |
-| Reviewer   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |       |
-| Reviewer   | Mattias Strömberg | Task 4.3 member | UU / NBIS |       |
 | Reviewer   | Gabriele Rinck |  | EMBL-EBI |       |
 | Approver   | Óscar Martínez | SDPC member | CRG |       |
 | Approver   | Dylan Spalding | OC member | CSC |       |
 | Approver   | Nejc Nadižar | OC member / SDPC member | UL-MF |       |
+| Authorizer | Management Board            | Authorizer according to GDI SOP governance    | GDI                  |       |
 
 ### 4. Purpose
 This SOP defines the process of creating an SOP, from the [initial SOP request](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues?q=is%3Aissue%20state%3Aopen%20label%3Anew-sop-request) to a fully authorised, released SOP. This helps everyone involved in the process, such as the maintainers of the `GenomicDataInfrastructure/standard-operating-procedures` repository, members of GDI's Operations Committee (OC) or those involved in drafting, reviewing, approval and authorisation. In doing so, the process is reproducible and straightforward, ensuring consistency and quality in SOP development across the GDI project.

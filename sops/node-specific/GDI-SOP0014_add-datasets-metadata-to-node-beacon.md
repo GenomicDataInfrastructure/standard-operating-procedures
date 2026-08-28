@@ -75,7 +75,7 @@ Data loaded into GDI, be it through beacon or through FAIR Data Points (FDP), ne
 
 ### 5. Scope
 
-The SOP covers node-level guidance for uploading dataset metadata to beacon  and includes:
+The SOP covers node-level guidance for uploading dataset metadata to beacon and includes:
 - Dataset metadata preparation and check that the dataset ID matches FDP requirements (GH)
 - Entering dataset metadata to beacon (dataset ID and name)
 - Validating the dataset endpoint with Verifier
@@ -117,7 +117,7 @@ flowchart TD;
 | :-------------- | :------------------------------------------------------------------ | :-------------------------------------- |
 | `1`             | When metadata for a new beacon dataset needs to be added or existing metadata needs to be updated. | Node beacon maintainer |
 
-After collecting all the information related to the dataset’s metadata, create a new `datasets.csv` file with this exact name inside `/ri-tools/csv` folder (or any subfolder). Copy the headers you need from the template file `/ri-tools/csv/templates/datasets.csv`. Make sure the following mandatory headers are included:
+After collecting all the information related to the dataset’s metadata, create a new `datasets.csv` file with this exact name inside `/ri-tools/csv` folder (or create a new subfolder under this path with the dataset's name and save it there). Copy the headers you need from the template file `/ri-tools/csv/templates/datasets.csv`. Make sure the following mandatory headers are included:
 ```yaml
 id
 name
@@ -247,8 +247,8 @@ or perform the ID beacon query directly,
 ```bash
 curl 'https://<yourBeaconDomain>/api/datasets/<id>'
 ```
-- If the dataset appears and you wish it to declare either if it is test mode, synthetic or deprecated, proceed to ⏩[Step 5](#85-make-additional-statements-for-your-dataset).
-- If the dataset appears, and you don’t wish to make additional declarations for your dataset, proceed to ⏩[Step 6](#86-validate-your-new-datasets-metadata-record-with-verifier-log-and-report-completion).
+- If the dataset appears and you wish to declare either if it is test mode, synthetic or deprecated, proceed to ⏩[Step 5](#85-make-additional-statements-for-your-dataset).
+- If the dataset appears, but you don’t wish to make additional declarations for your dataset, proceed to ⏩[Step 6](#86-validate-your-new-datasets-metadata-record-with-verifier-log-and-report-completion).
 - If the dataset is not found, record the response obtained from the used commands, adding all the information about the actions performed and the intended goal of performing them and report to the GDI Virtual Helpdesk so that requester communication continues through the VHD workflow.
 
 #### 8.5. Make additional statements for your dataset
@@ -257,7 +257,7 @@ curl 'https://<yourBeaconDomain>/api/datasets/<id>'
 | :-------------- | :--------------------------------------- | :-------------------------------------- |
 | `5`             | After successfully updating new dataset metadata ⏩[Step 3.2](#832-update-metadata-for-existing-dataset) or after adding permissions for the new dataset ⏩[Step 4](#84-add-permissions-for-your-new-dataset) | Node beacon maintainer |
 
-In case you want your dataset to be declared as meant for test mode, specify its nature or deprecate it, you can by editing the `/beacon/conf/datasets/datasets_conf.yml` file. Add a new entry with the dataset id as the main property and add whatever three optional following items you want to declare for the dataset, setting them as `True`.
+In case you want your dataset to be declared as meant for test mode, specify its nature or deprecate it, you can by editing the `/beacon/conf/datasets/datasets_conf.yml` file. Add a new entry with the dataset id as the main property and append below any of the three settings (isTest, isSynthetic or isDeprecated) you want to declare for the dataset.
 ```yaml
 <dataset id>
   isTest: True

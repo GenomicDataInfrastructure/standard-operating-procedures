@@ -248,7 +248,7 @@ curl 'https://<yourBeaconDomain>/datasets/<id>'
 
 Execute a HTTPS GET request to your beacon looking for the dataset. Use the method you prefer (e.g., curl, postman...)..."
 ```bash
-curl 'https://<yourBeaconDomain>/datasets/<id>/g_variants'
+curl 'https://<yourBeaconDomain>/datasets/<id>'
 ```
 - If the response was empty, the dataset was removed successfully, proceed to ⏩[Step 4](#84-remove-dataset-permissions). 
 - If the response was not empty, the dataset removal was not successful, record the response obtained from the used commands, adding all the information about the actions performed and the intended goal of performing them and report to the GDI Virtual Helpdesk so that requester communication continues through the VHD workflow and proceed to ⏩[Step 4](#84-remove-dataset-permissions).

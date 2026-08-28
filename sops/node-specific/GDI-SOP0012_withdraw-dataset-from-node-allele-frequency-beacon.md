@@ -235,7 +235,18 @@ Proceed to verify the dataset is not found in your database.
 
 Execute a HTTPS GET request to your beacon looking for the dataset. Use the method you prefer (e.g., curl, postman...)...":
 ```bash
-curl 'https://<yourBeaconDomain>/datasets/<id>'
+bash -c '
+read -s -p "Mongo user: " MONGO_USER; echo
+read -s -p "Mongo password: " MONGO_PASS; echo
+
+
+docker exec -i mongoprod mongosh <<EOF
+db = connect("mongodb://${MONGO_USER}:${MONGO_PASS}@localhost:27017/admin");
+db = db.getSiblingDB("beacon");
+db.datasets.find({ id: "<id>" });
+db.genomicVariations.find({ datasetId: "<id>" });
+EOF
+'
 ```
 - If the response was empty, the dataset was removed successfully, proceed to ⏩[Step 4](#84-remove-dataset-permissions). 
 - If the response was not empty, the dataset removal was not successful, record the response obtained from the used commands, adding all the information about the actions performed and the intended goal of performing them and report to the GDI Virtual Helpdesk so that requester communication continues through the VHD workflow and proceed to ⏩[Step 4](#84-remove-dataset-permissions).

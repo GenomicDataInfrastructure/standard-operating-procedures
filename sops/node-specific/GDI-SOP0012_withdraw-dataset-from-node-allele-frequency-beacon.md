@@ -235,6 +235,19 @@ Proceed to verify the dataset is not found in your database.
 
 Execute a HTTPS GET request to your beacon looking for the dataset. Use the method you prefer (e.g., curl, postman...)...":
 ```bash
+curl 'https://<yourBeaconDomain>/datasets/<id>'
+```
+- If the response was empty, the dataset was removed successfully, proceed to ⏩[Step 4](#84-remove-dataset-permissions). 
+- If the response was not empty, the dataset removal was not successful, record the response obtained from the used commands, adding all the information about the actions performed and the intended goal of performing them and report to the GDI Virtual Helpdesk so that requester communication continues through the VHD workflow and proceed to ⏩[Step 4](#84-remove-dataset-permissions).
+
+##### 8.3.2. Hard-deletion
+
+| Step identifier | When | Who |
+| :-------------- | :--------------------------------------- | :-------------------------------------- |
+| `3.2`             | After the removal to perform was identified as a hard-deletion in ⏩[Step 3](#83-check-that-the-dataset-was-removed-successfully) | AF beacon maintainer |
+
+Execute a mongoDB scan to make sure no record related to the dataset is still remaining in the database, using the following commands:
+```bash
 bash -c '
 read -s -p "Mongo user: " MONGO_USER; echo
 read -s -p "Mongo password: " MONGO_PASS; echo
@@ -247,19 +260,6 @@ db.datasets.find({ id: "<id>" });
 db.genomicVariations.find({ datasetId: "<id>" });
 EOF
 '
-```
-- If the response was empty, the dataset was removed successfully, proceed to ⏩[Step 4](#84-remove-dataset-permissions). 
-- If the response was not empty, the dataset removal was not successful, record the response obtained from the used commands, adding all the information about the actions performed and the intended goal of performing them and report to the GDI Virtual Helpdesk so that requester communication continues through the VHD workflow and proceed to ⏩[Step 4](#84-remove-dataset-permissions).
-
-##### 8.3.2. Hard-deletion
-
-| Step identifier | When | Who |
-| :-------------- | :--------------------------------------- | :-------------------------------------- |
-| `3.2`             | After the removal to perform was identified as a hard-deletion in ⏩[Step 3](#83-check-that-the-dataset-was-removed-successfully) | AF beacon maintainer |
-
-Execute a HTTPS GET request to your beacon looking for the dataset. Use the method you prefer (e.g., curl, postman...)..."
-```bash
-curl 'https://<yourBeaconDomain>/datasets/<id>'
 ```
 - If the response was empty, the dataset was removed successfully, proceed to ⏩[Step 4](#84-remove-dataset-permissions). 
 - If the response was not empty, the dataset removal was not successful, record the response obtained from the used commands, adding all the information about the actions performed and the intended goal of performing them and report to the GDI Virtual Helpdesk so that requester communication continues through the VHD workflow and proceed to ⏩[Step 4](#84-remove-dataset-permissions).

@@ -54,7 +54,9 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | ---------- | --------------------------- | ------------------------------------------------ | ------------------------------------- |
 | Author     | Hans-Christian van der Werf | SOP author and FDP metadata contributor          | Health Research Infrastructure        |
 | Reviewer   | Marcos Casado Barbero       | Task 4.3 member                                  | European Molecular Biology Laboratory |
-| Approver   | Gabi Rinck                  | Approver according to current GDI SOP governance | To be confirmed                       |
+| Approver   | Dylan Spalding                  | OC approver | CSC |
+| Approver   | Wasiu Akanni	                  | OC / SDPC approver | DKFZ |
+| Approver   | Jorge Oliveira                  | SDPC approver | BioData.pt |
 | Authorizer | GDI Management Board        | SOP authorizer according to GDI governance       | European GDI                          |
 
 ### 4. Purpose

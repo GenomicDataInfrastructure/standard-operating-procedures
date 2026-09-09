@@ -313,7 +313,7 @@ Request details:
 - Deadline requested: <Deadline of withdrawal if applicable>
 
 ACTIONS NEEDED [Within 5 working days]:
-1. Please follow through with the dataset withdrawal request as per [Step 5](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/dev/sops/european-level/GDI-SOP0009_dataset-withdrawal.md#85-assign-withdrawal-response-team). 
+1. Please follow through with the dataset withdrawal request as per [Step 5](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/dev/sops/european-level/GDI-SOP0009_dataset-withdrawal.md#85-assign-withdrawal-response-team).
 2. Update the VHD ticket with assigned leads and expected completion timeline.
 
 Once withdrawal is confirmed, the VHD will resume control to verify, notify the requester, and close the ticket.
@@ -437,7 +437,7 @@ To accomplish these tasks, **follow the appropriate SOP** for your specified sys
    - Dataset Browser (_#! SOP TBD_).
       - Nodes' FAIR Data Points (FDP) ([`GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md`](../node-specific/GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md), soft withdrawal in node FDP metadata).
    - Allele Frequency Browser (_#! SOP TBD_).
-      - Nodes' Allele Frequency Beacons (_#! SOP TBD, see https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/65 #!_).
+      - Nodes' Allele Frequency Beacons ([GDI-SOP0012_withdraw-dataset-from-node-allele-frequency-beacon.md](../node-specific/GDI-SOP0012_withdraw-dataset-from-node-allele-frequency-beacon.md)).
 - **Nodes' Secure Processing Environment** (SPE) (_#! SOP TBD_).
 
 Once you have completed the relevant withdrawal SOP for the specified GDI System:

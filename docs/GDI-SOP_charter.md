@@ -112,7 +112,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 |------------------|-------------------------------------------------------------------------|
 | API              | Application Programming Interface is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. |
 | Beacon           |A web-accessible service implementing the GA4GH Beacon specification, enabling federated discovery (and sometimes retrieval) of genomic variant and related biomedical data across distributed resources|
-| Beacon Query      | HTTPS request to an endpoint of the node’s Allele Frequency beacon.          |
+| Beacon query      | HTTPS request to an endpoint of the node’s Allele Frequency beacon.          |
 | CHANGELOG        | Log or record of all notable changes made to a project                 |
 | Data controller  |The legal owner or organisation that determines the purposes and means of processing the dataset and can authorise its withdrawal|
 | Dataset permissions      | All the information related to the dataset grants and its security level configuration.          |

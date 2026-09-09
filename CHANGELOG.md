@@ -8,10 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - [``GDI-SOP_github-introduction-for-maintainers.md``](docs/GDI-SOP_github-introduction-for-maintainers.md) - Introductory guide for GDI SOP Repository maintainers.
+- [``GDI-SOP0013_fdp-submission-metadata-validation.md``](sops/node-specific/GDI-SOP0013_fdp-submission-metadata-validation.md) - Node-specific SOP template describing how a node FAIR Data Point should validate dataset metadata through save-time validation, local escalation, and a harvestable end state.
 - [``GDI-SOP0008_node-helpdesk-ticket-classification.md``](sops/node-specific/GDI-SOP0008_node-helpdesk-ticket-classification.md) - GDI Node Helpdesk Ticket Classification SOP. 
 - [``GDI-SOP0009_dataset-withdrawal.md``](sops/european-level/GDI-SOP0009_dataset-withdrawal.md) - Withdrawal request GDI SOP.
 - [``.gitignore``](.gitignore) - File to ignore certain files in git commits.
 - [``GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md``](sops/node-specific/GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md) - Node-specific SOP template describing how a node FAIR Data Point should process soft withdrawal of a dataset or linked distributions.
+
 
 ### Modified
 - [``GDI-SOP_github-management.md``](docs/GDI-SOP_github-management.md) - Added reference to recorded session
@@ -23,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [``tests/``](tests/) - Updated ``tests/GDI-SOP0000_sop-template-for-linting.md`` to fit testing standards of the linting script.
 - [``GDI-SOP_charter.md``](docs/GDI-SOP_charter.md) - Updated Glossary section with new acronyms and terms from other three SOPs.
 - [``GDI-SOP_style-guide.md``](docs/GDI-SOP_style-guide.md) - Added section regarding positioning of tables in MD files.
+- [``GDI-SOP_charter.md``](docs/GDI-SOP_charter.md) - Added `DCAT` and `SHACL` to the glossary for SOP0013.
 - [``sops/README.md``](sops/README.md) - Added new SOPs to index table.
 
 ### Fixed

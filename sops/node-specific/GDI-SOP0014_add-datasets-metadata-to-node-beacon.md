@@ -63,10 +63,13 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | Author     | Liina Nagirnaja             | Beacon Manager                                   | CRG                                   |
 | Author     | Jordi Rambla                | Beacon Product Owner                             | CRG                                   |
 | Author     | Oriol López-Doriga Sagalés  | Beacon Developer                                 | CRG                                   |
-| Reviewer   | Wasiu Akanni                   | Task 4.3 member                                  | DKFZ                                   |
 | Reviewer   | Aleš Čep                    | Task 4.3 member                                  | UM                                   |
 | Reviewer   | Marcos Casado Barbero       | Task 4.3 member                                  | EMBL-EBI                              |
-| Approver   | Gabriele Rinck              | Task 4.3 member                                  | EMBL-EBI                              |
+| Reviewer   | Gabriele Rinck              | Task 4.3 member                                  | EMBL-EBI                              |
+| Approver | Òscar Martínez Llobet  | OC member                               | CRG                                   |
+| Approver   | Dylan Spalding | OC member                                  | CSC                                   |
+| Approver   | Wasiu Akanni                   | SDPC member                                  | DKFZ                                   |
+| Approver   | Milan Ojsteršek                   | SDPC member                                  | DKFZ                                   |
 | Authorizer | Management Board            | Authorizer according to GDI SOP governance       | GDI                                   |
 
 ### 4. Purpose

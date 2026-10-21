@@ -4,10 +4,10 @@
 |----------|-------|
 | Template SOP number | GDI-SOP0010 |
 | Template SOP version | v1 |
-| Topic | Data & Metadata Management |
+| Topic | Data & metadata Management |
 | Template SOP Type | Node-specific SOP |
-| GDI Node | - |
-| Instance version | - |
+| GDI Node |  |
+| Instance version |  |
 
 ## Index
 

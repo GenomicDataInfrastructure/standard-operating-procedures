@@ -25,6 +25,7 @@
 
 | Template Version | Instance version | Author(s)                   | Description of changes                                                                                                                                               | Date         |
 | ---------------- | ---------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| `v1.0.2`         |                  | Marcos Casado Barbero       | Updated 'Roles and Responsibilities' table and acronym glossary with missing definitions. | `2026.10.21` |
 | `v1.0.1`         |                  | Hans-Christian van der Werf | Clarified soft withdrawal scope, verification expectations, recovery handling, and minimum audit logging after PR review. | `2026.05.20` |
 | `v1`             |                  | Hans-Christian van der Werf | First markdown template version of the SOP for issue [#63](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/63), based on the approved draft and reviewed copy. | `2026.03.26` |
 | `v0`             |                  | Marcos Casado Barbero       | Created the initial SOP request and draft content for dataset withdrawal from a Node FAIR Data Point.                                                                 | `2026.03.05` |
@@ -39,7 +40,14 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | EBI           | European Bioinformatics Institute                 |
 | FAIR          | Findability, Accessibility, Interoperability and Reusability |
 | FDP           | FAIR Data Point                                   |
+| CSC           | Finnish IT Center for Science                    |
+| DKFZ          | Deutsches Krebsforschungszentrum                |
 | GDI           | European Genomic Data Infrastructure              |
+| IT            | Information Technology                           |
+| OC            | Operations Committee                              |
+| PR            | Pull Request                                      |
+| RI            | Research Infrastructure                           |
+| SDPC          | Security and Data Protection Committee            |
 | SOP           | Standard Operating Procedure                      |
 | VHD           | Virtual Helpdesk                                  |
 

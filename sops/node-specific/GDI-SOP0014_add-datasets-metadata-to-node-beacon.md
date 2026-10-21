@@ -25,6 +25,7 @@
 
 | Template Version | Instance version | Author(s)                   | Description of changes                                                                                                                                               | Date         |
 | ---------------- | ---------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| `v1.0.1`         |                  | Marcos Casado Barbero       | Updated 'Roles and Responsibilities' table and acronym glossary with missing definitions. | `2026.10.21` |
 | `v1`             |                  | Liina Nagirnaja, Oriol López-Doriga Sagalés | First version of the SOP for GitHub issue [#66](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/66), after reviews completed. | `2026.06.09` |
 | `v0`             |                  |  Liina Nagirnaja, Oriol López-Doriga Sagalés       | Initial version of the SOP for GitHub issue [#66](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/66), based on the approved draft and reviewed copy.                                                                 | `2026.04.30` |
 
@@ -35,16 +36,27 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | Abbreviation  | Description                                       |
 | ------------- | ------------------------------------------------- |
 | AF            | Allele Frequency                                  |
+| CSV           | Comma-Separated Values                            |
 | CRG           | Centre for Genomic Regulation                     |
+| CSC           | Finnish IT Center for Science                     |
 | DKFZ           | Deutsches Krebsforschungszentrum                   |
+| EGA           | European Genome-phenome Archive                   |
 | GDI           | European Genomic Data Infrastructure              |
 | GDPR          | General Data Protection Regulation.               |
+| GH            | GitHub                                            |
 | EBI           | European Bioinformatics Institute                 |
 | EMBL          | European Molecular Biology Laboratory             |
 | FAIR          | Findability, Accessibility, Interoperability and Reusability             |
+| FDP           | FAIR Data Point                                   |
 | HD               | Helpdesk                                                                |
 | HTTPS          | Hypertext Transfer Protocol Secure                     |
 | ID            | Identifier                                        |
+| IT            | Information Technology                            |
+| JSON          | JavaScript Object Notation                        |
+| OC            | Operations Committee                              |
+| RI            | Research Infrastructure                           |
+| SDPC          | Security and Data Protection Committee            |
+| SHACL         | Shapes Constraint Language                        |
 | SOP           | Standard Operating Procedure                      |
 | UM            | University of Maribor                             |
 | VHD           | Virtual Helpdesk                                  |

@@ -13,6 +13,7 @@
 ## 1. Document History
 | Version | Author(s)               | Description of Changes                                   | Date       |
 | ------- | ----------------------- | -------------------------------------------------------- | ---------- |
+| v1.0.1  | Marcos Casado Barbero   | Updated acronym glossary with the missing CSV definition | 21.10.2026 |
 | v1      | Marcos Casado Barbero   | Filled in gaps, formatted file, added new sections, resolved comments | 19.08.2024 |
 | v0      | Mallory Freeberg, Marcos Casado Barbero | Drafted charter | 26.03.2024 |
 
@@ -32,6 +33,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | API              | Application Programming Interface                                       |
 | BEN              | Beneficiary                                                             |
 | CC               | Carbon Copy (used in communications to send a copy to others)           |
+| CSV              | Comma-Separated Values                                                  |
 | CRG              | Centre for Genomic Regulation                                           |
 | CSC              | Finnish IT Center for Science                                           |
 | DCAT             | Data Catalog Vocabulary                                                 |

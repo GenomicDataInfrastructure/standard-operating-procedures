@@ -17,16 +17,16 @@ To ease the document linting process, the script ``sop_linter.py`` was created. 
 You can **manually execute** the script to ensure a file (i.e., the SOP document) passes the linting checks as follows:
 ````
 cd standard-operating-procedures
-pip install --upgrade --no-deps -r requirements.txt
+python3 -m pip install -r requirements.txt
 python3 scripts/sop_linter.py tests/GDI-SOP0000_sop-template_for_linting.md -v 1
 ````
 
-Replace the test SOP (``tests/GDI-SOP0000_sop-template_for_linting.md``) with the file path of the SOP you are reviewing.
+Replace the example SOP (``sops/european-level/GDI-SOP0009_dataset-withdrawal.md``) with the file path of the SOP you are reviewing.
 
 If there are no linting errors, the output will look like the following:
 ````
 {
-  "tests/GDI-SOP0000_sop-template_for_linting.md": {
+  "sops/european-level/GDI-SOP0009_dataset-withdrawal.md": {
     "errors": [],
     "warnings": []
   }
@@ -58,7 +58,7 @@ If, on the contrary, the latest commit has a red cross (❌), some of the checks
 
 ### 5. **Cross-Referencing and SOP Compliance**
 - [ ] **Referencing Existing SOPs**: Check that the SOP does not significantly overlap or conflict with other existing SOPs, and ensure that references to any related SOPs are included. See the full [list of released SOPs](../sops/README.md).
-- [ ] **Compliance with SOP Development SOP**: Verify that the SOP has followed the procedure outlined in the [``GDI-SOP0007_SOP-template-creation.md``](../sops/european-level/GDI-SOP0007_SOP-template-creation.md), including review stages and deadlines.
+- [ ] **Compliance with SOP Development SOP**: Verify that the SOP has followed the procedure outlined in the [``GDI-SOP0007_sop-template-creation.md``](../sops/european-level/GDI-SOP0007_sop-template-creation.md), including review stages and deadlines.
 
 ## Reporting and Escalation
 - [ ] **Document your feedback** in the appropriate review platform: either the Google Document or Pull Request, depending on the SOP development phase.
@@ -72,10 +72,10 @@ If, on the contrary, the latest commit has a red cross (❌), some of the checks
 
 ## Additional Checklist for Authorizers
 
-- [ ] **Formal Authorization**: Confirm that the SOP is ready for final release, and provide authorization (or veto) for its inclusion in the GitHub repository. This veto period is defined in the SOP ``SOP Template creation``(../sops/european-level/GDI-SOP0007_SOP-template-creation.md) as **4 weeks** after the authorization request. If no comment is received before the veto can be exercised, the **SOP will automatically be considered authorized**.
+- [ ] **Formal Authorization**: Confirm that the SOP is ready for final release, and provide authorization (or veto) for its inclusion in the GitHub repository. This veto period is defined in the SOP [``SOP Template creation``](../sops/european-level/GDI-SOP0007_sop-template-creation.md) as **4 weeks** after the authorization request. If no comment is received before the veto can be exercised, the **SOP will automatically be considered authorized**.
 
 ## Tools & References
 
 - **GitHub Repository**: [GDI SOP Repository](https://github.com/GenomicDataInfrastructure/standard-operating-procedures) (Check linting status, review, and approve PRs)
-- [**SOP Template creation SOP**](../sops/european-level/GDI-SOP0007_SOP-template-creation.md)
+- [**SOP Template creation SOP**](../sops/european-level/GDI-SOP0007_sop-template-creation.md)
 - **ZenHub Board**: [T4.3 GDI SOPs](https://app.zenhub.com/workspaces/t43-gdi-sops-667c1c5532726a00b93d51e4/board)

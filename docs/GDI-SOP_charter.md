@@ -13,6 +13,7 @@
 ## 1. Document History
 | Version | Author(s)               | Description of Changes                                   | Date       |
 | ------- | ----------------------- | -------------------------------------------------------- | ---------- |
+| v1.0.1  | Marcos Casado Barbero   | Updated acronym glossary with the missing CSV definition | 21.10.2026 |
 | v1      | Marcos Casado Barbero   | Filled in gaps, formatted file, added new sections, resolved comments | 19.08.2024 |
 | v0      | Mallory Freeberg, Marcos Casado Barbero | Drafted charter | 26.03.2024 |
 
@@ -25,76 +26,130 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | 1+MG DAC         | 1+MG Data Access Committee                                              |
 | AAI              | Authentication and Authorization Infrastructure                         |
 | AE               | Associated Entity                                                       |
+| AF               | Allele Frequency; Application Form (depending on context)               |
 | AI               | Action Item                                                             |
+| AP               | Application Profile                                                     |
+| API              | Application Programming Interface                                       |
 | BEN              | Beneficiary                                                             |
 | CC               | Carbon Copy (used in communications to send a copy to others)           |
+| CSV              | Comma-Separated Values                                                  |
+| CRG              | Centre for Genomic Regulation                                           |
 | CSC              | Finnish IT Center for Science                                           |
+| DCAT             | Data Catalog Vocabulary                                                 |
 | DAA              | Data Access Agreement                                                   |
 | DAC              | Data Access Committee                                                   |
+| DKFZ           | Deutsches Krebsforschungszentrum                   |
 | DMP              | Data Management Plan                                                    |
 | DO               | Data Object                                                             |
 | DP               | Data Protection                                                         |
 | DPA              | Data Processing Agreement                                               |
 | DPbDD            | Data Protection by Design and Default                                   |
 | DPIA             | Data Protection Impact Assessment                                       |
+| DPO              | Data Protection Officer                                                 |
 | EBI              | European Bioinformatics Institute                                       |
 | EDIC             | European Digital Infrastructure Consortium                              |
+| EGA              | European Genome-phenome Archive                                         |
 | ELSI             | Ethical, Legal, and Social Implications                                 |
 | EMBL             | European Molecular Biology Laboratory                                   |
+| FAIR             | Findability, Accessibility, Interoperability and Reusability            |
+| FDP              | FAIR Data Point                                                         |
+| FEGA             | Federated EGA                                                           |
+| FTP              | File Transfer Protocol                                                  |
+| GA4GH            | Global Alliance for Genomics and Health                                 |
 | GDI              | European Genomic Data Infrastructure                                    |
 | GDI-CO           | GDI Project Management Team (GDI coordinators)                          |
 | GDPR             | General Data Protection Regulation                                      |
 | GH               | GitHub                                                                  |
 | HD               | Helpdesk                                                                |
+| HDM              | Harmonised Data Model                                                   |
+| HealthDCAT-AP    | Health Data Catalogue Application Profile                               |
 | HRI              | Health Research Infrastructure                                          |
+| HTTPS            | Hypertext Transfer Protocol Secure                                      |
+| ID               | Identifier                                                              |
+| IdP              | Identity Provider                                                       |
 | INSERM           | L'Institut national de la santé et de la recherche médicale (France)    |
 | ISM              | Information Service Management                                          |
 | IST              | Instituto Superior Técnico                                              |
 | IT               | Information Technology                                                  |
+| JSON             | JavaScript Object Notation                                              |
 | KT               | Knowledge Transfer                                                      |
 | LNDS             | Luxembourg National Data Service                                        |
+| LS               | Life Science                                                            |
 | LU               | Luxembourg                                                              |
 | MB               | Management Board                                                        |
 | MG               | Million Genomes                                                         |
 | MS               | Milestone                                                               |
 | NBIS             | National Bioinformatics Infrastructure Sweden                           |
 | NCP              | Node Contact Point                                                      |
+| NHD              | Node Helpdesk                                                           |
 | OC               | Operations Committee                                                    |
+| OK               | All correct                                                             |
 | ORR              | Organisational Roles and Responsibilities                               |
+| PID              | Permanent Identifier                                                    |
 | PR               | Pull Request                                                            |
 | QMS              | Quality Management System                                               |
+| REMS             | Resource Entitlement Management System                                  |
 | RFC              | Request For Comments                                                    |
+| RI               | Research Infrastructure                                                 |
 | SDPC             | Security and Data Protection Committee                                  |
+| SHACL            | Shapes Constraint Language                                              |
 | SLA              | Service Level Agreement                                                 |
+| SP               | Submitter Portal                                                        |
 | SOP              | Standard Operating Procedure                                            |
+| SPE              | Secure Processing Environment                                           |
 | TB               | Top to Bottom                                                           |
 | TBD              | To Be Determined                                                        |
+| TL               | Technical Lead                                                          |
 | TODO             | A list of pending tasks                                                 |
 | UI               | User Interface                                                          |
+| UL-MF            | Faculty of Medicine at the University of Ljubljana                      |
 | URL              | Uniform Resource Locator                                                |
 | UU               | University of Uppsala                                                   |
+| UX               | User experience                                                         |
+| VHD              | Virtual Helpdesk                                                        |
 | VPN              | Virtual Private Network                                                 |
+| UM               | University of Maribor                                                   |
+| UP               | User portal                                                             |
 | WG               | Working Group                                                           |
 | WP               | Work Package                                                            |
+| XML              | Extensible Markup Language                                              |
 | ZH               | ZenHub                                                                  |
 
 | **Term**         | **Definition**                                                         |
 |------------------|-------------------------------------------------------------------------|
+| API              | Application Programming Interface is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. |
+| Beacon           |A web-accessible service implementing the GA4GH Beacon specification, enabling federated discovery (and sometimes retrieval) of genomic variant and related biomedical data across distributed resources|
+| Beacon query      | HTTPS request to an endpoint of the node’s Allele Frequency beacon.          |
 | CHANGELOG        | Log or record of all notable changes made to a project                 |
+| Data controller  |The legal owner or organisation that determines the purposes and means of processing the dataset and can authorise its withdrawal|
+| Dataset permissions      | All the information related to the dataset grants and its security level configuration.          |
+| Dataset version  |A specific released state of a dataset identified by a version label/number, used to distinguish minor or major changes between releases|
 | FitSM            | Standards for lightweight IT Services Management; developed initially through The FedSM Project, funded by the European Commission, now maintained by ITEMO (<https://www.fitsm.eu/>) |
+| Hard-deletion    | Complete, irreversible erasure of the data from all storage media so it cannot be recovered|
+| JIRA             | Software product developed by Atlassian that allows bug tracking, issue tracking and agile project management. |
+| JSON             | JavaScript Object Notation is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of name–value pairs and arrays (or other serializable values).|
+| Node Helpdesk    | The support team is responsible for handling tickets related to data management issues associated with the node in the GDI Project.  |
 | Permit Authority | National body responsible for data access decisions                    |
 | README           | File that provides information about a project or directory            |
+| Requester        |The person that initiates the request to the VHD for the dataset to be withdrawn|
+| Soft-deletion    |Data is marked as withdrawn and made inaccessible to users but retained internally for audit or limited-term retention|
+| Ticket           |A ticket is a recorded request or issue submitted for support, tracking, or resolution. It serves as a unit of work that enables communication and accountability throughout its lifecycle.|
+| Ticket Classification | Process of categorizing tickets based on their type, urgency, or topic to ensure efficient handling and appropriate routing.  |
+| Tombstone record |A persistent landing page/metadata record kept in place of a removed dataset, providing citation and identifier details and stating the item is no longer available|
+| Virtual Helpdesk | Centralized, digital support service that coordinates and responds to incoming requests across the network. In GDI, it complements Node helpdesks by offering cross-node guidance, escalation, and harmonization of support efforts.  |
+| Withdrawal       |An exceptional action where a dataset (or research object) is removed from public access, typically retaining its persistent identifier and replacing access with a notice (often via a tombstone page/record)|
+| XML              | Extensible Markup Language is a markup language and file format for storing, transmitting, and reconstructing data. |
 | YYYYMMDD         | Date format in year-month-day                                          |
 
 
 ## 3. Roles and Responsibilities
-| Role       | Full name       | GDI/node role   | Organisation |
-|------------|-----------------|-----------------|--------------|
-| **Author**     | Mallory Freeberg | Task 4.3 member | EMBL-EBI |
-| **Author**     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |
-| **Reviewer**   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |
-| **Approver**   | Erik Hedman | Task 4.3 member | UU / NBIS |
-| **Approver**   | Markus Englund | Task 4.3 member | UU / NBIS |
+| Role       | Full name       | GDI/node role   | Organisation | Notes |
+|------------|-----------------|-----------------|--------------|-------|
+| **Author**     | Mallory Freeberg | Task 4.3 member | EMBL-EBI |       |
+| **Author**     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |       |
+| **Reviewer**   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |       |
+| **Approver**   | Erik Hedman | Task 4.3 member | UU / NBIS |       |
+| **Approver**   | Markus Englund | Task 4.3 member | UU / NBIS |       |
 
 ## 4. Introduction
 The [**European Genomic Data Infrastructure (GDI)**](https://gdi.onemilliongenomes.eu) project is a pioneering initiative that aims to **enable access to genomic, phenotypic, and clinical data across Europe**. This access is crucial for advancing research, policymaking, and healthcare on a continental scale. Central to this mission is the 1+ Million Genomes (1+MG) network, which encompasses a diverse array of national human data-sharing projects, each at different stages of development.
@@ -155,16 +210,16 @@ The scope of these SOPs is focused on roles, topics, and resources that are esse
 ## 7. GDI SOP Management
 Given the diverse fields that GDI SOPs may cover, a well-defined set of roles and responsibilities is crucial for ensuring seamless operations across the network. These roles are involved at every step of the SOP lifecycle, from development to node implementation. The most up-to-date definitions of roles and responsibilities can be found [here](./GDI-SOP_organisational-roles-and-responsibilities.md#6-roles-and-responsibilities-definitions).
 
-The process of adding a new SOP or editing an existing one is itself governed by established SOPs, such as the [GDI-SOP0007_SOP-template-creation.md](../sops/european-level/GDI-SOP0007_SOP-template-creation.md). **Repository maintainers must ensure that any changes are justified and consider their impact on both planned and existing GDI node features**. To facilitate this, the OC and SDPC include representatives from all GDI nodes across the three GDI pillars, ensuring that all are informed through mailing lists (see [GDI SOP Communication](#8-gdi-sop-communication)) about any SOP developments or changes. SOPs undergo rigorous review, approval, and authorization processes involving diverse GDI members to ensure quality and relevance.
+The process of adding a new SOP or editing an existing one is itself governed by established SOPs, such as the [GDI-SOP0007_sop-template-creation.md](../sops/european-level/GDI-SOP0007_sop-template-creation.md). **Repository maintainers must ensure that any changes are justified and consider their impact on both planned and existing GDI node features**. To facilitate this, the OC and SDPC include representatives from all GDI nodes across the three GDI pillars, ensuring that all are informed through mailing lists (see [GDI SOP Communication](#8-gdi-sop-communication)) about any SOP developments or changes. SOPs undergo rigorous review, approval, and authorization processes involving diverse GDI members to ensure quality and relevance.
 
-Flexibility is also essential, ensuring that **GDI SOPs are strict enough to be followed and maintained while allowing GDI nodes the flexibility to implement them as needed**. The responsibility for maintaining the integrity of these implementations (i.e. being _similar enough_ to the templates) lies with the members of each node who participate in the OC/SDPC. This accountability framework allows for quick and flexible node implementation without imposing excessive constraints from the central GDI governance. For more information, refer to the [Roles and Responsibilities](./GDI-SOP_organisational-roles-and-responsibilities.md#6-roles-and-responsibilities-definitions), [GH management](./GDI-SOP_github-management.md) documentation, and the [summary diagram](../README.md#summary-diagram).
+Flexibility is also essential, ensuring that **GDI SOPs are strict enough to be followed and maintained while allowing GDI nodes the flexibility to implement them as needed**. The responsibility for maintaining the integrity of these implementations (i.e. being _similar enough_ to the templates) lies with the members of each node who participate in the OC/SDPC. This accountability framework allows for quick and flexible node implementation without imposing excessive constraints from the central GDI governance. For more information, refer to the [Roles and Responsibilities](./GDI-SOP_organisational-roles-and-responsibilities.md#6-roles-and-responsibilities-definitions), [GH management](./GDI-SOP_github-management.md) documentation, and the [summary diagram](../README.md#diagram-overview).
 
 ## 8. GDI SOP Communication
 Effective communication is crucial within the GDI network to ensure that all nodes and pillars participate in the development and maintenance of SOPs. The following channels are used for transparent communication throughout the process:
 
 - **Mailing Lists:** The OC and SDPC are kept informed throughout the process as the main maintainers of the repository and, by extension, the GDI SOPs. More information on these bodies can be found in the [MS10 document](https://docs.google.com/document/d/1Vr5ChMWpkO8LDVi9eGJv6LuegE4vjhHOJ1aISqWhAG4/edit#heading=h.wn4i2ajfycxg).
-  - `gdi-oc [at] elixir-europe.org` - Operations Committee (OC)
-  - `gdi-sdpc [at] elixir-europe.org` - Security and Data Protection Committee (SDPC)
+  - `gdi_operations_committee [at] elixir-europe.org` - Operations Committee (OC)
+  - `gdi_security_data_protection [at] elixir-europe.org` - Security and Data Protection Committee (SDPC)
   - `gdi-mb [at] elixir-europe.org` - Management Board (MB), used for the formal authorization of SOPs and governance decisions.
 
 - **Slack Channels:** These are used for internal discussions related to the maintenance and management of SOPs within GDI.
@@ -173,7 +228,7 @@ Effective communication is crucial within the GDI network to ensure that all nod
 
 - **GitHub Forums:** These open discussion threads allow anyone with a GitHub account to participate or observe.
   - [**GitHub Issues**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues): Used to request changes to existing SOPs or the addition of new ones.
-  - [**GitHub Discussions**](https://github.com/GenomicDataInfrastructure/rfcs/discussions): RFCs are used to standardize significant changes to the GDI network, including SOPs. This step encourages community feedback during the SOP development and maintenance processes.
+  - [**GitHub Pull Requests**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pulls): Used to review and merge SOP changes following the [SOP creation procedure](../sops/european-level/GDI-SOP0007_sop-template-creation.md).
 
 ## 9. References
 
@@ -182,4 +237,4 @@ Effective communication is crucial within the GDI network to ensure that all nod
 | [MS10](https://docs.google.com/document/d/1Vr5ChMWpkO8LDVi9eGJv6LuegE4vjhHOJ1aISqWhAG4/edit#heading=h.wn4i2ajfycxg) | Milestone 10 document containing the Committee Overview |
 | [ORR](./GDI-SOP_organisational-roles-and-responsibilities.md) | Organisational Roles and Responsibilities |
 | [GH management](./GDI-SOP_github-management.md) | Documentation on how GitHub is used as a platform for both GDI-level SOP development and GDI node implementation of SOPs |
-| [GDI-SOP0007_SOP-template-creation.md](../sops/european-level/GDI-SOP0007_SOP-template-creation.md) | SOP containing steps to create more SOP templates in this repository |
+| [GDI-SOP0007_sop-template-creation.md](../sops/european-level/GDI-SOP0007_sop-template-creation.md) | SOP containing steps to create more SOP templates in this repository |

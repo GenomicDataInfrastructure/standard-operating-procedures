@@ -14,7 +14,6 @@ If you are a member of GDI, you are welcome to go through the [**recorded sessio
 5. [Pull Requests (PRs)](#pull-requests)
 6. [Workflows and Linting](#workflows-and-linting)
 7. [General Recommendations](#general-recommendations)
-8. [Further Reading](#further-reading)
 
 ## What is GitHub?
 

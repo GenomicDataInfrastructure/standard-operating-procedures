@@ -103,7 +103,7 @@ sops/
 - The repository includes a **SOP linter** (`scripts/sop_linter.py`) that checks for the basic structural requirements of each SOP. **Test your SOP** using the linter before submission:
     - Example: `python3 scripts/sop_linter.py sops/path/your-sop-file.md -v 1`
   
-- Ensure your SOP index is updated by running `compare_index.py` to verify that the `sops/README.md` matches the directory contents.
+- Generate the updated SOP index, copy the table into `sops/README.md`, then run `compare_index.py` to verify that the `sops/README.md` matches the directory contents.
     - Example: `python3 scripts/compare_index.py sops/README.md sops`
 
 ## 9. Style Consistency

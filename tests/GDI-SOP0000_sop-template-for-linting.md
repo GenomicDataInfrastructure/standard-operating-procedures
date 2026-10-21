@@ -2,7 +2,7 @@
 
 | Metadata          | Value               |
 |-------------------|---------------------|
-| Template SOP number  | GDI-SOP0001 |
+| Template SOP number  | GDI-SOP0000 |
 | Template SOP version | ``v1``          |
 | Topic                | Data protection & security |
 | Template SOP Type    | European-level SOP |
@@ -17,7 +17,7 @@
 4. [Purpose](#4-purpose)
 5. [Scope](#5-scope)
 6. [Introduction and Background Information - as needed](#6-introduction-and-background-information)
-7. [Su07ary or Context Diagram - as needed](#7-su07ary-or-context-diagram)
+7. [Summary or Context Diagram - as needed](#7-summary-or-context-diagram)
 8. [Procedure](#8-procedure)
 9. [References](#9-references)
 
@@ -50,12 +50,15 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 ### 3. Roles and Responsibilities
 See qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
 
-| Role       | Full name       | GDI/node role   | Organisation |
-|------------|-----------------|-----------------|--------------|
-| Author     | Bruce Wayne |                 |              |
-| Reviewer   | Batman |                 |              |
-| Approver   | Alfred |                 |              |
-| Authorizer |  |                 |              |
+| Role       | Full name       | GDI/node role   | Organisation | Notes |
+|------------|-----------------|-----------------|--------------|-------|
+| Author     | Bruce Wayne |                 |              |       |
+| Reviewer   | Batman |                 |              |       |
+| Approver   | Alfred |                 |              | Delegated approval to Lucius Fox. |
+| Approver   | Robin |                 |              |       |
+| Approver   | Commissioner Gordon |                 |              |       |
+| Delegate   | Lucius Fox |                 |              | Approval delegated by Alfred. |
+| Authorizer |  |                 |              |       |
 
 ### 4. Purpose
 Test scope
@@ -95,7 +98,7 @@ After input 1 is received by ..., it is evaluated following this checklist:
 #### 8.2. < Do X >
 | Step identifier            | When             | Who |
 |:------------------|:----|:----|
-| 2                     | After positive evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
+| 2                     | After positive evaluation at [step 1](#81--evaluate-input-1-)... | The 1+MG Management Board at ... |
 
 If positive evaluation is received, then ... executes the following code:
 ```bash
@@ -104,7 +107,7 @@ echo "Hello world"
 ##### 8.2.1 < Do X >
 | Step identifier            | When             | Who |
 |:---------------------------|:-----------------|:----|
-| 2.1                 | After negative evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
+| 2.1                 | After negative evaluation at [step 1](#81--evaluate-input-1-)... | The 1+MG Management Board at ... |
 
 If negative evaluation is received, then ... executes the following code:
 ```bash
@@ -113,7 +116,7 @@ echo "Bye world"
 ##### 8.2.2 < Do X >
 | Step identifier            | When             | Who |
 |:---------------------------|:-----------------|:----|
-| 2.2                 | After negative evaluation at [step 1](#1--evaluate-input-1-)... | The 1+MG Management Board at ... |
+| 2.2                 | After negative evaluation at [step 1](#81--evaluate-input-1-)... | The 1+MG Management Board at ... |
 
 #### 8.3. < Do X 2 >
 | Step identifier            | When             | Who |

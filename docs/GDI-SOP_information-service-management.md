@@ -14,7 +14,7 @@
 
      - 7.1.1. [European-level SOPs](#711-european-level-sops)
      - 7.1.2. [Node-specific SOP templates](#712-node-specific-sop-templates)
-     - 7.33. [Node-specific SOPs](#713-node-specific-sops)
+     - 7.1.3. [Node-specific SOPs](#713-node-specific-sops)
 
    - 7.2. [GDI SOP accessioning and file naming](#72-gdi-sop-accessioning-and-file-naming)
 
@@ -22,7 +22,7 @@
 
    - 7.4. [GDI SOP access rules](#74-gdi-sop-access-rules)
 
-8. [References](#references)
+8. [References](#8-references)
 
 ## 1. Document History
 
@@ -53,16 +53,16 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 
 ## 3. Roles and Responsibilities
 
-| Role         | Full name             | GDI/node role   | Organisation            |
-| ------------ | --------------------- | --------------- | ----------------------- |
-| **Author**   | Mallory Freeberg      | Task 4.3 member | EMBL-EBI                |
-| **Author**   | Silvia Bahena         | Task 4.3 member | EMBL-EBI                |
-| **Reviewer** | Jeroen Belien         | GDI-Member      | Health-RI/Amsterdam UMC |
-| **Reviewer** | Mattias Strömberg     | Task 4.3 member | UU                      |
-| **Reviewer** | Elisavet Torstensson  | Task 4.3 member | UU                      |
-| **Reviewer** | Gabriele Rinck        | Task 4.3 member | EMBL-EBI                |
-| **Approver** | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI                |
-| **Approver**   | Markus Englund | Task 4.3 member | UU / NBIS |
+| Role         | Full name             | GDI/node role   | Organisation            | Notes |
+| ------------ | --------------------- | --------------- | ----------------------- |-------|
+| **Author**   | Mallory Freeberg      | Task 4.3 member | EMBL-EBI                |       |
+| **Author**   | Silvia Bahena         | Task 4.3 member | EMBL-EBI                |       |
+| **Reviewer** | Jeroen Belien         | GDI-Member      | Health-RI/Amsterdam UMC |       |
+| **Reviewer** | Mattias Strömberg     | Task 4.3 member | UU                      |       |
+| **Reviewer** | Elisavet Torstensson  | Task 4.3 member | UU                      |       |
+| **Reviewer** | Gabriele Rinck        | Task 4.3 member | EMBL-EBI                |       |
+| **Approver** | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI                |       |
+| **Approver**   | Markus Englund | Task 4.3 member | UU / NBIS |       |
 
 
 ## 4. Purpose
@@ -87,16 +87,16 @@ Together with the [Charter](./GDI-SOP_charter.md), which defines the scope and m
 
 #### 7.1.1. European-level SOPs
 
-For each European-level GDI SOP, only one SOP document is produced which all GDI nodes are expected to follow. The need for a new European-level GDI SOP is first identified by one or more GDI project partners who will then prepare a proposal, making use of the GitHub repository "[New SOP Request](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new/choose)" Github issue template. The proposal should include the purpose and scope of the SOP and a justification for its need. Once the proposal for a new European-level GDI SOP is approved by the Operations Committee (OC) and/or the Security and Data Protection Committee (SDPC), then work can begin on creating the new SOP following the Steps below (Figure 1). For more in detail information, refer to this "[Context Diagram.](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/dev/sops/european-level/GDI-SOP0007_SOP-template-creation.md#7-summary-or-context-diagram)"
+For each European-level GDI SOP, only one SOP document is produced which all GDI nodes are expected to follow. The need for a new European-level GDI SOP is first identified by one or more GDI project partners who will then prepare a proposal, making use of the GitHub repository "[New SOP Request](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new/choose)" Github issue template. The proposal should include the purpose and scope of the SOP and a justification for its need. Once the proposal for a new European-level GDI SOP is accepted by the Operations Committee (OC), then work can begin on creating the new SOP following the Steps below (Figure 1). For more in detail information, refer to this "[Context Diagram.](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/dev/sops/european-level/GDI-SOP0007_sop-template-creation.md#7-summary-or-context-diagram)"
 
 **Steps:**
 
-1. After a SOP request is received in the repository, a OC/SCDP member evaluates the request. If it is valid, the OC/SCDP member prepares the SOP draft from the [GDI General SOP template.](./GDI-SOP_sop-template.md)
-2. OC/SCDP member shares the template with the authors (OC/SDPC or nominated experts) to write the SOP (i.e. fill in the content).
-3. After the drafting is completed, the OC/SCDP member shares the draft internally or with experts to review for completeness.
-4. Both committees (OC/SDPC) approve the reviewed document.
-5. The OC/SDPC member then shares the approved SOP with the GDI MB for authorization.
-6. GDI MB reviews the SOP and authorises or requests changes (repeat from Step 3)
+1. After a SOP request is received in the repository, an OC member evaluates the request. If it is valid, the OC member prepares the SOP draft from the [GDI General SOP template.](./GDI-SOP_sop-template.md)
+2. OC member shares the template with the authors (OC/SDPC or nominated experts) to write the SOP (i.e. fill in the content).
+3. After the drafting is completed, the OC member shares the draft internally or with experts to review for completeness.
+4. Both committees (OC/SDPC) approve the reviewed document through their appointed approvers or delegates, following [SOP0007](../sops/european-level/GDI-SOP0007_sop-template-creation.md#842-request-ocsdpc-approval).
+5. The OC member then shares the approved SOP with the GDI MB for authorization.
+6. GDI MB reviews the SOP under the [four-week authorisation process](../sops/european-level/GDI-SOP0007_sop-template-creation.md#843-contact-management-board), or requests changes (repeat from Step 3)
 7. OC/SDPC accessions ([7.2.](#72-gdi-sop-accessioning-and-file-naming))the authorised SOP according to the agreed process and the SOP goes into production.
 8. OC/SDPC initiates periodic review cycle ([7.3.](#73-gdi-sop-review-and-revision)), if updates are needed then repeats steps 3-6.
 
@@ -106,16 +106,16 @@ _Figure 1: Workflow for creating and approving European-level SOPs._
 
 #### 7.1.2 Node-specific SOP templates
 
-For each Node-specific SOP, first a template is created and approved at the European level, as explained above ([7.1.2](#712-node-specific-sop-templates)). Once approved, the SOP template is then used by each node to create their own SOP instance ([7.1.3](#713-node-specific-sops)) which is approved at the node level. The steps below describe how to get a node-specific template created and approved.
+For each Node-specific SOP, first a template is created and approved at the European level, as explained above ([7.1.1](#711-european-level-sops)). Once approved, the SOP template is then used by each node to create their own SOP instance ([7.1.3](#713-node-specific-sops)) which is approved at the node level. The steps below describe how to get a node-specific template created and approved.
 
 **Steps:**
 
-1. After a SOP request is received in the repository, a OC/SCDP member evaluates the request. If it is a valid request,the OC/SCDP member prepares the SOP draft from the [GDI General SOP template.](./GDI-SOP_sop-template.md)
-2. OC/SCDP member shares template with the authors( OC/SDPC or nominated experts) to write the SOP (i.e. fill in the content).
-3. After the drafting is completed, the OC/SCDP member shares the draft internally or with experts to review for completeness.
-4. Both committees (OC/SDPC) approve the reviewed document.
-5. The OC/SDPC member then shares the approved SOP with GDI MB for authorization.
-6. GDI MB reviews the SOP and authorises or requests changes (repeat from Step 3).
+1. After a SOP request is received in the repository, an OC member evaluates the request. If it is a valid request,the OC member prepares the SOP draft from the [GDI General SOP template.](./GDI-SOP_sop-template.md)
+2. OC member shares template with the authors( OC/SDPC or nominated experts) to write the SOP (i.e. fill in the content).
+3. After the drafting is completed, the OC member shares the draft internally or with experts to review for completeness.
+4. Both committees (OC/SDPC) approve the reviewed document through their appointed approvers or delegates, following [SOP0007](../sops/european-level/GDI-SOP0007_sop-template-creation.md#842-request-ocsdpc-approval).
+5. The OC member then shares the approved SOP with GDI MB for authorization.
+6. GDI MB reviews the SOP under the [four-week authorisation process](../sops/european-level/GDI-SOP0007_sop-template-creation.md#843-contact-management-board), or requests changes (repeat from Step 3).
 7. OC/SDPC accessions ([7.2.](#72-gdi-sop-accessioning-and-file-naming)) the approved SOP template according to agreed process and informs the nodes that the SOP template is ready to be adapted to their own node processes (Figure 1).
 8. OC/SDPC initiates periodic review cycle ([7.3.](#73-gdi-sop-review-and-revision)), if updates are needed then repeats steps 3-6.
 
@@ -145,25 +145,25 @@ The [GDI SOP Accessioning Proposal](./GDI-SOP_sop-accessioning.md) is a speciali
 The SOPs in the GDI network will follow a structured review cycle to ensure they stay relevant, effective, and compliant. Reviews will take place both annually and on demand as described below:
 
 1. **Annual Review Cycle**: Each SOP will be reviewed annually. The OC/SDPC will initiate and oversee the review.
-   The OC/SDPC will check the SOP’s relevance, clarity, and effectiveness based on the based on the [SOP Review Check List](./GDI-SOP_review-checklist.md), then updates or changes will be made as necessary.
+   The OC/SDPC will check the SOP’s relevance, clarity, and effectiveness based on the [SOP Review Check List](./GDI-SOP_review-checklist.md), then updates or changes will be made as necessary.
    
 #### Automating reminders for the Review Cycle
 
-An automated GitHub workflow ([``review_reminder.yml``](./github/workflows/review_reminder.yml)) was created to streamline the annual review process. The workflow gets automatically triggered every month, calling a python script ([``check_sop_reviews.py``](scripts/check_sop_reviews.py)) that performs the following:
+An automated GitHub workflow ([``review_reminder.yml``](../.github/workflows/review_reminder.yml)) was created to streamline the annual review process. The workflow gets automatically triggered every month, calling a python script ([``check_sop_reviews.py``](../scripts/check_sop_reviews.py)) that performs the following:
 
 Checks all SOPs, one by one, if they are due for review, using the last date entry of each SOP's Document History. If this value is older than one full year, the SOP is considered for review.
-For each SOP due for review, the script creates a new GitHub issue, labelled with `'SOP-review'`, listing the actions to take for the SOP to be reviewed. This happens only if there are no other open GH issues for that same SOP with the same label.
-GitHub issues propagate automatically to the ZenHub board, and those labeled with `'SOP-review'` shall go into the "SOP-reviews" pipeline in the board for clarity.
+For each SOP due for review, the script creates a new GitHub issue, labelled with `'SOP-Review'`, listing the actions to take for the SOP to be reviewed. This happens only if there are no other open GH issues for that same SOP with the same label.
+GitHub issues propagate automatically to the ZenHub board, and those labeled with `'SOP-Review'` shall go into the "SOP-reviews" pipeline in the board for clarity.
 
 2. **Ad-Hoc Review Requests**: Any GDI member can request a review if they believe a process needs to be updated or improved.
 
 #### Ad-hoc requests
 
-  Review requests are submitted by creating a GitHub issue. We recommend to use the [SOP Content Change Suggestion](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new?assignees=&labels=help+wanted%2Cenhancement&projects=&template=content_suggestion.yaml&title=%5BChange+Suggestion%5D+%3CTitle%3E) template, adding the `'SOP-review'` label to the GH issue.
+  Review requests are submitted by creating a GitHub issue. We recommend to use the [SOP Content Change Suggestion](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new?assignees=&labels=help+wanted%2Cenhancement&projects=&template=content_suggestion.yaml&title=%5BChange+Suggestion%5D+%3CTitle%3E) template, adding the `'SOP-Review'` label to the GH issue.
 
 The OC/SDPC will evaluate the request and decide if the review is justified.
 
-All reviews, regardless of the trigger, will be recorded in the SOP’s revision history (i.e., their Document History). The status of each review will be monitored through the ZenHub board to ensure that actions are taken timely. If a review deems that an SOP needs to be updated in content (i.e., revision is due), the changes will undergo similar development stages as those described in [GDI-SOP0007_SOP Template creation](sops/european-level/GDI-SOP0007_SOP-template-creation.md).
+All reviews, regardless of the trigger, will be recorded in the SOP’s revision history (i.e., their Document History). The status of each review will be monitored through the ZenHub board to ensure that actions are taken timely. If a review deems that an SOP needs to be updated in content (i.e., revision is due), the changes will undergo similar development stages as those described in [GDI-SOP0007_SOP Template creation](../sops/european-level/GDI-SOP0007_sop-template-creation.md).
 
 ### 7.4. GDI SOP access rules
 
@@ -171,7 +171,7 @@ It is critical for maintaining quality and consistency across procedures to ensu
 
 1. Version Control and Differentiation: The latest, fully authorized SOP versions should be clearly distinguished from outdated, obsolete versions. This helps prevent the use of incorrect or outdated procedures that could lead to errors. To achieve this, version control systems such as GitHub and Zenodo are employed. This systems provide robust version control and archiving mechanisms.
 
-2. Access Control: Within an appropriate Quality Management System (QMS), access to obsolete or outdated SOP versions should be restricted. While GitHub allows version tracking, care must be taken to configure access settings in a way that limits visibility to old versions, ensuring only the latest authorized SOPs are readily accessible. This could involve setting strict branch protections or archiving mechanisms that prevent access to outdated SOPs.
+2. Historical Versions: The [current SOP index](../sops/README.md) identifies the SOPs available in this version of the repository. Earlier versions remain publicly accessible through Git history and releases for traceability; they are historical records and should not be used as current procedures.
 
 3. FAIR Principles and Accessibility: Following FAIR (Findable, Accessible, Interoperable, Reusable) sharing principles, all authorized European-level SOPs, as well as templates for node-specific SOPs templates, will be openly accessible through the GDI GitHub repository. This ensures transparency and encourages consistent usage across different nodes and projects.
 
@@ -193,7 +193,7 @@ It is critical for maintaining quality and consistency across procedures to ensu
    </td>
   </tr>
   <tr>
-   <td><a href="./GDI-SOP_ORR.md">2</a>
+   <td><a href="./GDI-SOP_organisational-roles-and-responsibilities.md">2</a>
    </td>
    <td>European GDI - Organisational Roles and Responsibilities
    </td>
@@ -217,7 +217,7 @@ It is critical for maintaining quality and consistency across procedures to ensu
    </td>
   </tr>
       <tr>
-   <td><a href="./sops/european-level/GDI-SOP0007_SOP-template-creation.md">6</a>
+   <td><a href="../sops/european-level/GDI-SOP0007_sop-template-creation.md">6</a>
    </td>
    <td>European GDI - GDI-SOP0007_SOP Template creation
    </td>

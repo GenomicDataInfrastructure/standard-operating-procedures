@@ -4,40 +4,57 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [2.0.0](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/releases/tag/v2.0.0) - 2026-10-21
 
 ### Added
 - [``GDI-SOP_github-introduction-for-maintainers.md``](docs/GDI-SOP_github-introduction-for-maintainers.md) - Introductory guide for GDI SOP Repository maintainers.
+- [``GDI-SOP0013_fdp-submission-metadata-validation.md``](sops/node-specific/GDI-SOP0013_fdp-submission-metadata-validation.md) - Node-specific SOP template describing how a node FAIR Data Point should validate dataset metadata through save-time validation, local escalation, and a harvestable end state.
+- [``GDI-SOP0008_node-helpdesk-ticket-classification.md``](sops/node-specific/GDI-SOP0008_node-helpdesk-ticket-classification.md) - GDI Node Helpdesk Ticket Classification SOP. 
+- [``GDI-SOP0009_dataset-withdrawal.md``](sops/european-level/GDI-SOP0009_dataset-withdrawal.md) - Withdrawal request GDI SOP.
+- [``.gitignore``](.gitignore) - File to ignore certain files in git commits.
+- [``GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md``](sops/node-specific/GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md) - Node-specific SOP template describing how a node FAIR Data Point should process soft withdrawal of a dataset or linked distributions.
+- [``GDI-SOP0014_add-datasets-metadata-to-node-beacon.md``](sops/node-specific/GDI-SOP0014_add-datasets-metadata-to-node-beacon.md) - Add dataset’s metadata to Node beacon.
+- [``GDI-SOP0012_withdraw-dataset-from-node-allele-frequency-beacon.md``](sops/node-specific/GDI-SOP0012_withdraw-dataset-from-node-allele-frequency-beacon.md) - Node-specific SOP template describing how a node's allele frequency beacon dataset should be removed.
+
 
 ### Modified
 - [``GDI-SOP_github-management.md``](docs/GDI-SOP_github-management.md) - Added reference to recorded session
-- [``GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md``](sops/european-level/GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md) - Updated references to _[Data Governance for Research](https://docs.google.com/document/d/1P_nzGxMXG4CWzqkVbceY2fA3MQ7PEAwW/edit)_ document.
+- [``GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/70dfe66ddf05b7835465fb0789e3ad83796062cd/sops/european-level/GDI-SOP0003_1+mg-dac-recommendation-approval.md) - Updated references to _[Data Governance for Research](https://docs.google.com/document/d/1P_nzGxMXG4CWzqkVbceY2fA3MQ7PEAwW/edit)_ document.
 - [``sop_linter.py``](scripts/sop_linter.py)
    - Added new Linting Rules (LR) modules: ``lr_check_procedure_step_numbering``, ``lr_check_step_consistency``, ``lr_check_glossary_in_charter``, ``lr_check_undefined_acronyms``, ``lr_check_resolvable_references``, ``lr_check_identifier_and_casing``, ``lr_check_title_match``, ``lr_check_image_paths``
    - Improved code and added a new file location check to ``lr_check_metadata_table``.
 - [``utils.py``](scripts/utils.py) - Added additional helper functions: ``parse_glossary``, ``is_remote_reference_resolvable``, ``get_image_paths``.
 - [``tests/``](tests/) - Updated ``tests/GDI-SOP0000_sop-template-for-linting.md`` to fit testing standards of the linting script.
-- [``GDI-SOP_charter.md``](docs/GDI-SOP_charter.md) - Updated Glossary section with new acronyms and terms from other three SOPs.
+- [``GDI-SOP_charter.md``](docs/GDI-SOP_charter.md) - Updated Glossary section with acronyms and terms used by the SOPs.
 - [``GDI-SOP_style-guide.md``](docs/GDI-SOP_style-guide.md) - Added section regarding positioning of tables in MD files.
+- [``GDI-SOP_charter.md``](docs/GDI-SOP_charter.md) - Added `DCAT` and `SHACL` to the glossary for SOP0013.
+- [``GDI-SOP0007_sop-template-creation.md``](sops/european-level/GDI-SOP0007_sop-template-creation.md) - Annual review (https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/70).
+- [``sops/README.md``](sops/README.md) - Added new SOPs to index table.
 
 ### Fixed
-- [``GDI-SOP0002_ncps-veto-edic-decision.md``](sops/node-specific/GDI-SOP0002_ncps-veto-edic-decision.md):
+- Aligned active SOP version metadata with the latest Document History entries and regenerated the SOP index.
+- Corrected stale filenames, broken documentation links and anchors, command examples, and committee contact addresses. Also aligned supporting documentation with the current SOP creation process.
+- [``GDI-SOP0002_ncps-veto-edic-decision.md``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/70dfe66ddf05b7835465fb0789e3ad83796062cd/sops/node-specific/GDI-SOP0002_ncps-veto-edic-decision.md):
     - ``v1.0.1``: Updated Glossary, fixed Procedure headers, and renamed file (previously in uppercase).
-- [``GDI-SOP0003_1+mg-dac-recommendation-approval.md``](sops/european-level/GDI-SOP0003_1+mg-dac-recommendation-approval.md):
+- [``GDI-SOP0003_1+mg-dac-recommendation-approval.md``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/70dfe66ddf05b7835465fb0789e3ad83796062cd/sops/european-level/GDI-SOP0003_1+mg-dac-recommendation-approval.md):
     - ``v1.0.2``: Updated Glossary, fixed Procedure headers, fixed SOP title (in doc.), fixed relative references, and renamed file (previously ``GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md``).
 - [``GDI-SOP0007_sop-template-creation.md``](sops/european-level/GDI-SOP0007_sop-template-creation.md):
     - ``v1.0.1``: Updated Glossary, fixed Procedure headers and tables, and renamed file (previously in uppercase).
+- [``GDI-SOP_sop-template.md``](docs/GDI-SOP_sop-template.md) - Amended header numbers.
+
+### Removed
+- Withdrawn obsolete [GDI-SOP0002](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/70dfe66ddf05b7835465fb0789e3ad83796062cd/sops/node-specific/GDI-SOP0002_ncps-veto-edic-decision.md) and [GDI-SOP0003](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/70dfe66ddf05b7835465fb0789e3ad83796062cd/sops/european-level/GDI-SOP0003_1+mg-dac-recommendation-approval.md) from the v2 SOP bundle and index, together with the unused SOP0002 diagram. Their identifiers remain reserved, and the linked historical copies and v1.0.0 release remain available. This is a one-off withdrawal pending [#76](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/76).
 
 ## [1.0.0](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/releases/tag/v1.0.0) - 2024-10-28
 
 ### Added
-- [``GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md``](sops/european-level/GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md) - European-level SOP describing how the 1+MG DAC is to review data access requests and recommend their rejection or approval.
-- [``GDI-SOP0002_NCPs-veto-EDIC-decision.md``](sops/node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md) - Node-specific SOP Template describing how NCPs may veto EDIC decisions on data requests.
-- [``GDI-SOP0007_SOP-template-creation.md``](sops/european-level/GDI-SOP0007_SOP-template-creation.md) - European-level SOP describing how to develop new SOP templates.
+- [``GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/v1.0.0/sops/european-level/GDI-SOP0003_SOP-1+MG-DAC-Recommendation-Approval.md) - European-level SOP describing how the 1+MG DAC is to review data access requests and recommend their rejection or approval.
+- [``GDI-SOP0002_NCPs-veto-EDIC-decision.md``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/v1.0.0/sops/node-specific/GDI-SOP0002_NCPs-veto-EDIC-decision.md) - Node-specific SOP Template describing how NCPs may veto EDIC decisions on data requests.
+- [``GDI-SOP0007_SOP-template-creation.md``](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/v1.0.0/sops/european-level/GDI-SOP0007_SOP-template-creation.md) - European-level SOP describing how to develop new SOP templates.
 - [``review_reminder.yml``](.github/workflows/review_reminder.yml) - GH Workflow to periodically (monthly) and automatically (through [check_sop_reviews.py](scripts/check_sop_reviews.py)) create SOP review reminders (GH issues)
 - [``check_sop_reviews.py``](scripts/check_sop_reviews.py) - Script to automatically check if SOPs are due for review and create GitHub issues if so
 - [``GDI-SOP_organisational-roles-and-responsibilities.md``](docs/GDI-SOP_organisational-roles-and-responsibilities.md) - Documentation containing Organisational Roles and Responsibilities for GDI SOPs.
-- [``GDI-SOP_information-service-management.md``](GDI-SOP_information-service-management.md) - Framework designed to systematically manage SOPs information flows across the GDI infrastructure
+- [``GDI-SOP_information-service-management.md``](docs/GDI-SOP_information-service-management.md) - Framework designed to systematically manage SOPs information flows across the GDI infrastructure
 - [``GDI-SOP_review-checklist.md``](docs/GDI-SOP_review-checklist.md) - Documentation guidelines in the form of checklists, for reviewers, approvers and authorizers of SOPs.
 - [``compare_index.py``](scripts/compare_index.py) - Script to automatically check if the SOP index table is up to date
 - [``sop_index.py``](scripts/sop_index.py) - Script to automatically create the SOP index table

@@ -8,6 +8,9 @@ import markdown
 from bs4 import BeautifulSoup
 from utils import find_tables, collect_sop_files, parse_glossary, is_remote_reference_resolvable, get_image_paths
 
+# Add to the list of uppercase words that should be skipped during undefined acronym checks
+skippable_acronyms = ["BBDEFB", "FFFFFF", "GDIVHD", "ACTIONS", "NEEDED", "II" , "III", "ACCESS", "DATE", "REVIEW", "DATA"]
+
 class SOPLinter:
     def __init__(self, verbosity: int = 0, strict: bool = False, required_sections: dict = {}):
         """
@@ -278,7 +281,10 @@ class SOPLinter:
 
     def lr_check_roles_and_responsibilities(self, soup: BeautifulSoup, file_path: str):
         """
-        Checks if the Roles and Responsibilities table exists and has at least one non-empty Full Name for roles Author, Reviewer, and Approver.
+        Checks if the Roles and Responsibilities table exists, has the required
+        five-column shape, and contains the required named roles. SOPs must
+        list at least three distinct approvers. Optional Delegate rows must
+        name a different listed Approver in their Notes cell.
 
         :param soup: BeautifulSoup object of the parsed SOP content.
         :param file_path: Path to the SOP file.
@@ -286,7 +292,7 @@ class SOPLinter:
         if self.verbosity > 1:
             print("-- Linting rule: checking Roles and Responsibilities table...")
 
-        aim_headers = ["Role", "Full name", "GDI/node role", "Organisation"]
+        aim_headers = ["Role", "Full name", "GDI/node role", "Organisation", "Notes"]
         table_find_result = self.find_tables(soup, file_path, aim_headers)
 
         if not table_find_result:
@@ -296,24 +302,62 @@ class SOPLinter:
         roles_table = table_find_result[0]
         required_roles = ["Author", "Reviewer", "Approver"]
         found_roles = {role: False for role in required_roles}
+        approver_names = {}
+        delegates = []
 
         rows = roles_table.find_all('tr')[1:]  # Skip the header row
         for row in rows:
             columns = [col.text.strip() for col in row.find_all('td')]
-            if len(columns) != 4:
-                self.report_issue(f"Roles and Responsibilities table row is incorrectly formatted (expected 4 columns): '{' | '.join(columns)}'.", file_path, error=True)
+            if len(columns) != 5:
+                self.report_issue(f"Roles and Responsibilities table row is incorrectly formatted (expected 5 columns): '{' | '.join(columns)}'.", file_path, error=True)
                 continue
 
-            role, full_name = columns[0], columns[1]
+            role, full_name, notes = columns[0], columns[1], columns[4]
 
             # If we haven't already found one, and this one is required and has a full name value
             if role in required_roles and full_name:
                 if not found_roles[role]:
                     found_roles[role] = True
 
+            if role == "Approver" and full_name:
+                normalised_name = re.sub(r"\s+", " ", full_name).strip().casefold()
+                approver_names[normalised_name] = full_name
+
+            if role == "Delegate":
+                if not full_name:
+                    self.report_issue("Delegate rows must contain a non-empty Full Name.", file_path, error=True)
+                if not notes:
+                    self.report_issue(f"Delegate row for '{full_name}' must contain a non-empty Notes value naming the delegating Approver.", file_path, error=True)
+                delegates.append((full_name, notes))
+
         for role, found in found_roles.items():
             if not found:
                 self.report_issue(f"Role '{role}' is missing a non-empty Full Name row in the Roles and Responsibilities table.", file_path, error=True)
+
+        if len(approver_names) < 3:
+            self.report_issue(
+                f"Roles and Responsibilities table must contain at least 3 distinct named Approvers; found {len(approver_names)}.",
+                file_path,
+                error=True
+            )
+
+        normalised_approvers = list(approver_names.keys())
+        for delegate_name, notes in delegates:
+            normalised_delegate = re.sub(r"\s+", " ", delegate_name).strip().casefold()
+            matching_approvers = [
+                approver_name for approver_name in normalised_approvers
+                if approver_name != normalised_delegate
+                and re.search(
+                    rf"(?<!\w){re.escape(approver_name)}(?!\w)",
+                    re.sub(r"\s+", " ", notes).strip().casefold()
+                )
+            ]
+            if not matching_approvers:
+                self.report_issue(
+                    f"Delegate row for '{delegate_name}' must name a different Approver from the same table in its Notes value.",
+                    file_path,
+                    error=True
+                )
 
         if self.verbosity > 1:
             print(f"{json.dumps(self.results[file_path], indent=2)}\n")
@@ -521,7 +565,7 @@ class SOPLinter:
         # Regex for uppercase acronyms of 2+ characters, with possible "s" ending (e.g., SOPs)
         detected_acronyms = re.findall(r'\b[A-Z]{2,}s?\b', sop_text)
         for acronym in set(detected_acronyms):
-            if acronym not in sop_glossary:
+            if acronym not in sop_glossary and acronym not in skippable_acronyms:
                 if acronym[-1] == 's' and acronym[:-1] in sop_glossary:
                     # We skip acronym plurals (e.g., SOPs) that would be false positives (e.g., since SOP is already there)
                     continue

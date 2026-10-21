@@ -31,6 +31,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | API              | Application Programming Interface                                       |
 | BEN              | Beneficiary                                                             |
 | CC               | Carbon Copy (used in communications to send a copy to others)           |
+| CRG              | Centre for Genomic Regulation                                           |
 | CSC              | Finnish IT Center for Science                                           |
 | DCAT             | Data Catalog Vocabulary                                                 |
 | DAA              | Data Access Agreement                                                   |
@@ -97,6 +98,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | TL               | Technical Lead                                                          |
 | TODO             | A list of pending tasks                                                 |
 | UI               | User Interface                                                          |
+| UL-MF            | Faculty of Medicine at the University of Ljubljana                      |
 | URL              | Uniform Resource Locator                                                |
 | UU               | University of Uppsala                                                   |
 | UX               | User experience                                                         |
@@ -134,13 +136,13 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 
 
 ## 3. Roles and Responsibilities
-| Role       | Full name       | GDI/node role   | Organisation |
-|------------|-----------------|-----------------|--------------|
-| **Author**     | Mallory Freeberg | Task 4.3 member | EMBL-EBI |
-| **Author**     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |
-| **Reviewer**   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |
-| **Approver**   | Erik Hedman | Task 4.3 member | UU / NBIS |
-| **Approver**   | Markus Englund | Task 4.3 member | UU / NBIS |
+| Role       | Full name       | GDI/node role   | Organisation | Notes |
+|------------|-----------------|-----------------|--------------|-------|
+| **Author**     | Mallory Freeberg | Task 4.3 member | EMBL-EBI |       |
+| **Author**     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |       |
+| **Reviewer**   | Elisavet Torstensson | Task 4.3 member | UU / NBIS |       |
+| **Approver**   | Erik Hedman | Task 4.3 member | UU / NBIS |       |
+| **Approver**   | Markus Englund | Task 4.3 member | UU / NBIS |       |
 
 ## 4. Introduction
 The [**European Genomic Data Infrastructure (GDI)**](https://gdi.onemilliongenomes.eu) project is a pioneering initiative that aims to **enable access to genomic, phenotypic, and clinical data across Europe**. This access is crucial for advancing research, policymaking, and healthcare on a continental scale. Central to this mission is the 1+ Million Genomes (1+MG) network, which encompasses a diverse array of national human data-sharing projects, each at different stages of development.

@@ -28,8 +28,10 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | AI               | Action Item                                                             |
 | AF               | Application Form                                                        |
 | API              | Application Programming Interface                                       |
+| BAM              | Binary Alignment Map, file format for aligned sequencing reads mapped to a reference genome |
 | BEN              | Beneficiary                                                             |
 | CC               | Carbon Copy (used in communications to send a copy to others)           |
+| CRAM             | Compressed Reference-oriented Alignment Map, a space-saving alternative to BAM |
 | CSC              | Finnish IT Center for Science                                           |
 | DAA              | Data Access Agreement                                                   |
 | DAC              | Data Access Committee                                                   |
@@ -46,6 +48,8 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | ELSI             | Ethical, Legal, and Social Implications                                 |
 | EMBL             | European Molecular Biology Laboratory                                   |
 | FAIR             | Findability, Accessibility, Interoperability and Reusability            |
+| FASTA            | Fast-A, file format for raw data output from sequencing machines        |
+| FASTQ            | FASTA with Quality, file format for raw data output from sequencing machines |
 | FDP              | FAIR Data Point                                                         |
 | FEGA             | Federated EGA                                                           |
 | FTP              | File Transfer Protocol                                                  |
@@ -82,6 +86,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | REMS             | Resource Entitlement Management System                                  |
 | RFC              | Request For Comments                                                    |
 | RI               | Research Infrastructure                                                 |
+| SAM              | Sequence Alignment/Map text file used in bioinformatics                 |
 | SDPC             | Security and Data Protection Committee                                  |
 | SLA              | Service Level Agreement                                                 |
 | SP               | Submitter Portal                                                        |
@@ -95,6 +100,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | URL              | Uniform Resource Locator                                                |
 | UU               | University of Uppsala                                                   |
 | UX               | User experience                                                         |
+| VCF              | Variant Call Format, file format used to store genetic variations       |
 | VHD              | Virtual Helpdesk                                                        |
 | VPN              | Virtual Private Network                                                 |
 | UP               | User portal                                                             |
@@ -109,6 +115,10 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | Beacon           |A web-accessible service implementing the GA4GH Beacon specification, enabling federated discovery (and sometimes retrieval) of genomic variant and related biomedical data across distributed resources|
 | CHANGELOG        | Log or record of all notable changes made to a project                 |
 | Data controller  |The legal owner or organisation that determines the purposes and means of processing the dataset and can authorise its withdrawal|
+| Data inclusion   | Systematic integration of data into structured and machine-readable datasets |
+| Data preparation | The process of structuring, annotating, and formatting data so that systems and users can discover, access and reuse it | 
+| Data reception   | The process where GDI node securely acquires, ingests, and validates data supplied by a data provider | 
+| Data submission  | The process of registering, publishing, and making data assets discoverable and accessible |
 | Dataset version  |A specific released state of a dataset identified by a version label/number, used to distinguish minor or major changes between releases|
 | FitSM            | Standards for lightweight IT Services Management; developed initially through The FedSM Project, funded by the European Commission, now maintained by ITEMO (<https://www.fitsm.eu/>) |
 | Hard-deletion    |Complete, irreversible erasure of the data from all storage media so it cannot be recovered|

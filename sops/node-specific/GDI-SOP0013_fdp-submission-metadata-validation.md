@@ -50,14 +50,14 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 
 See qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](../../docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
 
-| Role       | Full name                   | GDI/node role                                    | Organisation                          |
-| ---------- | --------------------------- | ------------------------------------------------ | ------------------------------------- |
-| Author     | Hans-Christian van der Werf | SOP author and FDP metadata contributor          | Health Research Infrastructure        |
-| Reviewer   | Marcos Casado Barbero       | Task 4.3 member                                  | European Molecular Biology Laboratory |
-| Approver   | Dylan Spalding                  | OC approver | CSC |
-| Approver   | Wasiu Akanni	                  | OC / SDPC approver | DKFZ |
-| Approver   | Jorge Oliveira                  | SDPC approver | BioData.pt |
-| Authorizer | GDI Management Board        | SOP authorizer according to GDI governance       | European GDI                          |
+| Role       | Full name                  | GDI/node role                             | Organisation                          | Notes |
+| ---------- | -------------------------- | ----------------------------------------- | ------------------------------------- | ----- |
+| Author     | Hans-Christian van der Werf | SOP author and FDP metadata contributor   | Health Research Infrastructure        |       |
+| Reviewer   | Marcos Casado Barbero       | Task 4.3 member                           | European Molecular Biology Laboratory |       |
+| Approver   | Dylan Spalding             | OC approver                               | CSC                                   |       |
+| Approver   | Wasiu Akanni               | OC / SDPC approver                        | DKFZ                                  |       |
+| Approver   | Jorge Oliveira             | SDPC approver                             | BioData.pt                            |       |
+| Authorizer | GDI Management Board       | SOP authorizer according to GDI governance | European GDI                          |       |
 
 ### 4. Purpose
 

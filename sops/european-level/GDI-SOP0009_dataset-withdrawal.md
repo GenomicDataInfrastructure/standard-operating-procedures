@@ -79,13 +79,15 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 ### 3. Roles and Responsibilities
 See qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
 
-| Role       | Full name       | GDI/node role   | Organisation |
-|------------|-----------------|-----------------|--------------|
-| Author     |Marcos Casado Barbero|Task 4.3 member|EMBL-EBI|
-| Reviewer   |Silvia Bahena|Task 4.3 member|EMBL-EBI|
-| Reviewer   |Kjell Petersen|Task 4.3 member|University of Bergen|
-| Approver |Gabriele Rinck|Task 4.3 member|EMBL-EBI|
-| Authorizer | |Management Board||
+| Role       | Full name            | GDI/node role   | Organisation       | Notes |
+|------------|----------------------|-----------------|--------------------|-------|
+| Author     | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI           |       |
+| Reviewer   | Silvia Bahena        | Task 4.3 member | EMBL-EBI           |       |
+| Reviewer   | Kjell Petersen       | Task 4.3 member | University of Bergen |     |
+| Approver   | Gabriele Rinck       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
+| Approver   | Marcos Casado Barbero       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
+| Approver   | Silvia Bahena       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
+| Authorizer | Management Board            | Authorizer according to GDI SOP governance    | GDI                  |       |
 
 ### 4. Purpose
 The purpose of this SOP is to define the process for withdrawing a dataset from the European Genomic Data Infrastructure (GDI). Requests can be initiated by many parties, but execution requires controller authorisation or a valid legal basis and governance decision. This procedure ensures the removal is propagated swiftly and consistently across all services while meeting legal, ethical, and audit requirements. With it, GDI nodes protect data-subject rights, prevent continued exposure of withdrawn data, and maintain a transparent, documented record of the action.

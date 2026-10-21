@@ -65,12 +65,16 @@ _< Roles and responsibilities table to be completed with who is responsible to a
 
 See qualifications and responsabilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
 
-| Role       | Full name       | GDI/node role   | Organisation |
-|------------|-----------------|-----------------|--------------|
-| Author     |                 |                 |              |
-| Reviewer   |                 |                 |              |
-| Approver   |                 |                 |              |
-| Authorizer |                 |                 |              |
+| Role       | Full name       | GDI/node role   | Organisation | Notes |
+|------------|-----------------|-----------------|--------------|-------|
+| Author     |                 |                 |              |       |
+| Reviewer   |                 |                 |              |       |
+| Approver   |                 |                 |              |       |
+| Approver   |                 |                 |              |       |
+| Approver   |                 |                 |              |       |
+| Authorizer |                 |                 |              |       |
+
+_< Use an optional `Delegate` row when an Approver delegates approval. Record the relationship in both rows using `Delegated approval to <delegate full name>.` in the Approver's Notes and `Approval delegated by <approver full name>.` in the Delegate's Notes. The Delegate's Notes must name an Approver listed in the same SOP's table. >_
 
 _< Example GDI/node roles: Legal Officer, Service Lead, Data Protection Officer, Admin Lead... >_
 

@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [``tests/``](tests/) - Updated ``tests/GDI-SOP0000_sop-template-for-linting.md`` to fit testing standards of the linting script.
 - [``GDI-SOP_charter.md``](docs/GDI-SOP_charter.md) - Updated Glossary section with new acronyms and terms from other three SOPs.
 - [``GDI-SOP_style-guide.md``](docs/GDI-SOP_style-guide.md) - Added section regarding positioning of tables in MD files.
+- [``GDI-SOP0007_sop-template-creation.md``](sops/european-level/GDI-SOP0007_sop-template-creation.md) - Annual review (https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/70).
 - [``sops/README.md``](sops/README.md) - Added new SOPs to index table.
 
 ### Fixed

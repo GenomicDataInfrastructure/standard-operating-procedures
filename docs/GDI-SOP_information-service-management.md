@@ -53,16 +53,16 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 
 ## 3. Roles and Responsibilities
 
-| Role         | Full name             | GDI/node role   | Organisation            |
-| ------------ | --------------------- | --------------- | ----------------------- |
-| **Author**   | Mallory Freeberg      | Task 4.3 member | EMBL-EBI                |
-| **Author**   | Silvia Bahena         | Task 4.3 member | EMBL-EBI                |
-| **Reviewer** | Jeroen Belien         | GDI-Member      | Health-RI/Amsterdam UMC |
-| **Reviewer** | Mattias Strömberg     | Task 4.3 member | UU                      |
-| **Reviewer** | Elisavet Torstensson  | Task 4.3 member | UU                      |
-| **Reviewer** | Gabriele Rinck        | Task 4.3 member | EMBL-EBI                |
-| **Approver** | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI                |
-| **Approver**   | Markus Englund | Task 4.3 member | UU / NBIS |
+| Role         | Full name             | GDI/node role   | Organisation            | Notes |
+| ------------ | --------------------- | --------------- | ----------------------- |-------|
+| **Author**   | Mallory Freeberg      | Task 4.3 member | EMBL-EBI                |       |
+| **Author**   | Silvia Bahena         | Task 4.3 member | EMBL-EBI                |       |
+| **Reviewer** | Jeroen Belien         | GDI-Member      | Health-RI/Amsterdam UMC |       |
+| **Reviewer** | Mattias Strömberg     | Task 4.3 member | UU                      |       |
+| **Reviewer** | Elisavet Torstensson  | Task 4.3 member | UU                      |       |
+| **Reviewer** | Gabriele Rinck        | Task 4.3 member | EMBL-EBI                |       |
+| **Approver** | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI                |       |
+| **Approver**   | Markus Englund | Task 4.3 member | UU / NBIS |       |
 
 
 ## 4. Purpose

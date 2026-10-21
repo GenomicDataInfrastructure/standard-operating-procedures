@@ -25,6 +25,7 @@
 
 | Template Version | Instance version | Author(s)                   | Description of changes                                                                                                                                               | Date         |
 | ---------------- | ---------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| `v1.0.1`         |                  | Marcos Casado Barbero       | Updated 'Roles and Responsibilities' table and acronym glossary with the missing OC and SDPC definitions. | `2026.10.21` |
 | `v1`             |                  | Liina Nagirnaja, Oriol López-Doriga Sagalés | First version of the SOP for GitHub issue [#65](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/65), based on the approved draft and reviewed copy. | `2026.04.10` |
 | `v0`             |                  | Marcos Casado Barbero       | Created template for draft SOP                                                                 | `2026.03.05` |
 
@@ -43,7 +44,9 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | FAIR          | Findability, Accessibility, Interoperability and Reusability             |
 | HTTPS          | Hypertext Transfer Protocol Secure                     |
 | ID            | Identifier                                        |
+| OC            | Operations Committee                              |
 | SOP           | Standard Operating Procedure                      |
+| SDPC          | Security and Data Protection Committee            |
 | UM            | University of Maribor                             |
 | VHD           | Virtual Helpdesk                                  |
 

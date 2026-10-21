@@ -25,6 +25,7 @@
 
 | Template Version | Instance version | Author(s)         | Description of changes               | Date       |
 |------------------|------------------|-------------------|--------------------------------------|------------|
+| ``v1.0.3`` |  | Marcos Casado Barbero | Updated 'Roles and Responsibilities' table and acronym glossary with the missing IT definition | ``2026.10.21`` |
 | ``v1.0.2`` |  | Marcos Casado Barbero | Added Notes and delegation-aware Roles and Responsibilities entries | ``2026.07.31`` |
 | ``v1.0.1`` |  | Marcos Casado Barbero | Updated to linting rules - [PR46](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/46) | ``2024.10.29`` |
 | ``v1``               |                  | Marcos Casado Barbero    | Transform document to markdown     | ``2024.09.27`` |
@@ -42,6 +43,7 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 | EDIC         | European Digital Infrastructure Consortium         |
 | EMBL         | European Molecular Biology Laboratory              |
 | GDI          | European Genomic Data Infrastructure               |
+| IT           | Information Technology                              |
 | LNDS         | Luxembourg National Data Service                   |
 | LU           | Luxembourg                                         |
 | MG           | Million Genomes                                    |

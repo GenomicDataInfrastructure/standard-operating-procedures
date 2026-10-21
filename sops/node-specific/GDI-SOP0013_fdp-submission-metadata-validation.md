@@ -25,6 +25,7 @@
 
 | Template Version | Instance version | Author(s)                   | Description of changes                                                                                                                                               | Date         |
 | ---------------- | ---------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| `v1.0.2`         |                  | Marcos Casado Barbero       | Updated 'Roles and Responsibilities' table and acronym glossary with missing definitions. | `2026.10.21` |
 | `v1.0.1`         |                  | Hans-Christian van der Werf | Updated scope, roles, references, and procedure steps after pull request review.                                                                                     | `2026.04.07` |
 | `v1`             |                  | Hans-Christian van der Werf | First markdown template version of the SOP for FAIR Data Point submission metadata validation, based on the reviewed draft and aligned with the repository template. | `2026.03.26` |
 | `v0`             |                  | Marcos Casado Barbero       | Created the initial SOP request and draft content for submission metadata validation.                                                                                | `2026.03.05` |
@@ -42,7 +43,12 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | GDI           | European Genomic Data Infrastructure              |
 | HDM           | Harmonised Data Model                             |
 | HealthDCAT-AP | Health Data Catalogue Application Profile         |
+| CSC           | Finnish IT Center for Science                     |
+| DKFZ          | Deutsches Krebsforschungszentrum                 |
+| IT            | Information Technology                            |
+| OC            | Operations Committee                              |
 | SHACL         | Shapes Constraint Language                        |
+| SDPC          | Security and Data Protection Committee            |
 | SOP           | Standard Operating Procedure                      |
 | TB            | Top to Bottom                                     |
 

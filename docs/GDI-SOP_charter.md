@@ -27,11 +27,13 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | AE               | Associated Entity                                                       |
 | AI               | Action Item                                                             |
 | AF               | Application Form                                                        |
+| AP               | Application Profile                                                     |
 | API              | Application Programming Interface                                       |
 | BEN              | Beneficiary                                                             |
 | CC               | Carbon Copy (used in communications to send a copy to others)           |
 | CRG              | Centre for Genomic Regulation                                           |
 | CSC              | Finnish IT Center for Science                                           |
+| DCAT             | Data Catalog Vocabulary                                                 |
 | DAA              | Data Access Agreement                                                   |
 | DAC              | Data Access Committee                                                   |
 | DMP              | Data Management Plan                                                    |
@@ -56,6 +58,8 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | GDPR             | General Data Protection Regulation                                      |
 | GH               | GitHub                                                                  |
 | HD               | Helpdesk                                                                |
+| HDM              | Harmonised Data Model                                                   |
+| HealthDCAT-AP    | Health Data Catalogue Application Profile                               |
 | HRI              | Health Research Infrastructure                                          |
 | ID               | Identity Document                                                       |
 | IdP              | Identity Provider                                                       |
@@ -84,6 +88,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | RFC              | Request For Comments                                                    |
 | RI               | Research Infrastructure                                                 |
 | SDPC             | Security and Data Protection Committee                                  |
+| SHACL            | Shapes Constraint Language                                              |
 | SLA              | Service Level Agreement                                                 |
 | SP               | Submitter Portal                                                        |
 | SOP              | Standard Operating Procedure                                            |

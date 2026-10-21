@@ -31,26 +31,31 @@
 
 
 ### 2. Glossary
-Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
+Find GDI SOP common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
 
 | Abbreviation  | Description     |
 |---------------|-----------------|
 | BAM           | Binary Alignment Map, file format for aligned sequencing reads mapped to a reference genome |
-| CRAM          | Compressed Reference-oriented Alignment Map, a space-saving alternative to BAM |
-| ELSI          | Ethical, Legal, and Social Issues |
-| FASTA         | Fast-A, file format for raw data output directly from DNA/RNA sequencing machines |
-| FASTQ         | FASTA with Quality, file format for raw data output directly from DNA/RNA sequencing machines |
-| VCF           | Variant Call Format, file format used to store genetic variations |
+| CRAM          | Compressed Reference-oriented Alignment Map, a space-saving alternative to BAM        |
+| ELSI          | Ethical, Legal, and Social Issues                                                     |
+| FASTA         | Fast-A, file format for raw data output from sequencing machines                      |
+| FASTQ         | FASTA with Quality, file format for raw data output from sequencing machines          |
+| LNDS          | Luxembourg National Data Service                                                      |
+| OK            | All correct                                                                           |
+| SAM           | Sequence Alignment/Map text file used in bioinformatics                               |
+| SOP           | Standard Operating Procedure                                                          |
+| TB            | Top to Bottom                                                                         |
+| TBD           | To Be Determined                                                                      |
+| VCF           | Variant Call Format, file format used to store genetic variations                     |
 
 | Term             | Definition      |
 |------------------|-----------------|
 | Node Helpdesk    | The support team is responsible for handling tickets related to data management issues associated with the node in the GDI Project. |
 | Ticket           | Incoming issues from the GDI Virtual Helpdesk, are to be processed within the Node Helpdesk and, after that, returned to the Virtual Helpdesk |
+| Data Inclusion   | Systematic integration of data into structured and machine-readable datasets |
+| Data Preparation | The process of structuring, annotating, and formatting data so that systems and users can discover, access and reuse it | 
 | Data Reception   | The process where GDI node securely acquires, ingests, and validates data supplied by a data provider | 
 | Data Submission  | The process of registering, publishing, and making data assets discoverable and accessible |
-| Data Preparation | The process of structuring, annotating, and formatting data so that systems and users can discover, access and reuse it | 
-| Data Inclusion   | Systematic integration of data into structured and machine-readable datasets |
-
 
 ### 3. Roles and Responsibilities
 See qualifications and responsabilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
@@ -175,4 +180,4 @@ TBD
 | Reference | Description                                          |
 |-----------|------------------------------------------------------|
 | [1](#)    | European GDI - SOP Charter (including Glossary)      |
-| [2](#)    | European GDI - Procedures for Information Service Management for SOPs |
+| [2](#)    | European GDI - Procedures for Information Service Management for SOP |

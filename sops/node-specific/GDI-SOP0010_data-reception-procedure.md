@@ -1,13 +1,13 @@
 # European GDI - Data Reception Procedure
 
-| Metadata | Value |
-|----------|-------|
-| Template SOP number | GDI-SOP0010 |
-| Template SOP version | v1 |
-| Topic | Data & metadata Management |
-| Template SOP Type | Node-specific SOP |
-| GDI Node |  |
-| Instance version |  |
+| Metadata             | Value             |
+|----------------------|-------------------|
+| Template SOP number  | GDI-SOP0010       |
+| Template SOP version | v1                |
+| Topic       | Data & metadata management |
+| Template SOP Type    | Node-specific SOP |
+| GDI Node             |                   |
+| Instance version     |                   |
 
 ## Index
 
@@ -87,16 +87,16 @@ graph TB
     ending(" ")
 
     start -..- input1
-    input1 -..->|Received by Role 1| step8.1
-    step8.1 -->|Assessment OK| step8.2
-    step8.1 -->|Assessment not OK| ending
-    step8.2 -->|Assessment OK| step8.3
-    step8.2 -->|Assessment not OK| ending
-    step8.3 -->|Check OK| step8.4
-    step8.3 -->|Check not OK| ending
-    step8.4 -->step8.5
-    step8.5 -->step8.6
-    step8.6 -..- ending
+    input1 -..->|Received by Role 1| step1
+    step1 -->|Assessment OK| step2
+    step1 -->|Assessment not OK| ending
+    step2 -->|Assessment OK| step3
+    step2 -->|Assessment not OK| ending
+    step3 -->|Check OK| step4
+    step3 -->|Check not OK| ending
+    step4 -->step5
+    step5 -->step6
+    step6 -..- ending
 ```
 
 ### 8. Procedure
@@ -107,7 +107,7 @@ graph TB
 
 | Step identifier   | When  | Who |
 |:------------------|:------|:----|
-| 8.1 | When data is submitted  | Helpdesk member assigned to the ticket (responsible for handling the submission request) |
+| 1 | When data is submitted  | Helpdesk member assigned to the ticket (responsible for handling the submission request) |
 
 Check if the submitted data types are in a standardized format - SAM, BAM, CRAM, VCF, FASTA, FASTQ:
  * Yes, continue the process
@@ -117,7 +117,7 @@ Check if the submitted data types are in a standardized format - SAM, BAM, CRAM,
 
 | Step identifier            | When             | Who |
 |:------------------|:----|:----|
-| 8.2 | After data types verification | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
+| 2 | After data types verification | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
 
 Make compliance checks, i.e. make sure you have necessary ELSI documents (e.g. informed consent, ethical permits) and ELSI metadata (e.g. data controller).
   * Yes, continue the process
@@ -127,7 +127,7 @@ Make compliance checks, i.e. make sure you have necessary ELSI documents (e.g. i
 #### 8.3. Storage capacity check
 | Step identifier            | When             | Who |
 |:---------------------------|:-----------------|:----|
-| 8.3 | After ticket assessment successful completion. | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
+| 3 | After ticket assessment successful completion. | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
 
 After evaluating the submission, determine the data size and verify if sufficient storage is available to accommodate it.
   * If yes, continue the process
@@ -137,7 +137,7 @@ After evaluating the submission, determine the data size and verify if sufficien
 #### 8.4. Storage capacity check
 | Step identifier            | When             | Who |
 |:---------------------------|:-----------------|:----|
-| 8.4 | After completing the request evaluation and all related considerations. | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
+| 4 | After completing the request evaluation and all related considerations. | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
 
 TBD
 
@@ -145,7 +145,7 @@ TBD
 #### 8.5. Review submission
 | Step identifier            | When             | Who |
 |:---------------------------|:-----------------|:----|
-| 8.5 | After metadata completion. | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
+| 5 | After metadata completion. | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
 
 After all, review the full submission:
   * Data integrity check
@@ -160,7 +160,7 @@ After all, review the full submission:
 #### 8.6. Release datasets
 | Step identifier            | When             | Who |
 |:---------------------------|:-----------------|:----|
-| 8.6 | After submission review | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
+| 6 | After submission review | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
 
 TBD
 

@@ -3,7 +3,7 @@
 | Metadata             | Value                                                                 |
 | -------------------- | --------------------------------------------------------------------- |
 | Template SOP number  | `GDI-SOP0012`                                                         |
-| Template SOP version | `v1`                                                                  |
+| Template SOP version | `v1.0.1`                                                                  |
 | Topic                | Technical infrastructure & software development                       |
 | Template SOP Type    | Node-specific SOP                                                      |
 | GDI Node             |                                                                       |
@@ -82,7 +82,7 @@ AF Beacons provide access to population-level allele counts. This node-level SOP
 ### 5. Scope
 
 This SOP covers the steps required to withdraw a dataset from a Node's Allele Frequency Beacon. Included steps are the identification of dataset records to withdraw, assessing the withdrawal scope, executing the removal of data, auditing and logging the withdrawal, and reporting completion.
-It is part of the higher level Dataset Withdrawal SOP ([SOP0009](/sops/european-level/GDI-SOP0009_dataset-withdrawal.md)).
+It is part of the higher level Dataset Withdrawal SOP ([SOP0009](../european-level/GDI-SOP0009_dataset-withdrawal.md)).
 
 ### 6. Introduction and Background Information
 
@@ -120,12 +120,12 @@ flowchart TD;
 
 | Step identifier | When | Who |
 | :-------------- | :------------------------------------------------------------------ | :-------------------------------------- |
-| `1`             | When a dataset withdrawal request has been approved under the overarching withdrawal process described in [GDI-SOP0009 dataset withdrawal](/sops/european-level/GDI-SOP0009_dataset-withdrawal.md). | Node's AF Beacon maintainer |
+| `1`             | When a dataset withdrawal request has been approved under the overarching withdrawal process described in [GDI-SOP0009 dataset withdrawal](../european-level/GDI-SOP0009_dataset-withdrawal.md). | Node's AF Beacon maintainer |
 
 As the AF beacon maintainer, confirm that the incoming request package is complete before performing any deletion in beacon. Double check first:
 - The original approved withdrawal request or ticket reference
 - The requested scope of the withdrawal (soft or hard-deletion)
-- The relevant dataset identifier matching the node FAIR Data Point’s dataset to be withdrawn, see [GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md](/sops/node-specific/GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md)
+- The relevant dataset identifier matching the node FAIR Data Point’s dataset to be withdrawn, see [GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md](./GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md)
 
 Send a HTTPS GET request to your beacon’s datasets endpoint and locate the record corresponding to the ID of the dataset to be deleted, use the method you prefer (e.g., curl, postman...)...",
 ```bash
@@ -171,8 +171,8 @@ EOF
 ```
 You will be asked to enter the mongodb credentials on the terminal prompt.
 
-- If the removal is successful, proceed to ⏩[Step 3](#83-remove-dataset-permissions).
-- If the removal is not successful, record the response obtained from the used commands, adding all the information about the actions performed and the intended goal of performing them and report to the GDI Virtual Helpdesk so that requester communication continues through the VHD workflow and proceed to ⏩[Step 3](#83-remove-dataset-permissions).
+- If the removal is successful, proceed to ⏩[Step 3](#83-check-that-the-dataset-was-removed-successfully).
+- If the removal is not successful, record the response obtained from the used commands, adding all the information about the actions performed and the intended goal of performing them and report to the GDI Virtual Helpdesk so that requester communication continues through the VHD workflow and proceed to ⏩[Step 3](#83-check-that-the-dataset-was-removed-successfully).
 
 ##### 8.2.2. Hard-deletion (option A)
 
@@ -188,7 +188,7 @@ Next, execute the following command line script on the terminal to remove index 
 ```bash
 docker exec beaconprod python -m beacon.connections.mongo.reindex
 ```
-- If the removal is successful, proceed to ⏩[Step 3](#83-remove-dataset-permissions).
+- If the removal is successful, proceed to ⏩[Step 3](#83-check-that-the-dataset-was-removed-successfully).
 - If the removal is not successful, proceed to ⏩[Step 2.2.1](#8221-hard-deletion-option-b).
 
 ###### 8.2.2.1. Hard-deletion (option B)

@@ -25,7 +25,7 @@ For more information on the release process and DOI minting, please refer to the
 We welcome contributions from all GDI members and the wider community. If you want to **request changes, propose new SOPs, or directly contribute to the repository**, please check out our [**CONTRIBUTING guide**](CONTRIBUTING.md).
 
 ## Key Documents
-More documentation is available within the ``docs`` directory. For detailed information about the SOP framework, processes, and roles within the GDI project, please refer to the **[Charter](docs/GDI-SOP_charter.md)**, the **[Information Security Management (ISM)](docs/GDI-SOP_information-service-management.md)** and **[Organisational Roles and Responsibilities (ORR)](docs/GDI-SOP_organisational-roles-and-responsibilities.md)**.
+More documentation is available within the ``docs`` directory. For detailed information about the SOP framework, processes, and roles within the GDI project, please refer to the **[Charter](docs/GDI-SOP_charter.md)**, the **[Information Service Management (ISM)](docs/GDI-SOP_information-service-management.md)** and **[Organisational Roles and Responsibilities (ORR)](docs/GDI-SOP_organisational-roles-and-responsibilities.md)**.
 
 ## Reporting Issues
 
@@ -203,7 +203,6 @@ flowchart TB
 
     subgraph Authorizers
         authorizers1[Management Board]
-        authorizers2[1+MG Working Group]
     end
 
     V -->|Enters process| SOP-release-process

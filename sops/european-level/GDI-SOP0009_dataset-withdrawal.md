@@ -2,7 +2,7 @@
 | Metadata          | Value         |
 |-------------------|---------------------|
 | Template SOP number  | ``GDI-SOP0009`` |
-| Template SOP version      | ``v1`` |
+| Template SOP version      | ``v1.0.1`` |
 | Topic      | Data & metadata management |
 | Template SOP Type      | European-level SOP |
 | GDI Node   |  |
@@ -291,11 +291,11 @@ Given that the request is valid and the requester has authority to withdraw the 
       - **Link it** to the initial ``dataset-withdrawal-request`` VHD ticket that was generated with the requester communication. As per the used system, this link should imply that the ``dataset-withdrawal-request`` ticket "is blocked by" this new ``dataset-withdrawal`` ticket.
       - Flag its ``priority`` as ``High``.
    - In the **absence** of this ticketing system, you may notify the GDI node's HD through **email** using the following template. 
-      - Include relevant stakeholders from within GDI (_not the requester!_) in CC, like the OC (``gdi-oc [at] elixir-europe.org``) and SDPC (``gdi-sdpc [at] elixir-europe.org``).
+      - Include relevant stakeholders from within GDI (_not the requester!_) in CC, like the OC (``gdi_operations_committee [at] elixir-europe.org``) and SDPC (``gdi_security_data_protection [at] elixir-europe.org``).
       - Attach to the email any **supporting documentation** (e.g., verification of authority, screenshots, initial request...). ⚠️ To minimise the **risk of removing the wrong subset of data** (e.g., copy-pasting the wrong id), ensure that the **initial request** (including the dataset identifier) is included in the communication, either as an attachment or in the body of the email.
 ````
 To: <Corresponding-GDI-node-Helpdesk>
-CC: gdi-sdpc [at] elixir-europe.org, gdi-oc [at] elixir-europe.org
+CC: gdi_security_data_protection [at] elixir-europe.org, gdi_operations_committee [at] elixir-europe.org
 Subject: [<dataset-withdrawal TICKET_ID>][GDI SOP0009] Dataset withdrawal request
 ````
 ````
@@ -393,7 +393,7 @@ ACTIONS NEEDED:
 
 You can find more details about how these tasks have been fulfilled previously at [Step 7](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/dev/sops/european-level/GDI-SOP0009_dataset-withdrawal.md#87-per-system-dataset-withdrawal).
 
-If you need additional context or support, contact the OC/SDPC (gdi-sdpc [at] elixir-europe.org, gdi-oc [at] elixir-europe.org) or the VHD Officer (<VHD_OFFICER_CONTACT_DETAILS>).
+If you need additional context or support, contact the OC/SDPC (gdi_security_data_protection [at] elixir-europe.org, gdi_operations_committee [at] elixir-europe.org) or the VHD Officer (<VHD_OFFICER_CONTACT_DETAILS>).
 Thank you for your prompt attention.
 
 Best regards,

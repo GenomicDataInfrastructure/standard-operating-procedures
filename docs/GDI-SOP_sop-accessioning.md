@@ -17,14 +17,14 @@ In this section we cover how identifiers for SOP-related documents are given. Th
 
 1. **European-level SOP instances**. To be used uniformly across all GDI nodes at European level.
    - **Format:** `GDI-SOPXXXX.vY`
-     - **Base identifier** (`GDI-SOPXXXX`): being ``XXXX`` an auto-incremented SOP number that is unique across the GDI SOP namespace.
+     - **Base identifier** (`GDI-SOPXXXX`): being ``XXXX`` an incrementing SOP number that is unique across the GDI SOP namespace.
      - `vY`: Version number starting from `v1`.
    - **Example:** `GDI-SOP0001.v1`
 
 2. **Node-specific SOPs**.
     1. Node-specific **templates**. To be used uniformly across all GDI nodes, adapted by GDI nodes into their node-specific instances.
         - **Format:** `GDI-SOPXXXX.vY`
-          - **Base identifier** (`GDI-SOPXXXX`): being ``XXXX`` an auto-incremented SOP number that is unique across the GDI SOP namespace.
+          - **Base identifier** (`GDI-SOPXXXX`): being ``XXXX`` an incrementing SOP number that is unique across the GDI SOP namespace.
           - `vY`: Version number starting from `v1`.
         - **Example:** `GDI-SOP0001.v1`
     2. Node-specific **instances**. This format is used for instances of SOP templates that are adapted by specific nodes. The `NodeID` ensures the SOP is identifiable to a particular node, and the `vZ` allows for node-specific versioning.
@@ -35,7 +35,7 @@ In this section we cover how identifiers for SOP-related documents are given. Th
           - `vZ`: Node-specific version number starting from `v1`. The version of the instance is restarted everytime the template it is based on changes in version.
         - **Example:** `GDI-SOP0001.v1_SWE.v1`
 
-The details encompassed by these identifiers **must** be added at the _Metadata_ section of each SOP (see [general SOP template](./GDI-SOP_sop-template.md)) for a clear depiction. While the ``<Base identifier>`` may define the filename, the full identifier may be used when referencing a specific version of it in written language from other resources (e.g., "_...some examples of node instances include `GDI-SOP0001.v1_SWE.v1` and `GDI-SOP0002.v3_SWE.v2`..._").
+The details encompassed by these identifiers **must** be added at the _Metadata_ section of each SOP (see [general SOP template](./GDI-SOP_sop-template.md)) for a clear depiction. While the ``<Base identifier>`` may define the filename, the full identifier may be used when referencing a specific version of it in written language from other resources (e.g., "_...some examples of node instances include `GDI-SOP0001.v1_SWE.v1` and `GDI-SOP0008.v1.0.2_SWE.v2`..._").
 
 ## File Naming Conventions
 
@@ -47,9 +47,9 @@ Furthermore, before diving into the details of filenaming, we have to define a *
 In order to make use of the main features of GitHub (e.g., file changes tracking), it is crucial to **maintain integrity with regards to filenaming**. For example, if any time a file changes its version we modified its filename, we would not be able to automatically track their changes across releases and forks. For this reason, **the filename of an SOP document will be defined exclusively by its ``Base identifier``** (see [identifier format](#identifier-format) section).
 
   - **Filename format**: `<Base identifier>_<Title>.md`
-  - **Example**: `GDI-SOP0001_Node-Helpdesk-Ticket-Management-Template.md`
+  - **Example**: `GDI-SOP0001_node-helpdesk-ticket-management.md`
     - Base identifier: ``GDI-SOP0001``
-    - Title: ``Node-Helpdesk-Ticket-Management-Template``
+    - Title: ``node-helpdesk-ticket-management``
 
 Given the chosen character (``_``) for connecting the base identifier and the title, neither of these should contain it within. Likewise, do not use any forbidden characters for filenames (``\/:*?"<>| ``), including blank spaces. If needed, replace them with ``-``.
 
@@ -59,7 +59,7 @@ As mentioned above, for the sake of traceability through GitHub's features, the 
 
 In both scenarios, **the node-specific template** (at the source repository) and **instances** (at each GDI node repository) **have the same filename**. This enables efficient traceability of files in their adaptation from templates to instances, and facilitates to resolve merging conflicts when a template is updated (i.e. a new release is provided at the source repository). Nevertheless, even if these details are not propagated to the filename, the **content of the _Metadata_ section of each of these documents should change** accordingly.
 
-For example, see the following diagram, where we start with a Node-specific SOP template named ``GDI-SOP0001_NCPs-veto-EDIC-decision.md``, that maintains its filename when cloned by a node. Notice how the template version, node code and instance version are part of the file metadata but not of the filename.
+For example, see the following diagram, where we start with a Node-specific SOP template named ``GDI-SOP0001_node-helpdesk-ticket-management.md``, that maintains its filename when cloned by a node. Notice how the template version, node code and instance version are part of the file metadata but not of the filename.
 ````mermaid
 flowchart TB
     %% Colors
@@ -68,10 +68,10 @@ flowchart TB
 
     subgraph Source-GitHub
         sopt["`SOP **Template**
-        **Filename**: GDI-SOP0001_NCPs-veto-EDIC-decision.md`"]
+        **Filename**: GDI-SOP0001_node-helpdesk-ticket-management.md`"]
         subgraph SOP-template-metadata
             sopt_m1("`**Base identifier**: GDI-SOP0001`")
-            title1("NCPs-veto-EDIC-decision")
+            title1("node-helpdesk-ticket-management")
             sopt_m2("`**Identifier**: GDI-SOP0001.v1`")
         end
     end
@@ -82,7 +82,7 @@ flowchart TB
 
     subgraph Node's-GitHub
         sopi["`SOP **Instance**
-    **Filename**: GDI-SOP0001_NCPs-veto-EDIC-decision.md`"]
+    **Filename**: GDI-SOP0001_node-helpdesk-ticket-management.md`"]
         subgraph SOP-instance-metadata
             sopi_m2("`**Identifier**: GDI-SOP0001.v1_SWE.v1`")
         end
@@ -98,7 +98,7 @@ flowchart TB
 These are additional documents that support the SOPs, but are not SOPs in themselves. For example, the SOP [Charter](GDI-SOP_charter.md). Similar to the SOPs, their identifier defines their filename, while any other piece of metadata (e.g., version) remains in their file content at the _Metadata_ section.
    - **Filename format:** `GDI-SOP_<Title>.md`
      - `<Title>`: Brief text describing the document. Should not contain ``_`` nor forbidden characters (replace by ``-``).
-   - **Example:** `GDI-SOP_Charter.md`
+   - **Example:** `GDI-SOP_charter.md`
 
 ## SOP Repository Structure
 The repository is divided in two main directories:
@@ -108,15 +108,15 @@ The repository is divided in two main directories:
   - `docs/`: Contains all other supporting documents.
 
 ## SOP Life-cycle
-In this section we briefly describe the common life-cycle of an SOP within the GDI platform. For further details, take a look at the [**summary diagram**](../README.md#summary-diagram) and the [SOP Template creation SOP](../sops/european-level/GDI-SOP0007_SOP-template-creation.md#7-summary-or-context-diagram).
+In this section we briefly describe the common life-cycle of an SOP within the GDI platform. For further details, take a look at the [**summary diagram**](../README.md#diagram-overview) and the [SOP Template creation SOP](../sops/european-level/GDI-SOP0007_sop-template-creation.md#7-summary-or-context-diagram).
 
 1. SOP is **requested** by any GDI member by making use of the [**"New SOP request"**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/new/choose) GitHub Issue Template.
-2. SOP Request is evaluated by the OC/SDPC, who approves or denies it.
+2. SOP Request is evaluated by the OC, who approves or denies it.
 3. The SOP starts its development phase (content filling, review, approval...). This may have multiple steps, based on the chose initial method (e.g. Google Docs, GitHub...). Regardless of the method, the [general SOP template](GDI-SOP_sop-template.md) is used to construct it.
-4. The SOP gets to a level of maturity where it can be added through a Pull Request to the source GitHub repository after approval from authorizers (e.g. Management Board, 1+MG Working Group).
+4. The SOP gets to a level of maturity where it can be added through a Pull Request to the source GitHub repository after authorisation by the Management Board.
 5. PR is merged with the source repository, representing the end of its development cycle, soon to be released. 
 
-If the SOP is a European-level SOP instance, it enters its own periodic review cycle. On the other hand, if it is a Node-specific SOP Template, the SOP can be then adapted by nodes once these fork/import (see [rubric](/GDI-SOP_github-management.md)) the source repository. See below an example of how a Node-specific SOP Template could be adapted between the source and a GDI's node repositories.
+If the SOP is a European-level SOP instance, it enters its own periodic review cycle. On the other hand, if it is a Node-specific SOP Template, the SOP can be then adapted by nodes once these fork/import (see [rubric](GDI-SOP_github-management.md)) the source repository. See below an example of how a Node-specific SOP Template could be adapted between the source and a GDI's node repositories.
 ````mermaid
 %%{init: { 'gitGraph': {'mainBranchName': 'Source-repo'}} }%%
 gitGraph
@@ -140,14 +140,12 @@ gitGraph
 ````
 
 ## Automatic SOP accessioning
-**#! TO-DO** once the accessioning proposal is approved: 
-- To create something similar to a version manifest, making use of GitHub actions to:
-  - Check that the accessioning and naming conventions are correct
-  - Check that the SOP identifier is correct, and we place it into the SOP manifest/browser/table somewhere in the repo.
-  - Metadata in the file-content of each SOP is correct and adequate.
-    - We should have a table with all metadata of the SOPs, with their topics, location, id, title, type, etc. This would be used in Changelogs.
-  - Generate DOIs for GDI SOPs.
-  - Prepare documentation (Changelog) for tags/releases.
+SOP identifiers are assigned by repository maintainers. Assigned identifiers must never be reused, including those of withdrawn SOPs; `GDI-SOP0002` and `GDI-SOP0003` remain reserved.
+
+The repository already provides the following automation:
+- [SOP linter](../scripts/sop_linter.py): checks identifiers, filenames, metadata and document structure.
+- [Index generator](../scripts/sop_index.py) and [index comparison](../scripts/compare_index.py): generate the [SOP index](../sops/README.md) and check that it matches the SOP files. Maintainers update the index and changelog before release.
+- [GitHub–Zenodo integration](#sop-releases-and-doi-minting): archives repository releases and assigns a DOI to each bundle.
 
 ## Version Control and Updates
 

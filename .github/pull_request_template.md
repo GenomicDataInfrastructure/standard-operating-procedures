@@ -31,7 +31,7 @@
 <!--- Review carefully, ticking (or adding an `x` to) each box  upon completion of the item, ensuring you meet the standards required for this PR. -->
 
 **General Compliance:**
-- [ ] My changes follow the code style of this project ([GDI SOP Style Guide](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_style-guide.md)) and the file naming conventions of the [file accessioning proposal](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs//GDI-SOP_sop-accessioning.md).
+- [ ] My changes follow the code style of this project ([GDI SOP Style Guide](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_style-guide.md)) and the file naming conventions of the [file accessioning proposal](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_sop-accessioning.md).
 - [ ] I have verified that all new updated content is accessible, including checking that all external references are readable (i.e., no broken links). These may include references to external resources that should be resolvable, and internal references among SOPs.
 - [ ] I have properly added this PR's changes to the repository [CHANGELOG.md](../CHANGELOG.md).
 

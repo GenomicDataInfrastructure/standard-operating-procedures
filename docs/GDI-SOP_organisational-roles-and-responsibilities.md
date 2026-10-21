@@ -13,7 +13,7 @@ Find GDI SOPs common Glossary at the [charter document](./GDI-SOP_charter.md#2-g
 | Abbreviation | Description                                |
 |--------------|--------------------------------------------|
 | EMBL-EBI     | European Molecular Biology Laboratory - European Bioinformatics Institute |
-| GDI          | Genome Data Infrastructure                 |
+| GDI          | European Genomic Data Infrastructure                 |
 | GDPR         | General Data Protection Regulation         |
 | NBIS         | National Bioinformatics Infrastructure Sweden |
 | OC           | Operations Committee                       |
@@ -57,7 +57,7 @@ The roles and responsibilities described in this document apply to:
 | **Trainer** | European and Node level | - **Conduct training** on SOP Templates for relevant stakeholders. <br> - Ensure understanding of procedures and compliance requirements. <br> - Provide updates on SOP revisions. | - In-depth knowledge of SOPs and the GDI context. <br> - Strong communication and training skills. <br> - Experience in adult education and training methodologies.        |
 | **Node SOP Maintainer** | Node level | - **Monitor for updates** to GDI SOP Templates. <br> - **Ensure node-specific SOPs align with updates**. <br> - Gather feedback on SOP implementation, any potential issues and relay to the SOP development team. | - Proficient in GitHub version control. <br> - Detail-oriented with the ability to assess the impact of updates. <br> - Strong communication skills for feedback gathering. |
 
-Find all these **roles and their respective responsibilities** in the GDI SOP context at the main [README's diagram](../README.md#summary-diagram).
+Find all these **roles and their respective responsibilities** in the GDI SOP context at the main [README's diagram](../README.md#diagram-overview).
 
 ## 7. References
 | Reference | Description |

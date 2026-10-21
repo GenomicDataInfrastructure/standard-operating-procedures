@@ -3,7 +3,7 @@
 | Metadata | Value |
 |---|---|
 | Template SOP number | ``GDI-SOP0008`` |
-| Template SOP version |  ``v1.0.0``  |
+| Template SOP version |  ``v1.0.2``  |
 | Topic                | Helpdesk & operations |
 | Template SOP Type | Node-specific SOP |
 | GDI Node |  |

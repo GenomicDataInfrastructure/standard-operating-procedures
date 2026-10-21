@@ -3,7 +3,7 @@
 | Metadata             | Value                                                                 |
 | -------------------- | --------------------------------------------------------------------- |
 | Template SOP number  | `GDI-SOP0014`                                                         |
-| Template SOP version | `v1`                                                                  |
+| Template SOP version | `v1.0.1`                                                                  |
 | Topic                | Technical infrastructure & software development                       |
 | Template SOP Type    | Node-specific SOP                                                      |
 | GDI Node             |                                                                       |
@@ -253,7 +253,7 @@ In beacon container, add the dataset ID to the file in path `/beacon/permissions
    public:
       default_entry_types_granularity: record
 ```
-This is only an example, set the security level as it is meant for the dataset and add further restrictions as needed. More information about security levels and granularity types can be found in the [beacon2 pi repository"](https://github.com/EGA-archive/beacon2-pi-api/tree/main#making-a-dataset-publicregisteredcontrolled).
+This is only an example, set the security level as it is meant for the dataset and add further restrictions as needed. More information about security levels and granularity types can be found in the [beacon2 pi repository](https://github.com/EGA-archive/beacon2-pi-api/tree/main#making-a-dataset-publicregisteredcontrolled).
 Verify that your dataset appears correctly by sending an HTTPS GET request to your beacon’s datasets endpoint and locate the record corresponding to the ID of the dataset to be inserted, use the method you prefer (e.g., curl, postman...)...",
 ```bash
 curl 'https://<yourBeaconDomain>/datasets'

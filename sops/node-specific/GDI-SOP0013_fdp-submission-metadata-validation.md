@@ -3,7 +3,7 @@
 | Metadata             | Value                      |
 | -------------------- | -------------------------- |
 | Template SOP number  | `GDI-SOP0013`              |
-| Template SOP version | `v1`                       |
+| Template SOP version | `v1.0.2`                       |
 | Topic                | Data & metadata management |
 | Template SOP Type    | Node-specific SOP          |
 | GDI Node             |                            |

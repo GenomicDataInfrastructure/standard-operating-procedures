@@ -49,13 +49,13 @@ Before submitting a PR, you should test your changes to ensure they comply with 
 
 Depending on your environment, it may be required to install the required python modules:
 ````
-pip install --upgrade --no-deps -r requirements.txt
+python3 -m pip install -r requirements.txt
 ````
 
 1. **Lint the SOPs**: Use the `sop_linter.py` script to check that the format of your SOP files follows the required structure.
 ````
-# Example of linting the test SOP
-python3 scripts/sop_linter.py tests/GDI-SOP0000_sop-template_for_linting.md -v 1
+# Example of linting an SOP
+python3 scripts/sop_linter.py sops/european-level/GDI-SOP0009_dataset-withdrawal.md -v 1
 
 # To know more
 python3 scripts/sop_linter.py --help
@@ -63,7 +63,7 @@ python3 scripts/sop_linter.py --help
 
 2.  **Check SOP index consistency**: Ensure that the index of SOPs (located in `sops/README.md`) is consistent with the actual contents of the `sops/` directory using the `compare_index.py` script.
 ````
-# Example of linting the test SOP
+# Check the SOP index against the current SOP files
 python3 scripts/compare_index.py sops/README.md sops/
 
 # To know more

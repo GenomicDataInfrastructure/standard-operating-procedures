@@ -26,9 +26,8 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | 1+MG DAC         | 1+MG Data Access Committee                                              |
 | AAI              | Authentication and Authorization Infrastructure                         |
 | AE               | Associated Entity                                                       |
-| AF               | Allele Frequency                                                        |
+| AF               | Allele Frequency; Application Form (depending on context)               |
 | AI               | Action Item                                                             |
-| AF               | Application Form                                                        |
 | AP               | Application Profile                                                     |
 | API              | Application Programming Interface                                       |
 | BEN              | Beneficiary                                                             |
@@ -211,16 +210,16 @@ The scope of these SOPs is focused on roles, topics, and resources that are esse
 ## 7. GDI SOP Management
 Given the diverse fields that GDI SOPs may cover, a well-defined set of roles and responsibilities is crucial for ensuring seamless operations across the network. These roles are involved at every step of the SOP lifecycle, from development to node implementation. The most up-to-date definitions of roles and responsibilities can be found [here](./GDI-SOP_organisational-roles-and-responsibilities.md#6-roles-and-responsibilities-definitions).
 
-The process of adding a new SOP or editing an existing one is itself governed by established SOPs, such as the [GDI-SOP0007_SOP-template-creation.md](../sops/european-level/GDI-SOP0007_SOP-template-creation.md). **Repository maintainers must ensure that any changes are justified and consider their impact on both planned and existing GDI node features**. To facilitate this, the OC and SDPC include representatives from all GDI nodes across the three GDI pillars, ensuring that all are informed through mailing lists (see [GDI SOP Communication](#8-gdi-sop-communication)) about any SOP developments or changes. SOPs undergo rigorous review, approval, and authorization processes involving diverse GDI members to ensure quality and relevance.
+The process of adding a new SOP or editing an existing one is itself governed by established SOPs, such as the [GDI-SOP0007_sop-template-creation.md](../sops/european-level/GDI-SOP0007_sop-template-creation.md). **Repository maintainers must ensure that any changes are justified and consider their impact on both planned and existing GDI node features**. To facilitate this, the OC and SDPC include representatives from all GDI nodes across the three GDI pillars, ensuring that all are informed through mailing lists (see [GDI SOP Communication](#8-gdi-sop-communication)) about any SOP developments or changes. SOPs undergo rigorous review, approval, and authorization processes involving diverse GDI members to ensure quality and relevance.
 
-Flexibility is also essential, ensuring that **GDI SOPs are strict enough to be followed and maintained while allowing GDI nodes the flexibility to implement them as needed**. The responsibility for maintaining the integrity of these implementations (i.e. being _similar enough_ to the templates) lies with the members of each node who participate in the OC/SDPC. This accountability framework allows for quick and flexible node implementation without imposing excessive constraints from the central GDI governance. For more information, refer to the [Roles and Responsibilities](./GDI-SOP_organisational-roles-and-responsibilities.md#6-roles-and-responsibilities-definitions), [GH management](./GDI-SOP_github-management.md) documentation, and the [summary diagram](../README.md#summary-diagram).
+Flexibility is also essential, ensuring that **GDI SOPs are strict enough to be followed and maintained while allowing GDI nodes the flexibility to implement them as needed**. The responsibility for maintaining the integrity of these implementations (i.e. being _similar enough_ to the templates) lies with the members of each node who participate in the OC/SDPC. This accountability framework allows for quick and flexible node implementation without imposing excessive constraints from the central GDI governance. For more information, refer to the [Roles and Responsibilities](./GDI-SOP_organisational-roles-and-responsibilities.md#6-roles-and-responsibilities-definitions), [GH management](./GDI-SOP_github-management.md) documentation, and the [summary diagram](../README.md#diagram-overview).
 
 ## 8. GDI SOP Communication
 Effective communication is crucial within the GDI network to ensure that all nodes and pillars participate in the development and maintenance of SOPs. The following channels are used for transparent communication throughout the process:
 
 - **Mailing Lists:** The OC and SDPC are kept informed throughout the process as the main maintainers of the repository and, by extension, the GDI SOPs. More information on these bodies can be found in the [MS10 document](https://docs.google.com/document/d/1Vr5ChMWpkO8LDVi9eGJv6LuegE4vjhHOJ1aISqWhAG4/edit#heading=h.wn4i2ajfycxg).
-  - `gdi-oc [at] elixir-europe.org` - Operations Committee (OC)
-  - `gdi-sdpc [at] elixir-europe.org` - Security and Data Protection Committee (SDPC)
+  - `gdi_operations_committee [at] elixir-europe.org` - Operations Committee (OC)
+  - `gdi_security_data_protection [at] elixir-europe.org` - Security and Data Protection Committee (SDPC)
   - `gdi-mb [at] elixir-europe.org` - Management Board (MB), used for the formal authorization of SOPs and governance decisions.
 
 - **Slack Channels:** These are used for internal discussions related to the maintenance and management of SOPs within GDI.
@@ -229,7 +228,7 @@ Effective communication is crucial within the GDI network to ensure that all nod
 
 - **GitHub Forums:** These open discussion threads allow anyone with a GitHub account to participate or observe.
   - [**GitHub Issues**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues): Used to request changes to existing SOPs or the addition of new ones.
-  - [**GitHub Discussions**](https://github.com/GenomicDataInfrastructure/rfcs/discussions): RFCs are used to standardize significant changes to the GDI network, including SOPs. This step encourages community feedback during the SOP development and maintenance processes.
+  - [**GitHub Pull Requests**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pulls): Used to review and merge SOP changes following the [SOP creation procedure](../sops/european-level/GDI-SOP0007_sop-template-creation.md).
 
 ## 9. References
 
@@ -238,4 +237,4 @@ Effective communication is crucial within the GDI network to ensure that all nod
 | [MS10](https://docs.google.com/document/d/1Vr5ChMWpkO8LDVi9eGJv6LuegE4vjhHOJ1aISqWhAG4/edit#heading=h.wn4i2ajfycxg) | Milestone 10 document containing the Committee Overview |
 | [ORR](./GDI-SOP_organisational-roles-and-responsibilities.md) | Organisational Roles and Responsibilities |
 | [GH management](./GDI-SOP_github-management.md) | Documentation on how GitHub is used as a platform for both GDI-level SOP development and GDI node implementation of SOPs |
-| [GDI-SOP0007_SOP-template-creation.md](../sops/european-level/GDI-SOP0007_SOP-template-creation.md) | SOP containing steps to create more SOP templates in this repository |
+| [GDI-SOP0007_sop-template-creation.md](../sops/european-level/GDI-SOP0007_sop-template-creation.md) | SOP containing steps to create more SOP templates in this repository |

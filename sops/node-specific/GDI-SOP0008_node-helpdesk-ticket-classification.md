@@ -84,15 +84,17 @@ Find GDI SOPs common Glossary at the [charter document](https://github.com/Genom
 
 See the qualifications and responsibilities of the roles in the [Organisational Roles and Responsibilities](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
 
-| Role | Full name | GDI/node role | Organisation |
-|---|---|---|---|
-| Author | Elisavet Torstensson | Task 4.3 member  | UU-NBIS |
-| Author | Mattias Strömberg | Task 4.3 member  | UU-NBIS |
-| Author | Silvia Bahena | Task 4.3 member  | EMBL-EBI |
-| Reviewer | Marcos Casado Barbero  | Task 4.3 Lead | EMBL-EBI  |
-| Reviewer | Bianca Hendriksze  | Task 4.3 member | Health-RI  |
-| Approver | Marcos Casado Barbero  |  Task 4.3 Lead  | EMBL-EBI  |
-| Authorizer |  |  |  |
+| Role      | Full name             | GDI/node role    | Organisation | Notes |
+|-----------|-----------------------|------------------|--------------|-------|
+| Author    | Elisavet Torstensson  | Task 4.3 member  | UU-NBIS      |       |
+| Author    | Mattias Strömberg     | Task 4.3 member  | UU-NBIS      |       |
+| Author    | Silvia Bahena         | Task 4.3 member  | EMBL-EBI     |       |
+| Reviewer  | Marcos Casado Barbero | Task 4.3 Lead    | EMBL-EBI     |       |
+| Reviewer  | Bianca Hendriksze     | Task 4.3 member  | Health-RI    |       |
+| Approver   | Gabriele Rinck       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
+| Approver   | Marcos Casado Barbero       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
+| Approver   | Silvia Bahena       | Task 4.3 member | EMBL-EBI           | In the absence of the GDI OC/SDPC |
+| Authorizer | Management Board            | Authorizer according to GDI SOP governance    | GDI                  |       |
 
 ### 4. Purpose
 

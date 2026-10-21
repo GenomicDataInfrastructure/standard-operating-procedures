@@ -33,14 +33,14 @@
 ### 2. Glossary
 Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
 
-| Abbreviation | Description     |
+| Abbreviation  | Description     |
 |---------------|-----------------|
 | ELSI          | Ethical, Legal, and Social Issues |
 
-| Term          | Definition      |
-|---------------|-----------------|
-| Node Helpdesk | The support team is responsible for handling tickets related to data management issues associated with the node in the GDI Project. |
-| Ticket | Incoming issues from the GDI Virtual Helpdesk, are to be processed within the Node Helpdesk and, after that, returned to the Virtual Helpdesk |
+| Term             | Definition      |
+|------------------|-----------------|
+| Node Helpdesk    | The support team is responsible for handling tickets related to data management issues associated with the node in the GDI Project. |
+| Ticket           | Incoming issues from the GDI Virtual Helpdesk, are to be processed within the Node Helpdesk and, after that, returned to the Virtual Helpdesk |
 | Data Reception   | The process where GDI node securely acquires, ingests, and validates data supplied by a data provider | 
 | Data Submission  | The process of registering, publishing, and making data assets discoverable and accessible |
 | Data Preparation | The process of structuring, annotating, and formatting data so that systems and users can discover, access and reuse it | 
@@ -52,10 +52,11 @@ See qualifications and responsabilities of the roles at the [**Organisational Ro
 
 | Role       | Full name       | GDI/node role   | Organisation |
 |------------|-----------------|-----------------|--------------|
-| Author     | Jorge Oliveira | Node technical coordinator   |  BioData.pt   |
-| Reviewer   |                 |                 |              |
-| Approver   |                 |                 |              |
-| Authorizer |                 |                 |              |
+| Author     | Jorge Oliveira  | Node technical coordinator   |  BioData.pt   |
+| Author     | Jacek Lebioda   | DevOps Engineer | LNDS         |
+| Reviewer   | TBD             | TBD             | TBD          |
+| Approver   | TBD             | TBD             | TBD          |
+| Authorizer | TBD             | TBD             | TBD          |
 
 
 ### 4. Purpose
@@ -86,65 +87,65 @@ graph TB
     ending(" ")
 
     start -..- input1
-    input1 -..->|Received by Role 1| step1.1
-    step1.1 -->|Assessment OK| step1.2
-    step1.1 -->|Assessment not OK| ending
-    step1.2 -->|Assessment OK| step2
-    step1.2 -->|Assessment not OK| ending
-    step2 -->|Check OK| step3
-    step2 -->|Check not OK| ending
-    step3 -->step4
-    step4 -->step5
-    step5 -..- ending
+    input1 -..->|Received by Role 1| step8.1
+    step8.1 -->|Assessment OK| step8.2
+    step8.1 -->|Assessment not OK| ending
+    step8.2 -->|Assessment OK| step8.3
+    step8.2 -->|Assessment not OK| ending
+    step8.3 -->|Check OK| step8.4
+    step8.3 -->|Check not OK| ending
+    step8.4 -->step8.5
+    step8.5 -->step8.6
+    step8.6 -..- ending
 ```
 
 ### 8. Procedure
 
 
-#### 1.1 Assessment of submission request - data types evaluation
+#### 8.1 Assessment of submission request - data types evaluation
 
 
 | Step identifier   | When  | Who |
 |:------------------|:------|:----|
-| 1.1 | When data is submitted  | Helpdesk member assigned to the ticket (responsible for handling the submission request) |
+| 8.1 | When data is submitted  | Helpdesk member assigned to the ticket (responsible for handling the submission request) |
 
 Check if the submitted data types are in a standardized format - SAM, BAM, CRAM, VCF, FASTA, FASTQ:
  * Yes, continue the process
  * No, contact the submitter and request appropriate changes.
 
-#### 1.2 Assessment of submission request - ELSI compliance verification
+#### 8.2 Assessment of submission request - ELSI compliance verification
 
 | Step identifier            | When             | Who |
 |:------------------|:----|:----|
-| 1.2 | After data types verification | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
+| 8.2 | After data types verification | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
 
 Make compliance checks, i.e. make sure you have necessary ELSI documents (e.g. informed consent, ethical permits) and ELSI metadata (e.g. data controller).
   * Yes, continue the process
   * No, there is missing/incomplete/incorrect ELSI documentation or metadata: contact the submitter and request appropriate changes.
 
 
-#### 2. Storage capacity check
+#### 8.3. Storage capacity check
 | Step identifier            | When             | Who |
 |:---------------------------|:-----------------|:----|
-| 2.1 | After ticket assessment successful completion. | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
+| 8.3 | After ticket assessment successful completion. | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
 
 After evaluating the submission, determine the data size and verify if sufficient storage is available to accommodate it.
   * If yes, continue the process
   * If not, (TBD)
 
 
-#### 3. Storage capacity check
+#### 8.4. Storage capacity check
 | Step identifier            | When             | Who |
 |:---------------------------|:-----------------|:----|
-| 3 | After completing the request evaluation and all related considerations. | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
+| 8.4 | After completing the request evaluation and all related considerations. | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
 
 TBD
 
 
-#### 4. Review submission
+#### 8.5. Review submission
 | Step identifier            | When             | Who |
 |:---------------------------|:-----------------|:----|
-| 4 | After metadata completion. | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
+| 8.5 | After metadata completion. | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
 
 After all, review the full submission:
   * Data integrity check
@@ -156,10 +157,10 @@ After all, review the full submission:
 
 
 
-#### 5. Release datasets
+#### 8.6. Release datasets
 | Step identifier            | When             | Who |
 |:---------------------------|:-----------------|:----|
-| 5 | After submission review | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
+| 8.6 | After submission review | The Helpdesk member assigned to the ticket (responsible for handling the submission request) |
 
 TBD
 

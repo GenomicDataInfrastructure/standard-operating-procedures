@@ -112,7 +112,7 @@ graph TB
 _< This section is required >_
 
 _< List step-by-step hierarchical instructions for the SOP. Each step has at first a table with information, followed by an explanation of what is done at the step. For example: >_
-#### 1. < Evaluate input 1 >
+#### 8.1. < Evaluate input 1 >
 | Step identifier            | When             | Who |
 |:------------------|:----|:----|
 | _< 1 >_                     | _< When input 1 is received... >_ | _< The 1+MG Management Board at ... >_ |
@@ -120,19 +120,19 @@ _< List step-by-step hierarchical instructions for the SOP. Each step has at fir
 _< After input 1 is received by ..., it is evaluated following this checklist: >_
 - _< It is ... >_
 - _< It contains ...>_
-#### 2.1. < Do X >
+#### 8.2.1. < Do X >
 | Step identifier            | When             | Who |
 |:------------------|:----|:----|
-| _< 2.1 >_                     | _< After positive evaluation at [step 1](#1--evaluate-input-1-)... >_ | _< The 1+MG Management Board at ... >_ |
+| _< 2.1 >_                     | _< After positive evaluation at [step 1](#81--evaluate-input-1-)... >_ | _< The 1+MG Management Board at ... >_ |
 
 _< If positive evaluation is received, then ... executes the following code: >_
 ```bash
 echo "Hello world"
 ```
-#### 2.2. < Do X >
+#### 8.2.2. < Do X >
 | Step identifier            | When             | Who |
 |:---------------------------|:-----------------|:----|
-| _< 2.2 >_                  | _< After negative evaluation at [step 1](#1--evaluate-input-1-)... >_ | _< The 1+MG Management Board at ... >_ |
+| _< 2.2 >_                  | _< After negative evaluation at [step 1](#81--evaluate-input-1-)... >_ | _< The 1+MG Management Board at ... >_ |
 
 _< If negative evaluation is received, then ... executes the following code: >_
 ```bash

@@ -8,6 +8,9 @@ import markdown
 from bs4 import BeautifulSoup
 from utils import find_tables, collect_sop_files, parse_glossary, is_remote_reference_resolvable, get_image_paths
 
+# Add to the list of uppercase words that should be skipped during undefined acronym checks
+skippable_acronyms = ["BBDEFB", "FFFFFF", "GDIVHD", "ACTIONS", "NEEDED", "II" , "III", "ACCESS", "DATE", "REVIEW", "DATA"]
+
 class SOPLinter:
     def __init__(self, verbosity: int = 0, strict: bool = False, required_sections: dict = {}):
         """
@@ -521,7 +524,7 @@ class SOPLinter:
         # Regex for uppercase acronyms of 2+ characters, with possible "s" ending (e.g., SOPs)
         detected_acronyms = re.findall(r'\b[A-Z]{2,}s?\b', sop_text)
         for acronym in set(detected_acronyms):
-            if acronym not in sop_glossary:
+            if acronym not in sop_glossary and acronym not in skippable_acronyms:
                 if acronym[-1] == 's' and acronym[:-1] in sop_glossary:
                     # We skip acronym plurals (e.g., SOPs) that would be false positives (e.g., since SOP is already there)
                     continue

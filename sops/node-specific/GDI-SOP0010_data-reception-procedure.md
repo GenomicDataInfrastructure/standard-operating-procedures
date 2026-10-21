@@ -35,7 +35,12 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 
 | Abbreviation  | Description     |
 |---------------|-----------------|
+| BAM           | Binary Alignment Map, file format for aligned sequencing reads mapped to a reference genome |
+| CRAM          | Compressed Reference-oriented Alignment Map, a space-saving alternative to BAM |
 | ELSI          | Ethical, Legal, and Social Issues |
+| FASTA         | Fast-A, file format for raw data output directly from DNA/RNA sequencing machines |
+| FASTQ         | FASTA with Quality, file format for raw data output directly from DNA/RNA sequencing machines |
+| VCF           | Variant Call Format, file format used to store genetic variations |
 
 | Term             | Definition      |
 |------------------|-----------------|
@@ -170,6 +175,4 @@ TBD
 | Reference | Description                                          |
 |-----------|------------------------------------------------------|
 | [1](#)    | European GDI - SOP Charter (including Glossary)      |
-| [2](#)    | European GDI - Procedures for Information Service Management (ISM) for SOPs |
-| [3](#)    | European GDI - Organisational Roles and Responsibilities (ORR) |
-| [4](#)    | ... |
+| [2](#)    | European GDI - Procedures for Information Service Management for SOPs |

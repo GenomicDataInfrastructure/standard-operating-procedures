@@ -71,7 +71,7 @@ See the [Organisational Roles and Responsibilities](https://github.com/GenomicDa
 
 ## 4. Purpose
 
-This SOP defines a standardised process for formally withdrawing previously approved GDI Standard Operating Procedures that are obsolete, superseded or no longer applicable.
+This SOP defines a standardised process for formally withdrawing previously approved GDI Standard Operating Procedures (SOPs) that are obsolete, superseded or no longer applicable.
 
 It ensures that withdrawal decisions are appropriately assessed, documented, approved and communicated, while preserving document history, identifiers and traceability across the GDI infrastructure.
 
@@ -93,21 +93,16 @@ The process includes:
 
 **Out of scope:** The independent withdrawal of node-specific SOP instances maintained exclusively in local node repositories. These remain subject to local governance. However, GDI nodes must be informed when a central SOP or template on which their local procedures depend is withdrawn.
 
-**Input:** A withdrawal request identifying an approved SOP that may no longer be applicable.
-
-**Output:** An authorised withdrawal recorded in the repository, with the SOP clearly marked as withdrawn, its historical record preserved and affected stakeholders notified.
 
 ## 6. Introduction and Background Information
 
-The GDI SOP framework provides a standardised approach for developing, reviewing, approving and maintaining operational procedures across participating nodes.
+The GDI SOP framework provides a standardised approach for developing, reviewing, approving and maintaining operational procedures across GDI and participating nodes.
 
 As GDI evolves, previously approved SOPs may become obsolete due to technical developments, organisational changes, updated governance requirements or the introduction of replacement procedures.
 
-Although the existing SOP framework defines the creation and maintenance of SOPs, a dedicated process is required to manage their formal withdrawal.
+Although the importance for a dedicated process to manage the SOPs formal withdrawal.
 
 Without a standardised withdrawal procedure, obsolete SOPs may remain accessible without clear indication that they are no longer applicable, potentially leading to inconsistent practices across GDI nodes.
-
-The withdrawal process must therefore distinguish between removing an SOP from active operational use and permanently deleting its historical record.
 
 **The following principles apply:**
 
@@ -141,17 +136,17 @@ A withdrawal request must be created as an issue in the GDI SOP GitHub repositor
 
 **Procedure:**
 
-1. Navigate to the repository's [GitHub Issues](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues).
-2. Create a new issue requesting withdrawal of the relevant SOP.
-3. Provide the following information:
-   - SOP identifier and title.
-   - Current SOP version.
-   - Reason for withdrawal.
-   - Description of the operational or technical changes motivating the request.
-   - Replacement SOP, if applicable.
-   - Known dependencies or affected GDI nodes.
-   - Supporting references or documentation.
-4. Submit the issue for evaluation by the OC.
+1. Navigate to the GDI SOP GitHub Issues.
+
+1. Select New issue.
+
+1. Choose the Request SOP Withdrawal template.
+
+1. Complete all mandatory fields, including the SOP identifier, title, version, URL, withdrawal reason and justification.
+
+1. Provide additional information about replacement SOPs, dependencies and potential impacts, where known.
+
+1. Submit the request for assessment by the Operations Committee.
 
 **Withdrawal criteria**
 
@@ -166,7 +161,6 @@ A withdrawal request must be created as an issue in the GDI SOP GitHub repositor
 
 **Required evidence:** GitHub issue containing the withdrawal request and justification.
 
-Proceed to step 2.
 
 ### 8.2. Evaluate the withdrawal request
 
@@ -191,7 +185,7 @@ The OC evaluates the request to determine whether the proposed withdrawal is jus
 - **Additional information required:** Request clarification from the submitter and repeat the evaluation.
 - **Rejected:** Document the reason for rejection and close the issue.
 
-Acceptance of the request does not constitute approval to withdraw the SOP.
+Important: Acceptance of the request does not constitute approval to withdraw the SOP.
 
 **Required evidence:** Documented initial assessment and decision in the GitHub issue.
 
@@ -234,7 +228,7 @@ Proceed to step 4.
 
 | Step identifier | When | Who |
 |---|---|---|
-| `4` | After the impact assessment has been completed | OC / SDPC and designated authorising body **[TO CONFIRM]** |
+| `4` | After the impact assessment has been completed | OC / SDPC / Managment Board |
 
 The proposed withdrawal must undergo formal review before repository changes are implemented.
 
@@ -252,10 +246,6 @@ The proposed withdrawal must undergo formal review before repository changes are
 4. The designated governance body reviews and records its decision.
 5. The decision is linked to the GitHub withdrawal issue.
 
-**[TO CONFIRM — GOVERNANCE]**
-
-The existing SOP creation procedure includes OC/SDPC approval and Management Board authorisation. The equivalent authority and approval requirements for withdrawal must be agreed before this SOP is finalised.
-
 **Decision:**
 
 - **Approved:** Proceed to step 5.
@@ -264,80 +254,71 @@ The existing SOP creation procedure includes OC/SDPC approval and Management Boa
 
 **Required evidence:** Traceable approval record, including decision, date and approving authority.
 
-### 8.5. Prepare withdrawal metadata
+#### 8.5. Prepare withdrawal metadata
 
 | Step identifier | When | Who |
 |---|---|---|
 | `5` | After formal withdrawal approval has been recorded | Repository maintainer |
 
-The repository maintainer prepares the changes required to identify the SOP as withdrawn.
+The repository maintainer must clearly identify the SOP as withdrawn and move it to the designated directory for withdrawn SOPs.
 
 **Procedure:**
 
-1. Locate the approved SOP in the repository.
-2. Confirm that the SOP identifier and current version match the approved withdrawal record.
-3. Update the document's metadata to include the withdrawal information.
-4. Add a prominent withdrawal notice at the beginning of the document.
-5. Update the document history to record the withdrawal.
-6. Preserve the original SOP content for historical reference.
+1. Locate the approved SOP in the GDI SOP repository and verify its identifier and version against the approved withdrawal record.
+2. Add the following **WITHDRAWN** notice at the beginning of the SOP Markdown file, before its main content. Replace all placeholders with the approved information:
 
-**Proposed metadata fields:**
+   ```markdown
+   > [!WARNING]
+   > **WITHDRAWN — NOT FOR OPERATIONAL USE**
+   >
+   > This SOP was formally withdrawn on YYYY-MM-DD and is no longer applicable for GDI operations.
+   >
+   > **Reason:** [Withdrawal justification]
+   >
+   > **Replacement SOP:** [SOP identifier and link, or N/A]
+   >
+   > **Withdrawal request and approval:** [GitHub issue / approval record links]
+   >
+   > This document is retained for historical reference only.
+   ```
 
-| Metadata | Value |
-|---|---|
-| Status | Withdrawn |
-| Withdrawal date | YYYY.MM.DD |
-| Withdrawal reason | Brief explanation |
-| Superseded by | Replacement SOP identifier or N/A |
-| Withdrawal reference | GitHub issue URL |
-| Approval reference | Link to recorded decision |
-
-**Example withdrawal notice:**
-
-> **WITHDRAWN — NOT FOR OPERATIONAL USE**
->
-> This SOP was formally withdrawn on YYYY.MM.DD and is no longer applicable for GDI operations.
->
-> **Reason:** [Withdrawal justification]
->
-> **Replacement:** [SOP identifier, if applicable]
->
-> This document is retained for historical reference only.
-
-The SOP identifier must remain unchanged and must not be reused.
-
-**Required evidence:** Updated SOP Markdown file included in the withdrawal pull request.
+3. Update the document metadata to show its status as **Withdrawn**, the effective withdrawal date, withdrawal reason, replacement (if applicable), and approval reference.
+4. Add an entry to the document history recording the withdrawal, without removing or rewriting previous history entries.
+5. After the notice is added. Move the withdrawn sop to the folder `sops/withdrawn/`. Keep the original SOP identifier and filename unchanged.
 
 Proceed to step 6.
 
-### 8.6. Update repository documentation and references
+#### 8.6. Update repository documentation and references
 
 | Step identifier | When | Who |
 |---|---|---|
-| `6` | After the withdrawal metadata has been prepared | Repository maintainer |
+| `6` | After the withdrawn SOP has been relocated | OC|
 
-The repository must be updated to ensure that withdrawn SOPs are clearly distinguished from active procedures.
+Update the withdrawn index records.
 
 **Procedure:**
 
-1. Update the SOP index to display the withdrawn status.
-2. Review and update references to the withdrawn SOP in other documents.
-3. Where applicable, add references to the replacement SOP.
-4. Ensure the withdrawn SOP is not presented as an active procedure.
-5. Preserve the document in the repository for historical reference.
-6. Review any automated validation or publication processes affected by the new status.
+1. Open `sops/withdrawn/README.md` and add a row to the **Withdrawn SOP Register**, recording:
+   - SOP identifier and title, linked to its new location.
+   - Effective withdrawal date.
+   - Withdrawal reason.
+   - Replacement SOP, if applicable.
+   - Link to the GitHub withdrawal issue and recorded approval.
+2. Update the main SOP index and remove the record of the withdrawn SOP. 
+3. Search the repository for the withdrawn SOP identifier, old file path, and related links. Review matches in other SOPs, README files, and supporting documentation.
+4. Update links to the withdrawn SOP's new path (`sops/withdrawn/`). Where operational guidance should point to a replacement SOP, link to the approved replacement instead. 
+6. Confirm that the withdrawn SOP remains accessible, that the register and index entries are accurate, and that links resolve correctly.
 
-**Repository retention:**
 
-By default, the withdrawn SOP should remain at its existing file path to preserve links and Git history.
+**Verification checklist:**
 
-If a dedicated archive structure is adopted, the repository maintainers must ensure that historical references remain accessible and that affected links are updated.
+- [ ] A complete entry exists in `sops/withdrawn/README.md`.
+- [ ] The active SOP index no longer presents the withdrawn SOP as active.
+- [ ] Relevant links and references have been reviewed and updated.
+- [ ] The withdrawal notice, date, reason, and approval references agree with the withdrawal record.
+- [ ] The withdrawn Markdown file remains accessible in `sops/withdrawn/`.
+- [ ] Relevant repository validation checks pass.
 
-**Identifier preservation:**
-
-The base identifier and all previously issued versions must remain permanently reserved.
-
-**Required evidence:** Pull request containing the proposed repository changes.
 
 Proceed to step 7.
 
@@ -345,40 +326,19 @@ Proceed to step 7.
 
 | Step identifier | When | Who |
 |---|---|---|
-| `7` | After the withdrawal changes have been prepared | Repository maintainer and designated reviewers |
+| `7` | After the withdrawal changes have been prepared | OC |
 
-The repository maintainer submits the withdrawal changes through the established GitHub contribution workflow.
+The OC contact in charged of the withdrawal changes through the established GitHub contribution workflow.
 
 **Procedure:**
 
 1. Create a working branch from the repository's designated development branch.
 2. Commit the withdrawal-related changes.
 3. Open a pull request referencing the approved withdrawal issue.
-4. Request review from the appropriate repository maintainers and OC representatives.
+4. Request review from the appropriate OC representatives.
 5. Verify that the changes are consistent with the approval record.
 6. Run the applicable repository validation checks.
 7. Resolve review comments and merge the pull request in accordance with repository governance.
-
-**Example Git commands** (assuming the repository's designated development branch is `dev`; verify before use):
-
-```bash
-git fetch origin
-git switch dev
-git pull --ff-only origin dev
-
-git switch -c sop-withdrawal-XXXX
-
-# Edit the relevant SOP and repository files
-
-git add .
-git commit -m "docs: withdraw GDI-SOPXXXX"
-
-git push -u origin sop-withdrawal-XXXX
-```
-
-The pull request must contain a link to the original withdrawal issue and the recorded approval.
-
-**Required evidence:** Merged pull request and passing repository checks.
 
 Proceed to step 8.
 
@@ -386,7 +346,7 @@ Proceed to step 8.
 
 | Step identifier | When | Who |
 |---|---|---|
-| `8` | After the withdrawal has been published, or earlier if required by the approved transition plan | OC, supported by repository maintainers |
+| `8` | After the withdrawal has been published | OC|
 
 The withdrawal must be communicated to relevant stakeholders to prevent continued use of the obsolete procedure.
 
@@ -404,39 +364,56 @@ The withdrawal must be communicated to relevant stakeholders to prevent continue
 4. Request affected nodes to review their local copies, forks or SOP instances.
 5. Record the communication and any required follow-up actions in the GitHub issue.
 
-**Important:** Changes in the central repository do not necessarily update local forks or independently imported repositories automatically. Affected nodes remain responsible for reviewing and incorporating relevant changes into their local procedures.
-
-**Required evidence:** Communication record, including notification date and channels used.
 
 Proceed to step 9.
+
 
 ### 8.9. Verify withdrawal and close request
 
 | Step identifier | When | Who |
 |---|---|---|
-| `9` | After repository publication and communication have been completed | OC and repository maintainer |
+| `9` | After repository changes have been merged and the withdrawal has been communicated | OC |
 
-The OC verifies that the withdrawal has been implemented according to the approved decision.
+The OC contact must verify that the withdrawal has been correctly implemented, documented, and communicated before closing the withdrawal request.
 
-**Verification checklist:**
+**Procedure:**
 
-- [ ] Formal withdrawal approval is documented.
-- [ ] SOP metadata indicates `Withdrawn`.
-- [ ] Withdrawal date and justification are recorded.
-- [ ] A visible withdrawal notice is present.
-- [ ] SOP identifier remains unchanged and reserved.
-- [ ] Historical content remains accessible.
-- [ ] Repository index has been updated.
-- [ ] Relevant references have been reviewed.
-- [ ] Repository checks have passed.
-- [ ] Affected GDI nodes have been notified.
-- [ ] Withdrawal issue links to the merged pull request.
+1. Verify that the withdrawal was formally approved and that the approval record is linked to the GitHub issue.
+2. Confirm that the SOP Markdown file:
+   - Contains a prominent **WITHDRAWN — NOT FOR OPERATIONAL USE** notice.
+   - Includes the withdrawal date, reason, replacement SOP (if applicable), and approval reference.
+   - Has been moved to the `sops/withdrawn/` directory.
+   - Retains its original SOP identifier, version, and historical content.
+3. Verify that the withdrawn SOP has been added to the withdrawal register in `sops/withdrawn/README.md`.
+4. Confirm that the main SOP index and all relevant repository references have been updated to reflect the withdrawal and the new file location.
+5. Check that the withdrawn SOP is no longer listed or presented as an active operational procedure.
+6. Verify that the withdrawal pull request has been reviewed, approved, and merged, and that all applicable repository validation checks have passed.
+7. Confirm that affected GDI nodes and stakeholders have been notified and that the communication is documented.
+8. Record the final verification results in the original GitHub withdrawal issue.
+9. Close the GitHub issue once all required actions have been completed.
 
-Once the verification is complete, the OC records the outcome in the GitHub issue and closes the request.
+**Final verification checklist:**
 
-Any unresolved node-specific follow-up actions must remain traceable through an appropriate issue or action record.
+- [ ] Formal withdrawal approval is documented and linked.
+- [ ] SOP contains the **WITHDRAWN** notice.
+- [ ] Withdrawal date, reason, and approval reference are recorded.
+- [ ] Replacement SOP is identified, where applicable.
+- [ ] SOP has been moved to `sops/withdrawn/`.
+- [ ] Original SOP identifier, version, and historical content are preserved.
+- [ ] Withdrawal register (`sops/withdrawn/README.md`) is updated.
+- [ ] Main SOP index and related references are updated.
+- [ ] Withdrawn SOP is no longer presented as active.
+- [ ] Pull request is approved and merged.
+- [ ] Repository validation checks have passed.
+- [ ] Affected GDI nodes and stakeholders have been notified.
+- [ ] Withdrawal issue contains links to the approval record, merged PR, and communication evidence.
 
-**Output:** A formally withdrawn SOP with a complete and auditable withdrawal record.
+If any verification item is incomplete, the issue must remain open until the outstanding actions have been resolved or documented in a separately tracked follow-up issue approved by the OC.
+
+
+
+**End of procedure.**
+
 
 ## 9. References
 

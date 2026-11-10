@@ -1,0 +1,141 @@
+
+name: "Request SOP Withdrawal"
+description: "Request the formal withdrawal of an approved GDI SOP."
+title: "[SOP Withdrawal] GDI-SOPXXXX - "
+labels:
+  - "sop-withdrawal"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## GDI SOP Withdrawal Request
+
+        Use this form to request the withdrawal of an
+        approved GDI Standard Operating Procedure.
+
+        Withdrawal requests are subject to assessment
+        and approval under the GDI SOP governance process.
+
+        Submitting this form does not authorise withdrawal.
+
+  - type: input
+    id: sop_id
+    attributes:
+      label: "SOP Identifier"
+      description: "Provide the identifier of the SOP."
+      placeholder: "GDI-SOP0002"
+    validations:
+      required: true
+
+  - type: input
+    id: sop_title
+    attributes:
+      label: "SOP Title"
+      placeholder: "Full title of the SOP"
+    validations:
+      required: true
+
+  - type: input
+    id: sop_version
+    attributes:
+      label: "SOP Version"
+      placeholder: "e.g. v.1.0.1"
+    validations:
+      required: true
+
+  - type: input
+    id: sop_url
+    attributes:
+      label: "SOP URL"
+      description: "Link to the SOP in the GDI repository."
+      placeholder: "https://github.com/..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: withdrawal_reason
+    attributes:
+      label: "Reason for Withdrawal"
+      description: "Select the primary reason."
+      options:
+        - "Obsolete"
+        - "Superseded by another SOP"
+        - "Technical or infrastructure changes"
+        - "Governance or organisational changes"
+        - "Security or compliance concerns"
+        - "Process or service discontinued"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: "Withdrawal Justification"
+      description: |
+        Explain why the SOP should be withdrawn
+        and why an update would not be sufficient.
+      placeholder: |
+        Describe the changes that make this SOP
+        no longer applicable.
+    validations:
+      required: true
+
+  - type: input
+    id: replacement
+    attributes:
+      label: "Replacement SOP (if applicable)"
+      description: |
+        Provide the identifier or URL of the
+        replacement SOP, if one exists.
+      placeholder: "GDI-SOPXXXX or N/A"
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "Known Dependencies and Affected Nodes"
+      description: |
+        Identify related SOPs, GDI nodes,
+        services or operational procedures.
+      placeholder: |
+        - Related SOPs:
+        - Affected GDI nodes:
+        - Affected services:
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: "Potential Operational Impact"
+      description: |
+        Describe known operational, technical,
+        security or compliance implications.
+      placeholder: |
+        Explain any risks or transitional
+        actions that may be required.
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: "Supporting References"
+      description: |
+        Add links to supporting documentation,
+        discussions or relevant GitHub issues.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "Request Confirmation"
+      options:
+        - label: |
+            I understand this request requires formal
+            review and approval before withdrawal.
+          required: true
